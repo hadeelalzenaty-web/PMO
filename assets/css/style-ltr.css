@@ -1,49 +1,11 @@
-@import "../fonts/fontawesome/css/all.css";
-.text-card{
-	font-size:20px;
-	color:gray;
-	font-weight: bold;
-}
-.number-card{
-	color:#6093F4;
-	font-weight: bold;
-	font-size:16px;
-}
-.progress{
-	height: 0.357rem !important;
-}
-.card-content{
-	padding:0.3rem 1rem;
-}
+/*================================================================================
+	Item Name: Frest HTML Admin Template
+	Version: 1.0
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+================================================================================
 
-.btn-sm{
-	padding:4px 10px !important
-}
-.btn-site2{
-	color: #fff;
-    background-color: rgb(228, 10, 10);
-    border-color: rgb(228, 10, 10);
-}
-.btn-site1{
-	color: #fff;
-    background-color: #27AAE1;
-    border-color: #27AAE1;
-}
-.nav-itam a{
-	font-size: 1.5rem;
-    color: #475F7B;
-    vertical-align: middle;
-    cursor: pointer;
-    -webkit-text-stroke: 0.2px #FFFFFF;
-}
-.header-navbar .navbar-container ul.nav li i.bx-help-circle {
-    font-size: 1.5rem;
-    color: #475F7B;
-    vertical-align: middle;
-    cursor: pointer;
-	-webkit-text-stroke: 0.2px #FFFFFF;
-}
-.header-navbar .navbar-container ul.nav li a.nav-link-help{
-	padding: 1.5rem 0.75rem 1.15rem 0.75rem;
-	float:left;
-}
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
