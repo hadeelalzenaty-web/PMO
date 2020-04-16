@@ -36,3 +36,14 @@
     cursor: pointer;
     -webkit-text-stroke: 0.2px #FFFFFF;
 }
+.header-navbar .navbar-container ul.nav li i.bx-help-circle {
+    font-size: 1.5rem;
+    color: #475F7B;
+    vertical-align: middle;
+    cursor: pointer;
+	-webkit-text-stroke: 0.2px #FFFFFF;
+}
+.header-navbar .navbar-container ul.nav li a.nav-link-help{
+	padding: 1.5rem 0.75rem 1.15rem 0.75rem;
+	float:left;
+}
