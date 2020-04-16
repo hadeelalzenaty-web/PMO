@@ -15,6 +15,7 @@
 .card-content{
 	padding:0.3rem 1rem;
 }
+
 .btn-sm{
 	padding:4px 10px !important
 }
@@ -27,4 +28,11 @@
 	color: #fff;
     background-color: #27AAE1;
     border-color: #27AAE1;
+}
+.nav-itam a{
+	font-size: 1.5rem;
+    color: #475F7B;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-text-stroke: 0.2px #FFFFFF;
 }
