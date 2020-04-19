@@ -224,7 +224,7 @@
                 </li>
                 <li class=" nav-item"><a href="Projects.html"><i class="bx bx-envelope"></i><span class="menu-title" data-i18n="Email">Projects</span></a>
                 </li>
-                <li class=" nav-item"><a href="app-chat.html"><i class="bx bx-chat"></i><span class="menu-title" data-i18n="Chat">Resources</span></a>
+                <li class=" nav-item"><a href="app-chat.html"><i class="bx bxs-group"></i><span class="menu-title" data-i18n="Chat">Resources</span></a>
                 </li>
                 <li class=" nav-item"><a href="app-todo.html"><i class="bx bx-check-circle"></i><span class="menu-title" data-i18n="Todo">client</span></a>
                 </li>
@@ -275,6 +275,26 @@
                             </div>
                           </div>
                     </div>
+                    <div class="col-xl-3 col-sm-6 col-12">
+                      <fieldset class="form-group position-relative has-icon-left  mb-0">
+                                                          <input type="text" class="form-control round" id="chat-search" placeholder="Search">
+                                                          <div class="form-control-position">
+                                                              <i class="bx bx-search-alt text-dark"></i>
+                                                          </div>
+                                                      </fieldset>
+                      <div></div></div>
+                      <div class="col-xl-3 col-sm-6 col-12">
+                        <div class="todo-sort dropdown mr-1 show">
+                                                                    <button class="btn dropdown-toggle sorting" type="button" id="sortDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                                        <i class="bx bx-filter"></i>
+                                                                        <span>Sort</span>
+                                                                    </button>
+                                                                    <div class="dropdown-menu dropdown-menu-right show" aria-labelledby="sortDropdown" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(-32px, 39px, 0px);">
+                                                                        <a class="dropdown-item ascending" href="#">Ascending</a>
+                                                                        <a class="dropdown-item descending" href="#">Descending</a>
+                                                                    </div>
+                                                                </div>
+                        </div>
 
                     </div>
                     <div class="content-header row">
@@ -291,8 +311,8 @@
                                           <li class="breadcrumb-item active">Projects
                                           </li>
                                       </ol>
-                                      <button type="button" class="btn btn-primary mb-1" id="add-kanban">
-                                        <i class='bx bx-add-to-queue mr-50'></i> New Project
+                                      <button type="button" class="btn btn-primary ml-1" id="add-kanban">
+                                        <i class="bx bx-add-to-queue mr-50"></i> New Project
                                     </button>
                                   </div>
                               </div>
@@ -304,7 +324,7 @@
                         <div class="kanban-overlay"></div>
                         <section id="kanban-wrapper">
                             <div class="d-flex">
-                              <h5 class="float-left pr-1 mb-0">March</h5>
+                              <h5 class="float-left pr-1">March</h5>
                                     <div id="kanban-app"></div>
                             </div>
                             <div class="row match-height">
@@ -445,6 +465,96 @@
                                   </div>
                               </div>
                           </div>
+                          <div class="col-md-4 col-sm-12">
+                            <div class="card" style="height: 179.5px;">
+                                <div class="card-content">
+                                    <div class="card-body">
+                                      <div class="d-flex">
+                                        <h4>
+                                            300IT
+                                    </h4>
+                                        <div class="bold ml-auto">...</div>
+                                    </div>
+                                    <div class="d-flex">
+                                      <div class="badge badge-danger mr-1">status</div>
+                                        <div class="align-self-center mr-1"><i class="bx bxs-calendar"></i> Start date</div>
+                                        <div class="align-self-center"><i class="bx bxs-calendar"></i> End date</div>
+                                    </div>
+                                    <div class="description my-1">
+                                        <span>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                            industry. Lorem Ipsum has been the industry's standard dummy text ever
+                                            since the 1500s, when an unknown printer took a galley of type and scrambled it</span>
+                                    </div>
+                                    <div class="Project-progress my-1">
+                                        <label class="d-block"> Plan Progress </label>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <label class="d-block"> Actual Progress </label>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-end">
+                                        <div class="ml-auto">
+                                            <i class="fas fa-money-bill-wave"></i><span>
+                                                contract pricing
+                                            </span>
+                                            <i class="bx bx-task"></i> 
+                                            <span>
+                                                24 Tasks
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                      <div class="card" style="height: 179.5px;">
+                          <div class="card-content">
+                              <div class="card-body">
+                                <div class="d-flex">
+                                  <h4>
+                                      300IT
+                              </h4>
+                                  <div class="bold ml-auto">...</div>
+                              </div>
+                              <div class="d-flex">
+                                <div class="badge badge-danger mr-1">status</div>
+                                  <div class="align-self-center mr-1"><i class="bx bxs-calendar"></i> Start date</div>
+                                  <div class="align-self-center"><i class="bx bxs-calendar"></i> End date</div>
+                              </div>
+                              <div class="description my-1">
+                                  <span>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                      industry. Lorem Ipsum has been the industry's standard dummy text ever
+                                      since the 1500s, when an unknown printer took a galley of type and scrambled it</span>
+                              </div>
+                              <div class="Project-progress my-1">
+                                  <label class="d-block"> Plan Progress </label>
+                                  <div class="progress">
+                                      <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                  <label class="d-block"> Actual Progress </label>
+                                  <div class="progress">
+                                      <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                              </div>
+                              <div class="d-flex align-items-end">
+                                  <div class="ml-auto">
+                                      <i class="fas fa-money-bill-wave"></i><span>
+                                          contract pricing
+                                      </span>
+                                      <i class="bx bx-task"></i> 
+                                      <span>
+                                          24 Tasks
+                                      </span>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
                             <!-- above cards -->
         
                             <!--/ User Chat profile right area -->
