@@ -226,12 +226,9 @@
                 </li>
                 <li class=" nav-item"><a href="app-chat.html"><i class="bx bxs-group"></i><span class="menu-title" data-i18n="Chat">Resources</span></a>
                 </li>
-                <li class=" nav-item"><a href="app-todo.html"><i class="bx bx-check-circle"></i><span class="menu-title" data-i18n="Todo">client</span></a>
+                <li class=" nav-item"><a href="app-todo.html"><i class="bx bxs-user-badge"></i><span class="menu-title" data-i18n="Todo">client</span></a>
                 </li>
                 <li class=" nav-item"><a href="app-calendar.html"><i class="bx bx-calendar"></i><span class="menu-title" data-i18n="Calendar">Payments</span></a>
-
-                <li class=" nav-item"><a href="ext-component-sweet-alerts.html"><i class="bx bx-error"></i><span class="menu-title" data-i18n="Sweet Alert">Sweet Alert</span></a>
-                </li>
             </ul>
         </div>
     </div>
@@ -275,57 +272,50 @@
                             </div>
                           </div>
                     </div>
-                    <div class="col-xl-3 col-sm-6 col-12">
-                      <fieldset class="form-group position-relative has-icon-left  mb-0">
-                                                          <input type="text" class="form-control round" id="chat-search" placeholder="Search">
-                                                          <div class="form-control-position">
-                                                              <i class="bx bx-search-alt text-dark"></i>
-                                                          </div>
-                                                      </fieldset>
-                      <div></div></div>
-                      <div class="col-xl-3 col-sm-6 col-12">
-                        <div class="todo-sort dropdown mr-1 show">
-                                                                    <button class="btn dropdown-toggle sorting" type="button" id="sortDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                                        <i class="bx bx-filter"></i>
-                                                                        <span>Sort</span>
-                                                                    </button>
-                                                                    <div class="dropdown-menu dropdown-menu-right show" aria-labelledby="sortDropdown" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(-32px, 39px, 0px);">
-                                                                        <a class="dropdown-item ascending" href="#">Ascending</a>
-                                                                        <a class="dropdown-item descending" href="#">Descending</a>
-                                                                    </div>
-                                                                </div>
-                        </div>
-
                     </div>
-                    <div class="content-header row">
-                      <div class="content-header-left col-12 mb-2 mt-1">
-                          <div class="row breadcrumbs-top">
-                              <div class="col-12">
-                                  <h5 class="content-header-title float-left pr-1 mb-0">Projects</h5>
-                                  <div class="breadcrumb-wrapper col-12">
-                                      <ol class="breadcrumb p-0 mb-0">
-                                          <li class="breadcrumb-item"><a href="index.html"><i class="bx bx-home-alt"></i></a>
-                                          </li>
-                                          <li class="breadcrumb-item"><a href="#">Extensions</a>
-                                          </li>
-                                          <li class="breadcrumb-item active">Projects
-                                          </li>
-                                      </ol>
-                                      <button type="button" class="btn btn-primary ml-1" id="add-kanban">
-                                        <i class="bx bx-add-to-queue mr-50"></i> New Project
-                                    </button>
-                                  </div>
-                              </div>
+                    <div class="todo-fixed-search d-flex justify-content-between align-items-center">
+                      <fieldset class="form-group position-relative has-icon-left m-0 flex-grow-1">
+                          <input type="text" class="form-control todo-search" id="todo-search" placeholder="Search project">
+                          <div class="form-control-position">
+                              <i class="bx bx-search"></i>
+                          </div>
+                      </fieldset>
+                      <div class="todo-sort dropdown mr-1">
+                          <button class="btn dropdown-toggle sorting" type="button" id="sortDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="bx bx-filter"></i>
+                              <span>Sort</span>
+                          </button>
+                          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="sortDropdown">
+                              <a class="dropdown-item ascending" href="#">Ascending</a>
+                              <a class="dropdown-item descending" href="#">Descending</a>
                           </div>
                       </div>
                   </div>
+                  <div class="row">
+                  <div class="content-header-left col-12 mb-2 mt-1">
+                    <div class="row breadcrumbs-top">
+                        <div class="col-12">
+                            <h5 class="content-header-title float-left pr-1 mb-0">Projects</h5>
+                            <div class="breadcrumb-wrapper col-12">
+                                <ol class="breadcrumb p-0 mb-0">
+                                    <li class="breadcrumb-item"><a href="Projects.html"><i class="bx bx-home-alt"></i></a>
+                                    </li>
+                                    <li class="breadcrumb-item"><a href="#">Extensions</a>
+                                    </li>
+                                    <li class="breadcrumb-item active">Projects
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
                     <div class="content-body">
                         <!-- Basic Kanban App -->
                         <div class="kanban-overlay"></div>
                         <section id="kanban-wrapper">
                             <div class="d-flex">
                               <h5 class="float-left pr-1">March</h5>
-                                    <div id="kanban-app"></div>
                             </div>
                             <div class="row match-height">
                               <div class="col-md-4 col-sm-12">
