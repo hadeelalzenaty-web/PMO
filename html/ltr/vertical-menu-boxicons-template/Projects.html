@@ -19,6 +19,7 @@
     <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/jkanban/jkanban.min.css">
     <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/editors/quill/quill.snow.css">
     <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/pickers/pickadate/pickadate.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/pickers/daterange/daterangepicker.css">
     <!-- END: Vendor CSS-->
 
     <!-- BEGIN: Theme CSS-->
@@ -312,9 +313,9 @@
                                 <fieldset class="form-group">
                                     <select class="form-control" id="users-list-status">
                                         <option value="">Any</option>
-                                        <option value="Active">Active</option>
-                                        <option value="Close">Close</option>
-                                        <option value="Banned">Banned</option>
+                                        <option value="Active">Alaa Khalil</option>
+                                        <option value="Close">Hassan Alsheikh</option>
+                                        <option value="Banned">Mohammad farhan</option>
                                     </select>
                                 </fieldset>
                             </div>
@@ -329,6 +330,24 @@
                                   </select>
                               </fieldset>
                           </div>
+                          <div class="col-12 col-sm-6 col-lg-3">
+                            <label for="users-list-status">From</label>
+                          <fieldset class="form-group position-relative has-icon-left">
+                            <input type="text" class="form-control pickadate-months-year" placeholder="Select Date">
+                            <div class="form-control-position">
+                                <i class='bx bx-calendar'></i>
+                            </div>
+                        </fieldset>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3">
+                          <label for="users-list-status">To</label>
+                        <fieldset class="form-group position-relative has-icon-left">
+                          <input type="text" class="form-control pickadate-months-year" placeholder="Select Date">
+                          <div class="form-control-position">
+                              <i class='bx bx-calendar'></i>
+                          </div>
+                      </fieldset>
+                      </div>
                               <div class="col-12 col-sm-6 col-lg-3 d-flex align-items-center">
                                   <button type="reset" class="btn btn-primary btn-block glow users-list-clear mb-0">Clear</button>
                               </div>
@@ -371,10 +390,10 @@
                                       </h4>
                                       <div class="bold ml-auto">...</div>
                                     </div>
-                                    <div class="d-flex flex-sm-row flex-column">
+                                    <div class="d-flex flex-sm-row flex-column time-card">
                                       <div class="badge badge-danger mr-1">status</div>
-                                      <div class="align-self-sm-center mr-1"><a href="#"><i class="bx bxs-calendar"></i> Start date</a></div>
-                                      <div class="align-self-sm-center mr-1"><a href="#"><i class="bx bxs-calendar"></i> End date</a></div>
+                                      <a href="#" class="align-self-sm-center mr-1"><i class="bx bxs-calendar"></i> Start date</a>
+                                      <a href="#" class="align-self-sm-center"><i class="bx bxs-calendar"></i> End date</a>
                                     </div>
                                     <div class="description my-1">
                                       <span>Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -393,7 +412,7 @@
                                           aria-valuemax="100"></div>
                                       </div>
                                     </div>
-                                    <div class="d-flex align-items-end box-icon">
+                                    <div class="d-flex align-items-end">
                                       <div class="ml-auto">
                                         <a href="#" class="mr-1">
                                           <i class="fas fa-money-bill-wave"></i>
@@ -421,10 +440,10 @@
                                       </h4>
                                       <div class="bold ml-auto">...</div>
                                     </div>
-                                    <div class="d-flex flex-sm-row flex-column">
+                                    <div class="d-flex flex-sm-row flex-column time-card">
                                       <div class="badge badge-danger mr-1">status</div>
-                                      <div class="align-self-sm-center mr-1"><a href="#"><i class="bx bxs-calendar"></i> Start date</a></div>
-                                      <div class="align-self-sm-center mr-1"><a href="#"><i class="bx bxs-calendar"></i> End date</a></div>
+                                      <a href="#" class="align-self-sm-center mr-1"><i class="bx bxs-calendar"></i> Start date</a>
+                                      <a href="#" class="align-self-sm-center"><i class="bx bxs-calendar"></i> End date</a>
                                     </div>
                                     <div class="description my-1">
                                       <span>Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -443,7 +462,7 @@
                                           aria-valuemax="100"></div>
                                       </div>
                                     </div>
-                                    <div class="d-flex align-items-end box-icon">
+                                    <div class="d-flex align-items-end ">
                                       <div class="ml-auto">
                                         <a href="#" class="mr-1">
                                           <i class="fas fa-money-bill-wave"></i>
@@ -471,10 +490,10 @@
                                       </h4>
                                       <div class="bold ml-auto">...</div>
                                     </div>
-                                    <div class="d-flex flex-sm-row flex-column">
+                                    <div class="d-flex flex-sm-row flex-column time-card">
                                       <div class="badge badge-danger mr-1">status</div>
-                                      <div class="align-self-sm-center mr-1"><a href="#"><i class="bx bxs-calendar"></i> Start date</a></div>
-                                      <div class="align-self-sm-center mr-1"><a href="#"><i class="bx bxs-calendar"></i> End date</a></div>
+                                      <a href="#" class="align-self-sm-center mr-1"><i class="bx bxs-calendar"></i> Start date</a>
+                                      <a href="#" class="align-self-sm-center"><i class="bx bxs-calendar"></i> End date</a>
                                     </div>
                                     <div class="description my-1">
                                       <span>Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -493,7 +512,7 @@
                                           aria-valuemax="100"></div>
                                       </div>
                                     </div>
-                                    <div class="d-flex align-items-end box-icon">
+                                    <div class="d-flex align-items-end ">
                                       <div class="ml-auto">
                                         <a href="#" class="mr-1">
                                           <i class="fas fa-money-bill-wave"></i>
@@ -520,10 +539,10 @@
                                       </h4>
                                       <div class="bold ml-auto">...</div>
                                     </div>
-                                    <div class="d-flex flex-sm-row flex-column">
+                                    <div class="d-flex flex-sm-row flex-column time-card">
                                       <div class="badge badge-danger mr-1">status</div>
-                                      <div class="align-self-sm-center mr-1"><a href="#"><i class="bx bxs-calendar"></i> Start date</a></div>
-                                      <div class="align-self-sm-center mr-1"><a href="#"><i class="bx bxs-calendar"></i> End date</a></div>
+                                      <a href="#" class="align-self-sm-center mr-1"><i class="bx bxs-calendar"></i> Start date</a>
+                                      <a href="#" class="align-self-sm-center"><i class="bx bxs-calendar"></i> End date</a>
                                     </div>
                                     <div class="description my-1">
                                       <span>Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -542,7 +561,7 @@
                                           aria-valuemax="100"></div>
                                       </div>
                                     </div>
-                                    <div class="d-flex align-items-end box-icon">
+                                    <div class="d-flex align-items-end ">
                                       <div class="ml-auto">
                                         <a href="#" class="mr-1">
                                           <i class="fas fa-money-bill-wave"></i>
@@ -569,10 +588,10 @@
                                       </h4>
                                       <div class="bold ml-auto">...</div>
                                     </div>
-                                    <div class="d-flex flex-sm-row flex-column">
+                                    <div class="d-flex flex-sm-row flex-column time-card">
                                       <div class="badge badge-danger mr-1">status</div>
-                                      <div class="align-self-sm-center mr-1"><a href="#"><i class="bx bxs-calendar"></i> Start date</a></div>
-                                      <div class="align-self-sm-center mr-1"><a href="#"><i class="bx bxs-calendar"></i> End date</a></div>
+                                      <a href="#" class="align-self-sm-center mr-1"><i class="bx bxs-calendar"></i> Start date</a>
+                                      <a href="#" class="align-self-sm-center"><i class="bx bxs-calendar"></i> End date</a>
                                     </div>
                                     <div class="description my-1">
                                       <span>Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -591,7 +610,7 @@
                                           aria-valuemax="100"></div>
                                       </div>
                                     </div>
-                                    <div class="d-flex align-items-end box-icon">
+                                    <div class="d-flex align-items-end ">
                                       <div class="ml-auto">
                                         <a href="#" class="mr-1">
                                           <i class="fas fa-money-bill-wave"></i>
@@ -624,10 +643,10 @@
                                       </h4>
                                       <div class="bold ml-auto">...</div>
                                     </div>
-                                    <div class="d-flex flex-sm-row flex-column">
+                                    <div class="d-flex flex-sm-row flex-column time-card">
                                       <div class="badge badge-danger mr-1">status</div>
-                                      <div class="align-self-sm-center mr-1"><a href="#"><i class="bx bxs-calendar"></i> Start date</a></div>
-                                      <div class="align-self-sm-center mr-1"><a href="#"><i class="bx bxs-calendar"></i> End date</a></div>
+                                      <a href="#" class="align-self-sm-center mr-1"><i class="bx bxs-calendar"></i> Start date</a>
+                                      <a href="#" class="align-self-sm-center"><i class="bx bxs-calendar"></i> End date</a>
                                     </div>
                                     <div class="description my-1">
                                       <span>Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -646,7 +665,7 @@
                                           aria-valuemax="100"></div>
                                       </div>
                                     </div>
-                                    <div class="d-flex align-items-end box-icon">
+                                    <div class="d-flex align-items-end ">
                                       <div class="ml-auto">
                                         <a href="#" class="mr-1">
                                           <i class="fas fa-money-bill-wave"></i>
@@ -674,10 +693,10 @@
                                       </h4>
                                       <div class="bold ml-auto">...</div>
                                     </div>
-                                    <div class="d-flex flex-sm-row flex-column">
+                                    <div class="d-flex flex-sm-row flex-column time-card">
                                       <div class="badge badge-danger mr-1">status</div>
-                                      <div class="align-self-sm-center mr-1"><a href="#"><i class="bx bxs-calendar"></i> Start date</a></div>
-                                      <div class="align-self-sm-center mr-1"><a href="#"><i class="bx bxs-calendar"></i> End date</a></div>
+                                      <a href="#" class="align-self-sm-center mr-1"><i class="bx bxs-calendar"></i> Start date</a>
+                                      <a href="#" class="align-self-sm-center"><i class="bx bxs-calendar"></i> End date</a>
                                     </div>
                                     <div class="description my-1">
                                       <span>Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -696,7 +715,7 @@
                                           aria-valuemax="100"></div>
                                       </div>
                                     </div>
-                                    <div class="d-flex align-items-end box-icon">
+                                    <div class="d-flex align-items-end ">
                                       <div class="ml-auto">
                                         <a href="#" class="mr-1">
                                           <i class="fas fa-money-bill-wave"></i>
@@ -724,10 +743,10 @@
                                       </h4>
                                       <div class="bold ml-auto">...</div>
                                     </div>
-                                    <div class="d-flex flex-sm-row flex-column">
+                                    <div class="d-flex flex-sm-row flex-column time-card">
                                       <div class="badge badge-danger mr-1">status</div>
-                                      <div class="align-self-sm-center mr-1"><a href="#"><i class="bx bxs-calendar"></i> Start date</a></div>
-                                      <div class="align-self-sm-center mr-1"><a href="#"><i class="bx bxs-calendar"></i> End date</a></div>
+                                      <a href="#" class="align-self-sm-center mr-1"><i class="bx bxs-calendar"></i> Start date</a>
+                                      <a href="#" class="align-self-sm-center"><i class="bx bxs-calendar"></i> End date</a>
                                     </div>
                                     <div class="description my-1">
                                       <span>Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -746,7 +765,7 @@
                                           aria-valuemax="100"></div>
                                       </div>
                                     </div>
-                                    <div class="d-flex align-items-end box-icon">
+                                    <div class="d-flex align-items-end ">
                                       <div class="ml-auto">
                                         <a href="#" class="mr-1">
                                           <i class="fas fa-money-bill-wave"></i>
@@ -773,10 +792,10 @@
                                       </h4>
                                       <div class="bold ml-auto">...</div>
                                     </div>
-                                    <div class="d-flex flex-sm-row flex-column">
+                                    <div class="d-flex flex-sm-row flex-column time-card">
                                       <div class="badge badge-danger mr-1">status</div>
-                                      <div class="align-self-sm-center mr-1"><a href="#"><i class="bx bxs-calendar"></i> Start date</a></div>
-                                      <div class="align-self-sm-center mr-1"><a href="#"><i class="bx bxs-calendar"></i> End date</a></div>
+                                      <a href="#" class="align-self-sm-center mr-1"><i class="bx bxs-calendar"></i> Start date</a>
+                                      <a href="#" class="align-self-sm-center"><i class="bx bxs-calendar"></i> End date</a>
                                     </div>
                                     <div class="description my-1">
                                       <span>Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -795,7 +814,7 @@
                                           aria-valuemax="100"></div>
                                       </div>
                                     </div>
-                                    <div class="d-flex align-items-end box-icon">
+                                    <div class="d-flex align-items-end ">
                                       <div class="ml-auto">
                                         <a href="#" class="mr-1">
                                           <i class="fas fa-money-bill-wave"></i>
@@ -822,10 +841,10 @@
                                       </h4>
                                       <div class="bold ml-auto">...</div>
                                     </div>
-                                    <div class="d-flex flex-sm-row flex-column">
+                                    <div class="d-flex flex-sm-row flex-column time-card">
                                       <div class="badge badge-danger mr-1">status</div>
-                                      <div class="align-self-sm-center mr-1"><a href="#"><i class="bx bxs-calendar"></i> Start date</a></div>
-                                      <div class="align-self-sm-center mr-1"><a href="#"><i class="bx bxs-calendar"></i> End date</a></div>
+                                      <a href="#" class="align-self-sm-center mr-1"><i class="bx bxs-calendar"></i> Start date</a>
+                                      <a href="#" class="align-self-sm-center"><i class="bx bxs-calendar"></i> End date</a>
                                     </div>
                                     <div class="description my-1">
                                       <span>Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -844,7 +863,7 @@
                                           aria-valuemax="100"></div>
                                       </div>
                                     </div>
-                                    <div class="d-flex align-items-end box-icon">
+                                    <div class="d-flex align-items-end ">
                                       <div class="ml-auto">
                                         <a href="#" class="mr-1">
                                           <i class="fas fa-money-bill-wave"></i>
