@@ -1,0 +1,52 @@
+@import "../fonts/fontawesome/css/all.css";
+.text-card{
+	font-size:20px;
+	color:gray;
+	font-weight: bold;
+}
+.number-card{
+	color:#6093F4;
+	font-weight: bold;
+	font-size:16px;
+}
+.progress{
+	height: 0.357rem !important;
+}
+.card-content{
+	padding:0.3rem 1rem;
+}
+
+.btn-sm{
+	padding:4px 10px !important
+}
+
+.card-body a{
+    font-size:14px;
+    color:gray;
+}
+.boxes{
+    max-height: calc(800px - 121px) !important;
+    height: 800px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-right:20px;
+}
+
+.nav-itam a{
+	font-size: 1.5rem;
+    color: #475F7B;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-text-stroke: 0.2px #FFFFFF;
+}
+.header-navbar .navbar-container ul.nav li i.bx-help-circle {
+    font-size: 1.5rem;
+    color: #475F7B;
+    vertical-align: middle;
+    cursor: pointer;
+	-webkit-text-stroke: 0.2px #FFFFFF;
+}
+.header-navbar .navbar-container ul.nav li a.nav-link-help{
+	padding: 1.5rem 0.75rem 1.15rem 0.75rem;
+	float:left;
+}
