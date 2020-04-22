@@ -224,7 +224,7 @@
                 </li>
                 <li class=" nav-item"><a href="Projects.html"><i class="bx bx-envelope"></i><span class="menu-title" data-i18n="Email">Projects</span></a>
                 </li>
-                <li class=" nav-item"><a href="app-chat.html"><i class="bx bxs-group"></i><span class="menu-title" data-i18n="Chat">Resources</span></a>
+                <li class=" nav-item"><a href="Resources.html"><i class="bx bxs-group"></i><span class="menu-title" data-i18n="Chat">Resources</span></a>
                 </li>
                 <li class=" nav-item"><a href="Clients.html"><i class="bx bxs-user-badge"></i><span class="menu-title" data-i18n="Todo">Clients</span></a>
                 </li>
@@ -276,9 +276,9 @@
                       <form>
                           <div class="row border rounded py-2 mb-2">
                               <div class="col-12 col-sm-6 col-lg-3">
-                                  <label for="users-list-verified">Project Name</label>
+                                  <label for="project-name">Project Name</label>
                                   <fieldset class="form-group">
-                                      <select class="form-control" id="users-list-verified">
+                                      <select class="form-control" id="project-name">
                                           <option value="">Any</option>
                                           <option value="Yes">Yes</option>
                                           <option value="No">No</option>
@@ -286,9 +286,9 @@
                                   </fieldset>
                               </div>
                               <div class="col-12 col-sm-6 col-lg-3">
-                                  <label for="users-list-role">Client Name</label>
+                                  <label for="client-name">Client Name</label>
                                   <fieldset class="form-group">
-                                      <select class="form-control" id="users-list-role">
+                                      <select class="form-control" id="client-name">
                                           <option value="">Any</option>
                                           <option value="User">User</option>
                                           <option value="Staff">Staff</option>
@@ -296,9 +296,9 @@
                                   </fieldset>
                               </div>
                               <div class="col-12 col-sm-6 col-lg-3">
-                                  <label for="users-list-status">Status</label>
+                                  <label for="project-status">Status</label>
                                   <fieldset class="form-group">
-                                      <select class="form-control" id="users-list-status">
+                                      <select class="form-control" id="project-status">
                                           <option value="">Any</option>
                                           <option value="Active">Active</option>
                                           <option value="Close">Close</option>
@@ -307,9 +307,9 @@
                                   </fieldset>
                               </div>
                               <div class="col-12 col-sm-6 col-lg-3">
-                                <label for="users-list-status">PM</label>
+                                <label for="pm">PM</label>
                                 <fieldset class="form-group">
-                                    <select class="form-control" id="users-list-status">
+                                    <select class="form-control" id="pm">
                                         <option value="">Any</option>
                                         <option value="Active">Alaa Khalil</option>
                                         <option value="Close">Hassan Alsheikh</option>
@@ -318,9 +318,9 @@
                                 </fieldset>
                             </div>
                             <div class="col-12 col-sm-6 col-lg-3">
-                              <label for="users-list-status">Project Code</label>
+                              <label for="project-code">Project Code</label>
                               <fieldset class="form-group">
-                                  <select class="form-control" id="users-list-status">
+                                  <select class="form-control" id="project-code">
                                       <option value="">Any</option>
                                       <option value="Active">Active</option>
                                       <option value="Close">Close</option>
@@ -329,18 +329,18 @@
                               </fieldset>
                           </div>
                           <div class="col-12 col-sm-6 col-lg-3">
-                            <label for="users-list-status">From</label>
+                            <label for="from-date">From</label>
                           <fieldset class="form-group position-relative has-icon-left">
-                            <input type="text" class="form-control pickadate-months-year" placeholder="Select Date">
+                            <input type="text" class="form-control pickadate-months-year" placeholder="Select Date" id="from-date">
                             <div class="form-control-position">
                                 <i class='bx bx-calendar'></i>
                             </div>
                         </fieldset>
                         </div>
                         <div class="col-12 col-sm-6 col-lg-3">
-                          <label for="users-list-status">To</label>
+                          <label for="to-date">To</label>
                         <fieldset class="form-group position-relative has-icon-left">
-                          <input type="text" class="form-control pickadate-months-year" placeholder="Select Date">
+                          <input type="text" class="form-control pickadate-months-year" placeholder="Select Date" id="to-date">
                           <div class="form-control-position">
                               <i class='bx bx-calendar'></i>
                           </div>
@@ -350,9 +350,9 @@
                                   <button type="reset" class="btn btn-primary btn-block glow users-list-clear mb-0">Clear</button>
                               </div>
                               <div class="col-12 col-sm-6 col-lg-3">
-                                <label for="users-list-status">Search</label>
+                                <label for="search">Search</label>
                               <fieldset class="form-group position-relative has-icon-left m-0 flex-grow-1">
-                                <input type="text" class="form-control todo-search" id="todo-search" placeholder="Search Project">
+                                <input type="text" class="form-control todo-search" id="todo-search" placeholder="Search Project" id="search">
                                 <div class="form-control-position">
                                     <i class="bx bx-search"></i>
                                 </div>
@@ -384,12 +384,11 @@
                     </div>
                   </div>
                     <div class="content-body boxes">
-                        <!-- Basic Kanban App -->
-                        <section id="kanban-wrapper">
+                        <section id="boxes-wrapper">
                           <div class="d-flex">
                             <h5 class="float-left">March</h5>
                           </div>
-                          <div class="row match-height">
+                          <div class="row">
                             <div class="col-md-4 col-sm-12">
                               <div class="card">
                                 <div class="card-content">
@@ -443,7 +442,6 @@
                                 </div>
                               </div>
                             </div>
-                        
                             <div class="col-md-4 col-sm-12">
                               <div class="card" >
                                 <div class="card-content">
@@ -662,7 +660,8 @@
                           <div class="d-flex">
                             <h5 class="float-left pr-1">April</h5>
                           </div>
-                          <div class="row match-height">
+                          <!--Cards-->
+                          <div class="row">
                             <div class="col-md-4 col-sm-12">
                               <div class="card" >
                                 <div class="card-content">
@@ -972,7 +971,6 @@
     <script src="../../../app-assets/js/core/app-menu.js"></script>
     <script src="../../../app-assets/js/core/app.js"></script>
     <script src="../../../app-assets/js/scripts/components.js"></script>
-    <script src="../../../app-assets/js/scripts/footer.js"></script>
     <!-- END: Theme JS-->
 
     <!-- BEGIN: Page JS-->

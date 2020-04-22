@@ -221,13 +221,13 @@
                 </li>
                 <li class=" navigation-header"><span>Pages</span>
                 </li>
-                <li class=" nav-item"><a href="Projects.html"><i class="bx bx-envelope"></i><span class="menu-title" data-i18n="Email">Projects</span></a>
+                <li class=" nav-item"><a href="Projects.html"><i class="bx bx-envelope"></i><span class="menu-title">Projects</span></a>
                 </li>
-                <li class=" nav-item"><a href="app-chat.html"><i class="bx bxs-group"></i><span class="menu-title" data-i18n="Chat">Resources</span></a>
+                <li class=" nav-item"><a href="Resources.html"><i class="bx bxs-group"></i><span class="menu-title" data-i18n="Chat">Resources</span></a>
                 </li>
                 <li class=" nav-item"><a href="Clients.html"><i class="bx bxs-user-badge"></i><span class="menu-title" data-i18n="Todo">client</span></a>
                 </li>
-                <li class=" nav-item"><a href="app-calendar.html"><i class="bx bx-calendar"></i><span class="menu-title" data-i18n="Calendar">Payments</span></a>
+                <li class=" nav-item"><a href="Payment.html"><i class="bx bx-calendar"></i><span class="menu-title" data-i18n="Calendar">Payments</span></a>
             </ul>
         </div>
     </div>
@@ -262,15 +262,15 @@
               </div>
             <div class="content-body">
                 <!-- users list start -->
-                <section class="users-list-wrapper">
-                    <div class="users-list-table">
+                <section class="clients-wrapper">
+                    <div class="clients-table">
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col-sm-12 col-md-10">
-                                            <div class="dataTables_length" id="users-list-datatable_length"><label>Show 
-                                                <select name="users-list-datatable_length" aria-controls="users-list-datatable" class="custom-select custom-select-sm form-control form-control-sm">
+                                            <div class="dataTables_length" id="show-field"><label>Show 
+                                                <select name="show" aria-controls="users-list-datatable" class="custom-select custom-select-sm form-control form-control-sm">
                                                         <option value="10">10</option>
                                                         <option value="25">25</option>
                                                         <option value="50">50</option>
@@ -278,7 +278,7 @@
                                                     </select></label></div>
                                         </div>
                                         <div class="col-sm-12 col-md-2">
-                                            <div id="users-list-datatable_filter" class="dataTables_filter"><label>Search:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="users-list-datatable"></label>
+                                            <div id="search" class="dataTables_search"><label>Search:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="users-list-datatable"></label>
                                             </div>
                                         </div>
                                     </div>
