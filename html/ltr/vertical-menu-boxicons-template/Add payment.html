@@ -17,6 +17,8 @@
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/vendors.min.css">
     <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/tables/datatable/datatables.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/pickers/pickadate/pickadate.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/pickers/daterange/daterangepicker.css">
     <!-- END: Vendor CSS-->
 
     <!-- BEGIN: Theme CSS-->
@@ -227,7 +229,7 @@
                 </li>
                 <li class=" nav-item"><a href="app-todo.html"><i class="bx bxs-user-badge"></i><span class="menu-title" data-i18n="Todo">client</span></a>
                 </li>
-                <li class=" nav-item"><a href="Payment.html"><i class="bx bx-calendar"></i><span class="menu-title" data-i18n="Calendar">Payments</span></a>
+                <li class=" nav-item"><a href="app-calendar.html"><i class="bx bx-calendar"></i><span class="menu-title" data-i18n="Calendar">Payments</span></a>
             </ul>
         </div>
     </div>
@@ -240,7 +242,6 @@
         <div class="content-wrapper">
             <div class="content-header d-flex align-items-lg-center my-1">
                 <h5 class="mr-1">Add Payment</h5>
-                <button class="btn btn-primary"><i class="bx bxs-add-to-queue mr-1"></i>Add Payment</button>
             </div>
             <div class="content-body">
                 <!-- users list start -->
@@ -250,206 +251,51 @@
                             <div class="card-content">
                                 <div class="card-body">
                                     <div class="row">
-                                        <div class="col-sm-12 col-md-10">
-                                            <div class="dataTables_length" id="users-list-datatable_length"><label>Show 
-                                                <select name="users-list-datatable_length" aria-controls="users-list-datatable" class="custom-select custom-select-sm form-control form-control-sm">
-                                                        <option value="10">10</option>
-                                                        <option value="25">25</option>
-                                                        <option value="50">50</option>
-                                                        <option value="100">100</option>
-                                                    </select></label></div>
+                                        <div class="col-md-4 col-sm-6 col-12">
+                                            <fieldset class="form-group">
+                                                <label for="basicInput">Project Name</label>
+                                                <input type="text" class="form-control" id="basicInput" placeholder="Project name">
+                                            </fieldset>
                                         </div>
-                                        <div class="col-sm-12 col-md-2">
-                                            <div id="users-list-datatable_filter" class="dataTables_filter"><label>Search:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="users-list-datatable"></label>
+                                        <div class="col-md-4 col-sm-6 col-12">
+                                            <fieldset class="form-group">
+                                                <label for="basicInput">Client Name</label>
+                                                <input type="text" class="form-control" id="basicInput" placeholder="Client name">
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-12">
+                                            <fieldset class="form-group">
+                                                <label for="basicInput">Amount</label>
+                                                <input type="text" class="form-control" id="basicInput" placeholder="Client name">
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-12">
+                                            <fieldset class="form-group">
+                                                <label for="basicSelect">Status</label>
+                                                <select class="form-control" id="basicSelect">
+                                                    <option>Paid</option>
+                                                    <option>UnPaid</option>
+                                                </select>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-12">
+                                            <label for="users-list-status">DeadLine</label>
+                                          <fieldset class="form-group position-relative has-icon-left">
+                                            <input type="text" class="form-control pickadate-months-year" placeholder="Select Date">
+                                            <div class="form-control-position">
+                                                <i class='bx bx-calendar'></i>
                                             </div>
+                                        </fieldset>
                                         </div>
+
                                     </div>
-                                    <!-- datatable start -->
-                                    <div class="table-responsive">
-                                        <table id="users-list-datatable" class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th>Project name</th>
-                                                    <th>Client name</th>
-                                                    <th>Amount</th>
-                                                    <th>Deadline</th>
-                                                    <th>Status</th>
-                                                    <th>Action</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>PMO</td>
-                                                    <td>ahmad assaf</td>
-                                                    <td class="text-bold-600 sorting_1">$1,934</td>
-                                                    <td>20/3/2020 </td>
-                                                    <td><i class="bx bxs-circle success font-small-1 mr-50"></i><span>Paid</span></td>
-                                                    <td><i class="bx bx-edit-alt">
-                                                            <i class="bx bxs-trash-alt"></i>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>PMO
-                                                    </td>
-                                                    <td>ahmad assaf</td>
-                                                    <td class="text-bold-600 sorting_1">$1,934</td>
-                                                    <td>20/4/2020 </td>
-                                                    <td><i class="bx bxs-circle danger font-small-1 mr-50"></i><span>Unpaid</span></td>
-                                                    <td><i class="bx bx-edit-alt">
-                                                            <i class="bx bxs-trash-alt"></i>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>PMO</td>
-                                                    <td>ahmad assaf</td>
-                                                    <td class="text-bold-600 sorting_1">$1,934</td>
-                                                    <td>20/3/2020 </td>
-                                                    <td><i class="bx bxs-circle success font-small-1 mr-50"></i><span>Paid</span></td>
-                                                    <td><i class="bx bx-edit-alt">
-                                                            <i class="bx bxs-trash-alt"></i>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>PMO
-                                                    </td>
-                                                    <td>ahmad assaf</td>
-                                                    <td class="text-bold-600 sorting_1">$1,934</td>
-                                                    <td>20/4/2020 </td>
-                                                    <td><i class="bx bxs-circle danger font-small-1 mr-50"></i><span>Unpaid</span></td>
-                                                    <td><i class="bx bx-edit-alt">
-                                                            <i class="bx bxs-trash-alt"></i>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>PMO</td>
-                                                    <td>ahmad assaf</td>
-                                                    <td class="text-bold-600 sorting_1">$1,934</td>
-                                                    <td>20/3/2020 </td>
-                                                    <td><i class="bx bxs-circle success font-small-1 mr-50"></i><span>Paid</span></td>
-                                                    <td><i class="bx bx-edit-alt">
-                                                            <i class="bx bxs-trash-alt"></i>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>PMO
-                                                    </td>
-                                                    <td>ahmad assaf</td>
-                                                    <td class="text-bold-600 sorting_1">$1,934</td>
-                                                    <td>20/4/2020 </td>
-                                                    <td><i class="bx bxs-circle danger font-small-1 mr-50"></i><span>Unpaid</span></td>
-                                                    <td><i class="bx bx-edit-alt">
-                                                            <i class="bx bxs-trash-alt"></i>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>PMO</td>
-                                                    <td>ahmad assaf</td>
-                                                    <td class="text-bold-600 sorting_1">$1,934</td>
-                                                    <td>20/3/2020 </td>
-                                                    <td><i class="bx bxs-circle success font-small-1 mr-50"></i><span>Paid</span></td>
-                                                    <td><i class="bx bx-edit-alt">
-                                                            <i class="bx bxs-trash-alt"></i>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>PMO
-                                                    </td>
-                                                    <td>ahmad assaf</td>
-                                                    <td class="text-bold-600 sorting_1">$1,934</td>
-                                                    <td>20/4/2020 </td>
-                                                    <td><i class="bx bxs-circle danger font-small-1 mr-50"></i><span>Unpaid</span></td>
-                                                    <td><i class="bx bx-edit-alt">
-                                                            <i class="bx bxs-trash-alt"></i>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>PMO</td>
-                                                    <td>ahmad assaf</td>
-                                                    <td class="text-bold-600 sorting_1">$1,934</td>
-                                                    <td>20/3/2020 </td>
-                                                    <td><i class="bx bxs-circle success font-small-1 mr-50"></i><span>Paid</span></td>
-                                                    <td><i class="bx bx-edit-alt">
-                                                            <i class="bx bxs-trash-alt"></i>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>PMO
-                                                    </td>
-                                                    <td>ahmad assaf</td>
-                                                    <td class="text-bold-600 sorting_1">$1,934</td>
-                                                    <td>20/4/2020 </td>
-                                                    <td><i class="bx bxs-circle danger font-small-1 mr-50"></i><span>Unpaid</span></td>
-                                                    <td><i class="bx bx-edit-alt">
-                                                            <i class="bx bxs-trash-alt"></i>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>PMO</td>
-                                                    <td>ahmad assaf</td>
-                                                    <td class="text-bold-600 sorting_1">$1,934</td>
-                                                    <td>20/3/2020 </td>
-                                                    <td><i class="bx bxs-circle success font-small-1 mr-50"></i><span>Paid</span></td>
-                                                    <td><i class="bx bx-edit-alt">
-                                                            <i class="bx bxs-trash-alt"></i>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>PMO
-                                                    </td>
-                                                    <td>ahmad assaf</td>
-                                                    <td class="text-bold-600 sorting_1">$1,934</td>
-                                                    <td>20/4/2020 </td>
-                                                    <td><i class="bx bxs-circle danger font-small-1 mr-50"></i><span>Unpaid</span></td>
-                                                    <td><i class="bx bx-edit-alt">
-                                                            <i class="bx bxs-trash-alt"></i>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>PMO</td>
-                                                    <td>ahmad assaf</td>
-                                                    <td class="text-bold-600 sorting_1">$1,934</td>
-                                                    <td>20/3/2020 </td>
-                                                    <td><i class="bx bxs-circle success font-small-1 mr-50"></i><span>Paid</span></td>
-                                                    <td><i class="bx bx-edit-alt">
-                                                            <i class="bx bxs-trash-alt"></i>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>PMO
-                                                    </td>
-                                                    <td>ahmad assaf</td>
-                                                    <td class="text-bold-600 sorting_1">$1,934</td>
-                                                    <td>20/4/2020 </td>
-                                                    <td><i class="bx bxs-circle danger font-small-1 mr-50"></i><span>Unpaid</span></td>
-                                                    <td><i class="bx bx-edit-alt">
-                                                            <i class="bx bxs-trash-alt"></i>
-                                                    </td>
-                                                </tr>
-                                            
-                                            </tbody>
-                                        </table>
+                                    <div class="col-12 d-flex flex-sm-row flex-column justify-content-end mt-1 p-0">
+                                        <button type="submit" class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">Create Client</button>
+                                        <button type="reset" class="btn btn-light">Cancel</button>
                                     </div>
-                                    <!-- datatable ends -->
                                 </div>
                             </div>
                         </div>
-                        <nav aria-label="Page navigation example">
-                            <ul class="pagination justify-content-center mt-2">
-                                <li class="page-item previous disabled"><a class="page-link" href="#">
-                                        <i class="bx bx-chevron-left"></i>
-                                    </a></li>
-                                <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                <li class="page-item"><a class="page-link" href="#">5</a></li>
-                                <li class="page-item"><a class="page-link" href="#">6</a></li>
-                                <li class="page-item"><a class="page-link" href="#">7</a></li>
-                                <li class="page-item next"><a class="page-link" href="#">
-                                        <i class="bx bx-chevron-right"></i>
-                                    </a></li>
-                            </ul>
-                        </nav>
                     </div>
                 </section>
                 <!-- users list ends -->
@@ -474,6 +320,10 @@
     <!-- BEGIN: Page Vendor JS-->
     <script src="../../../app-assets/vendors/js/tables/datatable/datatables.min.js"></script>
     <script src="../../../app-assets/vendors/js/tables/datatable/dataTables.bootstrap4.min.js"></script>
+    <script src="../../../app-assets/vendors/js/editors/quill/quill.min.js"></script>
+    <script src="../../../app-assets/vendors/js/pickers/pickadate/picker.js"></script>
+    <script src="../../../app-assets/vendors/js/pickers/pickadate/picker.date.js"></script>
+    <script src="../../../app-assets/vendors/js/pickers/pickadate/picker.time.js"></script>
     <!-- END: Page Vendor JS-->
 
     <!-- BEGIN: Theme JS-->
@@ -484,6 +334,7 @@
     <!-- END: Theme JS-->
 
     <!-- BEGIN: Page JS-->
+    <script src="../../../app-assets/js/scripts/pickers/dateTime/pick-a-datetime.js"></script>
     <script src="../../../app-assets/js/scripts/pages/page-users.js"></script>
     <!-- END: Page JS-->
 
