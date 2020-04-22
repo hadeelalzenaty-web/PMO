@@ -227,9 +227,9 @@
                 </li>
                 <li class=" nav-item"><a href="app-chat.html"><i class="bx bxs-group"></i><span class="menu-title" data-i18n="Chat">Resources</span></a>
                 </li>
-                <li class=" nav-item"><a href="app-todo.html"><i class="bx bxs-user-badge"></i><span class="menu-title" data-i18n="Todo">client</span></a>
+                <li class=" nav-item"><a href="Clients.html"><i class="bx bxs-user-badge"></i><span class="menu-title" data-i18n="Todo">client</span></a>
                 </li>
-                <li class=" nav-item"><a href="app-calendar.html"><i class="bx bx-calendar"></i><span class="menu-title" data-i18n="Calendar">Payments</span></a>
+                <li class=" nav-item"><a href="payment.html"><i class="bx bx-calendar"></i><span class="menu-title" data-i18n="Calendar">Payments</span></a>
             </ul>
         </div>
     </div>
@@ -266,8 +266,17 @@
                                         <div class="col-md-4 col-sm-6 col-12">
                                             <fieldset class="form-group">
                                                 <label for="basicInput">Amount</label>
-                                                <input type="text" class="form-control" id="basicInput" placeholder="Client name">
+                                                <input type="text" class="form-control" id="basicInput" placeholder="$">
                                             </fieldset>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-12">
+                                            <label for="users-list-status">DeadLine</label>
+                                          <fieldset class="form-group position-relative has-icon-left">
+                                            <input type="text" class="form-control pickadate-months-year" placeholder="Select Date" id="users-list-status">
+                                            <div class="form-control-position">
+                                                <i class='bx bx-calendar'></i>
+                                            </div>
+                                        </fieldset>
                                         </div>
                                         <div class="col-md-4 col-sm-6 col-12">
                                             <fieldset class="form-group">
@@ -278,19 +287,9 @@
                                                 </select>
                                             </fieldset>
                                         </div>
-                                        <div class="col-md-4 col-sm-6 col-12">
-                                            <label for="users-list-status">DeadLine</label>
-                                          <fieldset class="form-group position-relative has-icon-left">
-                                            <input type="text" class="form-control pickadate-months-year" placeholder="Select Date">
-                                            <div class="form-control-position">
-                                                <i class='bx bx-calendar'></i>
-                                            </div>
-                                        </fieldset>
-                                        </div>
-
                                     </div>
                                     <div class="col-12 d-flex flex-sm-row flex-column justify-content-end mt-1 p-0">
-                                        <button type="submit" class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">Create Client</button>
+                                        <button type="submit" class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">Create Payment</button>
                                         <button type="reset" class="btn btn-light">Cancel</button>
                                     </div>
                                 </div>
