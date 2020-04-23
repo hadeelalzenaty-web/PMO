@@ -58,6 +58,16 @@
     font-size: 24px;
     vertical-align: middle;
 }
+.main-res-info{
+    font-size: 1rem;
+   color:#262B56; 
+}
+.hr-color{
+    border-top: 1px solid #aeaef7;
+}
+.resource-rate,.resource-level{
+    font-weight: bold;
+}
 @media (max-width: 576px) {
 .w-sm-100{
     width:100%; /*change*/
