@@ -238,7 +238,7 @@
                       </li>
                       <li><a href="Attachments.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Attachments</span></a>
                       </li>
-                      <li class="active"><a href="milestones-lists.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Milestones/Sub Mileston Lists</span></a>
+                      <li><a href="milestones-lists.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Milestones/Sub Mileston Lists</span></a>
                       </li>
                       <li><a href="weekly-progress.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Weekly progress per Mileston</span></a>
                       </li>
@@ -248,7 +248,7 @@
                       </li>
                       <li><a href="overtime-list.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Overtime List</span></a>
                       </li>
-                      <li><a href="stackholders.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Stack Holders</span></a>
+                      <li class="active"><a href="stackholders.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Stack Holders</span></a>
                       </li>
                       <li><a href="escalation.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Escalations</span></a>
                       </li>
@@ -296,7 +296,7 @@
         
         <div class="content-wrapper">
             <div class="content-header d-flex align-items-lg-center my-1">
-                <h5 class="mr-1">Millestons/Sub-Millestone List</h5>
+                <h5 class="mr-1">Stackholders</h5>
             </div>
             <div class="content-body">
                 <!-- users list start -->
@@ -307,47 +307,90 @@
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col-md-4 col-sm-6 col-12">
-                                                <fieldset class="form-group">
-                                                    <label for="basicInputFile">Name</label>
-                                                    <div class="custom-file">
-                                                        <input type="file" class="custom-file-input" id="inputGroupFile01">
-                                                        <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-                                                    </div>
-                                                </fieldset>
-                                        </div>
-                                        <div class="col-md-4 col-sm-6 col-12">
-                                            <label for="start-date">Start date</label>
-                                          <fieldset class="form-group position-relative has-icon-left">
-                                            <input type="text" class="form-control pickadate-months-year" placeholder="Select Date" id="start-date">
-                                            <div class="form-control-position">
-                                                <i class='bx bx-calendar'></i>
-                                            </div>
-                                        </fieldset>
-                                        </div>
-                                        <div class="col-md-4 col-sm-6 col-12">
-                                            <label for="start-date">Finish date</label>
-                                          <fieldset class="form-group position-relative has-icon-left">
-                                            <input type="text" class="form-control pickadate-months-year" placeholder="Select Date" id="finish-date">
-                                            <div class="form-control-position">
-                                                <i class='bx bx-calendar'></i>
-                                            </div>
-                                        </fieldset>
-                                        </div>
-                                        <div class="col-md-4 col-sm-6 col-12">
-                                            <label for="select2">Status</label>
                                             <fieldset class="form-group">
-                                                <select class="form-control" id="select2">
-                                                    <option value="">Any</option>
-                                                    <option value="Yes">Yes</option>
-                                                    <option value="No">No</option>
+                                                <label for="name1">Name</label>
+                                                <input type="text" class="form-control" id="name1" placeholder="name">
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-12">
+                                            <fieldset class="form-group">
+                                                <label for="email">Email</label>
+                                                <input type="email" class="form-control" id="email" placeholder="E-mail">
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-12">
+                                            <fieldset class="form-group">
+                                                <label for="mobile-num">Mobile Number</label>
+                                                <input type="email" class="form-control" id="mobile-num" placeholder="Mobile Number">
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-12">
+                                            <fieldset class="form-group">
+                                                <label for="Position">Position</label>
+                                                <select class="form-control" id="Position">
+                                                    <option>..</option>
+                                                    <option>..</option>
                                                 </select>
                                             </fieldset>
                                         </div>
                                         <div class="col-md-4 col-sm-6 col-12">
-                                            <div class="form-group">
-                                                <label for="textareap">Notes</label>
-                                                <textarea class="form-control" id="textareap" rows="3"></textarea>
-                                              </div>
+                                            <fieldset class="form-group">
+                                                <label for="type">Type</label>
+                                                <select class="form-control" id="type">
+                                                    <option>Customer</option>
+                                                    <option>Government</option>
+                                                </select>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-12 d-flex flex-sm-row flex-column justify-content-end mt-1 p-0">
+                                            <button type="submit" class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">add</button>
+                                        </div>
+                                        <div class="table-responsive">
+                                            <table class="table mb-0">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Name</th>
+                                                        <th>E-mail</th>
+                                                        <th>Mobile Number</th>
+                                                        <th>Position</th>
+                                                        <th>Type</th>
+                                                        <th>Action</th>
+
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Ministry of Interior</td>
+                                                        <td>ministry@riyadh.net</td>
+                                                        <td>343567534</td>
+                                                        <td>Ryiadh</td>
+                                                        <td>Government</td>
+                                                        <td><a href="../../../html/ltr/vertical-menu-template/page-users-edit.html"><i class="bx bx-edit-alt"></i></a>
+                                                            <a href="../../../html/ltr/vertical-menu-template/page-users-edit.html"><i class="bx bxs-trash-alt"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Ministry of Health</td>
+                                                        <td>ministryh@riyadh.net</td>
+                                                        <td>343567534</td>
+                                                        <td>Ryiadh</td>
+                                                        <td>Government</td>
+                                                        <td><a href="../../../html/ltr/vertical-menu-template/page-users-edit.html"><i class="bx bx-edit-alt"></i></a>
+                                                            <a href="../../../html/ltr/vertical-menu-template/page-users-edit.html"><i class="bx bxs-trash-alt"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Ministry of Interior</td>
+                                                        <td>ministry@riyadh.net</td>
+                                                        <td>343567534</td>
+                                                        <td>Ryiadh</td>
+                                                        <td>Government</td>
+                                                        <td><a href="../../../html/ltr/vertical-menu-template/page-users-edit.html"><i class="bx bx-edit-alt"></i></a>
+                                                            <a href="../../../html/ltr/vertical-menu-template/page-users-edit.html"><i class="bx bxs-trash-alt"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
                                     </div>
                                     <div class="col-12 d-flex flex-sm-row flex-column justify-content-end mt-1 p-0">
@@ -371,7 +414,6 @@
     <!-- END: Footer-->
 
 
-    <!-- BEGIN: Vendor JS-->
     <script src="../../../app-assets/vendors/js/vendors.min.js"></script>
     <script src="../../../app-assets/fonts/LivIconsEvo/js/LivIconsEvo.tools.js"></script>
     <script src="../../../app-assets/fonts/LivIconsEvo/js/LivIconsEvo.defaults.js"></script>
@@ -379,6 +421,7 @@
     <!-- BEGIN Vendor JS-->
 
     <!-- BEGIN: Page Vendor JS-->
+    <script src="../../../app-assets/vendors/js/forms/spinner/jquery.bootstrap-touchspin.js"></script>
     <script src="../../../app-assets/vendors/js/tables/datatable/datatables.min.js"></script>
     <script src="../../../app-assets/vendors/js/tables/datatable/dataTables.bootstrap4.min.js"></script>
     <script src="../../../app-assets/vendors/js/pickers/pickadate/picker.js"></script>
@@ -394,9 +437,11 @@
     <!-- END: Theme JS-->
 
     <!-- BEGIN: Page JS-->
+    <script src="../../../app-assets/js/scripts/forms/number-input.js"></script>
     <script src="../../../app-assets/js/scripts/pickers/dateTime/pick-a-datetime.js"></script>
     <script src="../../../app-assets/js/scripts/pages/page-users.js"></script>
     <!-- END: Page JS-->
+
 
 </body>
 <!-- END: Body-->

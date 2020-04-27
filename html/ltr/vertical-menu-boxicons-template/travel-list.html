@@ -238,13 +238,13 @@
                       </li>
                       <li><a href="Attachments.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Attachments</span></a>
                       </li>
-                      <li class="active"><a href="milestones-lists.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Milestones/Sub Mileston Lists</span></a>
+                      <li><a href="milestones-lists.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Milestones/Sub Mileston Lists</span></a>
                       </li>
                       <li><a href="weekly-progress.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Weekly progress per Mileston</span></a>
                       </li>
                       <li><a href="weekly-budget.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Weekly Budget Calculation</span></a>
                       </li>
-                      <li><a href="travel-list.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Travel List</span></a>
+                      <li class="active"><a href="travel-list.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Travel List</span></a>
                       </li>
                       <li><a href="overtime-list.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Overtime List</span></a>
                       </li>
@@ -296,7 +296,7 @@
         
         <div class="content-wrapper">
             <div class="content-header d-flex align-items-lg-center my-1">
-                <h5 class="mr-1">Millestons/Sub-Millestone List</h5>
+                <h5 class="mr-1">Travel List</h5>
             </div>
             <div class="content-body">
                 <!-- users list start -->
@@ -307,53 +307,110 @@
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col-md-4 col-sm-6 col-12">
-                                                <fieldset class="form-group">
-                                                    <label for="basicInputFile">Name</label>
-                                                    <div class="custom-file">
-                                                        <input type="file" class="custom-file-input" id="inputGroupFile01">
-                                                        <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-                                                    </div>
-                                                </fieldset>
-                                        </div>
-                                        <div class="col-md-4 col-sm-6 col-12">
-                                            <label for="start-date">Start date</label>
-                                          <fieldset class="form-group position-relative has-icon-left">
-                                            <input type="text" class="form-control pickadate-months-year" placeholder="Select Date" id="start-date">
-                                            <div class="form-control-position">
-                                                <i class='bx bx-calendar'></i>
-                                            </div>
-                                        </fieldset>
-                                        </div>
-                                        <div class="col-md-4 col-sm-6 col-12">
-                                            <label for="start-date">Finish date</label>
-                                          <fieldset class="form-group position-relative has-icon-left">
-                                            <input type="text" class="form-control pickadate-months-year" placeholder="Select Date" id="finish-date">
-                                            <div class="form-control-position">
-                                                <i class='bx bx-calendar'></i>
-                                            </div>
-                                        </fieldset>
-                                        </div>
-                                        <div class="col-md-4 col-sm-6 col-12">
-                                            <label for="select2">Status</label>
                                             <fieldset class="form-group">
-                                                <select class="form-control" id="select2">
-                                                    <option value="">Any</option>
-                                                    <option value="Yes">Yes</option>
+                                                <label for="Rname">Resource Name</label>
+                                                <input type="text" class="form-control" id="Rname" placeholder="Resource name">
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-12">
+                                            <label for="traveld_select">Travel Destination</label>
+                                            <fieldset class="form-group">
+                                                <select class="form-control" id="traveld_select">
+                                                    <option value="">KSA</option>
+                                                    <option value="Yes">UAE</option>
                                                     <option value="No">No</option>
                                                 </select>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-12">
+                                            <fieldset class="form-group">
+                                                <label for="Vcost">Visa Cost</label>
+                                                <input type="text" class="form-control" id="Vcost" placeholder="Resource name">
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-12">
+                                            <fieldset class="form-group">
+                                                <label for="Tcost">Ticket Cost</label>
+                                                <input type="text" class="form-control" id="Tcost" placeholder="Resource name">
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-12">
+                                            <label for="end-date">From Date</label>
+                                          <fieldset class="form-group position-relative has-icon-left">
+                                            <input type="text" class="form-control pickadate-months-year" placeholder="Select Date" id="end-date">
+                                            <div class="form-control-position">
+                                                <i class='bx bx-calendar'></i>
+                                            </div>
+                                        </fieldset>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-12">
+                                            <label for="end-date">To Date</label>
+                                          <fieldset class="form-group position-relative has-icon-left">
+                                            <input type="text" class="form-control pickadate-months-year" placeholder="Select Date" id="end-date">
+                                            <div class="form-control-position">
+                                                <i class='bx bx-calendar'></i>
+                                            </div>
+                                        </fieldset>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-12">
+                                            <fieldset class="form-group">
+                                                <label for="Vcost">Accommodation Location</label>
+                                                <input type="text" class="form-control" id="Vcost" placeholder="Resource name">
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-12">
+                                            <fieldset class="form-group">
+                                                <label for="Vcost">Accommodation Per Night</label>
+                                                <input type="text" class="form-control" id="Vcost" placeholder="Resource name">
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-12">
+                                            <fieldset class="form-group">
+                                                <label for="Vcost">Total Nights</label>
+                                                <input type="text" class="form-control" id="Vcost" placeholder="Resource name">
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-12">
+                                            <fieldset class="form-group">
+                                                <label for="Vcost">Prediem Per Day</label>
+                                                <input type="text" class="form-control" id="Vcost" placeholder="Resource name">
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-12">
+                                            <fieldset class="form-group">
+                                                <label for="Vcost">Total Days</label>
+                                                <input type="text" class="form-control" id="Vcost" placeholder="Resource name">
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-12">
+                                            <fieldset class="form-group">
+                                                <label for="Vcost">Transportaion Fees</label>
+                                                <input type="text" class="form-control" id="Vcost" placeholder="Resource name">
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-12">
+                                            <fieldset class="form-group">
+                                                <label for="Vcost">Exception Reason</label>
+                                                <input type="text" class="form-control" id="Vcost" placeholder="Resource name">
                                             </fieldset>
                                         </div>
                                         <div class="col-md-4 col-sm-6 col-12">
                                             <div class="form-group">
                                                 <label for="textareap">Notes</label>
                                                 <textarea class="form-control" id="textareap" rows="3"></textarea>
-                                              </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-12 d-flex flex-sm-row flex-column justify-content-end mt-1 p-0">
-                                        <button type="submit" class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">Save</button>
-                                        <button type="reset" class="btn btn-light">Cancel</button>
-                                    </div>
+                                        
+                                        <div class="col-md-4 col-sm-6 col-12">
+                                            <div class="form-group">
+                                                <label for="textareap">Total Travel cost</label>
+                                                <span class="d-block">500 JD</span>
+                                            </div>
+                                        </div>
+                                </div>
+                                <div class="col-12 d-flex flex-sm-row flex-column justify-content-end mt-1 p-0">
+                                    <button type="submit" class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">Save</button>
+                                    <button type="reset" class="btn btn-light">Cancel</button>
                                 </div>
                             </div>
                         </div>
@@ -371,6 +428,7 @@
     <!-- END: Footer-->
 
 
+
     <!-- BEGIN: Vendor JS-->
     <script src="../../../app-assets/vendors/js/vendors.min.js"></script>
     <script src="../../../app-assets/fonts/LivIconsEvo/js/LivIconsEvo.tools.js"></script>
@@ -379,6 +437,7 @@
     <!-- BEGIN Vendor JS-->
 
     <!-- BEGIN: Page Vendor JS-->
+    <script src="../../../app-assets/vendors/js/forms/spinner/jquery.bootstrap-touchspin.js"></script>
     <script src="../../../app-assets/vendors/js/tables/datatable/datatables.min.js"></script>
     <script src="../../../app-assets/vendors/js/tables/datatable/dataTables.bootstrap4.min.js"></script>
     <script src="../../../app-assets/vendors/js/pickers/pickadate/picker.js"></script>
@@ -394,8 +453,10 @@
     <!-- END: Theme JS-->
 
     <!-- BEGIN: Page JS-->
+    <script src="../../../app-assets/js/scripts/forms/number-input.js"></script>
     <script src="../../../app-assets/js/scripts/pickers/dateTime/pick-a-datetime.js"></script>
     <script src="../../../app-assets/js/scripts/pages/page-users.js"></script>
+    <!-- END: Page JS-->
     <!-- END: Page JS-->
 
 </body>
