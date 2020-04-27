@@ -244,11 +244,11 @@
                       </li>
                       <li><a href="weekly-budget.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Weekly Budget Calculation</span></a>
                       </li>
-                      <li><a href="travel-list.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Travel List</span></a>
+                      <li class="active"><a href="travel-list.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Travel List</span></a>
                       </li>
                       <li><a href="overtime-list.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Overtime List</span></a>
                       </li>
-                      <li class="active"><a href="stackholders.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Stack Holders</span></a>
+                      <li><a href="stackholders.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Stack Holders</span></a>
                       </li>
                       <li><a href="escalation.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Escalations</span></a>
                       </li>
@@ -296,7 +296,7 @@
         
         <div class="content-wrapper">
             <div class="content-header d-flex align-items-lg-center my-1">
-                <h5 class="mr-1">Stackholders</h5>
+                <h5 class="mr-1">Escalations</h5>
             </div>
             <div class="content-body">
                 <!-- users list start -->
@@ -307,96 +307,52 @@
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col-md-4 col-sm-6 col-12">
+                                            <label for="date">Date</label>
+                                          <fieldset class="form-group position-relative has-icon-left">
+                                            <input type="text" class="form-control pickadate-months-year" placeholder="Select Date" id="date">
+                                            <div class="form-control-position">
+                                                <i class='bx bx-calendar'></i>
+                                            </div>
+                                        </fieldset>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-12">
                                             <fieldset class="form-group">
-                                                <label for="name1">Name</label>
-                                                <input type="text" class="form-control" id="name1" placeholder="name">
+                                                <label for="client_own">Owner From Client</label>
+                                                <input type="text" class="form-control" id="client_own" placeholder="Owner From Client">
                                             </fieldset>
                                         </div>
                                         <div class="col-md-4 col-sm-6 col-12">
                                             <fieldset class="form-group">
-                                                <label for="email">Email</label>
-                                                <input type="email" class="form-control" id="email" placeholder="E-mail">
+                                                <label for="Inter_own">Internal Owner</label>
+                                                <input type="text" class="form-control" id="Inter_own" placeholder="Internal Owner">
                                             </fieldset>
                                         </div>
                                         <div class="col-md-4 col-sm-6 col-12">
                                             <fieldset class="form-group">
-                                                <label for="mobile-num">Mobile Number</label>
-                                                <input type="tel" class="form-control" id="mobile-num" placeholder="Mobile Number">
-                                            </fieldset>
-                                        </div>
-                                        <div class="col-md-4 col-sm-6 col-12">
-                                            <fieldset class="form-group">
-                                                <label for="Position">Position</label>
-                                                <select class="form-control" id="Position">
-                                                    <option>..</option>
-                                                    <option>..</option>
+                                                <label for="reaction">Reaction</label>
+                                                <select class="form-control" id="reaction">
+                                                    <option>Yes</option>
+                                                    <option>No</option>
                                                 </select>
                                             </fieldset>
                                         </div>
                                         <div class="col-md-4 col-sm-6 col-12">
-                                            <fieldset class="form-group">
-                                                <label for="type">Type</label>
-                                                <select class="form-control" id="type">
-                                                    <option>Customer</option>
-                                                    <option>Government</option>
-                                                </select>
-                                            </fieldset>
+                                            <div class="form-group">
+                                                <label for="reason">Reason</label>
+                                                <textarea class="form-control" id="reason" rows="3"></textarea>
+                                            </div>
                                         </div>
-                                        <div class="col-12 d-flex flex-sm-row flex-column justify-content-end mt-1 p-0">
-                                            <button type="submit" class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">add</button>
+                                        <div class="col-md-4 col-sm-6 col-12">
+                                            <div class="form-group">
+                                                <label for="notes">Notes</label>
+                                                <textarea class="form-control" id="notes" rows="3"></textarea>
+                                            </div>
                                         </div>
-                                        <div class="table-responsive">
-                                            <table class="table mb-0">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Name</th>
-                                                        <th>E-mail</th>
-                                                        <th>Mobile Number</th>
-                                                        <th>Position</th>
-                                                        <th>Type</th>
-                                                        <th>Action</th>
-
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Ministry of Interior</td>
-                                                        <td>ministry@riyadh.net</td>
-                                                        <td>343567534</td>
-                                                        <td>Ryiadh</td>
-                                                        <td>Government</td>
-                                                        <td><a href="../../../html/ltr/vertical-menu-template/page-users-edit.html"><i class="bx bx-edit-alt"></i></a>
-                                                            <a href="../../../html/ltr/vertical-menu-template/page-users-edit.html"><i class="bx bxs-trash-alt"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Ministry of Health</td>
-                                                        <td>ministryh@riyadh.net</td>
-                                                        <td>343567534</td>
-                                                        <td>Ryiadh</td>
-                                                        <td>Government</td>
-                                                        <td><a href="../../../html/ltr/vertical-menu-template/page-users-edit.html"><i class="bx bx-edit-alt"></i></a>
-                                                            <a href="../../../html/ltr/vertical-menu-template/page-users-edit.html"><i class="bx bxs-trash-alt"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Ministry of Interior</td>
-                                                        <td>ministry@riyadh.net</td>
-                                                        <td>343567534</td>
-                                                        <td>Ryiadh</td>
-                                                        <td>Government</td>
-                                                        <td><a href="../../../html/ltr/vertical-menu-template/page-users-edit.html"><i class="bx bx-edit-alt"></i></a>
-                                                            <a href="../../../html/ltr/vertical-menu-template/page-users-edit.html"><i class="bx bxs-trash-alt"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 d-flex flex-sm-row flex-column justify-content-end mt-1 p-0">
-                                        <button type="submit" class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">Save</button>
-                                        <button type="reset" class="btn btn-light">Cancel</button>
-                                    </div>
+                                        
+                                </div>
+                                <div class="col-12 d-flex flex-sm-row flex-column justify-content-end mt-1 p-0">
+                                    <button type="submit" class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">Save</button>
+                                    <button type="reset" class="btn btn-light">Cancel</button>
                                 </div>
                             </div>
                         </div>
@@ -414,6 +370,8 @@
     <!-- END: Footer-->
 
 
+
+    <!-- BEGIN: Vendor JS-->
     <script src="../../../app-assets/vendors/js/vendors.min.js"></script>
     <script src="../../../app-assets/fonts/LivIconsEvo/js/LivIconsEvo.tools.js"></script>
     <script src="../../../app-assets/fonts/LivIconsEvo/js/LivIconsEvo.defaults.js"></script>
@@ -441,7 +399,7 @@
     <script src="../../../app-assets/js/scripts/pickers/dateTime/pick-a-datetime.js"></script>
     <script src="../../../app-assets/js/scripts/pages/page-users.js"></script>
     <!-- END: Page JS-->
-
+    <!-- END: Page JS-->
 
 </body>
 <!-- END: Body-->
