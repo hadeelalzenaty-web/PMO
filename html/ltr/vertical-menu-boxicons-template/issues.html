@@ -252,9 +252,9 @@
                       </li>
                       <li><a href="escalation.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Escalations</span></a>
                       </li>
-                      <li class="active"><a href="riskes.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Risks</span></a>
+                      <li><a href="riskes.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Risks</span></a>
                       </li>
-                      <li><a href="issues.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Issues</span></a>
+                      <li class="active"><a href="issues.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Issues</span></a>
                       </li>
                       <li><a href="lastweek-tasks.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Last Week Tasks</span></a>
                       </li>
@@ -296,7 +296,7 @@
         
         <div class="content-wrapper">
             <div class="content-header d-flex align-items-lg-center my-1">
-                <h5 class="mr-1">Risks</h5>
+                <h5 class="mr-1">Issues</h5>
             </div>
             <div class="content-body">
                 <!-- users list start -->
@@ -307,61 +307,62 @@
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col-md-4 col-sm-6 col-12">
+                                            <div class="form-group">
+                                                <label for="issues-des">description</label>
+                                                <textarea class="form-control" id="issues-des" rows="3"></textarea>
+                                              </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-12">
+                                            <label for="priority2">Priority</label>
                                             <fieldset class="form-group">
-                                                <label for="client_own">Probability</label>
-                                                <input type="text" class="form-control" id="client_own" placeholder="Owner From Client">
+                                                <select class="form-control" id="priority2">
+                                                    <option value="">High</option>
+                                                    <option value="Low">Medium</option>
+                                                    <option value="Meduim">Low</option>
+                                                </select>
                                             </fieldset>
                                         </div>
                                         <div class="col-md-4 col-sm-6 col-12">
-                                            <div class="form-group">
-                                                <label for="desc">description</label>
-                                                <textarea class="form-control" id="desc" rows="3"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 col-sm-6 col-12">
+                                            <label for="owner2">Owner</label>
                                             <fieldset class="form-group">
-                                                <label for="reaction">Periority</label>
-                                                <select class="form-control" id="reaction">
-                                                    <option>Important</option>
-                                                    <option>Low</option>
+                                                <select class="form-control" id="owner2">
+                                                    <option value="">High</option>
+                                                    <option value="Low">Yes</option>
+                                                    <option value="Meduim">No</option>
                                                 </select>
                                             </fieldset>
                                         </div>
                                         <div class="col-md-4 col-sm-6 col-12">
                                             <div class="form-group">
-                                                <label for="notes">Mitigation Action</label>
-                                                <textarea class="form-control" id="notes" rows="3"></textarea>
+                                                <label for="snotes">Solution Notes</label>
+                                                <textarea class="form-control" id="snotes" rows="3"></textarea>
+                                              </div>
+                                        </div>
+
+                                        <div class="col-md-4 col-sm-6 col-12">
+                                            <label for="start-date">Start date</label>
+                                          <fieldset class="form-group position-relative has-icon-left">
+                                            <input type="text" class="form-control pickadate-months-year" placeholder="Select Date" id="start-date">
+                                            <div class="form-control-position">
+                                                <i class='bx bx-calendar'></i>
                                             </div>
+                                        </fieldset>
                                         </div>
                                         <div class="col-md-4 col-sm-6 col-12">
+                                            <label for="issue-status">Status</label>
                                             <fieldset class="form-group">
-                                                <label for="critical">Status</label>
-                                                <select class="form-control" id="critical">
-                                                    <option>crtical</option>
-                                                    <option>Low</option>
+                                                <select class="form-control" id="issue-status">
+                                                    <option value="">..</option>
+                                                    <option value="Low">..</option>
+                                                    <option value="Meduim">..</option>
                                                 </select>
                                             </fieldset>
                                         </div>
-                                        <div class="col-md-4 col-sm-6 col-12">
-                                            <div class="form-group">
-                                                <label for="impact">Impact</label>
-                                                <textarea class="form-control" id="impact" rows="3"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 col-sm-6 col-12">
-                                            <fieldset class="form-group">
-                                                <label for="owner">Owner</label>
-                                                <select class="form-control" id="owner">
-                                                    <option>.</option>
-                                                    <option>..</option>
-                                                </select>
-                                            </fieldset>
-                                        </div>
-                                        
-                                </div>
-                                <div class="col-12 d-flex flex-sm-row flex-column justify-content-end mt-1 p-0">
-                                    <button type="submit" class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">Save</button>
-                                    <button type="reset" class="btn btn-light">Cancel</button>
+                                    </div>
+                                    <div class="col-12 d-flex flex-sm-row flex-column justify-content-end mt-1 p-0">
+                                        <button type="submit" class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">Save</button>
+                                        <button type="reset" class="btn btn-light">Cancel</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -379,7 +380,6 @@
     <!-- END: Footer-->
 
 
-
     <!-- BEGIN: Vendor JS-->
     <script src="../../../app-assets/vendors/js/vendors.min.js"></script>
     <script src="../../../app-assets/fonts/LivIconsEvo/js/LivIconsEvo.tools.js"></script>
@@ -388,7 +388,6 @@
     <!-- BEGIN Vendor JS-->
 
     <!-- BEGIN: Page Vendor JS-->
-    <script src="../../../app-assets/vendors/js/forms/spinner/jquery.bootstrap-touchspin.js"></script>
     <script src="../../../app-assets/vendors/js/tables/datatable/datatables.min.js"></script>
     <script src="../../../app-assets/vendors/js/tables/datatable/dataTables.bootstrap4.min.js"></script>
     <script src="../../../app-assets/vendors/js/pickers/pickadate/picker.js"></script>
@@ -404,10 +403,8 @@
     <!-- END: Theme JS-->
 
     <!-- BEGIN: Page JS-->
-    <script src="../../../app-assets/js/scripts/forms/number-input.js"></script>
     <script src="../../../app-assets/js/scripts/pickers/dateTime/pick-a-datetime.js"></script>
     <script src="../../../app-assets/js/scripts/pages/page-users.js"></script>
-    <!-- END: Page JS-->
     <!-- END: Page JS-->
 
 </body>
