@@ -212,7 +212,7 @@
         <div class="shadow-bottom"></div>
         <div class="main-menu-content">
             <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation" data-icon-style="">
-                <li class=" nav-item"><a href="index.html"><i class="bx bx-home-alt"></i><span class="menu-title" data-i18n="Dashboard">Dashboard</span><span class="badge badge-light-danger badge-pill badge-round float-right mr-2">2</span></a>
+                <li class="nav-item"><a href="index.html"><i class="bx bx-home-alt"></i><span class="menu-title" data-i18n="Dashboard">Dashboard</span><span class="badge badge-light-danger badge-pill badge-round float-right mr-2">2</span></a>
                     <ul class="menu-content">
                         <li><a href="dashboard-ecommerce.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item" data-i18n="eCommerce">eCommerce</span></a>
                         </li>
@@ -238,9 +238,9 @@
                       </li>
                       <li><a href="Attachments.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Attachments</span></a>
                       </li>
-                      <li><a href="milestones-lists.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Milestones/Sub Mileston Lists</span></a>
+                      <li><a href="milestones-lists.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Attachments</span></a>
                       </li>
-                      <li><a href="weekly-progress.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Weekly progress per Mileston</span></a>
+                      <li><a href="weekly-progress.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Attachments</span></a>
                       </li>
                       <li><a href="weekly-budget.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Weekly Budget Calculation</span></a>
                       </li>
@@ -258,7 +258,7 @@
                       </li>
                       <li><a href="lastweek-tasks.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Last Week Tasks</span></a>
                       </li>
-                      <li class="active"><a href="nextweek-tasks.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Next Week Tasks</span></a>
+                      <li><a href="nextweek-tasks.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Next Week Tasks</span></a>
                       </li>
                   </ul>
               </li>
@@ -266,9 +266,9 @@
                   <ul class="menu-content">
                     <li><a href="Resources.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Resources List</span></a>
                     </li>
-                      <li><a href=""><i class="bx bx-right-arrow-alt"></i><span class="menu-item">New Resources</span></a>
+                      <li ><a href="new-resource.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">New Resources</span></a>
                       </li>
-                      <li class=""><a href="resource-vacation.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Resource Planned Annual Vacation</span></a>
+                      <li class="active"><a href="resource-vacation.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Resource Planned Annual Vacation</span></a>
                       </li>
                       <li><a href="resource-visa-list.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Resource Visa List</span></a>
                       </li>
@@ -296,7 +296,7 @@
         
         <div class="content-wrapper">
             <div class="content-header d-flex align-items-lg-center my-1">
-                <h5 class="mr-1">Next Week Tasks</h5>
+                <h5 class="mr-1">Resource Planned Annual Vacation</h5>
             </div>
             <div class="content-body">
                 <!-- users list start -->
@@ -307,34 +307,7 @@
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col-md-4 col-sm-6 col-12">
-                                            <fieldset class="form-group">
-                                                <label for="tname">Task Name</label>
-                                                <input type="text" class="form-control" id="tname" placeholder="Task Name">
-                                            </fieldset>
-                                        </div>
-                                        <div class="col-md-4 col-sm-6 col-12">
-                                            <label for="lastweek_owner">Owner</label>
-                                            <fieldset class="form-group">
-                                                <select class="form-control" id="lastweek_owner">
-                                                    <option value="">Yasser Tamimi</option>
-                                                    <option value="">Asmaa Ali</option>
-                                                    <option value="Meduim">Ahmad Mohammad</option>
-                                                </select>
-                                            </fieldset>
-                                        </div>
-                                        <div class="col-md-4 col-sm-6 col-12">
-                                            <label for="lastweek_status">Status</label>
-                                            <fieldset class="form-group">
-                                                <select class="form-control" id="lastweek_status">
-                                                    <option value="">Inprogress</option>
-                                                    <option value="Low">Complete</option>
-                                                    <option value="Meduim">Hold</option>
-                                                </select>
-                                            </fieldset>
-                                        </div>
-
-                                        <div class="col-md-4 col-sm-6 col-12">
-                                            <label for="start-date">Completion date</label>
+                                            <label for="start-date">Start Date</label>
                                           <fieldset class="form-group position-relative has-icon-left">
                                             <input type="text" class="form-control pickadate-months-year" placeholder="Select Date" id="start-date">
                                             <div class="form-control-position">
@@ -343,12 +316,14 @@
                                         </fieldset>
                                         </div>
                                         <div class="col-md-4 col-sm-6 col-12">
-                                            <div class="form-group">
-                                                <label for="lastweek_notes">Notes</label>
-                                                <textarea class="form-control" id="lastweek_notes" rows="3"></textarea>
-                                              </div>
+                                            <label for="end-date">End Date</label>
+                                          <fieldset class="form-group position-relative has-icon-left">
+                                            <input type="text" class="form-control pickadate-months-year" placeholder="Select Date" id="end-date">
+                                            <div class="form-control-position">
+                                                <i class='bx bx-calendar'></i>
+                                            </div>
+                                        </fieldset>
                                         </div>
-                                    </div>
                                     <div class="col-12 d-flex flex-sm-row flex-column justify-content-end mt-1 p-0">
                                         <button type="submit" class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">Add</button>
                                     </div>
@@ -356,41 +331,29 @@
                                         <table class="table mb-0">
                                             <thead>
                                                 <tr>
-                                                    <th>Task Name</th>
-                                                    <th>Owner</th>
-                                                    <th>Status</th>
-                                                    <th>Completion Date</th>
-                                                    <th>Notes</th>
+                                                    <th>Start Date</th>
+                                                    <th>End Date</th>
                                                     <th>Action</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>Create Dashboard</td>
-                                                    <td>Yasser Tamimi</td>
-                                                    <td class="text-warning">In progress</td>
-                                                    <td>5/5/2020</td>
-                                                    <td>Need some updates</td>
+                                                    <td>1/4/2020</td>
+                                                    <td>1/5/2020</td>
                                                     <td><a href="../../../html/ltr/vertical-menu-template/page-users-edit.html"><i class="bx bx-edit-alt"></i></a>
                                                         <a href="../../../html/ltr/vertical-menu-template/page-users-edit.html"><i class="bx bxs-trash-alt"></i></a>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Test the project</td>
-                                                    <td>Ahmad Mohammad</td>
-                                                    <td class="text-success">Complete</td>
-                                                    <td>29/4/2020</td>
-                                                    <td>Test in all Devices</td>
+                                                    <td>1/4/2020</td>
+                                                    <td>1/5/2020</td>
                                                     <td><a href="../../../html/ltr/vertical-menu-template/page-users-edit.html"><i class="bx bx-edit-alt"></i></a>
                                                         <a href="../../../html/ltr/vertical-menu-template/page-users-edit.html"><i class="bx bxs-trash-alt"></i></a>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>work in database</td>
-                                                    <td>Asmaa Ali</td>
-                                                    <td class="text-danger">Hold</td>
-                                                    <td>5/5/2020</td>
-                                                    <td>User information</td>
+                                                    <td>1/4/2020</td>
+                                                    <td>1/5/2020</td>
                                                     <td><a href="../../../html/ltr/vertical-menu-template/page-users-edit.html"><i class="bx bx-edit-alt"></i></a>
                                                         <a href="../../../html/ltr/vertical-menu-template/page-users-edit.html"><i class="bx bxs-trash-alt"></i></a>
                                                     </td>
@@ -398,10 +361,11 @@
                                             </tbody>
                                         </table>
                                     </div>
-                                    <div class="col-12 d-flex flex-sm-row flex-column justify-content-end mt-1 p-0">
-                                        <button type="submit" class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">Save</button>
-                                        <button type="reset" class="btn btn-light">Cancel</button>
-                                    </div>
+
+                                </div>
+                                <div class="col-12 d-flex flex-sm-row flex-column justify-content-end mt-1 p-0">
+                                    <button type="submit" class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">Save</button>
+                                    <button type="reset" class="btn btn-light">Cancel</button>
                                 </div>
                             </div>
                         </div>
@@ -419,6 +383,7 @@
     <!-- END: Footer-->
 
 
+
     <!-- BEGIN: Vendor JS-->
     <script src="../../../app-assets/vendors/js/vendors.min.js"></script>
     <script src="../../../app-assets/fonts/LivIconsEvo/js/LivIconsEvo.tools.js"></script>
@@ -427,6 +392,7 @@
     <!-- BEGIN Vendor JS-->
 
     <!-- BEGIN: Page Vendor JS-->
+    <script src="../../../app-assets/vendors/js/forms/spinner/jquery.bootstrap-touchspin.js"></script>
     <script src="../../../app-assets/vendors/js/tables/datatable/datatables.min.js"></script>
     <script src="../../../app-assets/vendors/js/tables/datatable/dataTables.bootstrap4.min.js"></script>
     <script src="../../../app-assets/vendors/js/pickers/pickadate/picker.js"></script>
@@ -442,8 +408,10 @@
     <!-- END: Theme JS-->
 
     <!-- BEGIN: Page JS-->
+    <script src="../../../app-assets/js/scripts/forms/number-input.js"></script>
     <script src="../../../app-assets/js/scripts/pickers/dateTime/pick-a-datetime.js"></script>
     <script src="../../../app-assets/js/scripts/pages/page-users.js"></script>
+    <!-- END: Page JS-->
     <!-- END: Page JS-->
 
 </body>

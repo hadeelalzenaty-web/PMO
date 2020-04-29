@@ -1,11 +1,11 @@
 @import "../fonts/fontawesome/css/all.css";
 .text-card{
 	font-size:20px;
-	color:white;
+	color:#333;
 	font-weight: bold;
 }
 .number-card{
-	color:white;
+	color:#333;
 	font-weight: bold;
 	font-size:18px;
 }
@@ -85,9 +85,10 @@ background: linear-gradient(90deg, rgba(63,53,246,1) 0%, rgba(84,84,227,1) 35%, 
     background: rgb(52,106,0);
     background: linear-gradient(90deg, rgba(52,106,0,1) 0%, rgba(28,175,104,1) 35%, rgba(215,196,62,1) 100%);
 }
-.card-gray{
-    background: rgb(74,74,74);
-    background: linear-gradient(90deg, rgba(74,74,74,1) 0%, rgba(104,112,108,1) 58%, rgba(171,171,171,1) 100%);
+
+.card-white{
+    background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(228,228,246,1) 35%, rgba(229,239,241,1) 100%);
 }
 @media (max-width: 576px) {
 .w-sm-100{
