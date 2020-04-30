@@ -228,7 +228,7 @@
                     </li>
                     <li><a href="new-project.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">New Project</span></a>
                     </li>
-                      <li class="active"><a href="baseline-pricing.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Baseline Pricing</span></a>
+                      <li><a href="baseline-pricing.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Baseline Pricing</span></a>
                       </li>
                       <li class=""><a href="actual-pricing.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Actual Pricing</span></a>
                       </li>
@@ -289,12 +289,12 @@
                         <li><a href="Payment.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Payments List  
                         </span></a>
                         </li>
-                        <li><a href="add-payment.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Add Payment 
+                        <li class="active"><a href="add-payment.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Add Payment 
                         </span></a>
                         </li>
                     </ul>
                 </li>
-                    </ul>
+                </ul>
         </div>
     </div>
     <!-- END: Main Menu-->
@@ -305,7 +305,7 @@
         
         <div class="content-wrapper">
             <div class="content-header d-flex align-items-lg-center my-1">
-                <h5 class="mr-1">Baseline Pricing</h5>
+                <h5 class="mr-1">Add Payment</h5>
             </div>
             <div class="content-body">
                 <!-- users list start -->
@@ -314,59 +314,47 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-body">
-                                    <h5 class="mr-1">Contract Price</h5>
                                     <div class="row">
                                         <div class="col-md-4 col-sm-6 col-12">
                                             <fieldset class="form-group">
-                                                <label for="budget">Proffesion Services Baseline Budgets</label>
-                                                <input type="text" class="form-control" id="budget" placeholder="Baseline Budgets">
+                                                <label for="pay-proj-name">Project Name</label>
+                                                <input type="text" class="form-control" id="pay-proj-name" placeholder="Project Name">
                                             </fieldset>
                                         </div>
                                         <div class="col-md-4 col-sm-6 col-12">
                                             <fieldset class="form-group">
-                                                <label for="pcost">Third Party Costs</label>
-                                                <input type="text" class="form-control" id="pcost" placeholder="Third Party Cost">
+                                                <label for="pay-clie-name">Client Name</label>
+                                                <input type="text" class="form-control" id="pay-clie-name" placeholder="Client Name">
                                             </fieldset>
                                         </div>
                                         <div class="col-md-4 col-sm-6 col-12">
                                             <fieldset class="form-group">
-                                                <label for="lcost">Licenses Cost</label>
-                                                <input type="text" class="form-control" id="lcost" placeholder="Licenses Cost">
+                                                <label for="pay-amount">Amount</label>
+                                                <input type="text" class="form-control" id="pay-amount" placeholder="$">
                                             </fieldset>
                                         </div>
                                         <div class="col-md-4 col-sm-6 col-12">
-                                            <fieldset class="form-group">
-                                                <label for="tcost">Training Cost</label>
-                                                <input type="text" class="form-control" id="tcost" placeholder="Training cost">
-                                            </fieldset>
+                                            <label for="pay-deadline">Deadline</label>
+                                          <fieldset class="form-group position-relative has-icon-left">
+                                            <input type="text" class="form-control pickadate-months-year" placeholder="Select Date" id="pay-deadline">
+                                            <div class="form-control-position">
+                                                <i class='bx bx-calendar'></i>
+                                            </div>
+                                        </fieldset>
                                         </div>
                                         <div class="col-md-4 col-sm-6 col-12">
                                             <fieldset class="form-group">
-                                                <label for="ocost">Outsourcing Cost</label>
-                                                <input type="text" class="form-control" id="ocost" placeholder="Outsourcing cost">
+                                                <label for="pay-status">Status</label>
+                                                <select class="form-control" id="pay-status">
+                                                    <option>Pay</option>
+                                                    <option>Unpay</option>
+                                                </select>
                                             </fieldset>
                                         </div>
-                                        <div class="col-md-4 col-sm-6 col-12">
-                                            <fieldset class="form-group">
-                                                <label for="scost">Support Cost</label>
-                                                <input type="text" class="form-control" id="pname" placeholder="Support Cost">
-                                            </fieldset>
-                                        </div>
-                                        <div class="col-md-4 col-sm-6 col-12">
-                                            <fieldset class="form-group">
-                                                <label for="hcost">Hardware Cost</label>
-                                                <input type="text" class="form-control" id="pname" placeholder="Hardware Cost">
-                                            </fieldset>
-                                        </div>
-                                        <div class="col-md-4 col-sm-6 col-12">
-                                            <fieldset class="form-group">
-                                                <label for="othercost">Other Costs</label>
-                                                <input type="text" class="form-control" id="othercost" placeholder="Other Costs">
-                                            </fieldset>
-                                        </div>
+
                                     </div>
                                     <div class="col-12 d-flex flex-sm-row flex-column justify-content-end mt-1 p-0">
-                                        <button type="submit" class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">Save</button>
+                                        <button type="submit" class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">Create Client</button>
                                         <button type="reset" class="btn btn-light">Cancel</button>
                                     </div>
                                 </div>

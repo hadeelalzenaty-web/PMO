@@ -9,15 +9,13 @@
     <meta name="description" content="Frest admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Frest admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="PIXINVENT">
-    <title>Users List - Frest - Bootstrap HTML admin template</title>
+    <title>Users View - Frest - Bootstrap HTML admin template</title>
     <link rel="apple-touch-icon" href="../../../app-assets/images/ico/apple-icon-120.png">
     <link rel="shortcut icon" type="image/x-icon" href="../../../app-assets/images/ico/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,600%7CIBM+Plex+Sans:300,400,500,600,700" rel="stylesheet">
 
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/vendors.min.css">
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/tables/datatable/datatables.min.css">
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/pickers/pickadate/pickadate.css">
     <!-- END: Vendor CSS-->
 
     <!-- BEGIN: Theme CSS-->
@@ -43,38 +41,53 @@
 
 <!-- BEGIN: Body-->
 
-<body class="vertical-layout vertical-menu-modern boxicon-layout no-card-shadow 2-columns  navbar-sticky footer-static menu-collapsed  " data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
+<body class="vertical-layout vertical-menu-modern boxicon-layout no-card-shadow 2-columns  navbar-sticky footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
 
     <!-- BEGIN: Header-->
     <div class="header-navbar-shadow"></div>
-    <nav class="header-navbar main-header-navbar navbar-expand-lg navbar navbar-with-menu fixed-top">
+    <nav class="header-navbar main-header-navbar navbar-expand-lg navbar navbar-with-menu fixed-top ">
         <div class="navbar-wrapper">
             <div class="navbar-container content">
                 <div class="navbar-collapse" id="navbar-mobile">
                     <div class="mr-auto float-left bookmark-wrapper d-flex align-items-center">
                         <ul class="nav navbar-nav">
-                            <li class="nav-item mobile-menu d-xl-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs is-active" href="#"><i class="ficon bx bx-menu"></i></a></li>
+                            <li class="nav-item mobile-menu d-xl-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ficon bx bx-menu"></i></a></li>
+                        </ul>
+                        <ul class="nav navbar-nav bookmark-icons">
+                            <li class="nav-item d-none d-lg-block"><a class="nav-link" href="app-email.html" data-toggle="tooltip" data-placement="top" title="Email"><i class="ficon bx bx-envelope"></i></a></li>
+                            <li class="nav-item d-none d-lg-block"><a class="nav-link" href="app-chat.html" data-toggle="tooltip" data-placement="top" title="Chat"><i class="ficon bx bx-chat"></i></a></li>
+                            <li class="nav-item d-none d-lg-block"><a class="nav-link" href="app-todo.html" data-toggle="tooltip" data-placement="top" title="Todo"><i class="ficon bx bx-check-circle"></i></a></li>
+                            <li class="nav-item d-none d-lg-block"><a class="nav-link" href="app-calendar.html" data-toggle="tooltip" data-placement="top" title="Calendar"><i class="ficon bx bx-calendar-alt"></i></a></li>
+                        </ul>
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item d-none d-lg-block"><a class="nav-link bookmark-star"><i class="ficon bx bx-star warning"></i></a>
+                                <div class="bookmark-input search-input">
+                                    <div class="bookmark-input-icon"><i class="bx bx-search primary"></i></div>
+                                    <input class="form-control input" type="text" placeholder="Explore Frest..." tabindex="0" data-search="template-search">
+                                    <ul class="search-list"></ul>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                     <ul class="nav navbar-nav float-right">
                         <li class="dropdown dropdown-language nav-item"><a class="dropdown-toggle nav-link" id="dropdown-flag" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="flag-icon flag-icon-us"></i><span class="selected-language">English</span></a>
                             <div class="dropdown-menu" aria-labelledby="dropdown-flag"><a class="dropdown-item" href="#" data-language="en"><i class="flag-icon flag-icon-us mr-50"></i> English</a><a class="dropdown-item" href="#" data-language="fr"><i class="flag-icon flag-icon-fr mr-50"></i> French</a><a class="dropdown-item" href="#" data-language="de"><i class="flag-icon flag-icon-de mr-50"></i> German</a><a class="dropdown-item" href="#" data-language="pt"><i class="flag-icon flag-icon-pt mr-50"></i> Portuguese</a></div>
                         </li>
-                        <li class="nav-item nav-help">
-                          <a class="nav-link nav-link-help"><i class="bx bx-help-circle"></i></a>
-                        <div class="search-input">
-                          <div class="search-input-icon"><i class="bx bx-search primary"></i></div>
-                          <input class="input" type="text" placeholder="Explore Frest..." tabindex="-1" data-search="template-search">
-                          <div class="search-input-close"><i class="bx bx-x"></i></div>
-                          <ul class="search-list"></ul>
-                        </div>
-                      </li>
+                        <li class="nav-item d-none d-lg-block"><a class="nav-link nav-link-expand"><i class="ficon bx bx-fullscreen"></i></a></li>
+                        <li class="nav-item nav-search"><a class="nav-link nav-link-search"><i class="ficon bx bx-search"></i></a>
+                            <div class="search-input">
+                                <div class="search-input-icon"><i class="bx bx-search primary"></i></div>
+                                <input class="input" type="text" placeholder="Explore Frest..." tabindex="-1" data-search="template-search">
+                                <div class="search-input-close"><i class="bx bx-x"></i></div>
+                                <ul class="search-list"></ul>
+                            </div>
+                        </li>
                         <li class="dropdown dropdown-notification nav-item"><a class="nav-link nav-link-label" href="#" data-toggle="dropdown"><i class="ficon bx bx-bell bx-tada bx-flip-horizontal"></i><span class="badge badge-pill badge-danger badge-up">5</span></a>
                             <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
                                 <li class="dropdown-menu-header">
                                     <div class="dropdown-header px-1 py-75 d-flex justify-content-between"><span class="notification-title">7 new Notification</span><span class="text-bold-400 cursor-pointer">Mark all as read</span></div>
                                 </li>
-                                <li class="scrollable-container media-list ps"><a class="d-flex justify-content-between" href="javascript:void(0)">
+                                <li class="scrollable-container media-list"><a class="d-flex justify-content-between" href="javascript:void(0)">
                                         <div class="media d-flex align-items-center">
                                             <div class="media-left pr-0">
                                                 <div class="avatar mr-1 m-0"><img src="../../../app-assets/images/portrait/small/avatar-s-11.jpg" alt="avatar" height="39" width="39"></div>
@@ -131,7 +144,7 @@
                                             </div>
                                             <div class="media-right">
                                                 <div class="custom-control custom-switch">
-                                                    <input class="custom-control-input" type="checkbox" checked="" id="notificationSwtich">
+                                                    <input class="custom-control-input" type="checkbox" checked id="notificationSwtich">
                                                     <label class="custom-control-label" for="notificationSwtich"></label>
                                                 </div>
                                             </div>
@@ -179,7 +192,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></li>
+                                </li>
                                 <li class="dropdown-menu-footer"><a class="dropdown-item p-50 text-primary justify-content-center" href="javascript:void(0)">Read all notifications</a></li>
                             </ul>
                         </li>
@@ -224,11 +237,11 @@
                 </li>
                 <li class="nav-item"><a href=""><i class="bx bx-envelope"></i><span class="menu-title">Projects</span></a>
                   <ul class="menu-content">
-                    <li><a href="Projects.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Projects List</span></a>
+                    <li class="active"><a href="Projects.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Projects List</span></a>
                     </li>
                     <li><a href="new-project.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">New Project</span></a>
                     </li>
-                      <li class="active"><a href="baseline-pricing.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Baseline Pricing</span></a>
+                      <li><a href="baseline-pricing.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Baseline Pricing</span></a>
                       </li>
                       <li class=""><a href="actual-pricing.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Actual Pricing</span></a>
                       </li>
@@ -284,16 +297,16 @@
   
                 </ul>
                 </li>
-                <li class="nav-item"><a href="#"><i class="bx bx-calendar"></i><span class="menu-title">Payments</span></a>
-                    <ul class="menu-content">
-                        <li><a href="Payment.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Payments List  
-                        </span></a>
-                        </li>
-                        <li><a href="add-payment.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Add Payment 
-                        </span></a>
-                        </li>
-                    </ul>
-                </li>
+                  <li class="nav-item"><a href="#"><i class="bx bx-calendar"></i><span class="menu-title">Payments</span></a>
+                      <ul class="menu-content">
+                          <li><a href="Payment.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Payments List  
+                          </span></a>
+                          </li>
+                          <li><a href="add-payment.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Add Payment 
+                          </span></a>
+                          </li>
+                      </ul>
+                  </li>
                     </ul>
         </div>
     </div>
@@ -302,87 +315,165 @@
     <!-- BEGIN: Content-->
     <div class="app-content content">
         <div class="content-overlay"></div>
-        
         <div class="content-wrapper">
-            <div class="content-header d-flex align-items-lg-center my-1">
-                <h5 class="mr-1">Baseline Pricing</h5>
+            <div class="content-header row">
             </div>
             <div class="content-body">
-                <!-- users list start -->
-                <section class="users-list-wrapper">
-                    <div class="users-list-table">
-                        <div class="card">
-                            <div class="card-content">
-                                <div class="card-body">
-                                    <h5 class="mr-1">Contract Price</h5>
-                                    <div class="row">
-                                        <div class="col-md-4 col-sm-6 col-12">
-                                            <fieldset class="form-group">
-                                                <label for="budget">Proffesion Services Baseline Budgets</label>
-                                                <input type="text" class="form-control" id="budget" placeholder="Baseline Budgets">
-                                            </fieldset>
-                                        </div>
-                                        <div class="col-md-4 col-sm-6 col-12">
-                                            <fieldset class="form-group">
-                                                <label for="pcost">Third Party Costs</label>
-                                                <input type="text" class="form-control" id="pcost" placeholder="Third Party Cost">
-                                            </fieldset>
-                                        </div>
-                                        <div class="col-md-4 col-sm-6 col-12">
-                                            <fieldset class="form-group">
-                                                <label for="lcost">Licenses Cost</label>
-                                                <input type="text" class="form-control" id="lcost" placeholder="Licenses Cost">
-                                            </fieldset>
-                                        </div>
-                                        <div class="col-md-4 col-sm-6 col-12">
-                                            <fieldset class="form-group">
-                                                <label for="tcost">Training Cost</label>
-                                                <input type="text" class="form-control" id="tcost" placeholder="Training cost">
-                                            </fieldset>
-                                        </div>
-                                        <div class="col-md-4 col-sm-6 col-12">
-                                            <fieldset class="form-group">
-                                                <label for="ocost">Outsourcing Cost</label>
-                                                <input type="text" class="form-control" id="ocost" placeholder="Outsourcing cost">
-                                            </fieldset>
-                                        </div>
-                                        <div class="col-md-4 col-sm-6 col-12">
-                                            <fieldset class="form-group">
-                                                <label for="scost">Support Cost</label>
-                                                <input type="text" class="form-control" id="pname" placeholder="Support Cost">
-                                            </fieldset>
-                                        </div>
-                                        <div class="col-md-4 col-sm-6 col-12">
-                                            <fieldset class="form-group">
-                                                <label for="hcost">Hardware Cost</label>
-                                                <input type="text" class="form-control" id="pname" placeholder="Hardware Cost">
-                                            </fieldset>
-                                        </div>
-                                        <div class="col-md-4 col-sm-6 col-12">
-                                            <fieldset class="form-group">
-                                                <label for="othercost">Other Costs</label>
-                                                <input type="text" class="form-control" id="othercost" placeholder="Other Costs">
-                                            </fieldset>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 d-flex flex-sm-row flex-column justify-content-end mt-1 p-0">
-                                        <button type="submit" class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">Save</button>
-                                        <button type="reset" class="btn btn-light">Cancel</button>
-                                    </div>
+                <!-- users view start -->
+                <section class="users-view">
+                    <!-- users view media object start -->
+                    <div class="row">
+                        <div class="col-12 col-sm-7">
+                            <div class="media mb-2">
+                                <a class="mr-1" href="#">
+                                    <img src="../../../app-assets/images/portrait/small/avatar-s-9.jpg" alt="users view avatar" class="users-avatar-shadow rounded-circle" height="64" width="64">
+                                </a>
+                                <div class="media-body pt-25">
+                                    <h4 class="media-heading"><span class="users-view-name">Dean Stanley </span></h4>
+                                    <span>IT Manager</span>
+                                    <div><i class="far fa-envelope"></i> yassert@sssit.net</div>
+                                    <div><i class="bx bx-phone"></i> +962785697865</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-5 px-0 d-flex justify-content-end align-items-center px-1 mb-2">
+                            <a href="#" class="btn btn-sm mr-25 border"><i class="bx bx-envelope font-small-3"></i></a>
+                            <a href="#" class="btn btn-sm mr-25 border">Profile</a>
+                            <a href="../../../html/ltr/vertical-menu-template/page-users-edit.html" class="btn btn-sm btn-primary">Edit</a>
+                        </div>
+                    </div>
+                    <!-- users view media object ends -->
+                    <!-- users view card details start -->
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-body">
+                                <div class="col-12">
+                                    <h5 class="mb-1"><i class="fas fa-map-marker-alt"></i> Location</h5>
+                                    <table class="table table-borderless">
+                                        <tbody>
+                                            <tr>
+                                                <td>Country</td>
+                                                <td>Amman,Jordan</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Department</td>
+                                                <td>IT Department</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Floor</td>
+                                                <td>3</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <h5 class="mb-1"><i class="bx bx-info-circle"></i> Contact Information</h5>
+                                    <table class="table table-borderless">
+                                        <tbody>
+                                            <tr>
+                                                <td>First Name</td>
+                                                <td>Yasser</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Last Name</td>
+                                                <td>Tamimi</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Birthday</td>
+                                                <td>22/7/1983</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Skype Name</td>
+                                                <td>Yasser Mohammad</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <h5 class="mb-1"><i class="fas fa-tasks"></i> Projects</h5>
+                                    <p>PMO,E-Morasalat</p>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- users view card details ends -->
+
                 </section>
-                <!-- users list ends -->
+                <!-- users view ends -->
             </div>
         </div>
     </div>
     <!-- END: Content-->
 
+    <!-- demo chat-->
+    <div class="widget-chat-demo">
+        <!-- widget chat demo footer button start -->
+        <button class="btn btn-primary chat-demo-button glow px-1"><i class="livicon-evo" data-options="name: comments.svg; style: lines; size: 24px; strokeColor: #fff; autoPlay: true; repeat: loop;"></i></button>
+        <!-- widget chat demo footer button ends -->
+        <!-- widget chat demo start -->
+        <div class="widget-chat widget-chat-demo d-none">
+            <div class="card mb-0">
+                <div class="card-header border-bottom p-0">
+                    <div class="media m-75">
+                        <a href="JavaScript:void(0);">
+                            <div class="avatar mr-75">
+                                <img src="../../../app-assets/images/portrait/small/avatar-s-2.jpg" alt="avtar images" width="32" height="32">
+                                <span class="avatar-status-online"></span>
+                            </div>
+                        </a>
+                        <div class="media-body">
+                            <h6 class="media-heading mb-0 pt-25"><a href="javaScript:void(0);">Kiara Cruiser</a></h6>
+                            <span class="text-muted font-small-3">Active</span>
+                        </div>
+                        <i class="bx bx-x widget-chat-close float-right my-auto cursor-pointer"></i>
+                    </div>
+                </div>
+                <div class="card-body widget-chat-container widget-chat-demo-scroll">
+                    <div class="chat-content">
+                        <div class="badge badge-pill badge-light-secondary my-1">today</div>
+                        <div class="chat">
+                            <div class="chat-body">
+                                <div class="chat-message">
+                                    <p>How can we help? 😄</p>
+                                    <span class="chat-time">7:45 AM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat chat-left">
+                            <div class="chat-body">
+                                <div class="chat-message">
+                                    <p>Hey John, I am looking for the best admin template.</p>
+                                    <p>Could you please help me to find it out? 🤔</p>
+                                    <span class="chat-time">7:50 AM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat">
+                            <div class="chat-body">
+                                <div class="chat-message">
+                                    <p>Stack admin is the responsive bootstrap 4 admin template.</p>
+                                    <span class="chat-time">8:01 AM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer border-top p-1">
+                    <form class="d-flex" onsubmit="widgetChatMessageDemo();" action="javascript:void(0);">
+                        <input type="text" class="form-control chat-message-demo mr-75" placeholder="Type here...">
+                        <button type="submit" class="btn btn-primary glow px-1"><i class="bx bx-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- widget chat demo ends -->
+
+    </div>
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
 
     <!-- BEGIN: Footer-->
-
+    <footer class="footer footer-static footer-light">
+        <p class="clearfix mb-0"><span class="float-left d-inline-block">2020 &copy; PIXINVENT</span><span class="float-right d-sm-inline-block d-none">Crafted with<i class="bx bxs-heart pink mx-50 font-small-3"></i>by<a class="text-uppercase" href="https://1.envato.market/pixinvent_portfolio" target="_blank">Pixinvent</a></span>
+            <button class="btn btn-primary btn-icon scroll-top" type="button"><i class="bx bx-up-arrow-alt"></i></button>
+        </p>
+    </footer>
     <!-- END: Footer-->
 
 
@@ -394,11 +485,6 @@
     <!-- BEGIN Vendor JS-->
 
     <!-- BEGIN: Page Vendor JS-->
-    <script src="../../../app-assets/vendors/js/tables/datatable/datatables.min.js"></script>
-    <script src="../../../app-assets/vendors/js/tables/datatable/dataTables.bootstrap4.min.js"></script>
-    <script src="../../../app-assets/vendors/js/pickers/pickadate/picker.js"></script>
-    <script src="../../../app-assets/vendors/js/pickers/pickadate/picker.date.js"></script>
-    <script src="../../../app-assets/vendors/js/pickers/pickadate/picker.time.js"></script>
     <!-- END: Page Vendor JS-->
 
     <!-- BEGIN: Theme JS-->
@@ -409,7 +495,6 @@
     <!-- END: Theme JS-->
 
     <!-- BEGIN: Page JS-->
-    <script src="../../../app-assets/js/scripts/pickers/dateTime/pick-a-datetime.js"></script>
     <script src="../../../app-assets/js/scripts/pages/page-users.js"></script>
     <!-- END: Page JS-->
 
