@@ -90,6 +90,10 @@ background: linear-gradient(90deg, rgba(63,53,246,1) 0%, rgba(84,84,227,1) 35%, 
     background: rgb(255,255,255);
 background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(228,228,246,1) 35%, rgba(229,239,241,1) 100%);
 }
+.card-body{
+    padding: 1.5rem !important;
+
+}
 @media (max-width: 576px) {
 .w-sm-100{
     width:100%; /*change*/
