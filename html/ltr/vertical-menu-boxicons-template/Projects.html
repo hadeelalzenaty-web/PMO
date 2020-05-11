@@ -43,7 +43,7 @@
 
 <!-- BEGIN: Body-->
 
-<body class="vertical-layout vertical-menu-modern boxicon-layout no-card-shadow 2-columns  navbar-sticky footer-static menu-collapsed " data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
+<body class="vertical-layout vertical-menu-modern boxicon-layout no-card-shadow 2-columns  navbar-sticky footer-static menu-expanded" data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
 
     <!-- BEGIN: Header-->
     <div class="header-navbar-shadow"></div>
@@ -57,18 +57,6 @@
                       </ul>
                   </div>
                   <ul class="nav navbar-nav float-right">
-                      <li class="dropdown dropdown-language nav-item"><a class="dropdown-toggle nav-link" id="dropdown-flag" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="flag-icon flag-icon-us"></i><span class="selected-language">English</span></a>
-                          <div class="dropdown-menu" aria-labelledby="dropdown-flag"><a class="dropdown-item" href="#" data-language="en"><i class="flag-icon flag-icon-us mr-50"></i> English</a><a class="dropdown-item" href="#" data-language="fr"><img src="../../../assets/images/saudi-arabia.png" width="15" class="mr-50"> Arabic</a></div>
-                      </li>
-                      <li class="nav-item nav-help">
-                        <a class="nav-link nav-link-help"><i class="bx bx-help-circle"></i></a>
-                      <div class="search-input">
-                        <div class="search-input-icon"><i class="bx bx-search primary"></i></div>
-                        <input class="input" type="text" placeholder="Explore Frest..." tabindex="-1" data-search="template-search">
-                        <div class="search-input-close"><i class="bx bx-x"></i></div>
-                        <ul class="search-list"></ul>
-                      </div>
-                    </li>
                       <li class="dropdown dropdown-notification nav-item"><a class="nav-link nav-link-label" href="#" data-toggle="dropdown"><i class="ficon bx bx-bell bx-tada bx-flip-horizontal"></i><span class="badge badge-pill badge-danger badge-up">5</span></a>
                           <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
                               <li class="dropdown-menu-header">
@@ -186,8 +174,8 @@
                       <li class="dropdown dropdown-user nav-item"><a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
                               <div class="user-nav d-sm-flex d-none"><span class="user-name">John Doe</span><span class="user-status text-muted">Available</span></div><span><img class="round" src="../../../app-assets/images/portrait/small/avatar-s-11.jpg" alt="avatar" height="40" width="40"></span>
                           </a>
-                          <div class="dropdown-menu dropdown-menu-right pb-0"><a class="dropdown-item" href="page-user-profile.html"><i class="bx bx-user mr-50"></i> Edit Profile</a><a class="dropdown-item" href="app-email.html"><i class="bx bx-envelope mr-50"></i> My Inbox</a><a class="dropdown-item" href="app-todo.html"><i class="bx bx-check-square mr-50"></i> Task</a><a class="dropdown-item" href="app-chat.html"><i class="bx bx-message mr-50"></i> Chats</a>
-                              <div class="dropdown-divider mb-0"></div><a class="dropdown-item" href="auth-login.html"><i class="bx bx-power-off mr-50"></i> Logout</a>
+                          <div class="dropdown-menu dropdown-menu-right pb-0"><a class="dropdown-item" href="page-user-profile.html"><i class="bx bx-user mr-50"></i> Edit Profile</a><a class="dropdown-item" href="app-todo.html"><i class="bx bx-check-square mr-50"></i> Task</a>
+                            <a class="dropdown-item" href="#"><i class="bx bx-cog mr-50"></i> Sitting</a>
                           </div>
                       </li>
                   </ul>
@@ -203,8 +191,7 @@
         <div class="navbar-header">
             <ul class="nav navbar-nav flex-row">
                 <li class="nav-item mr-auto"><a class="navbar-brand" href="../../../html/ltr/vertical-menu-boxicons-template/index.html">
-                        <div class="brand-logo"><img class="logo" src="../../../app-assets/images/logo/logo.png" /></div>
-                        <h2 class="brand-text mb-0">Frest</h2>
+                        <h2 class="brand-text mb-0">PMO</h2>
                     </a></li>
                 <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="bx bx-x d-block d-xl-none font-medium-4 primary toggle-icon"></i><i class="toggle-icon bx bx-disc font-medium-4 d-none d-xl-block collapse-toggle-icon primary" data-ticon="bx-disc"></i></a></li>
             </ul>
@@ -212,7 +199,7 @@
         <div class="shadow-bottom"></div>
         <div class="main-menu-content">
           <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation" data-icon-style="">
-              <li class="nav-item"><a href="index.html"><i class="bx bx-home-alt"></i><span class="menu-title" data-i18n="Dashboard">Dashboard</span><span class="badge badge-light-danger badge-pill badge-round float-right mr-2">2</span></a>
+              <li class="nav-item"><a href="index.html"><i class="bx bx-home-alt"></i><span class="menu-title" data-i18n="Dashboard">Dashboard</span></a>
                   <ul class="menu-content">
                       <li><a href="dashboard-ecommerce.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item" data-i18n="eCommerce">eCommerce</span></a>
                       </li>
@@ -222,11 +209,9 @@
               </li>
               <li class=" navigation-header"><span>Pages</span>
               </li>
-              <li class="nav-item"><a href=""><i class="bx bx-envelope"></i><span class="menu-title">Projects</span></a>
+              <li class="nav-item"><a href=""><i class="bx bxs-archive"></i><span class="menu-title">Projects</span></a>
                 <ul class="menu-content">
                   <li class="active"><a href="Projects.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Projects List</span></a>
-                  </li>
-                  <li><a href="new-project.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">New Project</span></a>
                   </li>
                     <li><a href="baseline-pricing.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Baseline Pricing</span></a>
                     </li>
@@ -266,8 +251,6 @@
                 <ul class="menu-content">
                   <li><a href="Resources.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Resources List</span></a>
                   </li>
-                    <li ><a href="new-resource.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">New Resources</span></a>
-                    </li>
                     <li><a href="resource-vacation.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Resource Planned Annual Vacation</span></a>
                     </li>
                     <li><a href="resource-visa-list.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Resource Visa List</span></a>
@@ -279,17 +262,12 @@
                   <li><a href="Clients.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Clients List
                               </span></a>
                   </li>
-                  <li><a href="Add Clients.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">New Client</span></a>
-                  </li>
 
               </ul>
               </li>
-                <li class="nav-item"><a href="#"><i class="bx bx-calendar"></i><span class="menu-title">Payments</span></a>
+                <li class="nav-item"><a href="#"><i class="bx bx-money"></i><span class="menu-title">Payments</span></a>
                     <ul class="menu-content">
                         <li><a href="Payment.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Payments List  
-                        </span></a>
-                        </li>
-                        <li><a href="add-payment.html"><i class="bx bx-right-arrow-alt"></i><span class="menu-item">Add Payment 
                         </span></a>
                         </li>
                     </ul>
@@ -435,7 +413,7 @@
                   <div class="row">
                     <div class="content-header-left col-12 mb-2 mt-1">
                       <div class="row breadcrumbs-top">
-                        <div class="col-lg-10 col-md-9 col-12">
+                        <div class="col-lg-9 col-md-9 col-12">
                           <h5 class="content-header-title float-left pr-1 mb-0">Projects</h5>
                           <div class="breadcrumb-wrapper col-12">
                             <ol class="breadcrumb p-0 mb-0">
@@ -448,8 +426,8 @@
                             </ol>
                           </div>
                         </div>
-                        <div class="col-lg-2 col-md-3 col-12 d-flex justify-content-sm-end">
-                          <button class="btn btn-primary w-sm-100"><i class="bx bxs-add-to-queue mr-1"></i>Add Project</button>
+                        <div class="col-lg-3 col-md-3 col-12 d-flex justify-content-sm-end">
+                          <button class="btn btn-primary w-sm-100"><i class="bx bxs-add-to-queue"></i>Add Project</button>
                         </div>
                       </div>
                     </div>
@@ -474,11 +452,15 @@
                                         </a>
                                       </div>
                                     </div>
-                                    <div class="d-flex flex-md-row flex-column time-card">
+                                    <div>
                                       <div class="badge badge-danger mr-1">status</div>
-                                      <a href="#" class=" mr-1"><i class="bx bxs-calendar"></i> Start date</a>
-                                      <a href="#" class=""><i class="bx bxs-calendar"></i> End date</a>
-                                    </div>
+                                      <div class="d-flex flex-md-row flex-column time-card">
+                                      <a href="#" class=" mr-1"><i class="bx bxs-calendar"></i>Start date:
+                                        <span> 22/5/2020 </span></a>
+                                      <a href="#" class=""><i class="bx bxs-calendar"></i>End date:
+                                        <span>22/6/2020
+                                      </span></a></div><a href="#" class="">
+                                    </a></div><a href="#" class="">
                                     <div class="description my-1">
                                       <span>Lorem Ipsum is simply dummy text of the printing and typesetting
                                         industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -487,18 +469,16 @@
                                     <div class="Project-progress my-1">
                                       <label class="d-block"> Plan Progress </label>
                                       <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
-                                          aria-valuemax="100"></div>
+                                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                       </div>
                                       <label class="d-block"> Actual Progress </label>
                                       <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0"
-                                          aria-valuemax="100"></div>
+                                        <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                                       </div>
                                     </div>
-                                    <div class="d-flex align-items-end">
-                                      <div class="ml-auto">
-                                        <a href="#" class="mr-1">
+                                    </a><div class="d-flex align-items-end"><a href="#" class="">
+                                      </a><div class="ml-auto"><a href="#" class="">
+                                        </a><a href="#" class="mr-1">
                                           <i class="fas fa-money-bill-wave"></i>
                                           contract pricing
                                         </a>
@@ -514,7 +494,7 @@
                               </div>
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                              <div class="card" >
+                              <div class="card">
                                 <div class="card-content">
                                   <div class="card-body">
                                     <div class="d-flex">
@@ -522,16 +502,20 @@
                                         300IT
                                       </h4>
                                       <div class="ml-auto">
-                                        <a>
+                                          <a>
                                           <i class="bx bx-dots-horizontal-rounded"></i>
                                         </a>
                                       </div>
-                                      </div>
-                                    <div class="d-flex flex-md-row flex-column time-card">
-                                      <div class="badge badge-danger mr-1">status</div>
-                                      <a href="#" class=" mr-1"><i class="bx bxs-calendar"></i> Start date</a>
-                                      <a href="#" class=""><i class="bx bxs-calendar"></i> End date</a>
                                     </div>
+                                    <div>
+                                      <div class="badge badge-danger mr-1">status</div>
+                                      <div class="d-flex flex-md-row flex-column time-card">
+                                      <a href="#" class=" mr-1"><i class="bx bxs-calendar"></i>Start date:
+                                        <span> 22/5/2020 </span></a>
+                                      <a href="#" class=""><i class="bx bxs-calendar"></i>End date:
+                                        <span>22/6/2020
+                                      </span></a></div><a href="#" class="">
+                                    </a></div><a href="#" class="">
                                     <div class="description my-1">
                                       <span>Lorem Ipsum is simply dummy text of the printing and typesetting
                                         industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -540,18 +524,16 @@
                                     <div class="Project-progress my-1">
                                       <label class="d-block"> Plan Progress </label>
                                       <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
-                                          aria-valuemax="100"></div>
+                                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                       </div>
                                       <label class="d-block"> Actual Progress </label>
                                       <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0"
-                                          aria-valuemax="100"></div>
+                                        <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                                       </div>
                                     </div>
-                                    <div class="d-flex align-items-end ">
-                                      <div class="ml-auto">
-                                        <a href="#" class="mr-1">
+                                    </a><div class="d-flex align-items-end"><a href="#" class="">
+                                      </a><div class="ml-auto"><a href="#" class="">
+                                        </a><a href="#" class="mr-1">
                                           <i class="fas fa-money-bill-wave"></i>
                                           contract pricing
                                         </a>
@@ -568,7 +550,7 @@
                             </div>
                         
                             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                              <div class="card" >
+<div class="card">
                                 <div class="card-content">
                                   <div class="card-body">
                                     <div class="d-flex">
@@ -576,16 +558,20 @@
                                         300IT
                                       </h4>
                                       <div class="ml-auto">
-                                        <a>
+                                          <a>
                                           <i class="bx bx-dots-horizontal-rounded"></i>
                                         </a>
                                       </div>
-                                      </div>
-                                    <div class="d-flex flex-md-row flex-column time-card">
-                                      <div class="badge badge-danger mr-1">status</div>
-                                      <a href="#" class=" mr-1"><i class="bx bxs-calendar"></i> Start date</a>
-                                      <a href="#" class=""><i class="bx bxs-calendar"></i> End date</a>
                                     </div>
+                                    <div>
+                                      <div class="badge badge-danger mr-1">status</div>
+                                      <div class="d-flex flex-md-row flex-column time-card">
+                                      <a href="#" class=" mr-1"><i class="bx bxs-calendar"></i>Start date:
+                                        <span> 22/5/2020 </span></a>
+                                      <a href="#" class=""><i class="bx bxs-calendar"></i>End date:
+                                        <span>22/6/2020
+                                      </span></a></div><a href="#" class="">
+                                    </a></div><a href="#" class="">
                                     <div class="description my-1">
                                       <span>Lorem Ipsum is simply dummy text of the printing and typesetting
                                         industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -594,18 +580,16 @@
                                     <div class="Project-progress my-1">
                                       <label class="d-block"> Plan Progress </label>
                                       <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
-                                          aria-valuemax="100"></div>
+                                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                       </div>
                                       <label class="d-block"> Actual Progress </label>
                                       <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0"
-                                          aria-valuemax="100"></div>
+                                        <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                                       </div>
                                     </div>
-                                    <div class="d-flex align-items-end ">
-                                      <div class="ml-auto">
-                                        <a href="#" class="mr-1">
+                                    </a><div class="d-flex align-items-end"><a href="#" class="">
+                                      </a><div class="ml-auto"><a href="#" class="">
+                                        </a><a href="#" class="mr-1">
                                           <i class="fas fa-money-bill-wave"></i>
                                           contract pricing
                                         </a>
@@ -621,7 +605,7 @@
                               </div>
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                              <div class="card" >
+<div class="card">
                                 <div class="card-content">
                                   <div class="card-body">
                                     <div class="d-flex">
@@ -629,16 +613,20 @@
                                         300IT
                                       </h4>
                                       <div class="ml-auto">
-                                        <a>
+                                          <a>
                                           <i class="bx bx-dots-horizontal-rounded"></i>
                                         </a>
                                       </div>
-                                      </div>
-                                    <div class="d-flex flex-md-row flex-column time-card">
-                                      <div class="badge badge-danger mr-1">status</div>
-                                      <a href="#" class=" mr-1"><i class="bx bxs-calendar"></i> Start date</a>
-                                      <a href="#" class=""><i class="bx bxs-calendar"></i> End date</a>
                                     </div>
+                                    <div>
+                                      <div class="badge badge-danger mr-1">status</div>
+                                      <div class="d-flex flex-md-row flex-column time-card">
+                                      <a href="#" class=" mr-1"><i class="bx bxs-calendar"></i>Start date:
+                                        <span> 22/5/2020 </span></a>
+                                      <a href="#" class=""><i class="bx bxs-calendar"></i>End date:
+                                        <span>22/6/2020
+                                      </span></a></div><a href="#" class="">
+                                    </a></div><a href="#" class="">
                                     <div class="description my-1">
                                       <span>Lorem Ipsum is simply dummy text of the printing and typesetting
                                         industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -647,18 +635,16 @@
                                     <div class="Project-progress my-1">
                                       <label class="d-block"> Plan Progress </label>
                                       <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
-                                          aria-valuemax="100"></div>
+                                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                       </div>
                                       <label class="d-block"> Actual Progress </label>
                                       <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0"
-                                          aria-valuemax="100"></div>
+                                        <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                                       </div>
                                     </div>
-                                    <div class="d-flex align-items-end ">
-                                      <div class="ml-auto">
-                                        <a href="#" class="mr-1">
+                                    </a><div class="d-flex align-items-end"><a href="#" class="">
+                                      </a><div class="ml-auto"><a href="#" class="">
+                                        </a><a href="#" class="mr-1">
                                           <i class="fas fa-money-bill-wave"></i>
                                           contract pricing
                                         </a>
@@ -674,7 +660,7 @@
                               </div>
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                              <div class="card" >
+<div class="card">
                                 <div class="card-content">
                                   <div class="card-body">
                                     <div class="d-flex">
@@ -682,16 +668,20 @@
                                         300IT
                                       </h4>
                                       <div class="ml-auto">
-                                        <a>
+                                          <a>
                                           <i class="bx bx-dots-horizontal-rounded"></i>
                                         </a>
                                       </div>
-                                      </div>
-                                    <div class="d-flex flex-md-row flex-column time-card">
-                                      <div class="badge badge-danger mr-1">status</div>
-                                      <a href="#" class=" mr-1"><i class="bx bxs-calendar"></i> Start date</a>
-                                      <a href="#" class=""><i class="bx bxs-calendar"></i> End date</a>
                                     </div>
+                                    <div>
+                                      <div class="badge badge-danger mr-1">status</div>
+                                      <div class="d-flex flex-md-row flex-column time-card">
+                                      <a href="#" class=" mr-1"><i class="bx bxs-calendar"></i>Start date:
+                                        <span> 22/5/2020 </span></a>
+                                      <a href="#" class=""><i class="bx bxs-calendar"></i>End date:
+                                        <span>22/6/2020
+                                      </span></a></div><a href="#" class="">
+                                    </a></div><a href="#" class="">
                                     <div class="description my-1">
                                       <span>Lorem Ipsum is simply dummy text of the printing and typesetting
                                         industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -700,18 +690,16 @@
                                     <div class="Project-progress my-1">
                                       <label class="d-block"> Plan Progress </label>
                                       <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
-                                          aria-valuemax="100"></div>
+                                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                       </div>
                                       <label class="d-block"> Actual Progress </label>
                                       <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0"
-                                          aria-valuemax="100"></div>
+                                        <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                                       </div>
                                     </div>
-                                    <div class="d-flex align-items-end ">
-                                      <div class="ml-auto">
-                                        <a href="#" class="mr-1">
+                                    </a><div class="d-flex align-items-end"><a href="#" class="">
+                                      </a><div class="ml-auto"><a href="#" class="">
+                                        </a><a href="#" class="mr-1">
                                           <i class="fas fa-money-bill-wave"></i>
                                           contract pricing
                                         </a>
@@ -734,7 +722,7 @@
                           <!--Cards-->
                           <div class="row">
                             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                              <div class="card" >
+                                <div class="card">
                                 <div class="card-content">
                                   <div class="card-body">
                                     <div class="d-flex">
@@ -742,16 +730,20 @@
                                         300IT
                                       </h4>
                                       <div class="ml-auto">
-                                        <a>
+                                          <a>
                                           <i class="bx bx-dots-horizontal-rounded"></i>
                                         </a>
                                       </div>
                                     </div>
-                                    <div class="d-flex flex-md-row flex-column time-card">
+                                    <div>
                                       <div class="badge badge-danger mr-1">status</div>
-                                      <a href="#" class=" mr-1"><i class="bx bxs-calendar"></i> Start date</a>
-                                      <a href="#" class=""><i class="bx bxs-calendar"></i> End date</a>
-                                    </div>
+                                      <div class="d-flex flex-md-row flex-column time-card">
+                                      <a href="#" class=" mr-1"><i class="bx bxs-calendar"></i>Start date:
+                                        <span> 22/5/2020 </span></a>
+                                      <a href="#" class=""><i class="bx bxs-calendar"></i>End date:
+                                        <span>22/6/2020
+                                      </span></a></div><a href="#" class="">
+                                    </a></div><a href="#" class="">
                                     <div class="description my-1">
                                       <span>Lorem Ipsum is simply dummy text of the printing and typesetting
                                         industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -760,18 +752,16 @@
                                     <div class="Project-progress my-1">
                                       <label class="d-block"> Plan Progress </label>
                                       <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
-                                          aria-valuemax="100"></div>
+                                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                       </div>
                                       <label class="d-block"> Actual Progress </label>
                                       <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0"
-                                          aria-valuemax="100"></div>
+                                        <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                                       </div>
                                     </div>
-                                    <div class="d-flex align-items-end ">
-                                      <div class="ml-auto">
-                                        <a href="#" class="mr-1">
+                                    </a><div class="d-flex align-items-end"><a href="#" class="">
+                                      </a><div class="ml-auto"><a href="#" class="">
+                                        </a><a href="#" class="mr-1">
                                           <i class="fas fa-money-bill-wave"></i>
                                           contract pricing
                                         </a>
@@ -788,7 +778,7 @@
                             </div>
                         
                             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                              <div class="card" >
+<div class="card">
                                 <div class="card-content">
                                   <div class="card-body">
                                     <div class="d-flex">
@@ -796,16 +786,20 @@
                                         300IT
                                       </h4>
                                       <div class="ml-auto">
-                                        <a>
+                                          <a>
                                           <i class="bx bx-dots-horizontal-rounded"></i>
                                         </a>
                                       </div>
                                     </div>
-                                    <div class="d-flex flex-md-row flex-column time-card">
+                                    <div>
                                       <div class="badge badge-danger mr-1">status</div>
-                                      <a href="#" class=" mr-1"><i class="bx bxs-calendar"></i> Start date</a>
-                                      <a href="#" class=""><i class="bx bxs-calendar"></i> End date</a>
-                                    </div>
+                                      <div class="d-flex flex-md-row flex-column time-card">
+                                      <a href="#" class=" mr-1"><i class="bx bxs-calendar"></i>Start date:
+                                        <span> 22/5/2020 </span></a>
+                                      <a href="#" class=""><i class="bx bxs-calendar"></i>End date:
+                                        <span>22/6/2020
+                                      </span></a></div><a href="#" class="">
+                                    </a></div><a href="#" class="">
                                     <div class="description my-1">
                                       <span>Lorem Ipsum is simply dummy text of the printing and typesetting
                                         industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -814,18 +808,16 @@
                                     <div class="Project-progress my-1">
                                       <label class="d-block"> Plan Progress </label>
                                       <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
-                                          aria-valuemax="100"></div>
+                                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                       </div>
                                       <label class="d-block"> Actual Progress </label>
                                       <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0"
-                                          aria-valuemax="100"></div>
+                                        <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                                       </div>
                                     </div>
-                                    <div class="d-flex align-items-end ">
-                                      <div class="ml-auto">
-                                        <a href="#" class="mr-1">
+                                    </a><div class="d-flex align-items-end"><a href="#" class="">
+                                      </a><div class="ml-auto"><a href="#" class="">
+                                        </a><a href="#" class="mr-1">
                                           <i class="fas fa-money-bill-wave"></i>
                                           contract pricing
                                         </a>
@@ -842,7 +834,7 @@
                             </div>
                         
                             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                              <div class="card" >
+<div class="card">
                                 <div class="card-content">
                                   <div class="card-body">
                                     <div class="d-flex">
@@ -850,16 +842,20 @@
                                         300IT
                                       </h4>
                                       <div class="ml-auto">
-                                        <a>
+                                          <a>
                                           <i class="bx bx-dots-horizontal-rounded"></i>
                                         </a>
                                       </div>
                                     </div>
-                                    <div class="d-flex flex-md-row flex-column time-card">
+                                    <div>
                                       <div class="badge badge-danger mr-1">status</div>
-                                      <a href="#" class=" mr-1"><i class="bx bxs-calendar"></i> Start date</a>
-                                      <a href="#" class=""><i class="bx bxs-calendar"></i> End date</a>
-                                    </div>
+                                      <div class="d-flex flex-md-row flex-column time-card">
+                                      <a href="#" class=" mr-1"><i class="bx bxs-calendar"></i>Start date:
+                                        <span> 22/5/2020 </span></a>
+                                      <a href="#" class=""><i class="bx bxs-calendar"></i>End date:
+                                        <span>22/6/2020
+                                      </span></a></div><a href="#" class="">
+                                    </a></div><a href="#" class="">
                                     <div class="description my-1">
                                       <span>Lorem Ipsum is simply dummy text of the printing and typesetting
                                         industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -868,18 +864,16 @@
                                     <div class="Project-progress my-1">
                                       <label class="d-block"> Plan Progress </label>
                                       <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
-                                          aria-valuemax="100"></div>
+                                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                       </div>
                                       <label class="d-block"> Actual Progress </label>
                                       <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0"
-                                          aria-valuemax="100"></div>
+                                        <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                                       </div>
                                     </div>
-                                    <div class="d-flex align-items-end ">
-                                      <div class="ml-auto">
-                                        <a href="#" class="mr-1">
+                                    </a><div class="d-flex align-items-end"><a href="#" class="">
+                                      </a><div class="ml-auto"><a href="#" class="">
+                                        </a><a href="#" class="mr-1">
                                           <i class="fas fa-money-bill-wave"></i>
                                           contract pricing
                                         </a>
@@ -895,7 +889,7 @@
                               </div>
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                              <div class="card" >
+<div class="card">
                                 <div class="card-content">
                                   <div class="card-body">
                                     <div class="d-flex">
@@ -903,16 +897,20 @@
                                         300IT
                                       </h4>
                                       <div class="ml-auto">
-                                        <a>
+                                          <a>
                                           <i class="bx bx-dots-horizontal-rounded"></i>
                                         </a>
                                       </div>
                                     </div>
-                                    <div class="d-flex flex-md-row flex-column time-card">
+                                    <div>
                                       <div class="badge badge-danger mr-1">status</div>
-                                      <a href="#" class=" mr-1"><i class="bx bxs-calendar"></i> Start date</a>
-                                      <a href="#" class=""><i class="bx bxs-calendar"></i> End date</a>
-                                    </div>
+                                      <div class="d-flex flex-md-row flex-column time-card">
+                                      <a href="#" class=" mr-1"><i class="bx bxs-calendar"></i>Start date:
+                                        <span> 22/5/2020 </span></a>
+                                      <a href="#" class=""><i class="bx bxs-calendar"></i>End date:
+                                        <span>22/6/2020
+                                      </span></a></div><a href="#" class="">
+                                    </a></div><a href="#" class="">
                                     <div class="description my-1">
                                       <span>Lorem Ipsum is simply dummy text of the printing and typesetting
                                         industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -921,18 +919,16 @@
                                     <div class="Project-progress my-1">
                                       <label class="d-block"> Plan Progress </label>
                                       <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
-                                          aria-valuemax="100"></div>
+                                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                       </div>
                                       <label class="d-block"> Actual Progress </label>
                                       <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0"
-                                          aria-valuemax="100"></div>
+                                        <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                                       </div>
                                     </div>
-                                    <div class="d-flex align-items-end ">
-                                      <div class="ml-auto">
-                                        <a href="#" class="mr-1">
+                                    </a><div class="d-flex align-items-end"><a href="#" class="">
+                                      </a><div class="ml-auto"><a href="#" class="">
+                                        </a><a href="#" class="mr-1">
                                           <i class="fas fa-money-bill-wave"></i>
                                           contract pricing
                                         </a>
@@ -948,7 +944,7 @@
                               </div>
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                              <div class="card" >
+<div class="card">
                                 <div class="card-content">
                                   <div class="card-body">
                                     <div class="d-flex">
@@ -956,16 +952,20 @@
                                         300IT
                                       </h4>
                                       <div class="ml-auto">
-                                        <a>
+                                          <a>
                                           <i class="bx bx-dots-horizontal-rounded"></i>
                                         </a>
                                       </div>
                                     </div>
-                                    <div class="d-flex flex-md-row flex-column time-card">
+                                    <div>
                                       <div class="badge badge-danger mr-1">status</div>
-                                      <a href="#" class=" mr-1"><i class="bx bxs-calendar"></i> Start date</a>
-                                      <a href="#" class=""><i class="bx bxs-calendar"></i> End date</a>
-                                    </div>
+                                      <div class="d-flex flex-md-row flex-column time-card">
+                                      <a href="#" class=" mr-1"><i class="bx bxs-calendar"></i>Start date:
+                                        <span> 22/5/2020 </span></a>
+                                      <a href="#" class=""><i class="bx bxs-calendar"></i>End date:
+                                        <span>22/6/2020
+                                      </span></a></div><a href="#" class="">
+                                    </a></div><a href="#" class="">
                                     <div class="description my-1">
                                       <span>Lorem Ipsum is simply dummy text of the printing and typesetting
                                         industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -974,18 +974,16 @@
                                     <div class="Project-progress my-1">
                                       <label class="d-block"> Plan Progress </label>
                                       <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
-                                          aria-valuemax="100"></div>
+                                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                       </div>
                                       <label class="d-block"> Actual Progress </label>
                                       <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0"
-                                          aria-valuemax="100"></div>
+                                        <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                                       </div>
                                     </div>
-                                    <div class="d-flex align-items-end ">
-                                      <div class="ml-auto">
-                                        <a href="#" class="mr-1">
+                                    </a><div class="d-flex align-items-end"><a href="#" class="">
+                                      </a><div class="ml-auto"><a href="#" class="">
+                                        </a><a href="#" class="mr-1">
                                           <i class="fas fa-money-bill-wave"></i>
                                           contract pricing
                                         </a>
