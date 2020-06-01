@@ -12,17 +12,34 @@
 .progress{
 	height: 0.357rem !important;
 }
+.plan-progress{
+    margin-bottom:8px;
+}
 .card-content{
 	padding:0.3rem 0.5rem;
 }
-
+.project-name{
+    font-size:1.37rem;
+    font-weight: bold;
+}
 .btn-sm{
 	padding:4px 10px !important
 }
+.time-card span{
+    font-size:12px;
+    color:gray;  
+}
 
-.card-body a{
+.contract-details a{
+    cursor: pointer;
     font-size:12px;
     color:gray;
+}
+.contract-details a:hover{
+    color:#5A8DEE !important;
+}
+.dropdown .bx:hover{
+    color:#5A8DEE !important;
 }
 
 .menu-item{
@@ -88,11 +105,110 @@ background: linear-gradient(90deg, rgba(63,53,246,1) 0%, rgba(84,84,227,1) 35%, 
 background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(228,228,246,1) 35%, rgba(229,239,241,1) 100%);
 }
 .card-body{
-    padding: 0.5rem !important;
+    padding: 1.7rem;
 
+}
+.card-body.project-card{
+    padding:0.5rem !important;
+}
+.nav-link{
+    padding:0.567rem 0.43rem !important; 
+}
+.nav.nav-tabs .nav-item {
+    padding-bottom: 0.3rem;
+}
+.nav.nav-tabs li{
+    color: #000;
+    background-color: #f2f4f4;
+    border-left:1px solid #D4D8D9;
+    margin-right:0px !important;
+    border-radius: 0px;
+    width:120px;
+    padding-bottom: 0rem !important;
+}
+.nav.nav-tabs li a.active{
+    color: #333;
+    background-color: #fff;
+    box-shadow: none !important;
+    border-top: 3px solid blue;
+    height:100%;
+}
+.nav.nav-tabs li.active{
+    color: #333;
+    background-color: #fff;
+    box-shadow: none !important;
+    border-top: 1px solid blue;
+}
+.nav.nav-tabs li a{
+    border-radius:0px !important;
+}
+.nav.nav-tabs .nav-item .nav-link.active:hover{
+    color: blue;
+}
+.costum-navtabs{
+    min-width: 80px;
+    text-align: center;
+}
+.costum-navtabs li a i{
+    font-size: 1.88rem;
 }
 .users-view-name{
     color:#5A8DEE;
+}
+.filter-box{
+    display:none;
+}
+.filter-row{
+    margin-bottom: 8px;
+}
+.filter-row .project-search::after {
+    position: absolute;
+    content: '\f002';
+    left: 25px;
+    top: 6px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+
+}
+.filter-row span{
+    font-size:20px;
+}
+.filter-button{
+    border: 1px solid #DBE5F3;
+    border-radius: 12px;
+    padding: 0px 5px;
+    background-color: white;
+}
+.filter-row i{
+    font-size:28px;
+    color:blue;
+}
+.white-container{
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 15px 25px;
+    box-shadow: 0px 8px 20px 5px #00000017 !important;
+    clear: both;
+    box-shadow: none !important;
+    border: 1px solid #e2e2e2;
+}
+.description div p{
+    max-height: 115px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: inherit;
+    height: fit-content;
+}
+.description a.more{
+    font-size: 12px;
+}
+.bx-loader-alt{
+    color:black;
+}
+
+input[type=search]{
+    text-indent: 20px;
 }
 @media (max-width: 576px) {
 .w-sm-100{
