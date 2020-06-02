@@ -111,13 +111,13 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(228,228,246,1) 3
 .card-body.project-card{
     padding:0.5rem !important;
 }
-.nav-link{
-    padding:0.567rem 0.43rem !important; 
+.costum-navtabs .nav-link{
+    padding: 0.267rem 0.23rem !important;
 }
-.nav.nav-tabs .nav-item {
+.nav.costum-navtabs .nav-item {
     padding-bottom: 0.3rem;
 }
-.nav.nav-tabs li{
+.nav.costum-navtabs li{
     color: #000;
     background-color: #f2f4f4;
     border-left:1px solid #D4D8D9;
@@ -125,24 +125,28 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(228,228,246,1) 3
     border-radius: 0px;
     width:120px;
     padding-bottom: 0rem !important;
+    border-bottom: 2px solid #D4D8D9;
 }
-.nav.nav-tabs li a.active{
+.nav.costum-navtabs{
+    border-bottom: 0px;
+}
+.nav.costum-navtabs li a.active{
     color: #333;
     background-color: #fff;
     box-shadow: none !important;
     border-top: 3px solid blue;
     height:100%;
 }
-.nav.nav-tabs li.active{
+.nav.costum-navtabs li.active{
     color: #333;
     background-color: #fff;
     box-shadow: none !important;
     border-top: 1px solid blue;
 }
-.nav.nav-tabs li a{
+.nav.costum-navtabs li a{
     border-radius:0px !important;
 }
-.nav.nav-tabs .nav-item .nav-link.active:hover{
+.nav.costum-navtabs .nav-item .nav-link.active:hover{
     color: blue;
 }
 .costum-navtabs{
@@ -150,7 +154,7 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(228,228,246,1) 3
     text-align: center;
 }
 .costum-navtabs li a i{
-    font-size: 1.88rem;
+    font-size: 25px;
 }
 .users-view-name{
     color:#5A8DEE;
@@ -207,7 +211,7 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(228,228,246,1) 3
     color:black;
 }
 
-input[type=search]{
+.filter-row input[type=search]{
     text-indent: 20px;
 }
 @media (max-width: 576px) {
