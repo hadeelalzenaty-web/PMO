@@ -37,7 +37,11 @@
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="../../../assets/css/main-style.css">
     <!-- END: Custom CSS-->
-
+  <script>
+    function theprice(contract,price){
+      contract.text(price);
+    }
+  </script>
 </head>
 <!-- END: Head-->
 
@@ -262,7 +266,7 @@
                     <div class="d-flex activity-content">
                       <div class="avatar bg-rgba-primary m-0 mr-75">
                         <div class="avatar-content">
-                          <i class="bx bx-loader-alt"></i>
+                          <i class="bx bx-loader-alt text-primary"></i>
                         </div>
                       </div>
                       <div class="activity-progress flex-grow-1">
@@ -280,17 +284,17 @@
                 <div class="card">
                   <div class="card-content p-2">
                     <div class="d-flex activity-content">
-                      <div class="avatar bg-rgba-primary m-0 mr-75">
+                      <div class="avatar bg-rgba-success m-0 mr-75">
                         <div class="avatar-content">
-                          <i class="bx bx-loader-alt"></i>
+                            <i class="bx bx-check text-success"></i>
                         </div>
                       </div>
                       <div class="activity-progress flex-grow-1">
                         <small class="text-muted d-inline-block mb-50">Finished Project</small>
                         <small class="float-right">200</small>
-                        <div class="progress progress-bar-primary progress-sm">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="54" style="width:54%"></div>
-                        </div>
+                        <div class="progress progress-bar-success progress-sm">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="80" style="width:80%"></div>
+                      </div>
                       </div>
                     </div>
                   </div>
@@ -300,17 +304,17 @@
                 <div class="card">
                   <div class="card-content p-2">
                     <div class="d-flex activity-content">
-                      <div class="avatar bg-rgba-primary m-0 mr-75">
+                      <div class="avatar bg-rgba-warning m-0 mr-75">
                         <div class="avatar-content">
-                          <i class="bx bx-loader-alt"></i>
+                            <i class="bx bx-stats text-warning"></i>
                         </div>
-                      </div>
+                     </div>
                       <div class="activity-progress flex-grow-1">
                         <small class="text-muted d-inline-block mb-50">All Project</small>
                         <small class="float-right">365</small>
-                        <div class="progress progress-bar-primary progress-sm">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="54" style="width:54%"></div>
-                        </div>
+                        <div class="progress progress-bar-warning progress-sm">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="100" style="width:100%"></div>
+                      </div>
                       </div>
                     </div>
                   </div>
@@ -473,14 +477,81 @@
                                   </div>
                                     <div class="d-flex align-items-end">
                                       <div class="ml-auto contract-details">
-                                        <a class="mr-1" data-toggle="tooltip" data-placement="top" title="500">
+                                        <a class="mr-1">
                                           <i class="fas fa-money-bill-wave"></i>
-                                          contract pricing
+                                          <span class="contract" id="500$">Contract Pricing</span>
                                         </a>
-                                        <a  data-toggle="tooltip" data-placement="top" title="24"> 
+                                        <a> 
                                           <i class="bx bx-task" ></i>
                                           24 Tasks
+                                        </a>                   
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                              <div class="card">
+                                <div class="card-content">
+                                  <div class="card-body project-card">
+                                    <div class="d-flex">
+                                      <a href="#" class="project-name">
+                                        300IT
+                                      </a>
+                                      <div class="ml-auto">
+                                        <div class="dropdown">
+                                          <span class="bx bx-dots-horizontal-rounded font-medium-3 dropdown-toggle nav-hide-arrow cursor-pointer" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="menu">
+                                          </span>
+                                          <div class="dropdown-menu dropdown-menu-right">
+                                              <a class="dropdown-item" href="#"><i class="bx bx-edit-alt mr-1"></i> edit</a>
+                                              <a class="dropdown-item" href="#"><i class="bx bx-trash mr-1"></i> delete</a>
+                                          </div>
+                                      </div>
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <div class="badge badge-danger mr-1">status</div>
+                                      <div class="d-flex flex-md-row flex-column time-card">
+                                          <span class=" mr-1"><i class="bx bxs-calendar"></i>Start date:
+                                        <span> 22/5/2020 </span></span>
+                                      <span class=""><i class="bx bxs-calendar"></i>End date:
+                                        <span>22/6/2020
+                                      </span></span></div></div>
+                                    <div class="description my-1">
+                                      <div>
+                                        <p class="mb-0">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                                        industry. Lorem Ipsum has been the industry's standard dummy text ever
+                                        since the 1500s, when an unknown printer took a galley of type and scrambled it
+                                      </p>
+                                      <a href="#" class="more"> Show More</a>
+                                      </div>
+                                    </div>
+                                    <div class="Project-progress my-1">
+                                      <div class="plan-progress">
+                                      <label class="d-block"> Plan Progress </label>
+                                      <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                      </div>
+                                    </div>
+                                    <div class="actual-progress">
+                                      <label class="d-block"> Actual Progress </label>
+                                      <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                    <div class="d-flex align-items-end">
+                                      <div class="ml-auto contract-details">
+                                        <a class="mr-1">
+                                          <i class="fas fa-money-bill-wave"></i>
+                                          <span class="contract" id="700$">Contract Pricing</span>
                                         </a>
+                                        <a> 
+                                          <i class="bx bx-task" ></i>
+                                          24 Tasks
+                                        </a> 
                         
                                       </div>
                                     </div>
@@ -541,82 +612,14 @@
                                   </div>
                                     <div class="d-flex align-items-end">
                                       <div class="ml-auto contract-details">
-                                        <a class="mr-1" data-toggle="tooltip" data-placement="top" title="500">
+                                        <a class="mr-1">
                                           <i class="fas fa-money-bill-wave"></i>
-                                          contract pricing
+                                          <span class="contract" id="400$">Contract Pricing</span>
                                         </a>
-                                        <a  data-toggle="tooltip" data-placement="top" title="24"> 
+                                        <a> 
                                           <i class="bx bx-task" ></i>
                                           24 Tasks
-                                        </a>
-                        
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                              <div class="card">
-                                <div class="card-content">
-                                  <div class="card-body project-card">
-                                    <div class="d-flex">
-                                      <a href="#" class="project-name">
-                                        300IT
-                                      </a>
-                                      <div class="ml-auto">
-                                        <div class="dropdown">
-                                          <span class="bx bx-dots-horizontal-rounded font-medium-3 dropdown-toggle nav-hide-arrow cursor-pointer" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="menu">
-                                          </span>
-                                          <div class="dropdown-menu dropdown-menu-right">
-                                              <a class="dropdown-item" href="#"><i class="bx bx-edit-alt mr-1"></i> edit</a>
-                                              <a class="dropdown-item" href="#"><i class="bx bx-trash mr-1"></i> delete</a>
-                                          </div>
-                                      </div>
-                                      </div>
-                                    </div>
-                                    <div>
-                                      <div class="badge badge-danger mr-1">status</div>
-                                      <div class="d-flex flex-md-row flex-column time-card">
-                                          <span class=" mr-1"><i class="bx bxs-calendar"></i>Start date:
-                                        <span> 22/5/2020 </span></span>
-                                      <span class=""><i class="bx bxs-calendar"></i>End date:
-                                        <span>22/6/2020
-                                      </span></span></div></div>
-                                    <div class="description my-1">
-                                      <div>
-                                        <p class="mb-0">
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting
-                                        industry. Lorem Ipsum has been the industry's standard dummy text ever
-                                        since the 1500s, when an unknown printer took a galley of type and scrambled it
-                                      </p>
-                                      <a href="#" class="more"> Show More</a>
-                                      </div>
-                                    </div>
-                                    <div class="Project-progress my-1">
-                                      <div class="plan-progress">
-                                      <label class="d-block"> Plan Progress </label>
-                                      <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                      </div>
-                                    </div>
-                                    <div class="actual-progress">
-                                      <label class="d-block"> Actual Progress </label>
-                                      <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                    <div class="d-flex align-items-end">
-                                      <div class="ml-auto contract-details">
-                                        <a class="mr-1" data-toggle="tooltip" data-placement="top" title="500">
-                                          <i class="fas fa-money-bill-wave"></i>
-                                          contract pricing
-                                        </a>
-                                        <a  data-toggle="tooltip" data-placement="top" title="24"> 
-                                          <i class="bx bx-task" ></i>
-                                          24 Tasks
-                                        </a>
+                                        </a> 
                         
                                       </div>
                                     </div>
@@ -684,14 +687,14 @@
                                   </div>
                                     <div class="d-flex align-items-end">
                                       <div class="ml-auto contract-details">
-                                        <a class="mr-1" data-toggle="tooltip" data-placement="top" title="500">
+                                        <a class="mr-1">
                                           <i class="fas fa-money-bill-wave"></i>
-                                          contract pricing
+                                          <span class="contract" id="200$">Contract Pricing</span>
                                         </a>
-                                        <a  data-toggle="tooltip" data-placement="top" title="24"> 
+                                        <a> 
                                           <i class="bx bx-task" ></i>
                                           24 Tasks
-                                        </a>
+                                        </a> 
                         
                                       </div>
                                     </div>
@@ -753,14 +756,14 @@
                                   </div>
                                     <div class="d-flex align-items-end">
                                       <div class="ml-auto contract-details">
-                                        <a class="mr-1" data-toggle="tooltip" data-placement="top" title="500">
+                                        <a class="mr-1">
                                           <i class="fas fa-money-bill-wave"></i>
-                                          contract pricing
+                                          <span class="contract" id="200$">Contract Pricing</span>
                                         </a>
-                                        <a  data-toggle="tooltip" data-placement="top" title="24"> 
+                                        <a> 
                                           <i class="bx bx-task" ></i>
                                           24 Tasks
-                                        </a>
+                                        </a> 
                         
                                       </div>
                                     </div>
@@ -822,14 +825,14 @@
                                   </div>
                                     <div class="d-flex align-items-end">
                                       <div class="ml-auto contract-details">
-                                        <a class="mr-1" data-toggle="tooltip" data-placement="top" title="500">
+                                        <a class="mr-1">
                                           <i class="fas fa-money-bill-wave"></i>
-                                          contract pricing
+                                          <span class="contract" id="1000$">Contract Pricing</span>
                                         </a>
-                                        <a  data-toggle="tooltip" data-placement="top" title="24"> 
+                                        <a> 
                                           <i class="bx bx-task" ></i>
                                           24 Tasks
-                                        </a>
+                                        </a> 
                         
                                       </div>
                                     </div>
@@ -890,14 +893,14 @@
                                   </div>
                                     <div class="d-flex align-items-end">
                                       <div class="ml-auto contract-details">
-                                        <a class="mr-1" data-toggle="tooltip" data-placement="top" title="500">
+                                        <a class="mr-1">
                                           <i class="fas fa-money-bill-wave"></i>
-                                          contract pricing
+                                          <span class="contract" id="200$">Contract Pricing</span>
                                         </a>
-                                        <a  data-toggle="tooltip" data-placement="top" title="24"> 
+                                        <a> 
                                           <i class="bx bx-task" ></i>
                                           24 Tasks
-                                        </a>
+                                        </a> 
                         
                                       </div>
                                     </div>
@@ -958,14 +961,14 @@
                                   </div>
                                     <div class="d-flex align-items-end">
                                       <div class="ml-auto contract-details">
-                                        <a class="mr-1" data-toggle="tooltip" data-placement="top" title="500">
+                                        <a class="mr-1">
                                           <i class="fas fa-money-bill-wave"></i>
-                                          contract pricing
+                                          <span class="contract" id=400$>Contract Pricing</span>
                                         </a>
-                                        <a  data-toggle="tooltip" data-placement="top" title="24"> 
+                                        <a> 
                                           <i class="bx bx-task" ></i>
                                           24 Tasks
-                                        </a>
+                                        </a> 
                         
                                       </div>
                                     </div>
@@ -1032,6 +1035,14 @@
 
   
       });
-
+      $(".contract-details a").hover(function(){
+        debugger
+        var contract=$(this).find(".contract");
+        var con_id=$(this).find(".contract").attr("id");
+       theprice(contract,con_id);
+      })
+      $(".contract-details a").mouseleave(function(){
+        $(this).find(".contract").text("contract pricing");
+      })
   });
 </script>

@@ -137,6 +137,10 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(228,228,246,1) 3
     border-top: 3px solid blue;
     height:100%;
 }
+.avatar-content i{
+    font-weight: 800;
+}
+
 .nav.costum-navtabs li.active{
     color: #333;
     background-color: #fff;
