@@ -60,13 +60,13 @@
                           <li class="nav-item mobile-menu d-xl-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ficon bx bx-menu"></i></a></li>
                       </ul>
                       <ul class="nav navbar-nav bookmark-icons">
-                          <li class="nav-item d-none d-lg-block"><a class="nav-link" href="app-todo.html" data-toggle="tooltip" data-placement="top" title="Todo"><i class="ficon bx bx-check-circle"></i></a></li>
+                          <li class="nav-item d-none d-lg-block"><a class="nav-link" href="app-todo.html" data-toggle="tooltip" data-placement="top" title="Tasks"><i class="ficon bx bx-check-circle"></i></a></li>
                           <li class="nav-item d-none d-lg-block"><a class="nav-link" href="app-calendar.html" data-toggle="tooltip" data-placement="top" title="Calendar"><i class="ficon bx bx-calendar-alt"></i></a></li>
                       </ul>
                   </div>
                   <ul class="nav navbar-nav float-right">
-                      <li class="dropdown dropdown-language nav-item"><a class="dropdown-toggle nav-link" id="dropdown-flag" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="flag-icon flag-icon-us"></i><span class="selected-language">English</span></a>
-                          <div class="dropdown-menu" aria-labelledby="dropdown-flag"><a class="dropdown-item" href="#" data-language="en"><i class="flag-icon flag-icon-us mr-50"></i> English</a><a class="dropdown-item" href="#" data-language="fr"><img src="../../../assets/images/saudi-arabia.png" width="15" class="mr-50"> Arabic</a></div>
+                      <li class="dropdown dropdown-language nav-item"><a class="dropdown-toggle nav-link" id="dropdown-flag" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="selected-language">English</span></a>
+                          <div class="dropdown-menu" aria-labelledby="dropdown-flag"><a class="dropdown-item" href="#" data-language="en"> English</a><a class="dropdown-item" href="#" data-language="fr"> Arabic</a></div>
                       </li>
                       <li class="nav-item d-none d-lg-block"><a class="nav-link nav-link-expand"><i class="ficon bx bx-fullscreen"></i></a></li>
                       <li class="nav-item nav-search"><a class="nav-link nav-link-search"><i class="ficon bx bx-search"></i></a>
@@ -222,7 +222,7 @@
           <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation" data-icon-style="">
               <li class="nav-item"><a href="index.html"><i class="bx bx-home-alt"></i><span class="menu-title" data-i18n="Dashboard">Dashboard</span></a>
               </li>
-              <li class=" active nav-item"><a href="Projects.html"><i class="bx bxs-shopping-bag"></i><span class="menu-title">Projects</span></a>
+              <li class=" active nav-item"><a href="Projects.html"><i class="bx bxs-briefcase"></i><span class="menu-title">Projects</span></a>
             </li>
               <li class="nav-item"><a href="Resources.html"><i class="fas fa-user-friends"></i><span class="menu-title">Resources</span></a>
             </li>
@@ -329,12 +329,11 @@
                       </div>
                       <div class="filter col-lg-4 col-md-5 col-12 d-flex justify-content-end mt-1 mt-md-auto">
                         <button type="button" class="btn filter-button">
-                          <i class="bx bx-filter"></i>
-                    
+                          <i class="bx bx-slider"></i>
                         </button>
                       </div>
                     </div>
-                    <div class="filter-box  white-container pb-2">
+                    <div class="filter-box  white-container pb-2 my-1">
                       <form>
                         <div class="row">
                             <div class="col-12 col-sm-6 col-lg-3">
@@ -364,7 +363,7 @@
                                         <option value="">Any</option>
                                         <option value="Active">Active</option>
                                         <option value="Close">Close</option>
-                                        <option value="Banned">Banned</option>
+                                        <option value="Banned">Late</option>
                                     </select>
                                 </fieldset>
                             </div>
@@ -386,7 +385,7 @@
                                     <option value="">Any</option>
                                     <option value="Active">Active</option>
                                     <option value="Close">Close</option>
-                                    <option value="Banned">Banned</option>
+                                    <option value="Banned">Late</option>
                                 </select>
                             </fieldset>
                         </div>
@@ -414,14 +413,32 @@
                 </div>
                     <div class="content-body boxes">
                         <section id="boxes-wrapper">
-                          <div class="d-flex">
+                          <div>
+                            <div class="chip mr-1">
+                              <div class="chip-body">
+                                  <span class="chip-text">#mohammadfarhan</span>
+                                  <div class="chip-closeable">
+                                      <i class="bx bx-x"></i>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="chip mr-1">
+                              <div class="chip-body">
+                                  <span class="chip-text">#MOJ</span>
+                                  <div class="chip-closeable">
+                                      <i class="bx bx-x"></i>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="chip mr-1">
+                              <div class="chip-body">
+                                  <span class="chip-text">#Morasalat</span>
+                                  <div class="chip-closeable">
+                                      <i class="bx bx-x"></i>
+                                  </div>
+                              </div>
+                            </div>
                             <h5 class="my-1">March</h5>
-                            <button type="button" class="btn filter-button my-auto ml-1">
-                              #farhan
-                            </button>
-                            <button type="button" class="btn filter-button my-auto ml-1">
-                              #Mohammad
-                            </button>
                           </div>
                           <div class="row">
                             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
@@ -436,7 +453,7 @@
                                         <div class="dropdown">
                                           <span class="bx bx-dots-horizontal-rounded font-medium-3 dropdown-toggle nav-hide-arrow cursor-pointer" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="menu">
                                           </span>
-                                          <div class="dropdown-menu dropdown-menu-right">
+                                          <div class="dropdown-menu dropdown-menu-right sub-menu">
                                               <a class="dropdown-item" href="#"><i class="bx bx-edit-alt mr-1"></i> edit</a>
                                               <a class="dropdown-item" href="#"><i class="bx bx-trash mr-1"></i> delete</a>
                                           </div>
@@ -444,21 +461,35 @@
                                       </div>
                                     </div>
                                     <div>
-                                      <div class="badge badge-danger mr-1">status</div>
-                                      <div class="d-flex flex-md-row flex-column time-card">
-                                          <span class=" mr-1"><i class="bx bxs-calendar"></i>Start date:
-                                        <span> 22/5/2020 </span></span>
-                                      <span class=""><i class="bx bxs-calendar"></i>End date:
-                                        <span>22/6/2020
-                                      </span></span></div></div>
+                                      <div class="badge badge-success">Active</div>
+                                      <div class="time-card row">
+                                        <span class="col-sm-6"><i class="bx bxs-calendar"></i>Start:
+                                      <span> 22/5/2020 </span></span>
+                                    <span class="col-sm-6"><i class="bx bxs-calendar"></i>End:
+                                      <span>22/6/2020
+                                    </span></span></div>
+                                      </div>
+                                      <div class="row contract-details">
+                                        <div class="col-sm-6">
+                                          <a> 
+                                            <i class="bx bx-task"></i>
+                                            24 Tasks
+                                          </a> 
+                                        </div>
+                                        <div class="col-sm-6">
+                                        <a class="mr-1">
+                                          <i class="fas fa-money-bill-wave"></i>
+                                          <span class="contract" id="500$">contract pricing</span>
+                                        </a>
+                                      </div>
+                                      </div>
                                     <div class="description my-1">
                                       <div>
                                         <p class="mb-0">
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting
-                                        industry. Lorem Ipsum has been the industry's standard dummy text ever
-                                        since the 1500s, when an unknown printer took a galley of type and scrambled it
+                                          Lorem Ipsum is simply dummy text of the printing and typesetting
+                                          industry. Lorem Ipsum has been the industry's standard dummy text ever
+                                          since the 1500s, when an unknown printer took a galley of type and scrambled it                                      
                                       </p>
-                                      <a href="#" class="more"> Show More</a>
                                       </div>
                                     </div>
                                     <div class="Project-progress my-1">
@@ -475,18 +506,6 @@
                                       </div>
                                     </div>
                                   </div>
-                                    <div class="d-flex align-items-end">
-                                      <div class="ml-auto contract-details">
-                                        <a class="mr-1">
-                                          <i class="fas fa-money-bill-wave"></i>
-                                          <span class="contract" id="500$">Contract Pricing</span>
-                                        </a>
-                                        <a> 
-                                          <i class="bx bx-task" ></i>
-                                          24 Tasks
-                                        </a>                   
-                                      </div>
-                                    </div>
                                   </div>
                                 </div>
                               </div>
@@ -511,13 +530,27 @@
                                       </div>
                                     </div>
                                     <div>
-                                      <div class="badge badge-danger mr-1">status</div>
-                                      <div class="d-flex flex-md-row flex-column time-card">
-                                          <span class=" mr-1"><i class="bx bxs-calendar"></i>Start date:
-                                        <span> 22/5/2020 </span></span>
-                                      <span class=""><i class="bx bxs-calendar"></i>End date:
-                                        <span>22/6/2020
-                                      </span></span></div></div>
+                                      <div class="badge badge-danger">Closed</div>
+                                      <div class="time-card row">
+                                        <span class="col-sm-6"><i class="bx bxs-calendar"></i>Start:
+                                      <span> 22/5/2020 </span></span>
+                                    <span class="col-sm-6"><i class="bx bxs-calendar"></i>End:
+                                      <span>22/6/2020
+                                    </span></span></div></div>
+                                    <div class="row contract-details">
+                                      <div class="col-sm-6">
+                                        <a> 
+                                          <i class="bx bx-task"></i>
+                                          24 Tasks
+                                        </a> 
+                                      </div>
+                                      <div class="col-sm-6">
+                                      <a class="mr-1">
+                                        <i class="fas fa-money-bill-wave"></i>
+                                        <span class="contract" id="300$">Contract Pricing</span>
+                                      </a>
+                                    </div>
+                                    </div>
                                     <div class="description my-1">
                                       <div>
                                         <p class="mb-0">
@@ -525,7 +558,7 @@
                                         industry. Lorem Ipsum has been the industry's standard dummy text ever
                                         since the 1500s, when an unknown printer took a galley of type and scrambled it
                                       </p>
-                                      <a href="#" class="more"> Show More</a>
+                                      
                                       </div>
                                     </div>
                                     <div class="Project-progress my-1">
@@ -542,19 +575,6 @@
                                       </div>
                                     </div>
                                   </div>
-                                    <div class="d-flex align-items-end">
-                                      <div class="ml-auto contract-details">
-                                        <a class="mr-1">
-                                          <i class="fas fa-money-bill-wave"></i>
-                                          <span class="contract" id="700$">Contract Pricing</span>
-                                        </a>
-                                        <a> 
-                                          <i class="bx bx-task" ></i>
-                                          24 Tasks
-                                        </a> 
-                        
-                                      </div>
-                                    </div>
                                   </div>
                                 </div>
                               </div>
@@ -579,13 +599,29 @@
                                       </div>
                                     </div>
                                     <div>
-                                      <div class="badge badge-danger mr-1">status</div>
-                                      <div class="d-flex flex-md-row flex-column time-card">
-                                          <span class=" mr-1"><i class="bx bxs-calendar"></i>Start date:
-                                        <span> 22/5/2020 </span></span>
-                                      <span class=""><i class="bx bxs-calendar"></i>End date:
-                                        <span>22/6/2020
-                                      </span></span></div></div>
+                                      <div class="badge badge-warning">Late</div>
+                                      <div class="time-card row">
+                                        <span class="col-sm-6"><i class="bx bxs-calendar"></i>Start:
+                                      <span> 22/5/2020 </span></span>
+                                    <span class="col-sm-6"><i class="bx bxs-calendar"></i>End:
+                                      <span>22/6/2020
+                                    </span></span></div>
+
+                                    </div>
+                                    <div class="row contract-details">
+                                      <div class="col-sm-6">
+                                        <a> 
+                                          <i class="bx bx-task" ></i>
+                                          24 Tasks
+                                        </a> 
+                                      </div>
+                                      <div class="col-sm-6">
+                                      <a class="mr-1">
+                                        <i class="fas fa-money-bill-wave"></i>
+                                        <span class="contract" id="700$">Contract Pricing</span>
+                                      </a>
+                                    </div>
+                                    </div>
                                     <div class="description my-1">
                                       <div>
                                         <p class="mb-0">
@@ -593,7 +629,7 @@
                                         industry. Lorem Ipsum has been the industry's standard dummy text ever
                                         since the 1500s, when an unknown printer took a galley of type and scrambled it
                                       </p>
-                                      <a href="#" class="more"> Show More</a>
+                                      
                                       </div>
                                     </div>
                                     <div class="Project-progress my-1">
@@ -610,19 +646,6 @@
                                       </div>
                                     </div>
                                   </div>
-                                    <div class="d-flex align-items-end">
-                                      <div class="ml-auto contract-details">
-                                        <a class="mr-1">
-                                          <i class="fas fa-money-bill-wave"></i>
-                                          <span class="contract" id="400$">Contract Pricing</span>
-                                        </a>
-                                        <a> 
-                                          <i class="bx bx-task" ></i>
-                                          24 Tasks
-                                        </a> 
-                        
-                                      </div>
-                                    </div>
                                   </div>
                                 </div>
                               </div>
@@ -654,13 +677,29 @@
                                       </div>
                                     </div>
                                     <div>
-                                      <div class="badge badge-danger mr-1">status</div>
-                                      <div class="d-flex flex-md-row flex-column time-card">
-                                          <span class=" mr-1"><i class="bx bxs-calendar"></i>Start date:
-                                        <span> 22/5/2020 </span></span>
-                                      <span class=""><i class="bx bxs-calendar"></i>End date:
-                                        <span>22/6/2020
-                                      </span></span></div></div>
+                                      <div class="badge badge-success">Active</div>
+                                      <div class="time-card row">
+                                        <span class="col-sm-6"><i class="bx bxs-calendar"></i>Start:
+                                      <span> 22/5/2020 </span></span>
+                                    <span class="col-sm-6"><i class="bx bxs-calendar"></i>End:
+                                      <span>22/6/2020
+                                    </span></span></div>
+                                    <div class="row contract-details">
+                                      <div class="col-sm-6">
+                                        <a> 
+                                          <i class="bx bx-task"></i>
+                                          24 Tasks
+                                        </a> 
+                                      </div>
+                                      <div class="col-sm-6">
+                                      <a class="mr-1">
+                                        <i class="fas fa-money-bill-wave"></i>
+                                        <span class="contract" id="700$">contract pricing</span>
+                                      </a>
+                                    </div>
+                                    </div>
+
+                                    </div>
                                     <div class="description my-1">
                                       <div>
                                         <p class="mb-0">
@@ -668,7 +707,7 @@
                                         industry. Lorem Ipsum has been the industry's standard dummy text ever
                                         since the 1500s, when an unknown printer took a galley of type and scrambled it
                                       </p>
-                                      <a href="#" class="more"> Show More</a>
+                                      
                                       </div>
                                     </div>
                                     <div class="Project-progress my-1">
@@ -685,19 +724,6 @@
                                       </div>
                                     </div>
                                   </div>
-                                    <div class="d-flex align-items-end">
-                                      <div class="ml-auto contract-details">
-                                        <a class="mr-1">
-                                          <i class="fas fa-money-bill-wave"></i>
-                                          <span class="contract" id="200$">Contract Pricing</span>
-                                        </a>
-                                        <a> 
-                                          <i class="bx bx-task" ></i>
-                                          24 Tasks
-                                        </a> 
-                        
-                                      </div>
-                                    </div>
                                   </div>
                                 </div>
                               </div>
@@ -723,13 +749,28 @@
                                       </div>
                                     </div>
                                     <div>
-                                      <div class="badge badge-danger mr-1">status</div>
-                                      <div class="d-flex flex-md-row flex-column time-card">
-                                          <span class=" mr-1"><i class="bx bxs-calendar"></i>Start date:
-                                        <span> 22/5/2020 </span></span>
-                                      <span class=""><i class="bx bxs-calendar"></i>End date:
-                                        <span>22/6/2020
-                                      </span></span></div></div>
+                                      <div class="badge badge-warning">Late</div>
+                                      <div class="time-card row">
+                                        <span class="col-sm-6"><i class="bx bxs-calendar"></i>Start:
+                                      <span> 22/5/2020 </span></span>
+                                    <span class="col-sm-6"><i class="bx bxs-calendar"></i>End:
+                                      <span>22/6/2020
+                                    </span></span></div>
+                                    <div class="row contract-details">
+                                      <div class="col-sm-6">
+                                        <a> 
+                                          <i class="bx bx-task" ></i>
+                                          24 Tasks
+                                        </a> 
+                                      </div>
+                                      <div class="col-sm-6">
+                                      <a class="mr-1">
+                                        <i class="fas fa-money-bill-wave"></i>
+                                        <span class="contract" id="200$">Contract Pricing</span>
+                                      </a>
+                                    </div>
+                                    </div>
+                                    </div>
                                     <div class="description my-1">
                                       <div>
                                         <p class="mb-0">
@@ -737,7 +778,7 @@
                                         industry. Lorem Ipsum has been the industry's standard dummy text ever
                                         since the 1500s, when an unknown printer took a galley of type and scrambled it
                                       </p>
-                                      <a href="#" class="more"> Show More</a>
+                                      
                                       </div>
                                     </div>
                                     <div class="Project-progress my-1">
@@ -754,19 +795,6 @@
                                       </div>
                                     </div>
                                   </div>
-                                    <div class="d-flex align-items-end">
-                                      <div class="ml-auto contract-details">
-                                        <a class="mr-1">
-                                          <i class="fas fa-money-bill-wave"></i>
-                                          <span class="contract" id="200$">Contract Pricing</span>
-                                        </a>
-                                        <a> 
-                                          <i class="bx bx-task" ></i>
-                                          24 Tasks
-                                        </a> 
-                        
-                                      </div>
-                                    </div>
                                   </div>
                                 </div>
                               </div>
@@ -792,13 +820,28 @@
                                       </div>
                                     </div>
                                     <div>
-                                      <div class="badge badge-danger mr-1">status</div>
-                                      <div class="d-flex flex-md-row flex-column time-card">
-                                          <span class=" mr-1"><i class="bx bxs-calendar"></i>Start date:
-                                        <span> 22/5/2020 </span></span>
-                                      <span class=""><i class="bx bxs-calendar"></i>End date:
-                                        <span>22/6/2020
-                                      </span></span></div></div>
+                                      <div class="badge badge-danger">Closed</div>
+                                      <div class="time-card row">
+                                        <span class="col-sm-6"><i class="bx bxs-calendar"></i>Start:
+                                      <span> 22/5/2020 </span></span>
+                                    <span class="col-sm-6"><i class="bx bxs-calendar"></i>End:
+                                      <span>22/6/2020
+                                    </span></span></div>
+                                    </div>
+                                    <div class="row contract-details">
+                                      <div class="col-sm-6">
+                                        <a> 
+                                          <i class="bx bx-task"></i>
+                                          24 Tasks
+                                        </a> 
+                                      </div>
+                                      <div class="col-sm-6">
+                                      <a class="mr-1">
+                                        <i class="fas fa-money-bill-wave"></i>
+                                        <span class="contract" id="400$">contract pricing</span>
+                                      </a>
+                                    </div>
+                                    </div>
                                     <div class="description my-1">
                                       <div>
                                         <p class="mb-0">
@@ -806,7 +849,7 @@
                                         industry. Lorem Ipsum has been the industry's standard dummy text ever
                                         since the 1500s, when an unknown printer took a galley of type and scrambled it
                                       </p>
-                                      <a href="#" class="more"> Show More</a>
+                                      
                                       </div>
                                     </div>
                                     <div class="Project-progress my-1">
@@ -823,19 +866,6 @@
                                       </div>
                                     </div>
                                   </div>
-                                    <div class="d-flex align-items-end">
-                                      <div class="ml-auto contract-details">
-                                        <a class="mr-1">
-                                          <i class="fas fa-money-bill-wave"></i>
-                                          <span class="contract" id="1000$">Contract Pricing</span>
-                                        </a>
-                                        <a> 
-                                          <i class="bx bx-task" ></i>
-                                          24 Tasks
-                                        </a> 
-                        
-                                      </div>
-                                    </div>
                                   </div>
                                 </div>
                               </div>
@@ -860,13 +890,28 @@
                                       </div>
                                     </div>
                                     <div>
-                                      <div class="badge badge-danger mr-1">status</div>
-                                      <div class="d-flex flex-md-row flex-column time-card">
-                                          <span class=" mr-1"><i class="bx bxs-calendar"></i>Start date:
-                                        <span> 22/5/2020 </span></span>
-                                      <span class=""><i class="bx bxs-calendar"></i>End date:
-                                        <span>22/6/2020
-                                      </span></span></div></div>
+                                      <div class="badge badge-danger">Closed</div>
+                                      <div class="time-card row">
+                                        <span class="col-sm-6"><i class="bx bxs-calendar"></i>Start:
+                                      <span> 22/5/2020 </span></span>
+                                    <span class="col-sm-6"><i class="bx bxs-calendar"></i>End:
+                                      <span>22/6/2020
+                                    </span></span></div>
+                                    </div>
+                                    <div class="row contract-details">
+                                      <div class="col-sm-6">
+                                        <a> 
+                                          <i class="bx bx-task"></i>
+                                          24 Tasks
+                                        </a> 
+                                      </div>
+                                      <div class="col-sm-6">
+                                      <a class="mr-1">
+                                        <i class="fas fa-money-bill-wave"></i>
+                                        <span class="contract" id="700$">contract pricing</span>
+                                      </a>
+                                    </div>
+                                    </div>
                                     <div class="description my-1">
                                       <div>
                                         <p class="mb-0">
@@ -874,7 +919,7 @@
                                         industry. Lorem Ipsum has been the industry's standard dummy text ever
                                         since the 1500s, when an unknown printer took a galley of type and scrambled it
                                       </p>
-                                      <a href="#" class="more"> Show More</a>
+                                      
                                       </div>
                                     </div>
                                     <div class="Project-progress my-1">
@@ -891,19 +936,6 @@
                                       </div>
                                     </div>
                                   </div>
-                                    <div class="d-flex align-items-end">
-                                      <div class="ml-auto contract-details">
-                                        <a class="mr-1">
-                                          <i class="fas fa-money-bill-wave"></i>
-                                          <span class="contract" id="200$">Contract Pricing</span>
-                                        </a>
-                                        <a> 
-                                          <i class="bx bx-task" ></i>
-                                          24 Tasks
-                                        </a> 
-                        
-                                      </div>
-                                    </div>
                                   </div>
                                 </div>
                               </div>
@@ -928,13 +960,28 @@
                                       </div>
                                     </div>
                                     <div>
-                                      <div class="badge badge-danger mr-1">status</div>
-                                      <div class="d-flex flex-md-row flex-column time-card">
-                                          <span class=" mr-1"><i class="bx bxs-calendar"></i>Start date:
-                                        <span> 22/5/2020 </span></span>
-                                      <span class=""><i class="bx bxs-calendar"></i>End date:
-                                        <span>22/6/2020
-                                      </span></span></div></div>
+                                      <div class="badge badge-success">Active</div>
+                                      <div class="time-card row">
+                                        <span class="col-sm-6"><i class="bx bxs-calendar"></i>Start:
+                                      <span> 22/5/2020 </span></span>
+                                    <span class="col-sm-6"><i class="bx bxs-calendar"></i>End:
+                                      <span>22/6/2020
+                                    </span></span></div>
+                                    <div class="row contract-details">
+                                      <div class="col-sm-6">
+                                        <a> 
+                                          <i class="bx bx-task"></i>
+                                          24 Tasks
+                                        </a> 
+                                      </div>
+                                      <div class="col-sm-6">
+                                      <a class="mr-1">
+                                        <i class="fas fa-money-bill-wave"></i>
+                                        <span class="contract" id="700$">contract pricing</span>
+                                      </a>
+                                    </div>
+                                    </div>
+                                    </div>
                                     <div class="description my-1">
                                       <div>
                                         <p class="mb-0">
@@ -942,7 +989,7 @@
                                         industry. Lorem Ipsum has been the industry's standard dummy text ever
                                         since the 1500s, when an unknown printer took a galley of type and scrambled it
                                       </p>
-                                      <a href="#" class="more"> Show More</a>
+                                      
                                       </div>
                                     </div>
                                     <div class="Project-progress my-1">
@@ -959,19 +1006,6 @@
                                       </div>
                                     </div>
                                   </div>
-                                    <div class="d-flex align-items-end">
-                                      <div class="ml-auto contract-details">
-                                        <a class="mr-1">
-                                          <i class="fas fa-money-bill-wave"></i>
-                                          <span class="contract" id=400$>Contract Pricing</span>
-                                        </a>
-                                        <a> 
-                                          <i class="bx bx-task" ></i>
-                                          24 Tasks
-                                        </a> 
-                        
-                                      </div>
-                                    </div>
                                   </div>
                                 </div>
                               </div>

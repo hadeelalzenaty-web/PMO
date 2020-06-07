@@ -21,9 +21,46 @@
 .project-name{
     font-size:1.37rem;
     font-weight: bold;
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.description p{
+      /* hide text if it more than N lines  */
+  overflow: hidden;
+  /* for set '...' in absolute position */
+  position: relative; 
+  /* use this value to count block height */
+  line-height: 1.2em;
+  /* max-height = line-height (1.2) * lines max number (3) */
+  max-height: 3.6em; 
+  /* fix problem when last visible word doesn't adjoin right side  */
+  text-align: justify;  
+  /* place for '...' */
+  margin-right: -1em;
+  padding-right: 1em;
+}
+.description p:before{
+  content: '...';
+  position: absolute;
+  right: 1px;
+  bottom: 0;
+}
+.description p:after{
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
+  background: white;
 }
 .btn-sm{
 	padding:4px 10px !important
+}
+.contract-details{
+    margin-top:5px;
 }
 .time-card span{
     font-size:12px;
@@ -46,6 +83,9 @@
     text-overflow:ellipsis;
     overflow: hidden;
     white-space: nowrap
+}
+.sub-menu.show{
+    left:8px !important;
 }
 
 .nav-itam a{
@@ -167,7 +207,7 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(228,228,246,1) 3
     display:none;
 }
 .filter-row{
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 .filter-row .project-search::after {
     position: absolute;
@@ -184,8 +224,11 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(228,228,246,1) 3
 .filter-button{
     border: 1px solid #DBE5F3;
     border-radius: 12px;
-    padding: 0px 5px;
+    padding: 0px 6px;
     background-color: white;
+}
+.btn.filter-button i:hover{
+    color:#5a8dee
 }
 .filter-row i{
     font-size:28px;
@@ -201,13 +244,7 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(228,228,246,1) 3
     box-shadow: none !important;
     border: 1px solid #e2e2e2;
 }
-.description div p{
-    max-height: 115px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: inherit;
-    height: fit-content;
-}
+
 .description a.more{
     font-size: 12px;
 }
