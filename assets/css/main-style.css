@@ -57,11 +57,9 @@
   background: white;
 }
 .time-card .bxs-calendar{
-    color:#0A5DA9;
+    color:#5A8DEE;
 }
-.contract-details .fa-money-bill-wave{
-    color: #427D2D;
-}
+
 .btn-sm{
 	padding:4px 10px !important
 }
@@ -78,13 +76,13 @@
     font-size:12px;
     color:gray;
 }
-.contract-details a:hover{
+.contract-details div:nth-child(2) a:hover{
     color:#5fb142 !important;
 }
 .dropdown .bx:hover{
     color:#5A8DEE !important;
 }
-.contract-details .bx-task{
+.contract-details i{
     color:#171515;
 }
 
