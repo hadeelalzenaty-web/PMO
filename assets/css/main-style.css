@@ -44,7 +44,7 @@
 .description p:before{
   content: '...';
   position: absolute;
-  right: 1px;
+  right: 3px;
   bottom: 0;
 }
 .description p:after{
@@ -55,6 +55,12 @@
   height: 1em;
   margin-top: 0.2em;
   background: white;
+}
+.time-card .bxs-calendar{
+    color:#0A5DA9;
+}
+.contract-details .fa-money-bill-wave{
+    color: #427D2D;
 }
 .btn-sm{
 	padding:4px 10px !important
@@ -73,10 +79,13 @@
     color:gray;
 }
 .contract-details a:hover{
-    color:#5A8DEE !important;
+    color:#5fb142 !important;
 }
 .dropdown .bx:hover{
     color:#5A8DEE !important;
+}
+.contract-details .bx-task{
+    color:#171515;
 }
 
 .menu-item{
