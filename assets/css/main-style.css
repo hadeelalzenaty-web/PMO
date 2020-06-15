@@ -57,7 +57,7 @@
   background: white;
 }
 .time-card .bxs-calendar{
-    color:#5A8DEE;
+    color:#555;
 }
 
 .btn-sm{
@@ -83,7 +83,7 @@
     color:#5A8DEE !important;
 }
 .contract-details i{
-    color:#171515;
+    color:#555;
 }
 
 .menu-item{
@@ -155,9 +155,10 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(228,228,246,1) 3
     padding: 1.7rem;
 
 }
-.card-body.project-card{
-    padding:0.5rem !important;
+.card-body.new-card{
+    padding:0.8rem !important;
 }
+
 .costum-navtabs .nav-link{
     padding: 0.267rem 0.23rem !important;
 }
