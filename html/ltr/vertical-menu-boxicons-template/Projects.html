@@ -468,20 +468,20 @@
                                     <span class="col-md-6 col-sm-12"><i class="bx bxs-calendar"></i>End:
                                       <span>22/6/2020
                                     </span></span></div>
+                                    <div class="row contract-details">
+                                      <div class="col-md-6 col-sm-12">
+                                        <a> 
+                                          <i class="bx bx-task"></i>
+                                          24 Tasks
+                                        </a> 
                                       </div>
-                                      <div class="row contract-details">
-                                        <div class="col-md-6 col-sm-12">
-                                          <a> 
-                                            <i class="bx bx-task"></i>
-                                            24 Tasks
-                                          </a> 
-                                        </div>
-                                        <div class="col-md-6 col-sm-12">
-                                        <a class="mr-1">
-                                          <i class="fas fa-money-bill-wave"></i>
-                                          <span class="contract" id="500$">contract pricing</span>
-                                        </a>
-                                      </div>
+                                      <div class="col-md-6 col-sm-12">
+                                      <a class="mr-1">
+                                        <i class="fas fa-money-bill-wave"></i>
+                                        <span class="contract" id="500$">contract pricing</span>
+                                      </a>
+                                    </div>
+                                    </div>
                                       </div>
                                     <div class="description my-1">
                                       <div>
@@ -536,7 +536,7 @@
                                       <span> 22/5/2020 </span></span>
                                     <span class="col-md-6 col-sm-12"><i class="bx bxs-calendar"></i>End:
                                       <span>22/6/2020
-                                    </span></span></div></div>
+                                    </span></span></div>
                                     <div class="row contract-details">
                                       <div class="col-md-6 col-sm-12">
                                         <a> 
@@ -551,6 +551,7 @@
                                       </a>
                                     </div>
                                     </div>
+                                  </div>
                                     <div class="description my-1">
                                       <div>
                                         <p class="mb-0">
@@ -606,8 +607,6 @@
                                     <span class="col-md-6 col-sm-12"><i class="bx bxs-calendar"></i>End:
                                       <span>22/6/2020
                                     </span></span></div>
-
-                                    </div>
                                     <div class="row contract-details">
                                       <div class="col-md-6 col-sm-12">
                                         <a> 
@@ -620,6 +619,7 @@
                                         <i class="fas fa-money-bill-wave"></i>
                                         <span class="contract" id="700$">Contract Pricing</span>
                                       </a>
+                                    </div>
                                     </div>
                                     </div>
                                     <div class="description my-1">
@@ -825,7 +825,6 @@
                                     <span class="col-md-6 col-sm-12"><i class="bx bxs-calendar"></i>End:
                                       <span>22/6/2020
                                     </span></span></div>
-                                    </div>
                                     <div class="row contract-details">
                                       <div class="col-md-6 col-sm-12">
                                         <a> 
@@ -840,6 +839,7 @@
                                       </a>
                                     </div>
                                     </div>
+                                    </div>
                                     <div class="description my-1">
                                       <div>
                                         <p class="mb-0">
@@ -847,7 +847,6 @@
                                         industry. Lorem Ipsum has been the industry's standard dummy text ever
                                         since the 1500s, when an unknown printer took a galley of type and scrambled it
                                       </p>
-                                      
                                       </div>
                                     </div>
                                     <div class="Project-progress my-1">
@@ -895,7 +894,6 @@
                                     <span class="col-md-6 col-sm-12"><i class="bx bxs-calendar"></i>End:
                                       <span>22/6/2020
                                     </span></span></div>
-                                    </div>
                                     <div class="row contract-details">
                                       <div class="col-md-6 col-sm-12">
                                         <a> 
@@ -908,6 +906,7 @@
                                         <i class="fas fa-money-bill-wave"></i>
                                         <span class="contract" id="700$">contract pricing</span>
                                       </a>
+                                    </div>
                                     </div>
                                     </div>
                                     <div class="description my-1">
@@ -1014,7 +1013,6 @@
         
                     </div>
 
-
             </div>
 
         </div>
@@ -1065,10 +1063,8 @@
   $(document).ready(function () {
       $('.filter button').click(function () {
           $('.filter-box').slideToggle();
-
-  
       });
-      $(".contract-details a").hover(function(){
+      $(".contract-details a").on('click mouseover', function (){
         var contract=$(this).find(".contract");
         var con_id=$(this).find(".contract").attr("id");
        theprice(contract,con_id);
@@ -1077,4 +1073,5 @@
         $(this).find(".contract").text("contract pricing");
       })
   });
+
 </script>
