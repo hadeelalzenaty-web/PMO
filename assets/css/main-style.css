@@ -57,7 +57,7 @@
   background: white;
 }
 .time-card .bxs-calendar{
-    color:#555;
+    color:#737171;
 }
 
 .btn-sm{
@@ -68,7 +68,6 @@
 }
 .time-card span{
     font-size:12px;
-    color:gray;  
 }
 
 .contract-details a{
@@ -83,7 +82,7 @@
     color:#5A8DEE !important;
 }
 .contract-details i{
-    color:#555;
+    color:#737171;
 }
 
 .menu-item{
@@ -158,6 +157,9 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(228,228,246,1) 3
 .card-body.new-card{
     padding:0.8rem !important;
 }
+.activity-progress small:first-child{
+    font-size:15px;
+}
 
 .costum-navtabs .nav-link{
     padding: 0.267rem 0.23rem !important;
@@ -231,7 +233,7 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(228,228,246,1) 3
 }
 .filter-button{
     border: 1px solid #DBE5F3;
-    border-radius: 12px;
+    border-radius: 0.267rem;
     padding: 0px 6px;
     background-color: white;
 }
@@ -239,7 +241,7 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(228,228,246,1) 3
     color:#5a8dee
 }
 .filter-row i{
-    font-size:28px;
+    font-size:25px;
     color:blue;
 }
 .white-container{
