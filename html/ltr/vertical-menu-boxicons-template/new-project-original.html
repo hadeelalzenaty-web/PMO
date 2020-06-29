@@ -6,17 +6,16 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-    <meta name="description" content="PMO for SSSIT">
+    <meta name="description" content="Frest admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Frest admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="PIXINVENT">
-    <title>New project</title>
+    <title>Invoice Edit - Frest - Bootstrap HTML admin template</title>
     <link rel="apple-touch-icon" href="../../../app-assets/images/ico/apple-icon-120.png">
     <link rel="shortcut icon" type="image/x-icon" href="../../../app-assets/images/ico/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,600%7CIBM+Plex+Sans:300,400,500,600,700" rel="stylesheet">
 
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/vendors.min.css">
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/tables/datatable/datatables.min.css">
     <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/pickers/pickadate/pickadate.css">
     <!-- END: Vendor CSS-->
 
@@ -31,7 +30,7 @@
 
     <!-- BEGIN: Page CSS-->
     <link rel="stylesheet" type="text/css" href="../../../app-assets/css/core/menu/menu-types/vertical-menu.css">
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/pages/page-users.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/pages/app-invoice.css">
     <!-- END: Page CSS-->
 
     <!-- BEGIN: Custom CSS-->
@@ -254,112 +253,112 @@
                                         <li class="nav-item">
                                             <a class="nav-link d-flex align-items-center active" id="project-tab"
                                                 data-toggle="pill" href="#project" aria-expanded="true">
-                                                <i class="bx bx-cog"></i>
+                                                <i class="bx bx-news"></i>
                                                 <span>New Project</span>
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link d-flex align-items-center" id="baseline-tab" data-toggle="pill"
                                                 href="#baseline" aria-expanded="false">
-                                                <i class="bx bx-lock"></i>
+                                                <i class="bx bx-dollar-circle"></i>
                                                 <span>Baseline Pricing</span>
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link d-flex align-items-center" id="actual-tab" data-toggle="pill"
                                                 href="#actual" aria-expanded="false">
-                                                <i class="bx bx-info-circle"></i>
+                                                <i class="bx bxs-dollar-circle"></i>
                                                 <span>Actual Pricing</span>
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link d-flex align-items-center" id="resource-tab" data-toggle="pill"
                                                 href="#resource" aria-expanded="false">
-                                                <i class="bx bxl-twitch"></i>
+                                                <i class="bx bx-user-plus"></i>
                                                 <span>Resource Allocation</span>
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link d-flex align-items-center" id="attachs-tab" data-toggle="pill"
                                                 href="#payments" aria-expanded="false">
-                                                <i class="bx bx-link"></i>
+                                                <i class="bx bxs-credit-card"></i>
                                                 <span>Payment</span>
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link d-flex align-items-center" id="attachs-tab" data-toggle="pill"
                                                 href="#attachs" aria-expanded="false">
-                                                <i class="bx bx-bell"></i>
+                                                <i class="bx bx-link"></i>
                                                 <span>Attachments</span>
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link d-flex align-items-center" id="millustones-tab" data-toggle="pill"
                                                 href="#millestones" aria-expanded="false">
-                                                <i class="bx bx-bell"></i>
+                                                <i class="bx bxs-calendar-event"></i>
                                                 <span>millestones</span>
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link d-flex align-items-center" id="weeklyprogress-tab" data-toggle="pill"
                                                 href="#weeklyprogress" aria-expanded="false">
-                                                <i class="bx bx-bell"></i>
+                                                <i class="bx bx-line-chart"></i>
                                                 <span>weeklyprogress</span>
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link d-flex align-items-center" id="travel-list-tab" data-toggle="pill"
                                                 href="#travel-list" aria-expanded="false">
-                                                <i class="bx bx-bell"></i>
+                                                <i class="bx bxs-plane-alt"></i>
                                                 <span>Travel list</span>
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link d-flex align-items-center" id="overtime-list-tab" data-toggle="pill"
                                                 href="#overtime-list" aria-expanded="false">
-                                                <i class="bx bx-bell"></i>
+                                                <i class="bx bx-alarm-add"></i>
                                                 <span>overtime list</span>
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link d-flex align-items-center" id="stackholder-tab" data-toggle="pill"
                                                 href="#stackholder" aria-expanded="false">
-                                                <i class="bx bx-bell"></i>
-                                                <span>overtime list</span>
+                                                <i class="bx bx-group"></i>
+                                                <span>stack holders</span>
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link d-flex align-items-center" id="escalation-tab" data-toggle="pill"
                                                 href="#escalation" aria-expanded="false">
-                                                <i class="bx bx-bell"></i>
+                                                <i class="bx bx-trending-up"></i>
                                                 <span>escalation</span>
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link d-flex align-items-center" id="risks-tab" data-toggle="pill"
                                                 href="#risks" aria-expanded="false">
-                                                <i class="bx bx-bell"></i>
+                                                <i class="bx bx-no-entry"></i>
                                                 <span>Risks</span>
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link d-flex align-items-center" id="escalation-tab" data-toggle="pill"
                                                 href="#issues" aria-expanded="false">
-                                                <i class="bx bx-bell"></i>
+                                                <i class="bx bx-cog"></i>
                                                 <span>Issues</span>
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link d-flex align-items-center" id="escalation-tab" data-toggle="pill"
                                                 href="#last-tasks" aria-expanded="false">
-                                                <i class="bx bx-bell"></i>
+                                                <i class="bx bx-task"></i>
                                                 <span>Last Week Tasks</span>
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link d-flex align-items-center" id="escalation-tab" data-toggle="pill"
                                                 href="#next-tasks" aria-expanded="false">
-                                                <i class="bx bx-bell"></i>
+                                                <i class="bx bx-task"></i>
                                                 <span>Next Week Tasks</span>
                                             </a>
                                         </li>
@@ -388,8 +387,8 @@
                                                             </div>
                                                             <div class="col-md-4 col-sm-6 col-12">
                                                                 <label for="users-list-status">Start Date</label>
-                                                                <fieldset class="form-group position-relative has-icon-left">
-                                                                    <input type="text" class="form-control pickadate-months-year" placeholder="Select Date"
+                                                                <fieldset class="form-group position-relative has-icon-left invoice-date-picker">
+                                                                    <input type="text" class="form-control pickadate" placeholder="Select Date"
                                                                         id="users-list-status">
                                                                     <div class="form-control-position">
                                                                         <i class='bx bx-calendar'></i>
@@ -684,7 +683,7 @@
                                                                     <textarea class="form-control" id="textareap" rows="3"></textarea>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-12 d-flex flex-sm-row flex-column justify-content-end mt-1 p-0">
+                                                            <div class="col-12 d-flex flex-sm-row flex-column justify-content-end p-0">
                                                                 <button type="submit" class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">Add</button>
                                                             </div>
                                                             <div class="table-responsive">
@@ -717,11 +716,11 @@
                                                                             <td>2/7/2020</td>
                                                                             <td>30%</td>
                                                                             <td>Has Experiance in angular</td>
-                                                                            <td><a href="../../../html/ltr/vertical-menu-template/page-users-edit.html"><i
-                                                                                        class="bx bx-edit-alt"></i></a>
-                                                                                <a href="../../../html/ltr/vertical-menu-template/page-users-edit.html"><i
-                                                                                        class="bx bxs-trash-alt"></i></a>
-                                                                            </td>
+                                                                            <td>
+                                                                                    <div class="table-icon d-flex align-items-center"><a href="#"><i class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
+                                                                                        <a href="#"><i class="badge-circle badge-circle-light-secondary bx bx-trash-alt font-medium-1"></i></a>
+                                                                                    </div>
+                                                                             </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td>
@@ -740,11 +739,11 @@
                                                                             <td>2/6/2020</td>
                                                                             <td>20%</td>
                                                                             <td>Has Experiance in MVC</td>
-                                                                            <td><a href="../../../html/ltr/vertical-menu-template/page-users-edit.html"><i
-                                                                                        class="bx bx-edit-alt"></i></a>
-                                                                                <a href="../../../html/ltr/vertical-menu-template/page-users-edit.html"><i
-                                                                                        class="bx bxs-trash-alt"></i></a>
-                                                                            </td>
+                                                                            <td>
+                                                                                    <div class="table-icon d-flex align-items-center"><a href="#"><i class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
+                                                                                        <a href="#"><i class="badge-circle badge-circle-light-secondary bx bx-trash-alt font-medium-1"></i></a>
+                                                                                    </div>
+                                                                             </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td>
@@ -763,11 +762,11 @@
                                                                             <td>2/7/2020</td>
                                                                             <td>20%</td>
                                                                             <td>Has Experiance in angular</td>
-                                                                            <td><a href="../../../html/ltr/vertical-menu-template/page-users-edit.html"><i
-                                                                                        class="bx bx-edit-alt"></i></a>
-                                                                                <a href="../../../html/ltr/vertical-menu-template/page-users-edit.html"><i
-                                                                                        class="bx bxs-trash-alt"></i></a>
-                                                                            </td>
+                                                                            <td>
+                                                                                    <div class="table-icon d-flex align-items-center"><a href="#"><i class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
+                                                                                        <a href="#"><i class="badge-circle badge-circle-light-secondary bx bx-trash-alt font-medium-1"></i></a>
+                                                                                    </div>
+                                                                             </td>
                                                                         </tr>
                                                                     </tbody>
                                                                 </table>
@@ -1160,7 +1159,7 @@
                                                                     <span class="d-block">500 JD</span>
                                                                 </fieldset>
                                                             </div>
-                                                            <div class="col-12 d-flex flex-sm-row flex-column justify-content-end mt-1 p-0">
+                                                            <div class="col-12 d-flex flex-sm-row flex-column justify-content-end p-0">
                                                                 <button type="submit" class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">Add</button>
                                                             </div>
                                                             <div class="table-responsive">
@@ -1193,11 +1192,12 @@
                                                                             <td>2/5/2020</td>
                                                                             <td>3 Hours</td>
                                                                             <td>Yea</td>
-                                                                            <td><a href="../../../html/ltr/vertical-menu-template/page-users-edit.html"><i
-                                                                                        class="bx bx-edit-alt"></i></a>
-                                                                                <a href="../../../html/ltr/vertical-menu-template/page-users-edit.html"><i
-                                                                                        class="bx bxs-trash-alt"></i></a>
-                                                                            </td>
+                                                                            <td>
+                                                                                <div class="table-icon d-flex align-items-center"><a href="#"><i
+                                                                                            class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
+                                                                                    <a href="#"><i class="badge-circle badge-circle-light-secondary bx bx-trash-alt font-medium-1"></i></a>
+                                                                                </div>
+                                                                         </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td>
@@ -1215,11 +1215,12 @@
                                                                             <td>2/5/2020</td>
                                                                             <td>3 Hours</td>
                                                                             <td>Yea</td>
-                                                                            <td><a href="../../../html/ltr/vertical-menu-template/page-users-edit.html"><i
-                                                                                        class="bx bx-edit-alt"></i></a>
-                                                                                <a href="../../../html/ltr/vertical-menu-template/page-users-edit.html"><i
-                                                                                        class="bx bxs-trash-alt"></i></a>
-                                                                            </td>
+                                                                             <td>
+                                                                                    <div class="table-icon d-flex align-items-center"><a href="#"><i
+                                                                                                class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
+                                                                                        <a href="#"><i class="badge-circle badge-circle-light-secondary bx bx-trash-alt font-medium-1"></i></a>
+                                                                                    </div>
+                                                                             </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td>
@@ -1237,11 +1238,12 @@
                                                                             <td>2/5/2020</td>
                                                                             <td>2 Hours</td>
                                                                             <td>No</td>
-                                                                            <td><a href="../../../html/ltr/vertical-menu-template/page-users-edit.html"><i
-                                                                                        class="bx bx-edit-alt"></i></a>
-                                                                                <a href="../../../html/ltr/vertical-menu-template/page-users-edit.html"><i
-                                                                                        class="bx bxs-trash-alt"></i></a>
-                                                                            </td>
+                                                                            <td>
+                                                                                <div class="table-icon d-flex align-items-center"><a href="#"><i
+                                                                                            class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
+                                                                                    <a href="#"><i class="badge-circle badge-circle-light-secondary bx bx-trash-alt font-medium-1"></i></a>
+                                                                                </div>
+                                                                         </td>
                                                                         </tr>
                                                                     </tbody>
                                                                 </table>
@@ -1291,8 +1293,8 @@
                                                                     </select>
                                                                 </fieldset>
                                                             </div>
-                                                            <div class="col-12 d-flex flex-sm-row flex-column justify-content-end mt-1 p-0">
-                                                                <button type="submit" class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">add</button>
+                                                            <div class="col-12 d-flex flex-sm-row flex-column justify-content-end p-0">
+                                                                <button type="submit" class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">Add</button>
                                                             </div>
                                                             <div class="table-responsive">
                                                                 <table class="table mb-0">
@@ -1314,9 +1316,12 @@
                                                                             <td>343567534</td>
                                                                             <td>Ryiadh</td>
                                                                             <td>Government</td>
-                                                                            <td><a href="../../../html/ltr/vertical-menu-template/page-users-edit.html"><i class="bx bx-edit-alt"></i></a>
-                                                                                <a href="../../../html/ltr/vertical-menu-template/page-users-edit.html"><i class="bx bxs-trash-alt"></i></a>
-                                                                            </td>
+                                                                            <td>
+                                                                                <div class="table-icon d-flex align-items-center"><a href="#"><i
+                                                                                            class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
+                                                                                    <a href="#"><i class="badge-circle badge-circle-light-secondary bx bx-trash-alt font-medium-1"></i></a>
+                                                                                </div>
+                                                                         </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td>Ministry of Health</td>
@@ -1324,9 +1329,12 @@
                                                                             <td>343567534</td>
                                                                             <td>Ryiadh</td>
                                                                             <td>Government</td>
-                                                                            <td><a href="../../../html/ltr/vertical-menu-template/page-users-edit.html"><i class="bx bx-edit-alt"></i></a>
-                                                                                <a href="../../../html/ltr/vertical-menu-template/page-users-edit.html"><i class="bx bxs-trash-alt"></i></a>
-                                                                            </td>
+                                                                            <td>
+                                                                                <div class="table-icon d-flex align-items-center"><a href="#"><i
+                                                                                            class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
+                                                                                    <a href="#"><i class="badge-circle badge-circle-light-secondary bx bx-trash-alt font-medium-1"></i></a>
+                                                                                </div>
+                                                                         </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td>Ministry of Interior</td>
@@ -1334,9 +1342,12 @@
                                                                             <td>343567534</td>
                                                                             <td>Ryiadh</td>
                                                                             <td>Government</td>
-                                                                            <td><a href="../../../html/ltr/vertical-menu-template/page-users-edit.html"><i class="bx bx-edit-alt"></i></a>
-                                                                                <a href="../../../html/ltr/vertical-menu-template/page-users-edit.html"><i class="bx bxs-trash-alt"></i></a>
-                                                                            </td>
+                                                                            <td>
+                                                                                <div class="table-icon d-flex align-items-center"><a href="#"><i
+                                                                                            class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
+                                                                                    <a href="#"><i class="badge-circle badge-circle-light-secondary bx bx-trash-alt font-medium-1"></i></a>
+                                                                                </div>
+                                                                         </td>
                                                                         </tr>
                                                                     </tbody>
                                                                 </table>
@@ -1585,9 +1596,11 @@
                                                                         <td class="text-warning">In progress</td>
                                                                         <td>5/5/2020</td>
                                                                         <td>Need some updates</td>
-                                                                        <td><a href="../../../html/ltr/vertical-menu-template/page-users-edit.html"><i class="bx bx-edit-alt"></i></a>
-                                                                            <a href="../../../html/ltr/vertical-menu-template/page-users-edit.html"><i class="bx bxs-trash-alt"></i></a>
-                                                                        </td>
+                                                                        <td>
+                                                                            <div class="table-icon d-flex align-items-center"><a href="#"><i class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
+                                                                                <a href="#"><i class="badge-circle badge-circle-light-secondary bx bx-trash-alt font-medium-1"></i></a>
+                                                                            </div>
+                                                                     </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>Test the project</td>
@@ -1595,9 +1608,11 @@
                                                                         <td class="text-success">Complete</td>
                                                                         <td>29/4/2020</td>
                                                                         <td>Test in all Devices</td>
-                                                                        <td><a href="../../../html/ltr/vertical-menu-template/page-users-edit.html"><i class="bx bx-edit-alt"></i></a>
-                                                                            <a href="../../../html/ltr/vertical-menu-template/page-users-edit.html"><i class="bx bxs-trash-alt"></i></a>
-                                                                        </td>
+                                                                        <td>
+                                                                            <div class="table-icon d-flex align-items-center"><a href="#"><i class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
+                                                                                <a href="#"><i class="badge-circle badge-circle-light-secondary bx bx-trash-alt font-medium-1"></i></a>
+                                                                            </div>
+                                                                     </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>work in database</td>
@@ -1605,9 +1620,11 @@
                                                                         <td class="text-danger">Hold</td>
                                                                         <td>5/5/2020</td>
                                                                         <td>User information</td>
-                                                                        <td><a href="../../../html/ltr/vertical-menu-template/page-users-edit.html"><i class="bx bx-edit-alt"></i></a>
-                                                                            <a href="../../../html/ltr/vertical-menu-template/page-users-edit.html"><i class="bx bxs-trash-alt"></i></a>
-                                                                        </td>
+                                                                        <td>
+                                                                            <div class="table-icon d-flex align-items-center"><a href="#"><i class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
+                                                                                <a href="#"><i class="badge-circle badge-circle-light-secondary bx bx-trash-alt font-medium-1"></i></a>
+                                                                            </div>
+                                                                     </td>
                                                                     </tr>
                                                                 </tbody>
                                                             </table>
@@ -1684,9 +1701,11 @@
                                                                         <td class="text-warning">In progress</td>
                                                                         <td>5/5/2020</td>
                                                                         <td>Need some updates</td>
-                                                                        <td><a href="../../../html/ltr/vertical-menu-template/page-users-edit.html"><i class="bx bx-edit-alt"></i></a>
-                                                                            <a href="../../../html/ltr/vertical-menu-template/page-users-edit.html"><i class="bx bxs-trash-alt"></i></a>
-                                                                        </td>
+                                                                        <td>
+                                                                            <div class="table-icon d-flex align-items-center"><a href="#"><i class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
+                                                                                <a href="#"><i class="badge-circle badge-circle-light-secondary bx bx-trash-alt font-medium-1"></i></a>
+                                                                            </div>
+                                                                     </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>Test the project</td>
@@ -1694,9 +1713,11 @@
                                                                         <td class="text-success">Complete</td>
                                                                         <td>29/4/2020</td>
                                                                         <td>Test in all Devices</td>
-                                                                        <td><a href="../../../html/ltr/vertical-menu-template/page-users-edit.html"><i class="bx bx-edit-alt"></i></a>
-                                                                            <a href="../../../html/ltr/vertical-menu-template/page-users-edit.html"><i class="bx bxs-trash-alt"></i></a>
-                                                                        </td>
+                                                                        <td>
+                                                                            <div class="table-icon d-flex align-items-center"><a href="#"><i class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
+                                                                                <a href="#"><i class="badge-circle badge-circle-light-secondary bx bx-trash-alt font-medium-1"></i></a>
+                                                                            </div>
+                                                                     </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>work in database</td>
@@ -1704,9 +1725,11 @@
                                                                         <td class="text-danger">Hold</td>
                                                                         <td>5/5/2020</td>
                                                                         <td>User information</td>
-                                                                        <td><a href="../../../html/ltr/vertical-menu-template/page-users-edit.html"><i class="bx bx-edit-alt"></i></a>
-                                                                            <a href="../../../html/ltr/vertical-menu-template/page-users-edit.html"><i class="bx bxs-trash-alt"></i></a>
-                                                                        </td>
+                                                                        <td>
+                                                                            <div class="table-icon d-flex align-items-center"><a href="#"><i class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
+                                                                                <a href="#"><i class="badge-circle badge-circle-light-secondary bx bx-trash-alt font-medium-1"></i></a>
+                                                                            </div>
+                                                                     </td>
                                                                     </tr>
                                                                 </tbody>
                                                             </table>
@@ -1747,12 +1770,9 @@
  <!-- BEGIN Vendor JS-->
 
  <!-- BEGIN: Page Vendor JS-->
- <script src="../../../app-assets/vendors/js/forms/spinner/jquery.bootstrap-touchspin.js"></script>
- <script src="../../../app-assets/vendors/js/tables/datatable/datatables.min.js"></script>
- <script src="../../../app-assets/vendors/js/tables/datatable/dataTables.bootstrap4.min.js"></script>
  <script src="../../../app-assets/vendors/js/pickers/pickadate/picker.js"></script>
  <script src="../../../app-assets/vendors/js/pickers/pickadate/picker.date.js"></script>
- <script src="../../../app-assets/vendors/js/pickers/pickadate/picker.time.js"></script>
+ <script src="../../../app-assets/vendors/js/forms/repeater/jquery.repeater.min.js"></script>
  <!-- END: Page Vendor JS-->
 
  <!-- BEGIN: Theme JS-->
@@ -1763,9 +1783,7 @@
  <!-- END: Theme JS-->
 
  <!-- BEGIN: Page JS-->
- <script src="../../../app-assets/js/scripts/forms/number-input.js"></script>
- <script src="../../../app-assets/js/scripts/pickers/dateTime/pick-a-datetime.js"></script>
- <script src="../../../app-assets/js/scripts/pages/page-users.js"></script>
+ <script src="../../../app-assets/js/scripts/pages/app-invoice.js"></script>
  <!-- END: Page JS-->
 
 </body>

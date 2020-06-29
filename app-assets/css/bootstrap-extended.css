@@ -2177,8 +2177,8 @@ input[type=number]::-webkit-outer-spin-button {
   color: #FFFFFF;
   background-color: #5A8DEE;
   border-radius: 50%;
-  height: 36px;
-  width: 36px;
+  height: 30px;
+  width: 30px;
 }
 
 .badge-circle.badge-circle-sm {
