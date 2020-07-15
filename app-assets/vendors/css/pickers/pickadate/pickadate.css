@@ -30,7 +30,7 @@
 	-webkit-overflow-scrolling: touch;
 }
 .picker--opened .picker__holder {
-	max-height: 155px;
+	max-height: 400px;
 	border-top-width: 1px;
 	border-bottom-width: 1px;
 	display: block;

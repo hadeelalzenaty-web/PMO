@@ -37,11 +37,7 @@
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="../../assets/css/main-style.css">
     <!-- END: Custom CSS-->
-  <script>
-    function theprice(contract,price){
-      contract.text(price);
-    }
-  </script>
+
 </head>
 <!-- END: Head-->
 
@@ -254,7 +250,8 @@
                   </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-12 d-flex justify-content-sm-end mt-sm-1">
-                  <button class="btn btn-primary w-sm-100"><i class="bx bxs-add-to-queue"></i> Add Project</button>
+                  <button class="btn btn-primary w-sm-100" data-dismiss="modal" data-toggle="modal"
+                  data-target="#myModal"><i class="bx bxs-add-to-queue"></i> Add Project</button>
                 </div>
               </div>
             </div>
@@ -440,7 +437,7 @@
                             </div>
                             <h5 class="my-1">March</h5>
                           </div>
-                          <div class="row">
+                          <div class="row card-row">
                             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                               <div class="card">
                                 <div class="card-content">
@@ -476,9 +473,10 @@
                                         </a> 
                                       </div>
                                       <div class="col-md-6 col-sm-12">
-                                      <a class="mr-1">
+                                      <a class="mr-1 contract-a">
                                         <i class="fas fa-money-bill-wave"></i>
-                                        <span class="contract" id="500$">contract pricing</span>
+                                        <span class="contract">Contract pricing</span>
+                                        <span class="price">500$</span>
                                       </a>
                                     </div>
                                     </div>
@@ -486,9 +484,7 @@
                                     <div class="description my-1">
                                       <div>
                                         <p class="mb-0">
-                                          Lorem Ipsum is simply dummy text of the printing and typesetting
-                                          industry. Lorem Ipsum has been the industry's standard dummy text ever
-                                          since the 1500s, when an unknown printer took a galley of type and scrambled it                                      
+                                          Lorem IpsumS                                    
                                       </p>
                                       </div>
                                     </div>
@@ -545,9 +541,10 @@
                                         </a> 
                                       </div>
                                       <div class="col-md-6 col-sm-12">
-                                      <a class="mr-1">
+                                      <a class="mr-1 contract-a">
                                         <i class="fas fa-money-bill-wave"></i>
-                                        <span class="contract" id="300$">Contract Pricing</span>
+                                        <span class="contract">Contract pricing</span>
+                                        <span class="price">400$</span>
                                       </a>
                                     </div>
                                     </div>
@@ -615,10 +612,11 @@
                                         </a> 
                                       </div>
                                       <div class="col-md-6 col-sm-12">
-                                      <a class="mr-1">
-                                        <i class="fas fa-money-bill-wave"></i>
-                                        <span class="contract" id="700$">Contract Pricing</span>
-                                      </a>
+                                        <a class="mr-1 contract-a">
+                                          <i class="fas fa-money-bill-wave"></i>
+                                          <span class="contract">Contract pricing</span>
+                                          <span class="price">400$</span>
+                                        </a>
                                     </div>
                                     </div>
                                     </div>
@@ -654,7 +652,7 @@
                           <!-- above cards -->
                           <h5 class="my-1">April</h5>
                           <!--Cards-->
-                          <div class="row">
+                          <div class="row card-row">
                             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                               <div class="card">
                                 <div class="card-content">
@@ -690,11 +688,12 @@
                                         </a> 
                                       </div>
                                       <div class="col-md-6 col-sm-12">
-                                      <a class="mr-1">
-                                        <i class="fas fa-money-bill-wave"></i>
-                                        <span class="contract" id="700$">contract pricing</span>
-                                      </a>
-                                    </div>
+                                        <a class="mr-1 contract-a">
+                                          <i class="fas fa-money-bill-wave"></i>
+                                          <span class="contract">Contract pricing</span>
+                                          <span class="price">600$</span>
+                                        </a>
+                                      </div>
                                     </div>
 
                                     </div>
@@ -762,10 +761,11 @@
                                         </a> 
                                       </div>
                                       <div class="col-md-6 col-sm-12">
-                                      <a class="mr-1">
-                                        <i class="fas fa-money-bill-wave"></i>
-                                        <span class="contract" id="200$">Contract Pricing</span>
-                                      </a>
+                                        <a class="mr-1 contract-a">
+                                          <i class="fas fa-money-bill-wave"></i>
+                                          <span class="contract">Contract pricing</span>
+                                          <span class="price">800$</span>
+                                        </a>
                                     </div>
                                     </div>
                                     </div>
@@ -833,10 +833,11 @@
                                         </a> 
                                       </div>
                                       <div class="col-md-6 col-sm-12">
-                                      <a class="mr-1">
-                                        <i class="fas fa-money-bill-wave"></i>
-                                        <span class="contract" id="400$">contract pricing</span>
-                                      </a>
+                                        <a class="mr-1 contract-a">
+                                          <i class="fas fa-money-bill-wave"></i>
+                                          <span class="contract">Contract pricing</span>
+                                          <span class="price">400$</span>
+                                        </a>
                                     </div>
                                     </div>
                                     </div>
@@ -902,10 +903,11 @@
                                         </a> 
                                       </div>
                                       <div class="col-md-6 col-sm-12">
-                                      <a class="mr-1">
-                                        <i class="fas fa-money-bill-wave"></i>
-                                        <span class="contract" id="700$">contract pricing</span>
-                                      </a>
+                                        <a class="mr-1 contract-a">
+                                          <i class="fas fa-money-bill-wave"></i>
+                                          <span class="contract">Contract pricing</span>
+                                          <span class="price">900$</span>
+                                        </a>
                                     </div>
                                     </div>
                                     </div>
@@ -972,10 +974,11 @@
                                         </a> 
                                       </div>
                                       <div class="col-md-6 col-sm-12">
-                                      <a class="mr-1">
-                                        <i class="fas fa-money-bill-wave"></i>
-                                        <span class="contract" id="700$">contract pricing</span>
-                                      </a>
+                                        <a class="mr-1 contract-a">
+                                          <i class="fas fa-money-bill-wave"></i>
+                                          <span class="contract">Contract pricing</span>
+                                          <span class="price">1000$</span>
+                                        </a>
                                     </div>
                                     </div>
                                     </div>
@@ -1009,14 +1012,82 @@
                             </div>
                           </div>
                         </section>
-
+                        <div class="modal" tabindex="-1" role="dialog" id="myModal">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title">New Project</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <div class="row">
+                                  <div class="col-12">
+                                      <fieldset class="form-group">
+                                          <label for="pname">Project Name</label>
+                                          <input type="text" class="form-control is-invalid" id="pname" placeholder="Project name">
+                                          <div class="invalid-feedback">This field is required</div>
+                                      </fieldset>
+                                  </div>
+                                  <div class="col-md-6 col-sm-6 col-12">
+                                      <fieldset class="form-group">
+                                          <label for="pcode">Project Code</label>
+                                          <input type="text" class="form-control" id="pcode" placeholder="enter the code">
+                                      </fieldset>
+                                  </div>
+                                  <div class="col-md-6 col-sm-6 col-12">
+                                      <fieldset class="form-group">
+                                          <label for="pselect">Client Name</label>
+                                          <select class="form-control" id="basicSelect">
+                                              <option>Ahmad Yasser</option>
+                                              <option>Blade Runner</option>
+                                              <option>Thor Ragnarok</option>
+                                          </select>
+                                      </fieldset>
+                                  </div>
+                                  <div class="col-md-6 col-sm-6 col-12">
+                                      <label for="users-list-status">Start Date</label>
+                                      <fieldset class="form-group position-relative has-icon-left invoice-date-picker">
+                                          <input type="text" class="form-control pickadate picker__input is-invalid" placeholder="Select Date" id="users-list-status" readonly="" aria-haspopup="true" aria-expanded="false" aria-readonly="false" aria-owns="users-list-status_root"><div class="picker" id="users-list-status_root" aria-hidden="true"><div class="picker__holder" tabindex="-1"><div class="picker__frame"><div class="picker__wrap"><div class="picker__box"><div class="picker__header"><div class="picker__month">July</div><div class="picker__year">2020</div><div class="picker__nav--prev" data-nav="-1" role="button" aria-controls="users-list-status_table" title="Previous month"> </div><div class="picker__nav--next" data-nav="1" role="button" aria-controls="users-list-status_table" title="Next month"> </div></div><table class="picker__table" id="users-list-status_table" role="grid" aria-controls="users-list-status" aria-readonly="true"><thead><tr><th class="picker__weekday" scope="col" title="Sunday">Sun</th><th class="picker__weekday" scope="col" title="Monday">Mon</th><th class="picker__weekday" scope="col" title="Tuesday">Tue</th><th class="picker__weekday" scope="col" title="Wednesday">Wed</th><th class="picker__weekday" scope="col" title="Thursday">Thu</th><th class="picker__weekday" scope="col" title="Friday">Fri</th><th class="picker__weekday" scope="col" title="Saturday">Sat</th></tr></thead><tbody><tr><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1593291600000" role="gridcell" aria-label="06/28/2020">28</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1593378000000" role="gridcell" aria-label="06/29/2020">29</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1593464400000" role="gridcell" aria-label="06/30/2020">30</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1593550800000" role="gridcell" aria-label="07/01/2020">1</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1593637200000" role="gridcell" aria-label="07/02/2020">2</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1593723600000" role="gridcell" aria-label="07/03/2020">3</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1593810000000" role="gridcell" aria-label="07/04/2020">4</div></td></tr><tr><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1593896400000" role="gridcell" aria-label="07/05/2020">5</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1593982800000" role="gridcell" aria-label="07/06/2020">6</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1594069200000" role="gridcell" aria-label="07/07/2020">7</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1594155600000" role="gridcell" aria-label="07/08/2020">8</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1594242000000" role="gridcell" aria-label="07/09/2020">9</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1594328400000" role="gridcell" aria-label="07/10/2020">10</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1594414800000" role="gridcell" aria-label="07/11/2020">11</div></td></tr><tr><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1594501200000" role="gridcell" aria-label="07/12/2020">12</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1594587600000" role="gridcell" aria-label="07/13/2020">13</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1594674000000" role="gridcell" aria-label="07/14/2020">14</div></td><td role="presentation"><div class="picker__day picker__day--infocus picker__day--today picker__day--highlighted" data-pick="1594760400000" role="gridcell" aria-label="07/15/2020" aria-activedescendant="true">15</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1594846800000" role="gridcell" aria-label="07/16/2020">16</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1594933200000" role="gridcell" aria-label="07/17/2020">17</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1595019600000" role="gridcell" aria-label="07/18/2020">18</div></td></tr><tr><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1595106000000" role="gridcell" aria-label="07/19/2020">19</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1595192400000" role="gridcell" aria-label="07/20/2020">20</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1595278800000" role="gridcell" aria-label="07/21/2020">21</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1595365200000" role="gridcell" aria-label="07/22/2020">22</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1595451600000" role="gridcell" aria-label="07/23/2020">23</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1595538000000" role="gridcell" aria-label="07/24/2020">24</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1595624400000" role="gridcell" aria-label="07/25/2020">25</div></td></tr><tr><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1595710800000" role="gridcell" aria-label="07/26/2020">26</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1595797200000" role="gridcell" aria-label="07/27/2020">27</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1595883600000" role="gridcell" aria-label="07/28/2020">28</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1595970000000" role="gridcell" aria-label="07/29/2020">29</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1596056400000" role="gridcell" aria-label="07/30/2020">30</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1596142800000" role="gridcell" aria-label="07/31/2020">31</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1596229200000" role="gridcell" aria-label="08/01/2020">1</div></td></tr><tr><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1596315600000" role="gridcell" aria-label="08/02/2020">2</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1596402000000" role="gridcell" aria-label="08/03/2020">3</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1596488400000" role="gridcell" aria-label="08/04/2020">4</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1596574800000" role="gridcell" aria-label="08/05/2020">5</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1596661200000" role="gridcell" aria-label="08/06/2020">6</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1596747600000" role="gridcell" aria-label="08/07/2020">7</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1596834000000" role="gridcell" aria-label="08/08/2020">8</div></td></tr></tbody></table><div class="picker__footer"><button class="picker__button--today" type="button" data-pick="1594760400000" disabled="" aria-controls="users-list-status">Today</button><button class="picker__button--clear" type="button" data-clear="1" disabled="" aria-controls="users-list-status">Clear</button><button class="picker__button--close" type="button" data-close="true" disabled="" aria-controls="users-list-status">Close</button></div></div></div></div></div></div>
+                                          <div class="invalid-feedback">
+                                            <i class="bx bx-radio-circle"></i>
+                                            This field is required
+                                        </div>
+                                          <div class="form-control-position">
+                                              <i class="bx bx-calendar"></i>
+                                          </div>
+                                      </fieldset>
+                                  </div>
+                                  <div class="col-md-6 col-sm-6 col-12">
+                                      <label for="users-list-status">End Date</label>
+                                      <fieldset class="form-group position-relative has-icon-left invoice-date-picker">
+                                          <input type="text" class="form-control pickadate picker__input" placeholder="Select Date" id="users-list-status" readonly="" aria-haspopup="true" aria-expanded="false" aria-readonly="false" aria-owns="users-list-status_root"><div class="picker" id="users-list-status_root" aria-hidden="true"><div class="picker__holder" tabindex="-1"><div class="picker__frame"><div class="picker__wrap"><div class="picker__box"><div class="picker__header"><div class="picker__month">July</div><div class="picker__year">2020</div><div class="picker__nav--prev" data-nav="-1" role="button" aria-controls="users-list-status_table" title="Previous month"> </div><div class="picker__nav--next" data-nav="1" role="button" aria-controls="users-list-status_table" title="Next month"> </div></div><table class="picker__table" id="users-list-status_table" role="grid" aria-controls="users-list-status" aria-readonly="true"><thead><tr><th class="picker__weekday" scope="col" title="Sunday">Sun</th><th class="picker__weekday" scope="col" title="Monday">Mon</th><th class="picker__weekday" scope="col" title="Tuesday">Tue</th><th class="picker__weekday" scope="col" title="Wednesday">Wed</th><th class="picker__weekday" scope="col" title="Thursday">Thu</th><th class="picker__weekday" scope="col" title="Friday">Fri</th><th class="picker__weekday" scope="col" title="Saturday">Sat</th></tr></thead><tbody><tr><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1593291600000" role="gridcell" aria-label="06/28/2020">28</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1593378000000" role="gridcell" aria-label="06/29/2020">29</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1593464400000" role="gridcell" aria-label="06/30/2020">30</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1593550800000" role="gridcell" aria-label="07/01/2020">1</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1593637200000" role="gridcell" aria-label="07/02/2020">2</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1593723600000" role="gridcell" aria-label="07/03/2020">3</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1593810000000" role="gridcell" aria-label="07/04/2020">4</div></td></tr><tr><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1593896400000" role="gridcell" aria-label="07/05/2020">5</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1593982800000" role="gridcell" aria-label="07/06/2020">6</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1594069200000" role="gridcell" aria-label="07/07/2020">7</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1594155600000" role="gridcell" aria-label="07/08/2020">8</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1594242000000" role="gridcell" aria-label="07/09/2020">9</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1594328400000" role="gridcell" aria-label="07/10/2020">10</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1594414800000" role="gridcell" aria-label="07/11/2020">11</div></td></tr><tr><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1594501200000" role="gridcell" aria-label="07/12/2020">12</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1594587600000" role="gridcell" aria-label="07/13/2020">13</div></td><td role="presentation"><div class="picker__day picker__day--infocus picker__day--selected picker__day--highlighted" data-pick="1594674000000" role="gridcell" aria-label="07/14/2020" aria-selected="true" aria-activedescendant="true">14</div></td><td role="presentation"><div class="picker__day picker__day--infocus picker__day--today" data-pick="1594760400000" role="gridcell" aria-label="07/15/2020">15</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1594846800000" role="gridcell" aria-label="07/16/2020">16</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1594933200000" role="gridcell" aria-label="07/17/2020">17</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1595019600000" role="gridcell" aria-label="07/18/2020">18</div></td></tr><tr><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1595106000000" role="gridcell" aria-label="07/19/2020">19</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1595192400000" role="gridcell" aria-label="07/20/2020">20</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1595278800000" role="gridcell" aria-label="07/21/2020">21</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1595365200000" role="gridcell" aria-label="07/22/2020">22</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1595451600000" role="gridcell" aria-label="07/23/2020">23</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1595538000000" role="gridcell" aria-label="07/24/2020">24</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1595624400000" role="gridcell" aria-label="07/25/2020">25</div></td></tr><tr><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1595710800000" role="gridcell" aria-label="07/26/2020">26</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1595797200000" role="gridcell" aria-label="07/27/2020">27</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1595883600000" role="gridcell" aria-label="07/28/2020">28</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1595970000000" role="gridcell" aria-label="07/29/2020">29</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1596056400000" role="gridcell" aria-label="07/30/2020">30</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1596142800000" role="gridcell" aria-label="07/31/2020">31</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1596229200000" role="gridcell" aria-label="08/01/2020">1</div></td></tr><tr><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1596315600000" role="gridcell" aria-label="08/02/2020">2</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1596402000000" role="gridcell" aria-label="08/03/2020">3</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1596488400000" role="gridcell" aria-label="08/04/2020">4</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1596574800000" role="gridcell" aria-label="08/05/2020">5</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1596661200000" role="gridcell" aria-label="08/06/2020">6</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1596747600000" role="gridcell" aria-label="08/07/2020">7</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1596834000000" role="gridcell" aria-label="08/08/2020">8</div></td></tr></tbody></table><div class="picker__footer"><button class="picker__button--today" type="button" data-pick="1594760400000" aria-controls="users-list-status" disabled="disabled">Today</button><button class="picker__button--clear" type="button" data-clear="1" aria-controls="users-list-status" disabled="disabled">Clear</button><button class="picker__button--close" type="button" data-close="true" aria-controls="users-list-status" disabled="disabled">Close</button></div></div></div></div></div></div>
+                                          <div class="form-control-position">
+                                              <i class="bx bx-calendar"></i>
+                                          </div>
+                                      </fieldset>
+                                  </div>
+                          </div>
+                              </div>
+                              <div class="modal-footer">
+                                <div class="d-flex flex-sm-row flex-column justify-content-end  p-0">
+                                  <button type="submit" class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">Create
+                                      Project</button>
+                                  <button type="reset" class="btn btn-light">Cancel</button>
+                              </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
         
                     </div>
-
             </div>
 
         </div>
     </div>
+
+
     <!-- END: Content-->
 
     <!-- demo chat-->
@@ -1060,14 +1131,6 @@
       $('.filter button').click(function () {
           $('.filter-box').slideToggle();
       });
-      $(".contract-details a").on('click mouseover', function (){
-        var contract=$(this).find(".contract");
-        var con_id=$(this).find(".contract").attr("id");
-       theprice(contract,con_id);
-      })
-      $(".contract-details a").mouseleave(function(){
-        $(this).find(".contract").text("contract pricing");
-      })
   });
 
 </script>

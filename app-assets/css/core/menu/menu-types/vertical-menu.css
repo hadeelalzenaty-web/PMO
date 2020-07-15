@@ -76,9 +76,10 @@ body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu {
   transform: translate3d(0, 0, 0);
 }
 
-body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu .navbar-header .brand-text,
-body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu .modern-nav-toggle {
-  display: none;
+body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu:not(.expanded) .navbar-header .brand-text,
+body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu:not(.expanded) .modern-nav-toggle {
+  font-size:16px;
+  padding:0px !important;
 }
 
 body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu:not(.expanded) .navigation-header {
