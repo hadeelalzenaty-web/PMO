@@ -8,8 +8,8 @@
     height:100%;
     margin-bottom:0 !important;
 }
-.Project-progress{
-    margin-bottom:text-;
+.project-progress{
+    margin-bottom: 5px;
 }
 .number-card{
 	color:#333;
@@ -256,15 +256,18 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(228,228,246,1) 3
     border: 1px solid #DBE5F3;
     border-radius: 0.267rem;
     padding: 0px 6px;
-    background-color: white;
+    background:transparent;
+    color:#8494A7;
 }
-.btn.filter-button i:hover{
-    color:#5a8dee
-}
-.filter-row i{
+.filter-button i{
     font-size:25px;
-    color:blue;
 }
+.btn.filter-button:hover{
+    background-color:white;
+    color:#5A8DEE !important;
+}
+
+
 .white-container{
     background: #fff;
     border-radius: 8px;
@@ -307,7 +310,35 @@ hr{
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
+.d-flex-responsive{
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+  }
 
+  @media (min-width: 768px){
+    .d-flex-responsive{
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-align: stretch;
+        align-items: stretch;
+        width: 100%;
+      }
+    .d-flex-responsive .stretch-side{
+        position: relative;
+        -ms-flex: 1 1 0%;
+        flex: 1 1 0%;
+        min-width: 0;
+      }
+  }
 @media (max-width: 576px) {
 .w-sm-100{
     width:100%; /*change*/
