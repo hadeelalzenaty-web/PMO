@@ -338,6 +338,12 @@ hr{
         flex: 1 1 0%;
         min-width: 0;
       }
+      
+  }
+  @media (max-width: 768px){
+.pills-stacked{
+    width:100%;
+}
   }
 @media (max-width: 576px) {
 .w-sm-100{
