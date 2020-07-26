@@ -178,9 +178,7 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(228,228,246,1) 3
 .card-body.new-card{
     padding:0.8rem !important;
 }
-.activity-progress small:first-child{
-    font-size:15px;
-}
+
 
 .costum-navtabs .nav-link{
     padding: 0.267rem 0.23rem !important;
@@ -321,7 +319,7 @@ hr{
     width: 100%;
   }
 
-  @media (min-width: 768px){
+  @media (min-width: 769px){
     .d-flex-responsive{
         position: relative;
         display: -ms-flexbox;
