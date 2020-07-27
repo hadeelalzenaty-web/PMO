@@ -2193,9 +2193,9 @@ input[type=number]::-webkit-outer-spin-button {
 
 /*    Nav, Navtabs and Navpills   */
 /*-------------------------------*/
-.nav.nav-tabs .nav-item, .nav.nav-pills .nav-item {
+/*.nav.nav-tabs .nav-item, .nav.nav-pills .nav-item {
   margin-right: 0.8rem;
-}
+}*/
 
 .nav.nav-tabs .nav-item.dropdown.show .dropdown-toggle:hover, .nav.nav-pills .nav-item.dropdown.show .dropdown-toggle:hover {
   color: #FFFFFF;
