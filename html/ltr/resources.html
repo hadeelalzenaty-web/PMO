@@ -43,7 +43,7 @@
 
 <!-- BEGIN: Body-->
 
-<body class="vertical-layout vertical-menu-modern boxicon-layout no-card-shadow 2-columns  navbar-sticky footer-static menu-collapsed " data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
+<body class="vertical-layout vertical-menu-modern boxicon-layout no-card-shadow 2-columns  navbar-sticky footer-static menu-expanded" data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
 
     <!-- BEGIN: Header-->
     <div class="header-navbar-shadow"></div>
@@ -229,12 +229,34 @@
                   </ul>
       </div>
     </div>
+
     <!-- END: Main Menu-->
 
     <!-- BEGIN: Content-->
     <div class="app-content content">
         <div class="content-wrapper">
-                          <div class="row filter-row mb-1">
+            <div class="row">
+                <div class="content-header-left col-12 mb-2 mt-1">
+                  <div class="row breadcrumbs-top">
+                    <div class="col-lg-9 col-md-9 col-12">
+                      <h5 class="content-header-title float-left pr-1 mb-0">Resources</h5>
+                      <div class="breadcrumb-wrapper col-12">
+                        <ol class="breadcrumb p-0 mb-0">
+                          <li class="breadcrumb-item"><a href="resources.html"><i class="bx bx-home-alt"></i></a>
+                          </li>
+                          
+                          <li class="breadcrumb-item active">Resources
+                          </li>
+                        </ol>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-12 d-flex justify-content-sm-end mt-1 mt-sm-0">
+                      <button class="btn btn-primary w-sm-100" data-dismiss="modal" data-toggle="modal" data-target="#myModal"><i class="bx bxs-add-to-queue"></i> Add Project</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <div class="row filter-row mb-1">
                             <div class="col-12 project-search">
                               <div class="input-group">
                           
@@ -246,7 +268,7 @@
                                 </div>
                               </div>
                             </div>
-                          </div>
+               </div>
                   <div class="filter-box  white-container pb-2 my-1">
                     <form>
                         <div class="row">
@@ -293,160 +315,304 @@
                   </form>
                 
                 </div>
-                <div class="row">
-                    <div class="content-header-left col-12 mb-2 mt-1">
-                      <div class="row breadcrumbs-top">
-                        <div class="col-lg-9 col-md-9 col-12 align-self-center">
-                          <h5 class="content-header-title float-left pr-1 mb-0">Resources</h5>
-                          <div class="breadcrumb-wrapper col-12">
-                            <ol class="breadcrumb p-0 mb-0">
-                              <li class="breadcrumb-item"><a href="resources.html"><i class="bx bx-home-alt"></i></a>
-                              </li>
-                              
-                              <li class="breadcrumb-item active">Resources
-                              </li>
-                            </ol>
-                          </div>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-12 d-flex justify-content-sm-end mt-1 mt-sm-0">
-                          <button class="btn btn-primary w-sm-100" data-dismiss="modal" data-toggle="modal" data-target="#myModal"><i class="bx bxs-add-to-queue"></i> Add Resource</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                    <div class="content-body resources d-flex">
-                      <div class="card mr-1">
-                        <div class="card-body new-card">     
-                            <div class="card-content">
-                            <div class="media mb-2">
-                                <a class="mr-1" href="#">
-                                    <img src="../../app-assets/images/portrait/small/avatar-s-15.jpg" alt="users view avatar" class="users-avatar-shadow rounded-circle" height="64" width="64">
-                                </a>
-                                <div class="media-body pt-25">
-                                    <h4 class="media-heading"><a href="./profile.html" class="users-view-name" data-toggle="tooltip" data-placement="bottom" title="Profile">Ahmad Ali</a></h4>
-                                    <span>Rate :</span>
-                                    <span class="resource-rate">350 JD</span>
-                                    <div>Level :</span>
-                                    <span class="resource-level">Junior</div>
+                    <div class="content-body resources">
+                        <div class="row card-row">
+                            <div class="box col-lg-4 col-md-6 col-sm-6 col-12">
+                                <div class="card">
+                                    <div class="card-body new-card">
+                                        <div class="card-content">
+                                            <div class="media mb-2">
+                                                <a class="mr-1" href="#">
+                                                    <img src="../../app-assets/images/portrait/small/avatar-s-15.jpg"
+                                                        alt="users view avatar" class="users-avatar-shadow rounded-circle" height="64"
+                                                        width="64">
+                                                </a>
+                                                <div class="media-body pt-25">
+                                                    <h4 class="media-heading"><a href="./profile.html" class="users-view-name"
+                                                            data-toggle="tooltip" data-placement="bottom" title="Profile">Ahmad Ali</a></h4>
+                                                    <span>Rate :</span>
+                                                    <span class="resource-rate">350 JD</span>
+                                                    <div>Level :</span>
+                                                        <span class="resource-level">Junior</div>
+                                                </div>
+                                            </div>
+                                            <div class="resource-info">
+                                                <div class="main-res-info">
+                                                    <a>
+                                                        <i class="bx bxs-plane-alt"></i> <span class="font-bold">Passport</span>
+                                                    </a>
+                                                </div>
+                                                <div class="main-res-info">
+                                                    <a>
+                                                        <i class="fab fa-cc-visa"></i> <span class="font-bold">Visa Data</span>
+                                                    </a>
+                                                    <div class="row">
+                                                        <div class="col-md-6 col-sm-12">Expired Date: <span>25/10</span></div>
+                                                        <div class="col-md-6 col-sm-12">assign on: <span>IT 35</span></div>
+                                                    </div>
+                                                    <div><button type="button" class="btn  btn-primary btn-sm w-sm-100">More</button></div>
+                                                </div>
+                                                <div class="main-res-info">
+                                                    <a>
+                                                        <i class="fas fa-user-clock"></i> <span class="font-bold">Annual Vacation</span>
+                                                    </a>
+                                                    <div class="row">
+                                                        <div class="col-md-6 col-sm-12">Start Date: <span>25/2/2020</span></div>
+                                                        <div class="col-md-6 col-sm-12">Duration: <span>5 Days</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="resource-info">
-                              <div class="main-res-info">
-                                <a>
-                                  <i class="bx bxs-plane-alt"></i> Passport
-                                </a>
-                              </div>
-                              <div class="main-res-info">
-                                <a>
-                                  <i class="bx bxl-visa"></i> Visa Data
-                                </a>
-                              </div>
-                              <div class="d-flex flex-sm-row flex-column">
-                                <div class="mr-2">Expired Date: <span>25/10</span></div>
-                                <div class="mr-2">assignment on: <span>IT 35</span></div>
-                                <div><button type="button" class="btn  btn-primary btn-sm w-sm-100">More</button></div>
-                              </div>
-                              <div class="main-res-info">
-                                  <a>
-                                    <i class="fas fa-user-clock"></i> Annual Vacation
-                                  </a>
-                              </div>
-                              <div  class="d-flex flex-sm-row flex-column">
-                                <div class="mr-2">Start Date: <span>25/2/2020</span></div>
-                                <div class="mr-2">Duration <span>5 Days</span></div>
-                              </div>
-                            </div> 
-                        </div>
-                    </div>
-                    </div>
-                    <div class="card  mr-1">
-                        <div class="card-body new-card">
-                            <div class="card-content">
-                            <div class="media mb-2">
-                                <a class="mr-1" href="#">
-                                    <img src="../../app-assets/images/portrait/small/avatar-s-13.jpg" alt="users view avatar" class="users-avatar-shadow rounded-circle" height="64" width="64">
-                                </a>
-                                <div class="media-body pt-25">
-                                    <h4 class="media-heading"><a href="./profile.html" class="users-view-name" data-toggle="tooltip" data-placement="bottom" title="Profile">Mohammad Saed</a></h4>
-                                    <span>Rate :</span>
-                                    <span class="resource-rate">350 JD</span>
-                                    <div>Level :</span>
-                                    <span class="resource-rate">Senior</div>
+                            <div class="box col-lg-4 col-md-6 col-sm-6 col-12">
+                                <div class="card">
+                                    <div class="card-body new-card">
+                                        <div class="card-content">
+                                            <div class="media mb-2">
+                                                <a class="mr-1" href="#">
+                                                    <img src="../../app-assets/images/portrait/small/avatar-s-15.jpg"
+                                                        alt="users view avatar" class="users-avatar-shadow rounded-circle" height="64"
+                                                        width="64">
+                                                </a>
+                                                <div class="media-body pt-25">
+                                                    <h4 class="media-heading"><a href="./profile.html" class="users-view-name"
+                                                            data-toggle="tooltip" data-placement="bottom" title="Profile">Ahmad Ali</a></h4>
+                                                    <span>Rate :</span>
+                                                    <span class="resource-rate">350 JD</span>
+                                                    <div>Level :</span>
+                                                        <span class="resource-level">Junior</div>
+                                                </div>
+                                            </div>
+                                            <div class="resource-info">
+                                                <div class="main-res-info">
+                                                    <a>
+                                                        <i class="bx bxs-plane-alt"></i> <span class="font-bold">Passport</span>
+                                                    </a>
+                                                </div>
+                                                <div class="main-res-info">
+                                                    <a>
+                                                        <i class="fab fa-cc-visa"></i> <span class="font-bold">Visa Data</span>
+                                                    </a>
+                                                    <div class="row">
+                                                        <div class="col-md-6 col-sm-12">Expired Date: <span>25/10</span></div>
+                                                        <div class="col-md-6 col-sm-12">assign on: <span>IT 35</span></div>
+                                                    </div>
+                                                    <div><button type="button" class="btn  btn-primary btn-sm w-sm-100">More</button></div>
+                                                </div>
+                                                <div class="main-res-info">
+                                                    <a>
+                                                        <i class="fas fa-user-clock"></i> <span class="font-bold">Annual Vacation</span>
+                                                    </a>
+                                                    <div class="row">
+                                                        <div class="col-md-6 col-sm-12">Start Date: <span>25/2/2020</span></div>
+                                                        <div class="col-md-6 col-sm-12">Duration: <span>5 Days</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="resource-info">
-                              <div class="main-res-info">
-                                <a>
-                                  <i class="bx bxs-plane-alt"></i> Passport
-                                </a>
-                              </div>
-                              <div class="main-res-info">
-                                <a>
-                                  <i class="bx bxl-visa"></i> Visa Data
-                                </a>
-                              </div>
-                              <div class="d-flex flex-sm-row flex-column">
-                                <div class="mr-2">Expired Date: <span>25/10</span></div>
-                                <div class="mr-2">assignment on: <span>IT 35</span></div>
-                                <div><button type="button" class="btn  btn-primary btn-sm w-sm-100">More</button></div>
-                              </div>
-                              <div class="main-res-info">
-                                  <a>
-                                    <i class="fas fa-user-clock"></i> Annual Vacation
-                                  </a>
-                              </div>
-                              <div  class="d-flex flex-sm-row flex-column">
-                                <div class="mr-2">Start Date: <span>25/2/2020</span></div>
-                                <div class="mr-2">Duration <span>5 Days</span></div>
-                              </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body new-card">
-                            <div class="card-content">
-                            <div class="media mb-2">
-                                <a class="mr-1" href="#">
-                                    <img src="../../app-assets/images/portrait/small/avatar-s-17.jpg" alt="users view avatar" class="users-avatar-shadow rounded-circle" height="64" width="64">
-                                </a>
-                                <div class="media-body pt-25">
-                                    <h4 class="media-heading"><a href="./profile.html" class="users-view-name" data-toggle="tooltip" data-placement="bottom" title="Profile">Yasser Tamimi</a></h4>
-                                    <span>Rate :</span>
-                                    <span class="resource-rate">350 JD</span>
-                                    <div>Level :</span>
-                                    <span class="resource-rate">Senior</div>
+                            <div class="box col-lg-4 col-md-6 col-sm-6 col-12">
+                                <div class="card">
+                                    <div class="card-body new-card">
+                                        <div class="card-content">
+                                            <div class="media mb-2">
+                                                <a class="mr-1" href="#">
+                                                    <img src="../../app-assets/images/portrait/small/avatar-s-15.jpg"
+                                                        alt="users view avatar" class="users-avatar-shadow rounded-circle" height="64"
+                                                        width="64">
+                                                </a>
+                                                <div class="media-body pt-25">
+                                                    <h4 class="media-heading"><a href="./profile.html" class="users-view-name"
+                                                            data-toggle="tooltip" data-placement="bottom" title="Profile">Ahmad Ali</a></h4>
+                                                    <span>Rate :</span>
+                                                    <span class="resource-rate">350 JD</span>
+                                                    <div>Level :</span>
+                                                        <span class="resource-level">Junior</div>
+                                                </div>
+                                            </div>
+                                            <div class="resource-info">
+                                                <div class="main-res-info">
+                                                    <a>
+                                                        <i class="bx bxs-plane-alt"></i> <span class="font-bold">Passport</span>
+                                                    </a>
+                                                </div>
+                                                <div class="main-res-info">
+                                                    <a>
+                                                        <i class="fab fa-cc-visa"></i> <span class="font-bold">Visa Data</span>
+                                                    </a>
+                                                    <div class="row">
+                                                        <div class="col-md-6 col-sm-12">Expired Date: <span>25/10</span></div>
+                                                        <div class="col-md-6 col-sm-12">assign on: <span>IT 35</span></div>
+                                                    </div>
+                                                    <div><button type="button" class="btn  btn-primary btn-sm w-sm-100">More</button></div>
+                                                </div>
+                                                <div class="main-res-info">
+                                                    <a>
+                                                        <i class="fas fa-user-clock"></i> <span class="font-bold">Annual Vacation</span>
+                                                    </a>
+                                                    <div class="row">
+                                                        <div class="col-md-6 col-sm-12">Start Date: <span>25/2/2020</span></div>
+                                                        <div class="col-md-6 col-sm-12">Duration: <span>5 Days</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="resource-info">
-                              <div class="main-res-info">
-                                <a>
-                                  <i class="bx bxs-plane-alt"></i> Passport
-                                </a>
-                              </div>
-                              <div class="main-res-info">
-                                <a>
-                                  <i class="bx bxl-visa"></i> Visa Data
-                                </a>
-                              </div>
-                              <div class="d-flex flex-sm-row flex-column">
-                                <div class="mr-2">Expired Date: <span>25/10</span></div>
-                                <div class="mr-2">assignment on: <span>IT 35</span></div>
-                                <div><button type="button" class="btn  btn-primary btn-sm w-sm-100">More</button></div>
-                              </div>
-                              <div class="main-res-info">
-                                  <a>
-                                    <i class="fas fa-user-clock"></i> Annual Vacation
-                                  </a>
-                              </div>
-                              <div  class="d-flex flex-sm-row flex-column">
-                                <div class="mr-2">Start Date: <span>25/2/2020</span></div>
-                                <div class="mr-2">Duration <span>5 Days</span></div>
-                              </div>
+                            <div class="box col-lg-4 col-md-6 col-sm-6 col-12">
+                                <div class="card">
+                                    <div class="card-body new-card">
+                                        <div class="card-content">
+                                            <div class="media mb-2">
+                                                <a class="mr-1" href="#">
+                                                    <img src="../../app-assets/images/portrait/small/avatar-s-15.jpg"
+                                                        alt="users view avatar" class="users-avatar-shadow rounded-circle" height="64"
+                                                        width="64">
+                                                </a>
+                                                <div class="media-body pt-25">
+                                                    <h4 class="media-heading"><a href="./profile.html" class="users-view-name"
+                                                            data-toggle="tooltip" data-placement="bottom" title="Profile">Ahmad Ali</a></h4>
+                                                    <span>Rate :</span>
+                                                    <span class="resource-rate">350 JD</span>
+                                                    <div>Level :</span>
+                                                        <span class="resource-level">Junior</div>
+                                                </div>
+                                            </div>
+                                            <div class="resource-info">
+                                                <div class="main-res-info">
+                                                    <a>
+                                                        <i class="bx bxs-plane-alt"></i> <span class="font-bold">Passport</span>
+                                                    </a>
+                                                </div>
+                                                <div class="main-res-info">
+                                                    <a>
+                                                        <i class="fab fa-cc-visa"></i> <span class="font-bold">Visa Data</span>
+                                                    </a>
+                                                    <div class="row">
+                                                        <div class="col-md-6 col-sm-12">Expired Date: <span>25/10</span></div>
+                                                        <div class="col-md-6 col-sm-12">assign on: <span>IT 35</span></div>
+                                                    </div>
+                                                    <div><button type="button" class="btn  btn-primary btn-sm w-sm-100">More</button></div>
+                                                </div>
+                                                <div class="main-res-info">
+                                                    <a>
+                                                        <i class="fas fa-user-clock"></i> <span class="font-bold">Annual Vacation</span>
+                                                    </a>
+                                                    <div class="row">
+                                                        <div class="col-md-6 col-sm-12">Start Date: <span>25/2/2020</span></div>
+                                                        <div class="col-md-6 col-sm-12">Duration: <span>5 Days</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box col-lg-4 col-md-6 col-sm-6 col-12">
+                                <div class="card">
+                                    <div class="card-body new-card">
+                                        <div class="card-content">
+                                            <div class="media mb-2">
+                                                <a class="mr-1" href="#">
+                                                    <img src="../../app-assets/images/portrait/small/avatar-s-15.jpg"
+                                                        alt="users view avatar" class="users-avatar-shadow rounded-circle" height="64"
+                                                        width="64">
+                                                </a>
+                                                <div class="media-body pt-25">
+                                                    <h4 class="media-heading"><a href="./profile.html" class="users-view-name"
+                                                            data-toggle="tooltip" data-placement="bottom" title="Profile">Ahmad Ali</a></h4>
+                                                    <span>Rate :</span>
+                                                    <span class="resource-rate">350 JD</span>
+                                                    <div>Level :</span>
+                                                        <span class="resource-level">Junior</div>
+                                                </div>
+                                            </div>
+                                            <div class="resource-info">
+                                                <div class="main-res-info">
+                                                    <a>
+                                                        <i class="bx bxs-plane-alt"></i> <span class="font-bold">Passport</span>
+                                                    </a>
+                                                </div>
+                                                <div class="main-res-info">
+                                                    <a>
+                                                        <i class="fab fa-cc-visa"></i> <span class="font-bold">Visa Data</span>
+                                                    </a>
+                                                    <div class="row">
+                                                        <div class="col-md-6 col-sm-12">Expired Date: <span>25/10</span></div>
+                                                        <div class="col-md-6 col-sm-12">assign on: <span>IT 35</span></div>
+                                                    </div>
+                                                    <div><button type="button" class="btn  btn-primary btn-sm w-sm-100">More</button></div>
+                                                </div>
+                                                <div class="main-res-info">
+                                                    <a>
+                                                        <i class="fas fa-user-clock"></i> <span class="font-bold">Annual Vacation</span>
+                                                    </a>
+                                                    <div class="row">
+                                                        <div class="col-md-6 col-sm-12">Start Date: <span>25/2/2020</span></div>
+                                                        <div class="col-md-6 col-sm-12">Duration: <span>5 Days</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box col-lg-4 col-md-6 col-sm-6 col-12">
+                                <div class="card">
+                                    <div class="card-body new-card">
+                                        <div class="card-content">
+                                            <div class="media mb-2">
+                                                <a class="mr-1" href="#">
+                                                    <img src="../../app-assets/images/portrait/small/avatar-s-15.jpg"
+                                                        alt="users view avatar" class="users-avatar-shadow rounded-circle" height="64"
+                                                        width="64">
+                                                </a>
+                                                <div class="media-body pt-25">
+                                                    <h4 class="media-heading"><a href="./profile.html" class="users-view-name"
+                                                            data-toggle="tooltip" data-placement="bottom" title="Profile">Ahmad Ali</a></h4>
+                                                    <span>Rate :</span>
+                                                    <span class="resource-rate">350 JD</span>
+                                                    <div>Level :</span>
+                                                        <span class="resource-level">Junior</div>
+                                                </div>
+                                            </div>
+                                            <div class="resource-info">
+                                                <div class="main-res-info">
+                                                    <a>
+                                                        <i class="bx bxs-plane-alt"></i> <span class="font-bold">Passport</span>
+                                                    </a>
+                                                </div>
+                                                <div class="main-res-info">
+                                                    <a>
+                                                        <i class="fab fa-cc-visa"></i> <span class="font-bold">Visa Data</span>
+                                                    </a>
+                                                    <div class="row">
+                                                        <div class="col-md-6 col-sm-12">Expired Date: <span>25/10</span></div>
+                                                        <div class="col-md-6 col-sm-12">assign on: <span>IT 35</span></div>
+                                                    </div>
+                                                    <div><button type="button" class="btn  btn-primary btn-sm w-sm-100">More</button></div>
+                                                </div>
+                                                <div class="main-res-info">
+                                                    <a>
+                                                        <i class="fas fa-user-clock"></i> <span class="font-bold">Annual Vacation</span>
+                                                    </a>
+                                                    <div class="row">
+                                                        <div class="col-md-6 col-sm-12">Start Date: <span>25/2/2020</span></div>
+                                                        <div class="col-md-6 col-sm-12">Duration: <span>5 Days</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
                     </div>
                     <div class="modal" tabindex="-1" role="dialog" id="myModal">
                         <div class="modal-dialog">

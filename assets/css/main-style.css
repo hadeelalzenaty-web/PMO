@@ -137,13 +137,14 @@
     height:200px;
      width:100%
 }
-.bxl-visa{
-    font-size: 24px;
+.fa-cc-visa{
+    font-size: 18px;
     vertical-align: middle;
 }
 .main-res-info{
-    font-size: 1rem;
+    font-size: 0.9rem;
    color:#262B56; 
+   margin-bottom: 10px;
 }
 .hr-color{
     border-top: 1px solid #aeaef7;
@@ -168,7 +169,7 @@ background: linear-gradient(90deg, rgba(63,53,246,1) 0%, rgba(84,84,227,1) 35%, 
 }
 
 .card-white{
-    background: rgb(255,255,255);
+background: rgb(255,255,255);
 background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(228,228,246,1) 35%, rgba(229,239,241,1) 100%);
 }
 .card-body{
@@ -317,6 +318,9 @@ hr{
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
+.main-res-info button{
+    margin-top:5px;
+}
 .d-flex-responsive{
     position: relative;
     display: -ms-flexbox;
@@ -326,6 +330,9 @@ hr{
     -ms-flex-align: stretch;
     align-items: stretch;
     width: 100%;
+  }
+  .font-bold{
+      font-weight: 600;
   }
 
   @media (min-width: 769px){
