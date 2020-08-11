@@ -257,7 +257,12 @@
                                     </div>
                                     <!-- right content section -->
                                     <div class="stretch-side">
-                                             <h4 class="text-primary my-1">Ahmad Ali</h4>
+                                        <div class="resource-head d-flex">
+                                            <a class="mr-1" href="#">
+                                                <img src="../../app-assets/images/portrait/small/avatar-s-15.jpg" alt="users view avatar" class="users-avatar-shadow rounded-circle" height="50" width="50">
+                                            </a>
+                                            <h4 class="text-primary my-1">Ahmad Ali</h4>
+                                        </div>
                                         <div class="tab-content">
                                             <div role="tabpanel" class="tab-pane active" id="project">
                                                 <!-- Tab panes -->
@@ -324,62 +329,123 @@
                                                     <div class="card-content">
                                                         <div class="card-body">
                                                             <div class="row">
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <fieldset class="form-group">
-                                                                        <label for="budget">Proffesion Services Baseline
-                                                                            Budgets</label>
-                                                                        <input type="text" class="form-control" id="budget"
-                                                                            placeholder="Baseline Budgets">
+                                                                        <label for="reaction">visa Type</label>
+                                                                        <select class="form-control" id="visa-type">
+                                                                            <option>Student Visa</option>
+                                                                            <option>Work Visa</option>
+                                                                        </select>
+                                                                    </fieldset>    
+                                                                </div>
+                                                                <div class="col-md-6 col-sm-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="validat_d">Total Validity Days</label>
+                                                                        <select class="form-control" id="validat_d">
+                                                                            <option>1</option>
+                                                                            <option>2</option>
+                                                                        </select>
+                                                                    </fieldset> 
+                                                                </div>
+                                                                <div class="col-md-6 col-sm-6 col-12">
+                                                                    <label for="from-date">Issue Date</label>
+                                                                    <fieldset class="form-group position-relative has-icon-left">
+                                                                      <input type="text" class="form-control pickadate pickadate-months-year" placeholder="Select Date" id="from-date">
+                                                                      <div class="form-control-position">
+                                                                          <i class='bx bx-calendar'></i>
+                                                                      </div>
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
-                                                                    <fieldset class="form-group">
-                                                                        <label for="pcost">Third Party Costs</label>
-                                                                        <input type="text" class="form-control" id="pcost"
-                                                                            placeholder="Third Party Cost">
+                                                                <div class="col-md-6 col-sm-6 col-12">
+                                                                    <label for="from-date">Expire Date</label>
+                                                                    <fieldset class="form-group position-relative has-icon-left">
+                                                                      <input type="text" class="form-control pickadate pickadate-months-year" placeholder="Select Date" id="from-date">
+                                                                      <div class="form-control-position">
+                                                                          <i class='bx bx-calendar'></i>
+                                                                      </div>
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
-                                                                    <fieldset class="form-group">
-                                                                        <label for="lcost">Licenses Cost</label>
-                                                                        <input type="text" class="form-control" id="lcost"
-                                                                            placeholder="Licenses Cost">
+                                                                <div class="col-md-6 col-sm-6 col-12">
+                                                                    <label for="from-date">Last onsite Date</label>
+                                                                    <fieldset class="form-group position-relative has-icon-left">
+                                                                      <input type="text" class="form-control pickadate pickadate-months-year" placeholder="Select Date" id="from-date">
+                                                                      <div class="form-control-position">
+                                                                          <i class='bx bx-calendar'></i>
+                                                                      </div>
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <fieldset class="form-group">
-                                                                        <label for="tcost">Training Cost</label>
-                                                                        <input type="text" class="form-control" id="tcost"
-                                                                            placeholder="Training cost">
-                                                                    </fieldset>
+                                                                        <label for="requested_p">Requested in Project</label>
+                                                                        <select class="form-control" id="requested_p">
+                                                                            <option>PMO</option>
+                                                                            <option>MOJ</option>
+                                                                        </select>
+                                                                    </fieldset> 
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
-                                                                    <fieldset class="form-group">
-                                                                        <label for="ocost">Outsourcing Cost</label>
-                                                                        <input type="text" class="form-control" id="ocost"
-                                                                            placeholder="Outsourcing cost">
-                                                                    </fieldset>
+                                                                <div class="col-12 d-flex flex-sm-row flex-column justify-content-end p-0">
+                                                                    <button type="submit" class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">Add</button>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
-                                                                    <fieldset class="form-group">
-                                                                        <label for="scost">Support Cost</label>
-                                                                        <input type="text" class="form-control" id="pname"
-                                                                            placeholder="Support Cost">
-                                                                    </fieldset>
-                                                                </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
-                                                                    <fieldset class="form-group">
-                                                                        <label for="hcost">Hardware Cost</label>
-                                                                        <input type="text" class="form-control" id="pname"
-                                                                            placeholder="Hardware Cost">
-                                                                    </fieldset>
-                                                                </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
-                                                                    <fieldset class="form-group">
-                                                                        <label for="othercost">Other Costs</label>
-                                                                        <input type="text" class="form-control" id="othercost"
-                                                                            placeholder="Other Costs">
-                                                                    </fieldset>
+                                                                <div class="table-responsive">
+                                                                    <table class="table table-striped mb-0">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>Visa Type</th>
+                                                                                <th>Total Validity Days</th>
+                                                                                <th>Issue Date</th>
+                                                                                <th>Expire Date</th>
+                                                                                <th>Last onsite Date</th>
+                                                                                <th>Action</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>
+                                                                                Student Visa
+                                                                                </td>
+                                                                                <td>5 Days</td>
+                                                                                <td>2/7/2020</td>
+                                                                                <td>2/8/2020</td>
+                                                                                <td>20/7/2020</td>
+                                                                                <td>
+                                                                                    <div class="table-icon d-flex align-items-center">
+                                                                                        <a href="#"><i class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
+                                                                                        <a href="#"><i class="badge-circle badge-circle-light-secondary bx bx-trash-alt font-medium-1"></i></a>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>
+                                                                                   Work Visa
+                                                                                </td>
+                                                                                <td>7 Days</td>
+                                                                                <td>2/6/2020</td>
+                                                                                <td>2/8/2020</td>
+                                                                                <td>20/7/2020</td>
+                                                                                <td>
+                                                                                    <div class="table-icon d-flex align-items-center">
+                                                                                        <a href="#"><i class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
+                                                                                        <a href="#"><i class="badge-circle badge-circle-light-secondary bx bx-trash-alt font-medium-1"></i></a>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    Student Visa
+                                                                                </td>
+                                                                                <td>9 Days</td>
+                                                                                <td>2/7/2020</td>
+                                                                                <td>2/8/2020</td>
+                                                                                <td>20/7/2020</td>
+                                                                                <td>
+                                                                                    <div class="table-icon d-flex align-items-center">
+                                                                                        <a href="#"><i class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
+                                                                                        <a href="#"><i class="badge-circle badge-circle-light-secondary bx bx-trash-alt font-medium-1"></i></a>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -396,136 +462,69 @@
                                                     <div class="card-content">
                                                         <div class="card-body">
                                                             <div class="row">
-                                                                <div class="col-md-6 col-md-6 col-12">
-                                                                    <fieldset class="form-group">
-                                                                        <label for="profservice">Proffesion Services
-                                                                            Baseline Budgets</label>
-                                                                        <input type="text" class="form-control" id="profservice"
-                                                                            placeholder="Proffesion Services Baseline Budgets">
+                                                                <div class="col-md-6 col-sm-6 col-12">
+                                                                    <label for="start-date">Start Date</label>
+                                                                    <fieldset class="form-group position-relative has-icon-left">
+                                                                      <input type="text" class="form-control pickadate pickadate-months-year" placeholder="Select Date" id="start-date">
+                                                                      <div class="form-control-position">
+                                                                          <i class='bx bx-calendar'></i>
+                                                                      </div>
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
-                                                                    <fieldset class="form-group">
-                                                                        <label for="actservice">Actual Professional Services
-                                                                            Remaining Budget</label>
-                                                                        <input type="text" class="form-control" id="actservice"
-                                                                            placeholder="Actual Professional Services Remaining Budget">
+                                                                <div class="col-md-6 col-sm-6 col-12">
+                                                                    <label for="start-date">End Date</label>
+                                                                    <fieldset class="form-group position-relative has-icon-left">
+                                                                      <input type="text" class="form-control pickadate pickadate-months-year" placeholder="Select Date" id="start-date">
+                                                                      <div class="form-control-position">
+                                                                          <i class='bx bx-calendar'></i>
+                                                                      </div>
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
-                                                                    <fieldset class="form-group">
-                                                                        <label for="actbudg">Actual Third Party Expensed
-                                                                            Budget</label>
-                                                                        <input type="text" class="form-control" id="actbudg"
-                                                                            placeholder="Actual Third Party Expensed Budget">
-                                                                    </fieldset>
+                                                                <div class="col-12 d-flex flex-sm-row flex-column justify-content-end p-0">
+                                                                    <button type="submit" class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">Add</button>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
-                                                                    <fieldset class="form-group">
-                                                                        <label for="actbudg">Actual Third Party Remaining
-                                                                            Budget</label>
-                                                                        <input type="text" class="form-control" id="actbudg"
-                                                                            placeholder="Actual Third Party Remaining Budget">
-                                                                    </fieldset>
-                                                                </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
-                                                                    <fieldset class="form-group">
-                                                                        <label for="act-l-budg">Actual Licenses Expensed
-                                                                            Budget</label>
-                                                                        <input type="text" class="form-control" id="act-l-budg"
-                                                                            placeholder="Actual Licenses Expensed Budget">
-                                                                    </fieldset>
-                                                                </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
-                                                                    <fieldset class="form-group">
-                                                                        <label for="act-l-remain-budg">Actual Licenses
-                                                                            Remaining Budget</label>
-                                                                        <input type="text" class="form-control" id="act-l-remain-budg"
-                                                                            placeholder="Actual Licenses Remaining Budget">
-                                                                    </fieldset>
-                                                                </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
-                                                                    <fieldset class="form-group">
-                                                                        <label for="act-t-budg">Actual Training Expensed
-                                                                            Budget</label>
-                                                                        <input type="text" class="form-control" id="act-t-budg"
-                                                                            placeholder="Actual Training Expensed Budget">
-                                                                    </fieldset>
-                                                                </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
-                                                                    <fieldset class="form-group">
-                                                                        <label for="act-t-remain-budg">Actual Training
-                                                                            Remaining Budget</label>
-                                                                        <input type="text" class="form-control" id="act-t-remain-budg"
-                                                                            placeholder="Actual Training Remaining Budget">
-                                                                    </fieldset>
-                                                                </div>
-                                                            </div>
-                                                            <hr>
-                                                            <div class="row">
-                                                                <div class="col-md-6 col-md-6 col-12">
-                                                                    <fieldset class="form-group">
-                                                                        <label for="act-o-budg">Actual Outsourcing Expensed
-                                                                            Budget</label>
-                                                                        <input type="text" class="form-control" id="act-o-budg"
-                                                                            placeholder="Actual Outsourcing Expensed Budget">
-                                                                    </fieldset>
-                                                                </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
-                                                                    <fieldset class="form-group">
-                                                                        <label for="act-o-remain-budg">Actual Outsourcing
-                                                                            Remaining Budget</label>
-                                                                        <input type="text" class="form-control" id="act-o-remain-budg"
-                                                                            placeholder="Actual Outsourcing Remaining Budget">
-                                                                    </fieldset>
-                                                                </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
-                                                                    <fieldset class="form-group">
-                                                                        <label for="act-s-budg">Actual Support Expensed
-                                                                            Budget</label>
-                                                                        <input type="text" class="form-control" id="act-s-budg"
-                                                                            placeholder="Actual Support Expensed Budget">
-                                                                    </fieldset>
-                                                                </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
-                                                                    <fieldset class="form-group">
-                                                                        <label for="act-s-remain-budg">Actual Support
-                                                                            Remaining Budget</label>
-                                                                        <input type="text" class="form-control" id="act-s-remain-budg"
-                                                                            placeholder="Actual Support Remaining Budget">
-                                                                    </fieldset>
-                                                                </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
-                                                                    <fieldset class="form-group">
-                                                                        <label for="act-h-budg">Actual Hardware Expensed
-                                                                            Budget</label>
-                                                                        <input type="text" class="form-control" id="act-h-budg"
-                                                                            placeholder="Actual Hardware Expensed Budget">
-                                                                    </fieldset>
-                                                                </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
-                                                                    <fieldset class="form-group">
-                                                                        <label for="act-h-remain-budg">Actual Hardware
-                                                                            Remaining Budget</label>
-                                                                        <input type="text" class="form-control" id="act-h-remain-budg"
-                                                                            placeholder="Actual Hardware Remaining Budget">
-                                                                    </fieldset>
-                                                                </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
-                                                                    <fieldset class="form-group">
-                                                                        <label for="act-oth-budg">Actual Other Expensed
-                                                                            Budget</label>
-                                                                        <input type="text" class="form-control" id="act-oth-budg"
-                                                                            placeholder="Actual Other Expensed Budget">
-                                                                    </fieldset>
-                                                                </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
-                                                                    <fieldset class="form-group">
-                                                                        <label for="act-h-oth-budg">Actual Other Remaining
-                                                                            Budget</label>
-                                                                        <input type="text" class="form-control" id="act-oth-remain-budg"
-                                                                            placeholder="Actual Other Remaining Budget">
-                                                                    </fieldset>
+                                                                <div class="table-responsive">
+                                                                    <table class="table table-striped mb-0">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>Start Date</th>
+                                                                                <th>End Date</th>
+                                                                                <th class="action">Action</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>22/6/2020</td>
+                                                                                <td>22/9/2020</td>
+                                                                                <td>
+                                                                                    <div class="table-icon d-flex align-items-center">
+                                                                                        <a href="#"><i class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
+                                                                                        <a href="#"><i class="badge-circle badge-circle-light-secondary bx bx-trash-alt font-medium-1"></i></a>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>22/6/2020</td>
+                                                                                <td>22/9/2020</td>
+                                                                                <td>
+                                                                                    <div class="table-icon d-flex align-items-center">
+                                                                                        <a href="#"><i class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
+                                                                                        <a href="#"><i class="badge-circle badge-circle-light-secondary bx bx-trash-alt font-medium-1"></i></a>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>22/6/2020</td>
+                                                                                <td>22/9/2020</td>
+                                                                                <td>
+                                                                                    <div class="table-icon d-flex align-items-center">
+                                                                                        <a href="#"><i class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
+                                                                                        <a href="#"><i class="badge-circle badge-circle-light-secondary bx bx-trash-alt font-medium-1"></i></a>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -542,7 +541,7 @@
                                                     <div class="card-content">
                                                         <div class="card-body">
                                                             <div class="row">
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <fieldset class="form-group">
                                                                         <label for="Rname">Resource Name</label>
                                                                         <input type="text" class="form-control is-invalid" id="Rname"
@@ -553,7 +552,7 @@
                                                                         </div>
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <label for="start-date">Start Date</label>
                                                                     <fieldset class="form-group position-relative has-icon-left">
                                                                         <input type="text" class="form-control pickadate"
@@ -563,7 +562,7 @@
                                                                         </div>
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <label for="end-date">End Date</label>
                                                                     <fieldset class="form-group position-relative has-icon-left">
                                                                         <input type="text" class="form-control pickadate"
@@ -573,14 +572,14 @@
                                                                         </div>
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <label for="end-date">Allocation Percantage</label>
                                                                     <div class="d-inline-block mb-1 mr-1 w-100">
                                                                         <input type="text" class="touchspin" value="20"
                                                                             data-bts-postfix="%">
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <div class="form-group">
                                                                         <label for="textareap">Notes</label>
                                                                         <textarea class="form-control" id="textareap"
@@ -593,7 +592,7 @@
                                                                         class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">Add</button>
                                                                 </div>
                                                                 <div class="table-responsive">
-                                                                    <table class="table mb-0">
+                                                                    <table class="table table-striped mb-0">
                                                                         <thead>
                                                                             <tr>
                                                                                 <th>Resource Name</th>
@@ -622,7 +621,7 @@
                                                                                 </td>
                                                                                 <td>2/5/2020</td>
                                                                                 <td>2/7/2020</td>
-                                                                                <td>30%</td>
+                                                                                <td>2/7/2020</td>
                                                                                 <td>Has Experiance in angular</td>
                                                                                 <td>
                                                                                     <div class="table-icon d-flex align-items-center">
@@ -708,21 +707,21 @@
                                                     <div class="card-content">
                                                         <div class="card-body">
                                                             <div class="row">
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <fieldset class="form-group">
                                                                         <label for="name">Name</label>
                                                                         <input type="text" class="form-control" id="name"
                                                                             placeholder="name">
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <fieldset class="form-group">
                                                                         <label for="value">Value</label>
                                                                         <input type="text" class="form-control" id="value"
                                                                             placeholder="value">
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <label for="users-list-status">Due date</label>
                                                                     <fieldset class="form-group position-relative has-icon-left">
                                                                         <input type="text" class="form-control pickadate"
@@ -732,7 +731,7 @@
                                                                         </div>
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <fieldset class="form-group">
                                                                         <label for="pselect">Status</label>
                                                                         <select class="form-control" id="basicSelect">
@@ -741,7 +740,7 @@
                                                                         </select>
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <label for="users-list-status">Change status
                                                                         date</label>
                                                                     <fieldset class="form-group position-relative has-icon-left">
@@ -752,7 +751,7 @@
                                                                         </div>
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <div class="form-group">
                                                                         <label for="textareap">Notes</label>
                                                                         <textarea class="form-control" id="textareap"
@@ -774,7 +773,7 @@
                                                     <div class="card-content">
                                                         <div class="card-body">
                                                             <div class="row">
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <fieldset class="form-group">
                                                                         <label for="basicInputFile">Contract</label>
                                                                         <div class="custom-file">
@@ -785,14 +784,14 @@
                                                                         </div>
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <fieldset class="form-group">
                                                                         <label for="pcontract">PO</label>
                                                                         <input type="text" class="form-control" id="pcontract"
                                                                             placeholder="">
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <fieldset class="form-group">
                                                                         <label for="basicInputFile">RFP document</label>
                                                                         <div class="custom-file">
@@ -803,7 +802,7 @@
                                                                         </div>
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <fieldset class="form-group">
                                                                         <label for="basicInputFile">Proposal</label>
                                                                         <div class="custom-file">
@@ -814,14 +813,14 @@
                                                                         </div>
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <fieldset class="form-group">
                                                                         <label for="dnotes">Delivery Notes</label>
                                                                         <input type="text" class="form-control" id="dnotes"
                                                                             placeholder="Delivery Notes">
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <fieldset class="form-group">
                                                                         <label for="Wdocument">Scope of Work
                                                                             Document</label>
@@ -829,7 +828,7 @@
                                                                             placeholder="Project name">
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <fieldset class="form-group">
                                                                         <label for="basicInputFile">BRS Document</label>
                                                                         <div class="custom-file">
@@ -840,7 +839,7 @@
                                                                         </div>
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <fieldset class="form-group">
                                                                         <label for="basicInputFile">Closure Document</label>
                                                                         <div class="custom-file">
@@ -851,7 +850,7 @@
                                                                         </div>
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <fieldset class="form-group">
                                                                         <label for="basicInputFile">Other Documents</label>
                                                                         <div class="custom-file">
@@ -862,7 +861,7 @@
                                                                         </div>
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <fieldset class="form-group">
                                                                         <label for="basicInputFile">Ms Project Plan</label>
                                                                         <div class="custom-file">
@@ -888,7 +887,7 @@
                                                     <div class="card-content">
                                                         <div class="card-body">
                                                             <div class="row">
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <fieldset class="form-group">
                                                                         <label for="basicInputFile">Name</label>
                                                                         <div class="custom-file">
@@ -899,7 +898,7 @@
                                                                         </div>
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <label for="start-date">Start date</label>
                                                                     <fieldset class="form-group position-relative has-icon-left">
                                                                         <input type="text" class="form-control pickadate"
@@ -909,7 +908,7 @@
                                                                         </div>
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <label for="start-date">Finish date</label>
                                                                     <fieldset class="form-group position-relative has-icon-left">
                                                                         <input type="text" class="form-control pickadate"
@@ -919,7 +918,7 @@
                                                                         </div>
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <label for="select2">Status</label>
                                                                     <fieldset class="form-group">
                                                                         <select class="form-control" id="select2">
@@ -929,7 +928,7 @@
                                                                         </select>
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <div class="form-group">
                                                                         <label for="textareap">Notes</label>
                                                                         <textarea class="form-control" id="textareap"
@@ -951,7 +950,7 @@
                                                     <div class="card-content">
                                                         <div class="card-body">
                                                             <div class="row">
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <fieldset class="form-group">
                                                                         <label for="basicInputFile">Name</label>
                                                                         <div class="custom-file">
@@ -959,7 +958,7 @@
                                                                         </div>
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <label for="planned-percant">Planned Percantage of
                                                                         Compelation</label>
                                                                     <div class="d-inline-block mb-1 mr-1 w-100">
@@ -967,7 +966,7 @@
                                                                             data-bts-postfix="%" id="planned-percant">
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <label for="actual-percant">Actual Percantage of
                                                                         Compelation</label>
                                                                     <div class="d-inline-block mb-1 mr-1 w-100">
@@ -975,7 +974,7 @@
                                                                             data-bts-postfix="%" id="actual-percant">
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <div class="form-group">
                                                                         <label for="textareap">Notes</label>
                                                                         <textarea class="form-control" id="textareap"
@@ -997,14 +996,14 @@
                                                     <div class="card-content">
                                                         <div class="card-body">
                                                             <div class="row">
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <fieldset class="form-group">
                                                                         <label for="Rname">Resource Name</label>
                                                                         <input type="text" class="form-control" id="Rname"
                                                                             placeholder="Resource name">
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <label for="traveld_select">Travel Destination</label>
                                                                     <fieldset class="form-group">
                                                                         <select class="form-control" id="traveld_select">
@@ -1014,21 +1013,21 @@
                                                                         </select>
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <fieldset class="form-group">
                                                                         <label for="Vcost">Visa Cost</label>
                                                                         <input type="text" class="form-control" id="Vcost"
                                                                             placeholder="Visa Cost">
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <fieldset class="form-group">
                                                                         <label for="Tcost">Ticket Cost</label>
                                                                         <input type="text" class="form-control" id="Tcost"
                                                                             placeholder="Ticket Cost">
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <label for="end-date">From Date</label>
                                                                     <fieldset class="form-group position-relative has-icon-left">
                                                                         <input type="text" class="form-control pickadate"
@@ -1038,7 +1037,7 @@
                                                                         </div>
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <label for="end-date">To Date</label>
                                                                     <fieldset class="form-group position-relative has-icon-left">
                                                                         <input type="text" class="form-control pickadate"
@@ -1051,42 +1050,42 @@
                                                             </div>
                                                             <hr>
                                                             <div class="row">
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <fieldset class="form-group">
                                                                         <label for="Acccost">Accommodation Location</label>
                                                                         <input type="text" class="form-control" id="Acccost"
                                                                             placeholder="Accommodation Location">
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <fieldset class="form-group">
                                                                         <label for="Acccos_night">Accommodation Per
                                                                             Night</label>
                                                                         <input type="text" class="form-control" id="Acccos_night">
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <fieldset class="form-group">
                                                                         <label for="Vcost">Total Nights</label>
                                                                         <input type="text" class="form-control" id="Vcost"
                                                                             placeholder="Total Nights">
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <fieldset class="form-group">
                                                                         <label for="Vcost">Prediem Per Day</label>
                                                                         <input type="text" class="form-control" id="Vcost"
                                                                             placeholder="Prediem Per Day">
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <fieldset class="form-group">
                                                                         <label for="Vcost">Total Days</label>
                                                                         <input type="text" class="form-control" id="Vcost"
                                                                             placeholder="Total Days">
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <fieldset class="form-group">
                                                                         <label for="Transportaion_cost">Transportaion
                                                                             Fees</label>
@@ -1094,14 +1093,14 @@
                                                                             placeholder="Transportaion Fees">
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <fieldset class="form-group">
                                                                         <label for="excep_reason">Exception Reason</label>
                                                                         <input type="text" class="form-control" id="excep_reason"
                                                                             placeholder="Exception Reason">
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <div class="form-group">
                                                                         <label for="textareap">Notes</label>
                                                                         <textarea class="form-control" id="textareap"
@@ -1109,7 +1108,7 @@
                                                                     </div>
                                                                 </div>
                 
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <div class="form-group">
                                                                         <label for="textareap">Total Travel cost</label>
                                                                         <span class="d-block bold-cost">500 JD</span>
@@ -1130,14 +1129,14 @@
                                                     <div class="card-content">
                                                         <div class="card-body">
                                                             <div class="row">
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <fieldset class="form-group">
                                                                         <label for="Rname">Resource Name</label>
                                                                         <input type="text" class="form-control" id="Rname"
                                                                             placeholder="Resource name">
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <label for="overtime-date">Overtime Date</label>
                                                                     <fieldset class="form-group position-relative has-icon-left">
                                                                         <input type="text" class="form-control pickadate"
@@ -1147,14 +1146,14 @@
                                                                         </div>
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <fieldset class="form-group">
                                                                         <label for="numhour">Number of Hours</label>
                                                                         <input type="text" class="form-control" id="numhour"
                                                                             placeholder="Number of Hours">
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <fieldset class="form-group">
                                                                         <label for="IsHoliday">Is Holiday</label>
                                                                         <select class="form-control" id="IsHoliday">
@@ -1163,7 +1162,7 @@
                                                                         </select>
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <fieldset class="form-group">
                                                                         <label>Total overtime come</label>
                                                                         <span class="d-block bold-cost">500 JD</span>
@@ -1177,7 +1176,7 @@
                                                                 <div class="table-responsive">
                 
                 
-                                                                    <table class="table mb-0">
+                                                                    <table class="table table-striped mb-0">
                                                                         <thead>
                                                                             <tr>
                                                                                 <th>Resource Name</th>
@@ -1287,28 +1286,28 @@
                                                     <div class="card-content">
                                                         <div class="card-body">
                                                             <div class="row">
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <fieldset class="form-group">
                                                                         <label for="name1">Name</label>
                                                                         <input type="text" class="form-control" id="name1"
                                                                             placeholder="name">
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <fieldset class="form-group">
                                                                         <label for="email">Email</label>
                                                                         <input type="email" class="form-control" id="email"
                                                                             placeholder="E-mail">
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <fieldset class="form-group">
                                                                         <label for="mobile-num">Mobile Number</label>
                                                                         <input type="tel" class="form-control" id="mobile-num"
                                                                             placeholder="Mobile Number">
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <fieldset class="form-group">
                                                                         <label for="Position">Position</label>
                                                                         <select class="form-control" id="Position">
@@ -1317,7 +1316,7 @@
                                                                         </select>
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <fieldset class="form-group">
                                                                         <label for="type">Type</label>
                                                                         <select class="form-control" id="type">
@@ -1332,7 +1331,7 @@
                                                                         class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">Add</button>
                                                                 </div>
                                                                 <div class="table-responsive">
-                                                                    <table class="table mb-0">
+                                                                    <table class="table table-striped mb-0">
                                                                         <thead>
                                                                             <tr>
                                                                                 <th>Name</th>
@@ -1408,7 +1407,7 @@
                                                     <div class="card-content">
                                                         <div class="card-body">
                                                             <div class="row">
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <label for="date">Date</label>
                                                                     <fieldset class="form-group position-relative has-icon-left">
                                                                         <input type="text" class="form-control pickadate"
@@ -1418,21 +1417,21 @@
                                                                         </div>
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <fieldset class="form-group">
                                                                         <label for="client_own">Owner From Client</label>
                                                                         <input type="text" class="form-control" id="client_own"
                                                                             placeholder="Owner From Client">
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <fieldset class="form-group">
                                                                         <label for="Inter_own">Internal Owner</label>
                                                                         <input type="text" class="form-control" id="Inter_own"
                                                                             placeholder="Internal Owner">
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <fieldset class="form-group">
                                                                         <label for="reaction">Reaction</label>
                                                                         <select class="form-control" id="reaction">
@@ -1441,13 +1440,13 @@
                                                                         </select>
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <div class="form-group">
                                                                         <label for="reason">Reason</label>
                                                                         <textarea class="form-control" id="reason" rows="3"></textarea>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <div class="form-group">
                                                                         <label for="notes">Notes</label>
                                                                         <textarea class="form-control" id="notes" rows="3"></textarea>
@@ -1469,14 +1468,14 @@
                                                     <div class="card-content">
                                                         <div class="card-body">
                                                             <div class="row">
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <fieldset class="form-group">
                                                                         <label for="client_own">Probability</label>
                                                                         <input type="text" class="form-control" id="client_own"
                                                                             placeholder="Owner From Client">
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <fieldset class="form-group">
                                                                         <label for="reaction">Periority</label>
                                                                         <select class="form-control" id="reaction">
@@ -1485,7 +1484,7 @@
                                                                         </select>
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <fieldset class="form-group">
                                                                         <label for="critical">Status</label>
                                                                         <select class="form-control" id="critical">
@@ -1494,7 +1493,7 @@
                                                                         </select>
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <fieldset class="form-group">
                                                                         <label for="owner">Owner</label>
                                                                         <select class="form-control" id="owner">
@@ -1503,19 +1502,19 @@
                                                                         </select>
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <div class="form-group">
                                                                         <label for="notes">Mitigation Action</label>
                                                                         <textarea class="form-control" id="notes" rows="3"></textarea>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <div class="form-group">
                                                                         <label for="desc">description</label>
                                                                         <textarea class="form-control" id="desc" rows="3"></textarea>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <div class="form-group">
                                                                         <label for="impact">Impact</label>
                                                                         <textarea class="form-control" id="impact" rows="3"></textarea>
@@ -1537,14 +1536,14 @@
                                                     <div class="card-content">
                                                         <div class="card-body">
                                                             <div class="row">
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <div class="form-group">
                                                                         <label for="issues-des">description</label>
                                                                         <textarea class="form-control" id="issues-des"
                                                                             rows="3"></textarea>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <label for="priority2">Priority</label>
                                                                     <fieldset class="form-group">
                                                                         <select class="form-control" id="priority2">
@@ -1554,13 +1553,13 @@
                                                                         </select>
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <div class="form-group">
                                                                         <label for="snotes">Solution Notes</label>
                                                                         <textarea class="form-control" id="snotes" rows="3"></textarea>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <label for="owner2">Owner</label>
                                                                     <fieldset class="form-group">
                                                                         <select class="form-control" id="owner2">
@@ -1570,7 +1569,7 @@
                                                                         </select>
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <label for="start-date">Start date</label>
                                                                     <fieldset class="form-group position-relative has-icon-left">
                                                                         <input type="text" class="form-control pickadate"
@@ -1580,7 +1579,7 @@
                                                                         </div>
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <label for="issue-status">Status</label>
                                                                     <fieldset class="form-group">
                                                                         <select class="form-control" id="issue-status">
@@ -1605,13 +1604,13 @@
                                                     <div class="card-content">
                                                         <div class="card-body">
                                                             <div class="row">
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <fieldset class="form-group">
                                                                         <label for="tname">Task Name</label>
                                                                         <input type="text" class="form-control" id="tname" placeholder="Task Name">
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <label for="lastweek_owner">Owner</label>
                                                                     <fieldset class="form-group">
                                                                         <select class="form-control" id="lastweek_owner">
@@ -1621,7 +1620,7 @@
                                                                         </select>
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <label for="lastweek_status">Status</label>
                                                                     <fieldset class="form-group">
                                                                         <select class="form-control" id="lastweek_status">
@@ -1632,7 +1631,7 @@
                                                                     </fieldset>
                                                                 </div>
                                             
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <label for="start-date">Completion date</label>
                                                                     <fieldset class="form-group position-relative has-icon-left">
                                                                         <input type="text" class="form-control pickadate" placeholder="Select Date" id="start-date">
@@ -1641,7 +1640,7 @@
                                                                         </div>
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <div class="form-group">
                                                                         <label for="lastweek_notes">Notes</label>
                                                                         <textarea class="form-control" id="lastweek_notes" rows="3"></textarea>
@@ -1660,7 +1659,7 @@
                                                                             <th>Status</th>
                                                                             <th>Completion Date</th>
                                                                             <th>Notes</th>
-                                                                            <th>Action</th>
+                                                                            <th class="action">Action</th>
                                                                         </tr>
                                                                     </thead>
                                                                     <tbody>
@@ -1725,13 +1724,13 @@
                                                     <div class="card-content">
                                                         <div class="card-body">
                                                             <div class="row">
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <fieldset class="form-group">
                                                                         <label for="tname">Task Name</label>
                                                                         <input type="text" class="form-control" id="tname" placeholder="Task Name">
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <label for="lastweek_owner">Owner</label>
                                                                     <fieldset class="form-group">
                                                                         <select class="form-control" id="lastweek_owner">
@@ -1741,7 +1740,7 @@
                                                                         </select>
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <label for="lastweek_status">Status</label>
                                                                     <fieldset class="form-group">
                                                                         <select class="form-control" id="lastweek_status">
@@ -1752,7 +1751,7 @@
                                                                     </fieldset>
                                                                 </div>
                                             
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <label for="start-date">Completion date</label>
                                                                     <fieldset class="form-group position-relative has-icon-left">
                                                                         <input type="text" class="form-control pickadate" placeholder="Select Date" id="start-date">
@@ -1761,7 +1760,7 @@
                                                                         </div>
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="col-md-6 col-sm-6 col-12">
                                                                     <div class="form-group">
                                                                         <label for="lastweek_notes">Notes</label>
                                                                         <textarea class="form-control" id="lastweek_notes" rows="3"></textarea>
@@ -1772,7 +1771,7 @@
                                                                 <button type="submit" class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">Add</button>
                                                             </div>
                                                             <div class="table-responsive">
-                                                                <table class="table mb-0">
+                                                                <table class="table table-striped mb-0">
                                                                     <thead>
                                                                         <tr>
                                                                             <th>Task Name</th>
