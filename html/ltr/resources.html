@@ -234,7 +234,7 @@
 
     <!-- BEGIN: Content-->
     <div class="app-content content">
-        <div class="content-wrapper">
+    <div class="content-wrapper">
             <div class="row">
                 <div class="content-header-left col-12 mb-2 mt-1">
                   <div class="row breadcrumbs-top">
@@ -251,25 +251,26 @@
                       </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-12 d-flex justify-content-sm-end mt-1 mt-sm-0">
-                      <button class="btn btn-primary w-sm-100" data-dismiss="modal" data-toggle="modal" data-target="#myModal"><i class="bx bxs-add-to-queue"></i> Add Resource</button>
+                      <button class="btn btn-primary w-sm-100" data-dismiss="modal" data-toggle="modal" data-target="#myModal"><i class="fas fa-user-plus"></i> Add Resource</button>
                     </div>
                   </div>
                 </div>
               </div>
-               <div class="row filter-row mb-1">
-                            <div class="col-12 project-search">
-                              <div class="input-group">
-                          
-                                <input type="search" class="form-control" placeholder="Search" aria-label="Username" aria-describedby="basic-addon1">
-                                <div class="input-group-append">
-                                  <button type="button" class="btn filter-button">
-                                    <i class="bx bx-slider"></i>
-                                  </button>
-                                </div>
-                              </div>
-                            </div>
-               </div>
-                  <div class="filter-box  white-container pb-2 my-1">
+              <div class="row filter-row mb-1">
+                <div class="col-12 project-search">
+                  <div class="input-group">
+              
+                    <input type="search" class="form-control" placeholder="Search" aria-label="Username" aria-describedby="basic-addon1">
+                    <div class="input-group-append">
+                      <button type="button" class="btn filter-button">
+                        <i class="bx bx-slider"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              
+              </div>
+                <div class="filter-box  white-container pb-2 my-1">
                     <form>
                         <div class="row">
                             <div class="col-12 col-sm-6 col-lg-3">
@@ -315,21 +316,45 @@
                   </form>
                 
                 </div>
-                    <div class="content-body resources">
+                 <div class="content-body resources">
+                        <div class="mb-1">
+                            <div class="chip mr-1">
+                              <div class="chip-body">
+                                  <span class="chip-text">#backenddeveloper</span>
+                                  <div class="chip-closeable">
+                                      <i class="bx bx-x"></i>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="chip mr-1">
+                              <div class="chip-body">
+                                  <span class="chip-text">#senior</span>
+                                  <div class="chip-closeable">
+                                      <i class="bx bx-x"></i>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="chip mr-1">
+                              <div class="chip-body">
+                                  <span class="chip-text">#moj</span>
+                                  <div class="chip-closeable">
+                                      <i class="bx bx-x"></i>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
                         <div class="row card-row">
-                            <div class="box col-lg-4 col-md-6 col-sm-6 col-12">
+                            <div class="box col-lg-3 col-md-4 col-sm-6 col-12">
                                 <div class="card">
                                     <div class="card-body new-card">
                                         <div class="card-content">
                                             <div class="media mb-2">
                                                 <a class="mr-1" href="#">
                                                     <img src="../../app-assets/images/portrait/small/avatar-s-15.jpg"
-                                                        alt="users view avatar" class="users-avatar-shadow rounded-circle" height="64"
-                                                        width="64">
+                                                        alt="users view avatar" class="users-avatar-shadow resource-img rounded-circle">
                                                 </a>
                                                 <div class="media-body pt-25">
-                                                    <h4 class="media-heading"><a href="./profile.html" class="users-view-name"
-                                                            data-toggle="tooltip" data-placement="bottom" title="Profile">Ahmad Ali</a></h4>
+                                                    <h4 class="media-heading"><a href="./profile.html" class="users-view-name">Ahmad Ali</a></h4>
                                                     <span>Rate :</span>
                                                     <span class="resource-rate">350 JD</span>
                                                     <div>Level :</span>
@@ -339,26 +364,29 @@
                                             <div class="resource-info">
                                                 <div class="main-res-info">
                                                     <a>
-                                                        <i class="bx bxs-plane-alt"></i> <span class="font-bold">Passport</span>
-                                                    </a>
-                                                </div>
-                                                <div class="main-res-info">
-                                                    <a>
                                                         <i class="fab fa-cc-visa"></i> <span class="font-bold">Visa Data</span>
                                                     </a>
                                                     <div class="row">
-                                                        <div class="col-md-6 col-sm-12">Expired Date: <span>10/2020</span></div>
-                                                        <div class="col-md-6 col-sm-12">assign on: <span>IT 35</span></div>
+                                                        <div class="col-md-12 col-sm-12">Expired Date: <span>10/2020</span></div>
                                                     </div>
-                                                    <div><button type="button" class="btn  btn-primary btn-sm w-sm-100">More</button></div>
                                                 </div>
+                                                <hr>
                                                 <div class="main-res-info">
                                                     <a>
-                                                        <i class="fas fa-user-clock"></i> <span class="font-bold">Annual Vacation</span>
+                                                        <i class="bx bxs-briefcase"></i> <span class="font-bold">Assign On</span>
                                                     </a>
                                                     <div class="row">
-                                                        <div class="col-md-6 col-sm-12">Start Date: <span>2/2020</span></div>
-                                                        <div class="col-md-6 col-sm-12">Duration: <span>5 Days</span></div>
+                                                        <div class="col-md-12 col-sm-12">IT300</div>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="main-res-info">
+                                                    <a>
+                                                        <i class="fas fa-umbrella"></i> <span class="font-bold">Annual Vacation</span>
+                                                    </a>
+                                                    <div class="row">
+                                                        <div class="col-md-12 col-sm-12">Start Date: <span>2/2020</span></div>
+                                                        <div class="col-md-12 col-sm-12">Duration: <span>5 Days</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -366,19 +394,17 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="box col-lg-4 col-md-6 col-sm-6 col-12">
+                            <div class="box col-lg-3 col-md-4 col-sm-6 col-12">
                                 <div class="card">
                                     <div class="card-body new-card">
                                         <div class="card-content">
                                             <div class="media mb-2">
                                                 <a class="mr-1" href="#">
                                                     <img src="../../app-assets/images/portrait/small/avatar-s-15.jpg"
-                                                        alt="users view avatar" class="users-avatar-shadow rounded-circle" height="64"
-                                                        width="64">
+                                                        alt="users view avatar" class="users-avatar-shadow resource-img rounded-circle">
                                                 </a>
                                                 <div class="media-body pt-25">
-                                                    <h4 class="media-heading"><a href="./profile.html" class="users-view-name"
-                                                            data-toggle="tooltip" data-placement="bottom" title="Profile">Ahmad Ali</a></h4>
+                                                    <h4 class="media-heading"><a href="./profile.html" class="users-view-name">Ahmad Ali</a></h4>
                                                     <span>Rate :</span>
                                                     <span class="resource-rate">350 JD</span>
                                                     <div>Level :</span>
@@ -388,26 +414,29 @@
                                             <div class="resource-info">
                                                 <div class="main-res-info">
                                                     <a>
-                                                        <i class="bx bxs-plane-alt"></i> <span class="font-bold">Passport</span>
-                                                    </a>
-                                                </div>
-                                                <div class="main-res-info">
-                                                    <a>
                                                         <i class="fab fa-cc-visa"></i> <span class="font-bold">Visa Data</span>
                                                     </a>
                                                     <div class="row">
-                                                        <div class="col-md-6 col-sm-12">Expired Date: <span>10/2020</span></div>
-                                                        <div class="col-md-6 col-sm-12">assign on: <span>IT 35</span></div>
+                                                        <div class="col-md-12 col-sm-12">Expired Date: <span>10/2020</span></div>
                                                     </div>
-                                                    <div><button type="button" class="btn  btn-primary btn-sm w-sm-100">More</button></div>
                                                 </div>
+                                                <hr>
                                                 <div class="main-res-info">
                                                     <a>
-                                                        <i class="fas fa-user-clock"></i> <span class="font-bold">Annual Vacation</span>
+                                                        <i class="bx bxs-briefcase"></i> <span class="font-bold">Assign On</span>
                                                     </a>
                                                     <div class="row">
-                                                        <div class="col-md-6 col-sm-12">Start Date: <span>2/2020</span></div>
-                                                        <div class="col-md-6 col-sm-12">Duration: <span>5 Days</span></div>
+                                                        <div class="col-md-12 col-sm-12">IT300</div>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="main-res-info">
+                                                    <a>
+                                                        <i class="fas fa-umbrella"></i> <span class="font-bold">Annual Vacation</span>
+                                                    </a>
+                                                    <div class="row">
+                                                        <div class="col-md-12 col-sm-12">Start Date: <span>2/2020</span></div>
+                                                        <div class="col-md-12 col-sm-12">Duration: <span>5 Days</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -415,19 +444,17 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="box col-lg-4 col-md-6 col-sm-6 col-12">
+                            <div class="box col-lg-3 col-md-4 col-sm-6 col-12">
                                 <div class="card">
                                     <div class="card-body new-card">
                                         <div class="card-content">
                                             <div class="media mb-2">
                                                 <a class="mr-1" href="#">
                                                     <img src="../../app-assets/images/portrait/small/avatar-s-15.jpg"
-                                                        alt="users view avatar" class="users-avatar-shadow rounded-circle" height="64"
-                                                        width="64">
+                                                        alt="users view avatar" class="users-avatar-shadow resource-img rounded-circle">
                                                 </a>
                                                 <div class="media-body pt-25">
-                                                    <h4 class="media-heading"><a href="./profile.html" class="users-view-name"
-                                                            data-toggle="tooltip" data-placement="bottom" title="Profile">Ahmad Ali</a></h4>
+                                                    <h4 class="media-heading"><a href="./profile.html" class="users-view-name">Ahmad Ali</a></h4>
                                                     <span>Rate :</span>
                                                     <span class="resource-rate">350 JD</span>
                                                     <div>Level :</span>
@@ -437,26 +464,29 @@
                                             <div class="resource-info">
                                                 <div class="main-res-info">
                                                     <a>
-                                                        <i class="bx bxs-plane-alt"></i> <span class="font-bold">Passport</span>
-                                                    </a>
-                                                </div>
-                                                <div class="main-res-info">
-                                                    <a>
                                                         <i class="fab fa-cc-visa"></i> <span class="font-bold">Visa Data</span>
                                                     </a>
                                                     <div class="row">
-                                                        <div class="col-md-6 col-sm-12">Expired Date: <span>10/2020</span></div>
-                                                        <div class="col-md-6 col-sm-12">assign on: <span>IT 35</span></div>
+                                                        <div class="col-md-12 col-sm-12">Expired Date: <span>10/2020</span></div>
                                                     </div>
-                                                    <div><button type="button" class="btn  btn-primary btn-sm w-sm-100">More</button></div>
                                                 </div>
+                                                <hr>
                                                 <div class="main-res-info">
                                                     <a>
-                                                        <i class="fas fa-user-clock"></i> <span class="font-bold">Annual Vacation</span>
+                                                        <i class="bx bxs-briefcase"></i> <span class="font-bold">Assign On</span>
                                                     </a>
                                                     <div class="row">
-                                                        <div class="col-md-6 col-sm-12">Start Date: <span>2/2020</span></div>
-                                                        <div class="col-md-6 col-sm-12">Duration: <span>5 Days</span></div>
+                                                        <div class="col-md-12 col-sm-12">IT300</div>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="main-res-info">
+                                                    <a>
+                                                        <i class="fas fa-umbrella"></i> <span class="font-bold">Annual Vacation</span>
+                                                    </a>
+                                                    <div class="row">
+                                                        <div class="col-md-12 col-sm-12">Start Date: <span>2/2020</span></div>
+                                                        <div class="col-md-12 col-sm-12">Duration: <span>5 Days</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -464,19 +494,17 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="box col-lg-4 col-md-6 col-sm-6 col-12">
+                            <div class="box col-lg-3 col-md-4 col-sm-6 col-12">
                                 <div class="card">
                                     <div class="card-body new-card">
                                         <div class="card-content">
                                             <div class="media mb-2">
                                                 <a class="mr-1" href="#">
                                                     <img src="../../app-assets/images/portrait/small/avatar-s-15.jpg"
-                                                        alt="users view avatar" class="users-avatar-shadow rounded-circle" height="64"
-                                                        width="64">
+                                                        alt="users view avatar" class="users-avatar-shadow resource-img rounded-circle">
                                                 </a>
                                                 <div class="media-body pt-25">
-                                                    <h4 class="media-heading"><a href="./profile.html" class="users-view-name"
-                                                            data-toggle="tooltip" data-placement="bottom" title="Profile">Ahmad Ali</a></h4>
+                                                    <h4 class="media-heading"><a href="./profile.html" class="users-view-name">Ahmad Ali</a></h4>
                                                     <span>Rate :</span>
                                                     <span class="resource-rate">350 JD</span>
                                                     <div>Level :</span>
@@ -486,26 +514,29 @@
                                             <div class="resource-info">
                                                 <div class="main-res-info">
                                                     <a>
-                                                        <i class="bx bxs-plane-alt"></i> <span class="font-bold">Passport</span>
-                                                    </a>
-                                                </div>
-                                                <div class="main-res-info">
-                                                    <a>
                                                         <i class="fab fa-cc-visa"></i> <span class="font-bold">Visa Data</span>
                                                     </a>
                                                     <div class="row">
-                                                        <div class="col-md-6 col-sm-12">Expired Date: <span>10/2020</span></div>
-                                                        <div class="col-md-6 col-sm-12">assign on: <span>IT 35</span></div>
+                                                        <div class="col-md-12 col-sm-12">Expired Date: <span>10/2020</span></div>
                                                     </div>
-                                                    <div><button type="button" class="btn  btn-primary btn-sm w-sm-100">More</button></div>
                                                 </div>
+                                                <hr>
                                                 <div class="main-res-info">
                                                     <a>
-                                                        <i class="fas fa-user-clock"></i> <span class="font-bold">Annual Vacation</span>
+                                                        <i class="bx bxs-briefcase"></i> <span class="font-bold">Assign On</span>
                                                     </a>
                                                     <div class="row">
-                                                        <div class="col-md-6 col-sm-12">Start Date: <span>2/2020</span></div>
-                                                        <div class="col-md-6 col-sm-12">Duration: <span>5 Days</span></div>
+                                                        <div class="col-md-12 col-sm-12">IT300</div>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="main-res-info">
+                                                    <a>
+                                                        <i class="fas fa-umbrella"></i> <span class="font-bold">Annual Vacation</span>
+                                                    </a>
+                                                    <div class="row">
+                                                        <div class="col-md-12 col-sm-12">Start Date: <span>2/2020</span></div>
+                                                        <div class="col-md-12 col-sm-12">Duration: <span>5 Days</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -513,19 +544,17 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="box col-lg-4 col-md-6 col-sm-6 col-12">
+                            <div class="box col-lg-3 col-md-4 col-sm-6 col-12">
                                 <div class="card">
                                     <div class="card-body new-card">
                                         <div class="card-content">
                                             <div class="media mb-2">
                                                 <a class="mr-1" href="#">
                                                     <img src="../../app-assets/images/portrait/small/avatar-s-15.jpg"
-                                                        alt="users view avatar" class="users-avatar-shadow rounded-circle" height="64"
-                                                        width="64">
+                                                        alt="users view avatar" class="users-avatar-shadow resource-img rounded-circle">
                                                 </a>
                                                 <div class="media-body pt-25">
-                                                    <h4 class="media-heading"><a href="./profile.html" class="users-view-name"
-                                                            data-toggle="tooltip" data-placement="bottom" title="Profile">Ahmad Ali</a></h4>
+                                                    <h4 class="media-heading"><a href="./profile.html" class="users-view-name">Ahmad Ali</a></h4>
                                                     <span>Rate :</span>
                                                     <span class="resource-rate">350 JD</span>
                                                     <div>Level :</span>
@@ -535,26 +564,29 @@
                                             <div class="resource-info">
                                                 <div class="main-res-info">
                                                     <a>
-                                                        <i class="bx bxs-plane-alt"></i> <span class="font-bold">Passport</span>
-                                                    </a>
-                                                </div>
-                                                <div class="main-res-info">
-                                                    <a>
                                                         <i class="fab fa-cc-visa"></i> <span class="font-bold">Visa Data</span>
                                                     </a>
                                                     <div class="row">
-                                                        <div class="col-md-6 col-sm-12">Expired Date: <span>10/2020</span></div>
-                                                        <div class="col-md-6 col-sm-12">assign on: <span>IT 35</span></div>
+                                                        <div class="col-md-12 col-sm-12">No Visa</div>
                                                     </div>
-                                                    <div><button type="button" class="btn  btn-primary btn-sm w-sm-100">More</button></div>
                                                 </div>
+                                                <hr>
                                                 <div class="main-res-info">
                                                     <a>
-                                                        <i class="fas fa-user-clock"></i> <span class="font-bold">Annual Vacation</span>
+                                                        <i class="bx bxs-briefcase"></i> <span class="font-bold">Assign On</span>
                                                     </a>
                                                     <div class="row">
-                                                        <div class="col-md-6 col-sm-12">Start Date: <span>2/2020</span></div>
-                                                        <div class="col-md-6 col-sm-12">Duration: <span>5 Days</span></div>
+                                                        <div class="col-md-12 col-sm-12">IT300</div>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="main-res-info">
+                                                    <a>
+                                                        <i class="fas fa-umbrella"></i> <span class="font-bold">Annual Vacation</span>
+                                                    </a>
+                                                    <div class="row">
+                                                        <div class="col-md-12 col-sm-12">Start Date: <span>2/2020</span></div>
+                                                        <div class="col-md-12 col-sm-12">Duration: <span>5 Days</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -562,19 +594,17 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="box col-lg-4 col-md-6 col-sm-6 col-12">
+                            <div class="box col-lg-3 col-md-4 col-sm-6 col-12">
                                 <div class="card">
                                     <div class="card-body new-card">
                                         <div class="card-content">
                                             <div class="media mb-2">
                                                 <a class="mr-1" href="#">
                                                     <img src="../../app-assets/images/portrait/small/avatar-s-15.jpg"
-                                                        alt="users view avatar" class="users-avatar-shadow rounded-circle" height="64"
-                                                        width="64">
+                                                        alt="users view avatar" class="users-avatar-shadow resource-img rounded-circle">
                                                 </a>
                                                 <div class="media-body pt-25">
-                                                    <h4 class="media-heading"><a href="./profile.html" class="users-view-name"
-                                                            data-toggle="tooltip" data-placement="bottom" title="Profile">Ahmad Ali</a></h4>
+                                                    <h4 class="media-heading"><a href="./profile.html" class="users-view-name">Ahmad Ali</a></h4>
                                                     <span>Rate :</span>
                                                     <span class="resource-rate">350 JD</span>
                                                     <div>Level :</span>
@@ -584,26 +614,29 @@
                                             <div class="resource-info">
                                                 <div class="main-res-info">
                                                     <a>
-                                                        <i class="bx bxs-plane-alt"></i> <span class="font-bold">Passport</span>
-                                                    </a>
-                                                </div>
-                                                <div class="main-res-info">
-                                                    <a>
                                                         <i class="fab fa-cc-visa"></i> <span class="font-bold">Visa Data</span>
                                                     </a>
                                                     <div class="row">
-                                                        <div class="col-md-6 col-sm-12">Expired Date: <span>10/2020</span></div>
-                                                        <div class="col-md-6 col-sm-12">assign on: <span>IT 35</span></div>
+                                                        <div class="col-md-12 col-sm-12">No Visa</div>
                                                     </div>
-                                                    <div><button type="button" class="btn  btn-primary btn-sm w-sm-100">More</button></div>
                                                 </div>
+                                                <hr>
                                                 <div class="main-res-info">
                                                     <a>
-                                                        <i class="fas fa-user-clock"></i> <span class="font-bold">Annual Vacation</span>
+                                                        <i class="bx bxs-briefcase"></i> <span class="font-bold">Assign On</span>
                                                     </a>
                                                     <div class="row">
-                                                        <div class="col-md-6 col-sm-12">Start Date: <span>2/2020</span></div>
-                                                        <div class="col-md-6 col-sm-12">Duration: <span>5 Days</span></div>
+                                                        <div class="col-md-12 col-sm-12">IT300</div>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="main-res-info">
+                                                    <a>
+                                                        <i class="fas fa-umbrella"></i> <span class="font-bold">Annual Vacation</span>
+                                                    </a>
+                                                    <div class="row">
+                                                        <div class="col-md-12 col-sm-12">Start Date: <span>2/2020</span></div>
+                                                        <div class="col-md-12 col-sm-12">Duration: <span>5 Days</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -614,7 +647,7 @@
                         </div>
                     </div>
                     </div>
-                    <div class="modal" tabindex="-1" role="dialog" id="myModal">
+                <div class="modal" tabindex="-1" role="dialog" id="myModal">
                         <div class="modal-dialog">
                           <div class="modal-content">
                             <div class="modal-header">
@@ -728,10 +761,9 @@
 
 </html>
 <script>
-    $(document).ready(function () {
-        $('.filter-button').click(function () {
-            $('.filter-box').slideToggle();
-        });
-    });
-  
+  $(document).ready(function () {
+      $('.filter-button').click(function () {
+          $('.filter-box').slideToggle();
+      });
+  });
   </script>
