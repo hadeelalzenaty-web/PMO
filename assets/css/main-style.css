@@ -30,11 +30,13 @@
 }
 .project-name{
     font-size:1.37rem;
-    font-weight: bold;
     display: block;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+}
+.media-body{
+    color:#262B56;
 }
 
 .description p{

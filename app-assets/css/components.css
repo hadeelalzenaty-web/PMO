@@ -105,8 +105,9 @@ html body .content .content-wrapper {
 
 html body .content .content-wrapper .content-header-title {
   color: #475F7B;
-  margin-right: 1rem;
+  margin-right: 0.3rem;
   border-right: 1px solid #828D99;
+  padding-right: 0.3rem;
 }
 
 html body .content .content-wrapper .breadcrumb-wrapper .breadcrumb .breadcrumb-item a,
@@ -3453,6 +3454,9 @@ body.navbar-static .navbar-container .search-input.open {
   }
   .widget-chat.widget-chat-demo .widget-chat-container {
     height: 21rem;
+  }
+  html body .content .content-wrapper .content-header-title {
+    padding-right: 0.3rem;
   }
 }
 
