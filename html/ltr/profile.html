@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html class="loading" lang="en" data-textdirection="ltr">
 <!-- BEGIN: Head-->
-
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
     <meta name="description" content="Frest admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Frest admin template, dashboard template, flat admin template, responsive admin template, web app">
-    <meta name="author" content="PIXINVENT">
-    <title>Profile</title>
+    <meta name="author" content="SSSIT">
+    <title>Resources</title>
     <link rel="apple-touch-icon" href="../../app-assets/images/ico/apple-icon-120.png">
-    <link rel="shortcut icon" type="image/x-icon" href="../../app-assets/images/ico/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="../../assets/images/logo.png">
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,600%7CIBM+Plex+Sans:300,400,500,600,700" rel="stylesheet">
 
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/editors/quill/quill.snow.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/pickers/pickadate/pickadate.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/charts/apexcharts.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/pickers/daterange/daterangepicker.css">
     <!-- END: Vendor CSS-->
 
     <!-- BEGIN: Theme CSS-->
@@ -23,13 +26,11 @@
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/bootstrap-extended.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/colors.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/components.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/themes/dark-layout.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/themes/semi-dark-layout.css">
     <!-- END: Theme CSS-->
 
     <!-- BEGIN: Page CSS-->
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/core/menu/menu-types/vertical-menu.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/pages/page-users.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/pages/app-kanban.css">
     <!-- END: Page CSS-->
 
     <!-- BEGIN: Custom CSS-->
@@ -224,21 +225,21 @@
                     <!-- users view media object start -->
                     <div class="row">
                         <div class="col-12 col-sm-7">
-                            <div class="media mb-2">
+                            <div class="media profile mb-2">
                                 <a class="mr-1" href="#">
                                     <img src="../../app-assets/images/portrait/small/avatar-s-9.jpg" alt="users view avatar" class="users-avatar-shadow rounded-circle" height="64" width="64">
                                 </a>
                                 <div class="media-body pt-25">
-                                    <h4 class="media-heading"><span class="users-view-name">Yasser Tamimi</span></h4>
-                                    <span>IT Manager</span>
+                                    <h4 class="media-heading"><span class="mb-0 text-bold-500 profile-text-color">Yasser Tamimi</span></h4>
+                                    <div>IT Manager</div>
                                     <div><i class="far fa-envelope"></i> yassert@sssit.net</div>
-                                    <div><i class="bx bx-phone"></i> +962785697865</div>
+                                    <div><i class="fas fa-mobile-alt"></i> +962785697865</div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 col-sm-5 px-0 d-flex justify-content-end align-items-center px-1 mb-2">
-                            <a href="#" class="btn btn-sm mr-25 border"><i class="bx bx-envelope font-small-3"></i></a>
-                            <a href="../../html/ltr/vertical-menu-template/page-users-edit.html" class="btn btn-sm btn-primary">Edit</a>
+                            <a href="#" class="btn btn-sm mr-25 border round"><i class="bx bx-envelope font-small-3"></i></a>
+                            <a href="../../html/ltr/vertical-menu-template/page-users-edit.html" class="btn btn-sm btn-primary round">Edit</a>
                         </div>
                     </div>
                     <!-- users view media object ends -->
@@ -247,30 +248,31 @@
                         <div class="card-content">
                             <div class="card-body">
                                 <div class="col-12">
-                                    <ul class="nav nav-tabs nav-fill nav-justified profile-nav" id="myTab2" role="tablist">
+                                    <ul class="nav nav-tabs nav-justified nav-profile" id="myTab2" role="tablist">
                                         <li class="nav-item current">
-                                          <a class="nav-link active" id="home-tab-justified" data-toggle="tab" href="#home-just" role="tab" aria-controls="home-just" aria-selected="true">
-                                            Experience
-                                          </a>
+                                            <a class="nav-link active" id="experiance-tab" data-toggle="tab" href="#experiance-just" role="tab" aria-controls="home-just" aria-selected="true">
+                                                Experiance
+                                            </a>
                                         </li>
                                         <li class="nav-item">
-                                          <a class="nav-link" id="profile-tab-justified" data-toggle="tab" href="#profile-just" role="tab" aria-controls="profile-just" aria-selected="false">
-                                            Contant Information
-                                          </a>
+                                            <a class="nav-link" id="content-tab" data-toggle="tab" href="#content-just" role="tab" aria-controls="profile-just" aria-selected="true">
+                                                Content Information
+                                            </a>
                                         </li>
                                         <li class="nav-item">
-                                          <a class="nav-link" id="messages-tab-justified" data-toggle="tab" href="#messages-just" role="tab" aria-controls="messages-just" aria-selected="false">
-                                            Projects
-                                          </a>
+                                            <a class="nav-link" id="projects-tab" data-toggle="tab" href="#projects-just" role="tab" aria-controls="messages-just" aria-selected="false">
+                                                Projects
+                                            </a>
                                         </li>
                                         <li class="nav-item">
-                                          <a class="nav-link" id="settings-tab-justified" data-toggle="tab" href="#settings-just" role="tab" aria-controls="settings-just" aria-selected="false">
-                                            Location
-                                          </a>
+                                            <a class="nav-link" id="location-tab" data-toggle="tab" href="#location-just" role="tab" aria-controls="settings-just" aria-selected="false">
+                                                Location
+                                            </a>
                                         </li>
-                                      </ul>
+                                    </ul>
                                       <div class="tab-content pt-1">
-                                        <div class="tab-pane active" id="home-just" role="tabpanel" aria-labelledby="home-tab-justified">
+                                        <div class="tab-pane active" id="experiance-just" role="tabpanel" aria-labelledby="home-tab-justified">
+                                            <h5 class="mb-1"><i class="fas fa-users-cog"></i> Experiance</h5>
                                             <ol>
                                                 <li>
                                                     Creativity & World-class quality of work
@@ -321,7 +323,7 @@
                                                 </li>
                                             </ol>
                                         </div>
-                                        <div class="tab-pane" id="profile-just" role="tabpanel" aria-labelledby="profile-tab-justified">
+                                        <div class="tab-pane" id="content-just" role="tabpanel" aria-labelledby="profile-tab-justified">
                                             <h5 class="mb-1"><i class="bx bx-info-circle"></i> Contact Information</h5>
                                             <table class="table table-borderless">
                                                 <tbody>
@@ -344,11 +346,11 @@
                                                 </tbody>
                                             </table>
                                         </div>
-                                        <div class="tab-pane" id="messages-just" role="tabpanel" aria-labelledby="messages-tab-justified">
+                                        <div class="tab-pane" id="projects-just" role="tabpanel" aria-labelledby="messages-tab-justified">
                                             <h5 class="mb-1"><i class="bx bxs-briefcase"></i> Projects</h5>
                                             <p>PMO,E-Morasalat</p>
                                         </div>
-                                        <div class="tab-pane" id="settings-just" role="tabpanel" aria-labelledby="settings-tab-justified">
+                                        <div class="tab-pane" id="location-just" role="tabpanel" aria-labelledby="settings-tab-justified">
                                             <h5 class="mb-1"><i class="fas fa-map-marker-alt"></i> Location</h5>
                                             <table class="table table-borderless">
                                                 <tbody>
@@ -380,9 +382,21 @@
         </div>
     </div>
     <!-- END: Content-->
-
+    <!--JQuery-->
+    <script src="../../assets/js/jquery.js"></script>
 
     </div>
+    <script>
+        $(document).ready(function () {
+        $(".nav-item").click(function(){
+            $(".nav-item").removeClass("current");
+                $(this).toggleClass("current");
+          });
+             });
+
+    </script>
+
+
 
 
     <!-- BEGIN: Vendor JS-->

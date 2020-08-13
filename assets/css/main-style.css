@@ -35,6 +35,12 @@
     overflow: hidden;
     white-space: nowrap;
 }
+.nav.nav-profile .nav-link{
+    border-radius:0px !important;
+}
+.profile .media-body div{
+font-size:13px;
+}
 
 
 .description p{
