@@ -94,7 +94,7 @@ font-size:13px;
     margin-top:5px;
 }
 .time-card span{
-    font-size:12px;
+    font-size:13px;
 }
 
 .contract-details a{
@@ -148,8 +148,8 @@ font-size:13px;
     vertical-align: middle;
 }
 .main-res-info{
-    font-size: 0.9rem;
-   color:#262B56; 
+    font-size: 13px;
+   color:#737171; 
    margin-bottom: 10px;
 }
 .profile-nav .nav-link{
@@ -254,9 +254,7 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(228,228,246,1) 3
     overflow: hidden;
     white-space: nowrap;
 }
-.nav-pills .nav-item.col-6{
-    margin:0px !important;
-}
+
 
 .filter-box{
     display: none;
