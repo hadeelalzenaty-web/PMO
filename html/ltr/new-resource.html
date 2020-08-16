@@ -8,16 +8,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
     <meta name="description" content="Frest admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Frest admin template, dashboard template, flat admin template, responsive admin template, web app">
-    <meta name="author" content="PIXINVENT">
+    <meta name="author" content="sssIT">
     <title>New Resource</title>
     <link rel="apple-touch-icon" href="../../app-assets/images/ico/apple-icon-120.png">
     <link rel="shortcut icon" type="image/x-icon" href="../../assets/images/logo.png">
-    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,600%7CIBM+Plex+Sans:300,400,500,600,700" rel="stylesheet">">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,600%7CIBM+Plex+Sans:300,400,500,600,700" rel="stylesheet">
 
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/vendors.min.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/tables/datatable/datatables.min.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/editors/quill/quill.snow.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/pickers/pickadate/pickadate.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/charts/apexcharts.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/pickers/daterange/daterangepicker.css">
     <!-- END: Vendor CSS-->
 
     <!-- BEGIN: Theme CSS-->
@@ -25,13 +27,11 @@
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/bootstrap-extended.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/colors.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/components.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/themes/dark-layout.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/themes/semi-dark-layout.css">
     <!-- END: Theme CSS-->
 
     <!-- BEGIN: Page CSS-->
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/core/menu/menu-types/vertical-menu.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/pages/page-users.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/pages/app-kanban.css">
     <!-- END: Page CSS-->
 
     <!-- BEGIN: Custom CSS-->
@@ -43,7 +43,7 @@
 
 <!-- BEGIN: Body-->
 
-<body class="vertical-layout vertical-menu-modern boxicon-layout no-card-shadow 2-columns  navbar-sticky footer-static menu-collapsed" data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
+<body class="vertical-layout vertical-menu-modern boxicon-layout no-card-shadow 2-columns  navbar-sticky footer-static menu-collapsed  " data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
 
     <!-- BEGIN: Header-->
     <div class="header-navbar-shadow"></div>
@@ -235,8 +235,9 @@
     <!-- BEGIN: Content-->
     <div class="app-content content">
         <div class="content-overlay"></div>
-        
+    
         <div class="content-wrapper">
+            <div class="content-header">
             <div class="content-body">
                 <!-- users list start -->
                 <section class="users-list-wrapper">
@@ -248,22 +249,19 @@
                                     <div class="mb-2 mb-md-0 pills-stacked">
                                         <ul class="nav nav-pills d-flex flex-md-column flex-row">
                                             <li class="nav-item col-sm-6 col-md col-12 pl-0">
-                                                <a class="nav-link d-flex active" id="project-tab" data-toggle="pill"
-                                                    href="#project" aria-expanded="true">
+                                                <a class="nav-link d-flex active" id="project-tab" data-toggle="pill" href="#project" aria-expanded="true">
                                                     <i class="bx bx-news"></i>
                                                     <span>Main Info</span>
                                                 </a>
                                             </li>
                                             <li class="nav-item col-6 col-md pl-0">
-                                                <a class="nav-link d-flex" id="baseline-tab" data-toggle="pill"
-                                                    href="#baseline" aria-expanded="false">
+                                                <a class="nav-link d-flex" id="baseline-tab" data-toggle="pill" href="#baseline" aria-expanded="false">
                                                     <i class="bx bxs-plane-take-off"></i>
                                                     <span>Resource Vacation</span>
                                                 </a>
                                             </li>
                                             <li class="nav-item col-6 col-md pl-0">
-                                                <a class="nav-link d-flex" id="actual-tab" data-toggle="pill"
-                                                    href="#actual" aria-expanded="false">
+                                                <a class="nav-link d-flex" id="actual-tab" data-toggle="pill" href="#actual" aria-expanded="false">
                                                     <i class="fab fa-cc-visa"></i>
                                                     <span>Resource Visa List</span>
                                                 </a>
@@ -278,9 +276,29 @@
                                             </a>
                                             <div class="user-profile-text">
                                                 <h4 class="mb-0 text-bold-500 profile-text-color">Martina Ash</h4>
-                                                <small>Devloper</small>
+                                                <div>IT Manager</div>
+                                                <div><i class="far fa-envelope"></i> yassert@sssit.net</div>
+                                                <div><i class="fas fa-mobile-alt"></i> +962785697865</div>
                                               </div>
                                         </div>
+                                        <div class="row">
+                                            <div class="col-xl-4 col-md-12">
+                                              <span class="invoice-number mr-50">Level:</span>
+                                              <span>Junior</span>
+                                            </div>
+                                            <div class="col-xl-8 col-md-12">
+                                              <div class="d-flex align-items-center justify-content-xl-end flex-wrap">
+                                                <div>
+                                                    <small class="text-muted">Assign on:</small>
+                                                    <span>IT 130</span>
+                                                  </div>
+                                                <div class="ml-2">
+                                                  <small class="text-muted">Rate:</small>
+                                                  <span>350 JD</span>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
                                         <div class="tab-content">
                                             <div role="tabpanel" class="tab-pane active" id="project">
                                                 <!-- Tab panes -->
@@ -561,9 +579,10 @@
                         </div>
                     </div>
                 </section>
-                <!-- users list ends -->
-            </div>
+            <!-- users list ends -->
         </div>
+    </div>
+</div>
     </div>
     <!-- END: Content-->
 
@@ -573,36 +592,33 @@
     <!-- END: Footer-->
 
 
+ <!-- BEGIN: Vendor JS-->
+ <script src="../../app-assets/vendors/js/vendors.min.js"></script>
+ <script src="../../app-assets/fonts/LivIconsEvo/js/LivIconsEvo.tools.js"></script>
+ <script src="../../app-assets/fonts/LivIconsEvo/js/LivIconsEvo.defaults.js"></script>
+ <script src="../../app-assets/fonts/LivIconsEvo/js/LivIconsEvo.min.js"></script>
 
-    <!-- BEGIN: Vendor JS-->
-    <script src="../../app-assets/vendors/js/vendors.min.js"></script>
-    <script src="../../app-assets/fonts/LivIconsEvo/js/LivIconsEvo.tools.js"></script>
-    <script src="../../app-assets/fonts/LivIconsEvo/js/LivIconsEvo.defaults.js"></script>
-    <script src="../../app-assets/fonts/LivIconsEvo/js/LivIconsEvo.min.js"></script>
-    <!-- BEGIN Vendor JS-->
+ <!-- BEGIN: Page Vendor JS-->
+ <script src="../../app-assets/vendors/js/forms/spinner/jquery.bootstrap-touchspin.js"></script>
+ <script src="../../app-assets/vendors/js/tables/datatable/datatables.min.js"></script>
+ <script src="../../app-assets/vendors/js/tables/datatable/dataTables.bootstrap4.min.js"></script>
+ <script src="../../app-assets/vendors/js/pickers/pickadate/picker.js"></script>
+ <script src="../../app-assets/vendors/js/pickers/pickadate/picker.date.js"></script>
+ <script src="../../app-assets/vendors/js/pickers/pickadate/picker.time.js"></script>
+ <!-- END: Page Vendor JS-->
 
-    <!-- BEGIN: Page Vendor JS-->
-    <script src="../../app-assets/vendors/js/forms/spinner/jquery.bootstrap-touchspin.js"></script>
-    <script src="../../app-assets/vendors/js/tables/datatable/datatables.min.js"></script>
-    <script src="../../app-assets/vendors/js/tables/datatable/dataTables.bootstrap4.min.js"></script>
-    <script src="../../app-assets/vendors/js/pickers/pickadate/picker.js"></script>
-    <script src="../../app-assets/vendors/js/pickers/pickadate/picker.date.js"></script>
-    <script src="../../app-assets/vendors/js/pickers/pickadate/picker.time.js"></script>
-    <!-- END: Page Vendor JS-->
+ <!-- BEGIN: Theme JS-->
+ <script src="../../app-assets/js/core/app-menu.js"></script>
+ <script src="../../app-assets/js/core/app.js"></script>
+ <script src="../../app-assets/js/scripts/components.js"></script>
+ <script src="../../app-assets/js/scripts/footer.js"></script>
+ <!-- END: Theme JS-->
 
-    <!-- BEGIN: Theme JS-->
-    <script src="../../app-assets/js/core/app-menu.js"></script>
-    <script src="../../app-assets/js/core/app.js"></script>
-    <script src="../../app-assets/js/scripts/components.js"></script>
-    <script src="../../app-assets/js/scripts/footer.js"></script>
-    <!-- END: Theme JS-->
-
-    <!-- BEGIN: Page JS-->
-    <script src="../../app-assets/js/scripts/forms/number-input.js"></script>
-    <script src="../../app-assets/js/scripts/pickers/dateTime/pick-a-datetime.js"></script>
-    <script src="../../app-assets/js/scripts/pages/page-users.js"></script>
-    <!-- END: Page JS-->
-    <!-- END: Page JS-->
+ <!-- BEGIN: Page JS-->
+ <script src="../../app-assets/js/scripts/forms/number-input.js"></script>
+ <script src="../../app-assets/js/scripts/pages/page-users.js"></script>
+ <script src="../../app-assets/js/scripts/pages/app-invoice.js"></script>
+ <!-- END: Page JS-->
 
 </body>
 <!-- END: Body-->
