@@ -84,7 +84,8 @@ body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu:not(.expande
 /*new*/
 
 body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu:not(.expanded) .navbar-header .navbar-brand .logo-2{
-display: block;
+visibility: visible;
+transition:visible 2s linear;
 }
 body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu:not(.expanded) .navbar-header .navbar-brand .logo{
 display: none;
@@ -93,10 +94,10 @@ body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu.expanded .na
   display: block;
   }
   body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu.expanded .navbar-header .navbar-brand .logo-2{
-  display: none;
+ visibility: hidden;
   }
   body.vertical-layout .main-menu .navbar-brand .logo-2{
-    display: none;
+    visibility: hidden;
   }
   body.vertical-layout .main-menu .navbar-brand .logo{
     display: block;

@@ -8,18 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
     <meta name="description" content="Frest admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Frest admin template, dashboard template, flat admin template, responsive admin template, web app">
-    <meta name="author" content="sssIT">
-    <title>New Resources</title>
+    <meta name="author" content="PIXINVENT">
+    <title>New Resource</title>
     <link rel="apple-touch-icon" href="../../app-assets/images/ico/apple-icon-120.png">
     <link rel="shortcut icon" type="image/x-icon" href="../../assets/images/logo.png">
-    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,600%7CIBM+Plex+Sans:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,600%7CIBM+Plex+Sans:300,400,500,600,700" rel="stylesheet">">
 
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/vendors.min.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/editors/quill/quill.snow.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/tables/datatable/datatables.min.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/pickers/pickadate/pickadate.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/charts/apexcharts.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/pickers/daterange/daterangepicker.css">
     <!-- END: Vendor CSS-->
 
     <!-- BEGIN: Theme CSS-->
@@ -27,11 +25,13 @@
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/bootstrap-extended.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/colors.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/components.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/themes/dark-layout.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/themes/semi-dark-layout.css">
     <!-- END: Theme CSS-->
 
     <!-- BEGIN: Page CSS-->
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/core/menu/menu-types/vertical-menu.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/pages/app-kanban.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/pages/page-users.css">
     <!-- END: Page CSS-->
 
     <!-- BEGIN: Custom CSS-->
@@ -43,7 +43,7 @@
 
 <!-- BEGIN: Body-->
 
-<body class="vertical-layout vertical-menu-modern boxicon-layout no-card-shadow 2-columns  navbar-sticky footer-static menu-collapsed  " data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
+<body class="vertical-layout vertical-menu-modern boxicon-layout no-card-shadow 2-columns  navbar-sticky footer-static menu-collapsed" data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
 
     <!-- BEGIN: Header-->
     <div class="header-navbar-shadow"></div>
@@ -219,9 +219,9 @@
           <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation" data-icon-style="">
               <li class="nav-item"><a href="index.html"><i class="bx bx-home-alt"></i><span class="menu-title" data-i18n="Dashboard">Dashboard</span></a>
               </li>
-              <li class="nav-item"><a href="Projects.html"><i class="bx bxs-briefcase"></i><span class="menu-title">Projects</span></a>
+              <li class=" active nav-item"><a href="Projects.html"><i class="bx bxs-briefcase"></i><span class="menu-title">Projects</span></a>
             </li>
-              <li class="active nav-item"><a href="Resources.html"><i class="fas fa-user-friends"></i><span class="menu-title">Resources</span></a>
+              <li class="nav-item"><a href="Resources.html"><i class="fas fa-user-friends"></i><span class="menu-title">Resources</span></a>
             </li>
             <li class=" nav-item"><a href="Clients.html"><i class="bx bxs-user-badge"></i><span class="menu-title">Clients</span></a>
               </li>
@@ -235,9 +235,8 @@
     <!-- BEGIN: Content-->
     <div class="app-content content">
         <div class="content-overlay"></div>
-    
+        
         <div class="content-wrapper">
-            <div class="content-header">
             <div class="content-body">
                 <!-- users list start -->
                 <section class="users-list-wrapper">
@@ -248,23 +247,23 @@
                                     <!-- left menu section -->
                                     <div class="mb-2 mb-md-0 pills-stacked">
                                         <ul class="nav nav-pills d-flex flex-md-column flex-row">
-                                            <li class="nav-item  col-md col-sm-6 col-12 pl-0 m-0">
+                                            <li class="nav-item col-sm-6 col-md col-12 pl-0">
                                                 <a class="nav-link d-flex active" id="project-tab" data-toggle="pill"
-                                                    href="#maininfo" aria-expanded="true">
+                                                    href="#project" aria-expanded="true">
                                                     <i class="bx bx-news"></i>
                                                     <span>Main Info</span>
                                                 </a>
                                             </li>
-                                            <li class="nav-item  col-md col-sm-6 col-12 pl-0 m-0">
+                                            <li class="nav-item col-6 col-md pl-0">
                                                 <a class="nav-link d-flex" id="baseline-tab" data-toggle="pill"
-                                                    href="#rvacation" aria-expanded="false">
+                                                    href="#baseline" aria-expanded="false">
                                                     <i class="bx bxs-plane-take-off"></i>
                                                     <span>Resource Vacation</span>
                                                 </a>
                                             </li>
-                                            <li class="nav-item col-md col-sm-6 col-12 m-0 pl-0">
+                                            <li class="nav-item col-6 col-md pl-0">
                                                 <a class="nav-link d-flex" id="actual-tab" data-toggle="pill"
-                                                    href="#rvisalist" aria-expanded="false">
+                                                    href="#actual" aria-expanded="false">
                                                     <i class="fab fa-cc-visa"></i>
                                                     <span>Resource Visa List</span>
                                                 </a>
@@ -293,7 +292,7 @@
                                                                     <fieldset class="form-group">
                                                                         <label for="rname">Resource Name</label>
                                                                         <input type="text" class="form-control" id="rname" placeholder="Name">
-                                                        
+                                                                        
                                                                     </fieldset>
                                                                 </div>
                                                                 <div class="col-md-6 col-sm-6 col-12">
@@ -333,16 +332,17 @@
                                                                         </div>
                                                                     </fieldset>
                                                                 </div>
-                                                            </div>
+                                                        </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-12 d-flex flex-sm-row flex-column justify-content-end my-1 p-0">
-                                                    <button type="submit" class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">Save</button>
+                                                    <button type="submit" class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">Save
+                                                        </button>
                                                     <button type="reset" class="btn btn-light">Cancel</button>
                                                 </div>
                                             </div>
-                                            <div role="tabpanel" class="tab-pane" id="rvacation">
+                                            <div role="tabpanel" class="tab-pane" id="baseline">
                                                 <div class="card mb-0">
                                                     <div class="card-content">
                                                         <div class="card-body">
@@ -475,7 +475,7 @@
                                                     <button type="reset" class="btn btn-light">Cancel</button>
                                                 </div>
                                             </div>
-                                            <div role="tabpanel" class="tab-pane" id="rvisalist">
+                                            <div role="tabpanel" class="tab-pane" id="actual">
                                                 <div class="card mb-0">
                                                     <div class="card-content">
                                                         <div class="card-body">
@@ -561,10 +561,9 @@
                         </div>
                     </div>
                 </section>
-            <!-- users list ends -->
+                <!-- users list ends -->
+            </div>
         </div>
-    </div>
-</div>
     </div>
     <!-- END: Content-->
 
@@ -574,33 +573,36 @@
     <!-- END: Footer-->
 
 
- <!-- BEGIN: Vendor JS-->
- <script src="../../app-assets/vendors/js/vendors.min.js"></script>
- <script src="../../app-assets/fonts/LivIconsEvo/js/LivIconsEvo.tools.js"></script>
- <script src="../../app-assets/fonts/LivIconsEvo/js/LivIconsEvo.defaults.js"></script>
- <script src="../../app-assets/fonts/LivIconsEvo/js/LivIconsEvo.min.js"></script>
 
- <!-- BEGIN: Page Vendor JS-->
- <script src="../../app-assets/vendors/js/forms/spinner/jquery.bootstrap-touchspin.js"></script>
- <script src="../../app-assets/vendors/js/tables/datatable/datatables.min.js"></script>
- <script src="../../app-assets/vendors/js/tables/datatable/dataTables.bootstrap4.min.js"></script>
- <script src="../../app-assets/vendors/js/pickers/pickadate/picker.js"></script>
- <script src="../../app-assets/vendors/js/pickers/pickadate/picker.date.js"></script>
- <script src="../../app-assets/vendors/js/pickers/pickadate/picker.time.js"></script>
- <!-- END: Page Vendor JS-->
+    <!-- BEGIN: Vendor JS-->
+    <script src="../../app-assets/vendors/js/vendors.min.js"></script>
+    <script src="../../app-assets/fonts/LivIconsEvo/js/LivIconsEvo.tools.js"></script>
+    <script src="../../app-assets/fonts/LivIconsEvo/js/LivIconsEvo.defaults.js"></script>
+    <script src="../../app-assets/fonts/LivIconsEvo/js/LivIconsEvo.min.js"></script>
+    <!-- BEGIN Vendor JS-->
 
- <!-- BEGIN: Theme JS-->
- <script src="../../app-assets/js/core/app-menu.js"></script>
- <script src="../../app-assets/js/core/app.js"></script>
- <script src="../../app-assets/js/scripts/components.js"></script>
- <script src="../../app-assets/js/scripts/footer.js"></script>
- <!-- END: Theme JS-->
+    <!-- BEGIN: Page Vendor JS-->
+    <script src="../../app-assets/vendors/js/forms/spinner/jquery.bootstrap-touchspin.js"></script>
+    <script src="../../app-assets/vendors/js/tables/datatable/datatables.min.js"></script>
+    <script src="../../app-assets/vendors/js/tables/datatable/dataTables.bootstrap4.min.js"></script>
+    <script src="../../app-assets/vendors/js/pickers/pickadate/picker.js"></script>
+    <script src="../../app-assets/vendors/js/pickers/pickadate/picker.date.js"></script>
+    <script src="../../app-assets/vendors/js/pickers/pickadate/picker.time.js"></script>
+    <!-- END: Page Vendor JS-->
 
- <!-- BEGIN: Page JS-->
- <script src="../../app-assets/js/scripts/forms/number-input.js"></script>
- <script src="../../app-assets/js/scripts/pages/page-users.js"></script>
- <script src="../../app-assets/js/scripts/pages/app-invoice.js"></script>
- <!-- END: Page JS-->
+    <!-- BEGIN: Theme JS-->
+    <script src="../../app-assets/js/core/app-menu.js"></script>
+    <script src="../../app-assets/js/core/app.js"></script>
+    <script src="../../app-assets/js/scripts/components.js"></script>
+    <script src="../../app-assets/js/scripts/footer.js"></script>
+    <!-- END: Theme JS-->
+
+    <!-- BEGIN: Page JS-->
+    <script src="../../app-assets/js/scripts/forms/number-input.js"></script>
+    <script src="../../app-assets/js/scripts/pickers/dateTime/pick-a-datetime.js"></script>
+    <script src="../../app-assets/js/scripts/pages/page-users.js"></script>
+    <!-- END: Page JS-->
+    <!-- END: Page JS-->
 
 </body>
 <!-- END: Body-->
