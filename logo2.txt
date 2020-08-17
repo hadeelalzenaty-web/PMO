@@ -1,0 +1,180 @@
+<img src="../../assets/images/logo.png" alt="logo-2" class="logo-2" height="35" width="35">
+
+  body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu:not(.expanded) .navbar-header .navbar-brand .logo{
+display:none
+  } 
+
+/*body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu.expanded .navbar-header .navbar-brand .logo{
+  display: block;
+  }*/
+ /* body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu.expanded .navbar-header .navbar-brand .logo-2{
+ visibility: hidden;
+  }
+  body.vertical-layout .main-menu .navbar-brand .logo-2{
+    visibility: hidden;
+  }*/
+  body.vertical-layout .main-menu .navbar-brand .logo{
+    display: block;
+  }
+
+content body of profile:
+<div class="content-body">
+                <!-- users view start -->
+                <section class="users-view">
+                    <!-- users view media object start -->
+                    <div class="row">
+                        <div class="col-12 col-sm-7">
+                            <div class="media profile mb-2">
+                                <a class="mr-1" href="#">
+                                    <img src="../../app-assets/images/portrait/small/avatar-s-9.jpg" alt="users view avatar" class="users-avatar-shadow rounded-circle" height="64" width="64">
+                                </a>
+                                <div class="media-body pt-25">
+                                    <h4 class="media-heading"><span class="mb-0 text-bold-500 profile-text-color">Yasser Tamimi</span></h4>
+                                    <div>IT Manager</div>
+                                    <div><i class="far fa-envelope"></i> yassert@sssit.net</div>
+                                    <div><i class="fas fa-mobile-alt"></i> +962785697865</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-5 px-0 d-flex justify-content-end align-items-center px-1 mb-2">
+                            <a href="#" class="btn btn-sm mr-25 border round"><i class="bx bx-envelope font-small-3"></i></a>
+                            <a href="../../html/ltr/vertical-menu-template/page-users-edit.html" class="btn btn-sm btn-primary round">Edit</a>
+                        </div>
+                    </div>
+                    <!-- users view media object ends -->
+                    <!-- users view card details start -->
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-body">
+                                <div class="col-12">
+                                    <ul class="nav nav-tabs nav-justified nav-profile" id="myTab2" role="tablist">
+                                        <li class="nav-item current">
+                                            <a class="nav-link active" id="experiance-tab" data-toggle="tab" href="#experiance-just" role="tab" aria-controls="home-just" aria-selected="true">
+                                                Experiance
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="content-tab" data-toggle="tab" href="#content-just" role="tab" aria-controls="profile-just" aria-selected="true">
+                                                Content Information
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="projects-tab" data-toggle="tab" href="#projects-just" role="tab" aria-controls="messages-just" aria-selected="false">
+                                                Projects
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="location-tab" data-toggle="tab" href="#location-just" role="tab" aria-controls="settings-just" aria-selected="false">
+                                                Location
+                                            </a>
+                                        </li>
+                                    </ul>
+                                      <div class="tab-content pt-1">
+                                        <div class="tab-pane active" id="experiance-just" role="tabpanel" aria-labelledby="home-tab-justified">
+                                            <h5 class="mb-1"><i class="fas fa-users-cog"></i> Experiance</h5>
+                                            <ol>
+                                                <li>
+                                                    Creativity &amp; World-class quality of work
+                                                    <ul>
+                                                        <li>
+                                                            Ability to quickly understand, analyse, and respond to client briefs
+                                                        </li>
+                                                        <li>
+                                                            Work with the specialists to develop and deliver boundary pushing service concepts
+                                                        </li>
+                                                        <li>
+                                                            Creativity of output (innovation &amp; beauty)
+                                                        </li>
+                                                        <li>
+                                                            Completeness and suitability of work (works with client situation)
+                                                        </li>
+                                                        <li>
+                                                            Lead the creative side of pitch projects and support the business development team with
+                                                            creative input, client meetings, presentations and proposal writings
+                                                        </li>
+                                                    </ul>
+                                                    
+                                                </li>
+                                                <li>
+                                                    Output creation
+                                                    <ul>
+                                                        <li>
+                                                            Conduct user requirements analysis, task analysis, conceptual modeling, information
+                                                            architecture design, interaction design, and usability testing.
+                                                        </li>
+                                                        <li>
+                                                            Design and specify user interfaces and information architecture using participatory and
+                                                            iterative design techniques, including observational studies, customer interviews, usability
+                                                            testing, and other forms of requirements discovery.
+                                                        </li>
+                                                        <li>
+                                                            Produce user requirements specifications, personas, storyboards, scenarios, flowcharts,
+                                                            design prototypes, and design specifications.
+                                                        </li>
+                                                        <li>
+                                                            Effectively communicate research findings, conceptual ideas, detailed design, and design
+                                                            rationale both verbally and visually
+                                                        </li>
+                                                        <li>
+                                                            Work closely with development teams to ensure that design specifications are implemented.
+                                                        </li> 
+                                                    </ul>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                        <div class="tab-pane" id="content-just" role="tabpanel" aria-labelledby="profile-tab-justified">
+                                            <h5 class="mb-1"><i class="bx bx-info-circle"></i> Contact Information</h5>
+                                            <table class="table table-borderless">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>First Name</td>
+                                                        <td>Yasser</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Last Name</td>
+                                                        <td>Tamimi</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Birthday</td>
+                                                        <td>22/7/1983</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Skype Name</td>
+                                                        <td>Yasser Mohammad</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="tab-pane" id="projects-just" role="tabpanel" aria-labelledby="messages-tab-justified">
+                                            <h5 class="mb-1"><i class="bx bxs-briefcase"></i> Projects</h5>
+                                            <p>PMO,E-Morasalat</p>
+                                        </div>
+                                        <div class="tab-pane" id="location-just" role="tabpanel" aria-labelledby="settings-tab-justified">
+                                            <h5 class="mb-1"><i class="fas fa-map-marker-alt"></i> Location</h5>
+                                            <table class="table table-borderless">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Country</td>
+                                                        <td>Amman,Jordan</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Department</td>
+                                                        <td>IT Department</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Floor</td>
+                                                        <td>3</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- users view card details ends -->
+
+                </section>
+                <!-- users view ends -->
+            </div>

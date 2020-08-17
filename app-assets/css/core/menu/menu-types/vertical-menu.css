@@ -83,24 +83,19 @@ body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu:not(.expande
 }
 /*new*/
 
-body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu:not(.expanded) .navbar-header .navbar-brand .logo-2{
+/*body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu:not(.expanded) .navbar-header .navbar-brand .logo-2{
 visibility: visible;
-transition:visible 2s linear;
-}
-body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu:not(.expanded) .navbar-header .navbar-brand .logo{
-display: none;
-}
-body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu.expanded .navbar-header .navbar-brand .logo{
-  display: block;
-  }
-  body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu.expanded .navbar-header .navbar-brand .logo-2{
- visibility: hidden;
-  }
-  body.vertical-layout .main-menu .navbar-brand .logo-2{
-    visibility: hidden;
+transition: all 2s ease;
+}*/
+  body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu:not(.expanded) .navbar-header .navbar-brand .logo{
+  height:35px;
+  width:35px;
+  transition: all 400ms ease;
   }
   body.vertical-layout .main-menu .navbar-brand .logo{
-    display: block;
+    height:45px;
+    width:45px;
+    transition: all 400ms ease;
   }
   /*Till here*/
 body.vertical-layout.vertical-menu-modern .main-menu:not(.expanded) .navigation-header {
