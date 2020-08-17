@@ -2238,6 +2238,9 @@ input[type=number]::-webkit-outer-spin-button {
   padding-bottom: 0.8rem;
   position: relative;
 }
+.nav.nav-tabs .nav-item, .nav.nav-pills .nav-item {
+  margin-right: 0.8rem;
+}
 
 .nav.nav-tabs .nav-item.current::before {
   content: "";
