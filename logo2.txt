@@ -178,3 +178,13 @@ content body of profile:
                 </section>
                 <!-- users view ends -->
             </div>
+for edit profile:
+    <script>
+        $(document).ready(function () {
+        $(".nav-item").click(function(){
+            $(".nav-item").removeClass("current");
+                $(this).toggleClass("current");
+          });
+             });
+
+    </script>
