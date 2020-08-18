@@ -317,14 +317,13 @@ font-weight: 500;
 .bx-loader-alt{
     color:black;
 }
-.table-icon{
-    float: right;
-}
+
 .action{
     text-align:right;
 }
 .table th, .table td{
     padding:10px !important;
+    text-align: center;
 }
 .table-icon a:first-child{
     margin-right:5px;
