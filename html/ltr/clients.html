@@ -11,7 +11,7 @@
     <meta name="author" content="sssit">
     <title>Clients</title>
     <link rel="apple-touch-icon" href="../../app-assets/images/ico/apple-icon-120.png">
-    <link rel="shortcut icon" type="image/x-icon" href="../../app-assets/images/ico/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="../../assets/images/logo.png">
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,600%7CIBM+Plex+Sans:300,400,500,600,700" rel="stylesheet">
 
     <!-- BEGIN: Vendor CSS-->
@@ -42,7 +42,7 @@
 
 <!-- BEGIN: Body-->
 
-<body class="vertical-layout vertical-menu-modern boxicon-layout no-card-shadow 2-columns  navbar-sticky footer-static menu-collapsed  " data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
+<body class="vertical-layout vertical-menu-modern boxicon-layout no-card-shadow 2-columns  navbar-sticky footer-static menu-expanded" data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
 
     <!-- BEGIN: Header-->
     <div class="header-navbar-shadow"></div>
@@ -200,8 +200,6 @@
         </div>
     </nav>
     <!-- END: Header-->
-
-
     <!-- BEGIN: Main Menu-->
     <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
         <div class="navbar-header">
@@ -255,9 +253,76 @@
                   </div>
                 </div>
               </div>
+              <div class="row filter-row">
+                <div class="col-12 project-search">
+                  <div class="input-group">
+              
+                    <input type="search" class="form-control" placeholder="Search" aria-label="Username" aria-describedby="basic-addon1">
+                    <div class="input-group-append">
+                      <button type="button" class="btn filter-button">
+                        <i class="bx bx-slider"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              
+              </div>
+                <div class="filter-box  white-container">
+                    <form>
+                        <div class="row">
+                            <div class="col-12 col-sm-6 col-lg-3">
+                                <label for="select1">Location</label>
+                                <fieldset class="form-group">
+                                    <select class="form-control" id="select1">
+                                        <option value="A">Amman</option>
+                                        <option value="R">Riyadh</option>
+                                        <option value="p"></option>
+                                    </select>
+                                </fieldset>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-3">
+                              <label for="select2">Sort By</label>
+                              <fieldset class="form-group">
+                                  <select class="form-control" id="select2">
+                                      <option value="">Ascending</option>
+                                      <option value="Yes">descending</option>
+                                      <option value="No"></option>
+                                  </select>
+                              </fieldset>
+                          </div>
+                        </div>
+                  </form>
+                
+                </div>   
             <div class="content-body">
-                <!-- users list start -->
-                <section class="clients-wrapper">
+                <div class="my-1">
+                    <div class="chip mr-1">
+                      <div class="chip-body">
+                          <span class="chip-text">#Amman</span>
+                          <div class="chip-closeable">
+                              <i class="bx bx-x"></i>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="chip mr-1">
+                      <div class="chip-body">
+                          <span class="chip-text">#Riyadh</span>
+                          <div class="chip-closeable">
+                              <i class="bx bx-x"></i>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="chip mr-1">
+                      <div class="chip-body">
+                          <span class="chip-text">#Ahmad</span>
+                          <div class="chip-closeable">
+                              <i class="bx bx-x"></i>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+                <section class="clients-section">
+                    
                     <div class="clients-table">
                         <div class="card">
                             <div class="card-content">
@@ -664,6 +729,54 @@
                 </section>
                 <!-- users list ends -->
             </div>
+            <div class="modal" tabindex="-1" role="dialog" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">New Client</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-12">
+                            <fieldset class="form-group">
+                                <label for="client-name">Client Name</label>
+                                <input type="text " class="form-control is-invalid" id="client-name" placeholder="Client Name">
+                                <div class="invalid-feedback">This field is required</div>
+                            </fieldset>
+                        </div>
+                        <div class="col-12">
+                            <fieldset class="form-group">
+                                <label for="client-name-a">Client Name(بالعربية)</label>
+                                <input type="text" class="form-control is-invalid" id="client-name-a" placeholder="اسم العميل">
+                                <div class="invalid-feedback">This field is required</div>
+                            </fieldset>
+                        </div>
+                        <div class="col-12">
+                            <label for="location">Location</label>
+                            <fieldset class="form-group">
+                                <select class="form-control" id="location">
+                                    <option value="">Amman</option>
+                                    <option value="User">Riyadeh</option>
+                                    <option value="Staff">else</option>
+                                </select>
+                            </fieldset>
+                        </div>
+                         </div>
+                    </div>
+                    <div class="modal-footer">
+                      <div class="d-flex flex-sm-row flex-column justify-content-end  p-0">
+                        <button type="submit" class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">
+                          Add New Client
+                            </button>
+                        <button type="reset" class="btn btn-light" data-dismiss="modal">Cancel</button>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </div>
     </div>
     <!-- END: Content-->
@@ -682,8 +795,11 @@
     <!-- BEGIN Vendor JS-->
 
     <!-- BEGIN: Page Vendor JS-->
-    <script src="../../app-assets/vendors/js/tables/datatable/datatables.min.js"></script>
-    <script src="../../app-assets/vendors/js/tables/datatable/dataTables.bootstrap4.min.js"></script>
+    <script src="../../app-assets/vendors/js/jkanban/jkanban.min.js"></script>
+    <script src="../../app-assets/vendors/js/editors/quill/quill.min.js"></script>
+    <script src="../../app-assets/vendors/js/pickers/pickadate/picker.js"></script>
+    <script src="../../app-assets/vendors/js/pickers/pickadate/picker.date.js"></script>
+    <script src="../../app-assets/vendors/js/pickers/pickadate/picker.time.js"></script>
     <!-- END: Page Vendor JS-->
 
     <!-- BEGIN: Theme JS-->
@@ -694,10 +810,16 @@
     <!-- END: Theme JS-->
 
     <!-- BEGIN: Page JS-->
-    <script src="../../app-assets/js/scripts/pages/page-users.js"></script>
+    <script src="../../app-assets/js/scripts/pickers/dateTime/pick-a-datetime.js"></script>
     <!-- END: Page JS-->
 
 </body>
 <!-- END: Body-->
-
 </html>
+<script>
+    $(document).ready(function () {
+        $('.filter-button').click(function () {
+            $('.filter-box').slideToggle();
+        });
+    });
+    </script>

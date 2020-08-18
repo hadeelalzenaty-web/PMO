@@ -336,6 +336,9 @@ font-weight: 500;
     font-weight: 700;
     color:#5A8DEE;
 }
+.client-name-a{
+    display:block;
+}
 
 
 hr{
