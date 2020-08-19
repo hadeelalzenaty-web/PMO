@@ -256,11 +256,10 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(228,228,246,1) 3
     white-space: nowrap;
 }
 .resource-name{
-    width: 0;
+    flex: 1 1 auto;
+    width: 1%;
 }
-.resource-cont{
-    min-width: 0;
-}
+
 
 .filter-box{
     display: none;
@@ -328,7 +327,15 @@ font-weight: 500;
 .table-icon a:first-child{
     margin-right:5px;
 }
-
+.main-info{
+    font-weight: bold;
+}
+.client-name-a{
+    display: block;
+}
+.user-profile-text{
+    color: #52585f;
+}
 .filter-row input[type=search]{
     text-indent: 20px;
 }
