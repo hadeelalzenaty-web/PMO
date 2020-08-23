@@ -2037,11 +2037,20 @@ body.navbar-static .navbar-container .search-input.open {
   background-color: #3b5998;
   border-color: #FFFFFF;
 }
+.btn-outlook{
+  background-color:#0070C5;
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
 
 .btn-facebook:hover {
   color: #FFFFFF;
   background-color: #3b5998;
   border-color: #3b5998;
+}
+.btn-outlook:hover{
+  background-color:#5A8DEE;
+  color: #FFFFFF;
 }
 
 .btn-facebook:focus, .btn-facebook.focus {
@@ -2180,8 +2189,8 @@ body.navbar-static .navbar-container .search-input.open {
 
 .btn-google:hover {
   color: #FFFFFF;
-  background-color: #dd4b39;
-  border-color: #dd4b39;
+  background-color: #ef5d4b;
+  border-color: #ef5d4b;
 }
 
 .btn-google:focus, .btn-google.focus {
