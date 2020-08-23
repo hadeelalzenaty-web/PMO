@@ -25,6 +25,12 @@
 .plan-progress{
     margin-bottom:8px;
 }
+.col-action{
+    width:100px;
+}
+.table-icon a:hover i{
+    background-color:#ceddec;
+}
 .card-content{
 	padding:0.3rem 0.5rem;
 }
@@ -142,6 +148,12 @@ font-size:13px;
 .logo img{
     height:200px;
      width:100%
+}
+.card-no-shadow{
+    box-shadow: none!important;
+}
+.activity-progress{
+    font-size:13px;
 }
 
 .fa-cc-visa{
@@ -286,6 +298,8 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(228,228,246,1) 3
 }
 .filter-button i{
     font-size:25px;
+    position: relative;
+    top: 3px;
 }
 .btn.filter-button:hover{
     background-color:white;
@@ -306,10 +320,6 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(228,228,246,1) 3
 table td{
     white-space: nowrap;
 }
-.main-info span{
-font-weight: 500;
-}
-
 .description a.more{
     font-size: 12px;
 }
@@ -324,8 +334,9 @@ font-weight: 500;
     padding:10px !important;
     text-align: center;
 }
-.table-icon a:first-child{
+.table-icon a{
     margin-right:5px;
+    margin-left:5px;
 }
 .main-info{
     font-weight: bold;
@@ -334,7 +345,10 @@ font-weight: 500;
     display: block;
 }
 .user-profile-text{
-    color: #52585f;
+    color: #475F7B;
+}
+.resource-head{
+    margin-bottom: 0.5rem;
 }
 .filter-row input[type=search]{
     text-indent: 20px;

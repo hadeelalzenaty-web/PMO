@@ -866,12 +866,11 @@ input[type=number]::-webkit-outer-spin-button {
   padding-top: calc(0.467rem - 1px);
   padding-bottom: calc(0.467rem - 1px);
 }
-
-.btn i {
   /* Button with icons - make it in center */
+/*.btn i {
   position: relative;
   top: 3px;
-}
+}*/
 
 .btn.btn-white, .btn.btn-white:active, .btn.btn-white:hover, .btn.btn-white:focus {
   /* btn-white - color on different states */

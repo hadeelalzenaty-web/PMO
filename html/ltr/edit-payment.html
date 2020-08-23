@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html class="loading" lang="en" data-textdirection="ltr">
 <!-- BEGIN: Head-->
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-    <meta name="description" content="Frest admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
+    <meta name="description" content="PMO Project For SSSIT">
     <meta name="keywords" content="admin template, Frest admin template, dashboard template, flat admin template, responsive admin template, web app">
-    <meta name="author" content="SSSIT">
-    <title>Profile</title>
+    <meta name="author" content="sssit">
+    <title>edit Payment</title>
     <link rel="apple-touch-icon" href="../../app-assets/images/ico/apple-icon-120.png">
     <link rel="shortcut icon" type="image/x-icon" href="../../assets/images/logo.png">
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,600%7CIBM+Plex+Sans:300,400,500,600,700" rel="stylesheet">
 
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/vendors.min.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/editors/quill/quill.snow.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/tables/datatable/datatables.min.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/pickers/pickadate/pickadate.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/charts/apexcharts.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/pickers/daterange/daterangepicker.css">
     <!-- END: Vendor CSS-->
 
@@ -26,12 +26,13 @@
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/bootstrap-extended.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/colors.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/components.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/pages/page-users.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/themes/dark-layout.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/themes/semi-dark-layout.css">
     <!-- END: Theme CSS-->
 
     <!-- BEGIN: Page CSS-->
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/core/menu/menu-types/vertical-menu.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/pages/app-kanban.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/pages/page-users.css">
     <!-- END: Page CSS-->
 
     <!-- BEGIN: Custom CSS-->
@@ -43,7 +44,7 @@
 
 <!-- BEGIN: Body-->
 
-<body class="vertical-layout vertical-menu-modern boxicon-layout no-card-shadow 2-columns  navbar-sticky footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
+<body class="vertical-layout vertical-menu-modern boxicon-layout no-card-shadow 2-columns  navbar-sticky footer-static menu-collapsed  " data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
 
     <!-- BEGIN: Header-->
     <div class="header-navbar-shadow"></div>
@@ -203,7 +204,6 @@
     <!-- END: Header-->
 
 
-
     <!-- BEGIN: Main Menu-->
     <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
         <div class="navbar-header">
@@ -222,137 +222,108 @@
               </li>
               <li class="nav-item"><a href="Projects.html"><i class="bx bxs-briefcase"></i><span class="menu-title">Projects</span></a>
             </li>
-              <li class="active nav-item"><a href="Resources.html"><i class="fas fa-user-friends"></i><span class="menu-title">Resources</span></a>
+              <li class="nav-item"><a href="Resources.html"><i class="fas fa-user-friends"></i><span class="menu-title">Resources</span></a>
             </li>
             <li class=" nav-item"><a href="Clients.html"><i class="bx bxs-user-badge"></i><span class="menu-title">Clients</span></a>
               </li>
-                <li class="nav-item"><a href="Payment.html"><i class="bx bx-money"></i><span class="menu-title">Payments</span></a>
+                <li class="active nav-item"><a href="Payment.html"><i class="bx bx-money"></i><span class="menu-title">Payments</span></a>
                 </li>
                   </ul>
       </div>
     </div>
     <!-- END: Main Menu-->
 
-
     <!-- BEGIN: Content-->
     <div class="app-content content">
         <div class="content-overlay"></div>
+        
         <div class="content-wrapper">
-            <div class="content-header row">
+            <div class="content-header">
+                <div class="row">
+                    <div class="col-xl-4 col-md-12">
+                      <span class="invoice-number mr-50">Client Name:</span>
+                      <span>Ahmad Assaf</span>
+                    </div>
+                    <div class="col-xl-8 col-md-12">
+                      <div class="d-flex align-items-center justify-content-xl-end flex-wrap">
+                        <div class="mr-2">
+                          <small class="text-muted">Amount:</small>
+                          <span>1000$</span>
+                        </div>
+                        <div>
+                          <small class="text-muted">DeadLine:</small>
+                          <span>08/10/2020</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <h4 class="text-primary my-1">edit Payment</h4>
             </div>
             <div class="content-body">
-                <section class="users-view">
-                  <!-- users view media object start -->
-                  <div class="row">
-                    <div class="col-12 col-sm-7">
-                      <div class="media mb-2">
-                        <a class="mr-1" href="#">
-                          <img src="../../app-assets/images/portrait/small/avatar-s-9.jpg" alt="users view avatar" class="users-avatar-shadow rounded-circle" height="64" width="64">
-                        </a>
-                        <div class="media-body pt-25">
-                          <h4 class="media-heading"><span class="users-view-name">Dean Stanley </span><span class="text-muted font-medium-1"> @</span><span class="users-view-username text-muted font-medium-1 ">dean3004</span></h4>
-                          <span>ID:</span>
-                          <span class="users-view-id">305</span>
+                <!-- users list start -->
+                <section class="users-list-wrapper">
+                    <div class="users-list-table">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6 col-12">
+                                            <fieldset class="form-group">
+                                                <label for="basicInput">Project Name</label>
+                                                <input type="text" class="form-control" id="basicInput" placeholder="Project name">
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-12">
+                                            <fieldset class="form-group">
+                                                <label for="basicInput">Client Name</label>
+                                                <input type="text" class="form-control" id="basicInput" placeholder="Client name">
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-12">
+                                            <fieldset class="form-group">
+                                                <label for="basicInput">Amount</label>
+                                                <input type="text" class="form-control" id="basicInput" placeholder="$">
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-12">
+                                            <label for="users-list-status">DeadLine</label>
+                                          <fieldset class="form-group position-relative has-icon-left">
+                                            <input type="text" class="form-control pickadate-months-year" placeholder="Select Date" id="users-list-status">
+                                            <div class="form-control-position">
+                                                <i class='bx bx-calendar'></i>
+                                            </div>
+                                        </fieldset>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-12">
+                                            <fieldset class="form-group">
+                                                <label for="basicSelect">Status</label>
+                                                <select class="form-control" id="basicSelect">
+                                                    <option>Paid</option>
+                                                    <option>UnPaid</option>
+                                                </select>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 d-flex flex-sm-row flex-column justify-content-end mt-1 p-0">
+                                        <button type="submit" class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">Save</button>
+                                        <button type="reset" class="btn btn-dark glow">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                      </div>
                     </div>
-                    <div class="col-12 col-sm-5 px-0 d-flex justify-content-end align-items-center px-1 mb-2">
-                      <a href="#" class="btn btn-sm mr-25 border"><i class="bx bx-envelope font-small-3"></i></a>
-                      <a href="#" class="btn btn-sm mr-25 border">Profile</a>
-                      <a href="../../../html/ltr/vertical-menu-template/page-users-edit.html" class="btn btn-sm btn-primary">Edit</a>
-                    </div>
-                  </div>
-                  <!-- users view card details start -->
-                  <div class="card">
-                    <div class="card-content">
-                      <div class="card-body">
-                        <div class="row bg-primary bg-lighten-5 rounded mb-2 mx-25 text-center text-lg-left">
-                          <div class="col-12 col-sm-4 p-2">
-                            <h6 class="text-primary mb-0">Projects: <span class="font-large-1 align-middle">125</span></h6>
-                          </div>
-                          <div class="col-12 col-sm-4 p-2">
-                            <h6 class="text-primary mb-0">Experiance: <span class="font-large-1 align-middle">3Y</span></h6>
-                          </div>
-                          <div class="col-12 col-sm-4 p-2">
-                            <h6 class="text-primary mb-0">Rate: <span class="font-large-1 align-middle">1000JD</span></h6>
-                          </div>
-                        </div>
-                        <div class="col-12">
-                          <table class="table table-borderless">
-                            <tbody>
-                              <tr>
-                                <td>Username:</td>
-                                <td class="users-view-username">dean3004</td>
-                              </tr>
-                              <tr>
-                                <td>Name:</td>
-                                <td class="users-view-name">Dean Stanley</td>
-                              </tr>
-                              <tr>
-                                <td>E-mail:</td>
-                                <td class="users-view-email">deanstanley@gmail.com</td>
-                              </tr>
-                              <tr>
-                                <td>Skype:</td>
-                                <td>Dean Stanley7</td>
-                              </tr>
-                
-                            </tbody>
-                          </table>
-                          <h5 class="mb-1"><i class="bx bx-link"></i> Career Info</h5>
-                          <table class="table table-borderless">
-                            <tbody>
-                              <tr>
-                                <td>Position:</td>
-                                <td class="">IT Manager</td>
-                              </tr>
-                              <tr>
-                                <td>Level:</td>
-                                <td>Senior</td>
-                              </tr>
-                              <tr>
-                                <td>Rate:</td>
-                                <td>1000JD</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                          <h5 class="mb-1"><i class="bx bx-info-circle"></i> Personal Info</h5>
-                          <table class="table table-borderless">
-                            <tbody>
-                              <tr>
-                                <td>Birthday:</td>
-                                <td>03/04/1990</td>
-                              </tr>
-                              <tr>
-                                <td>Location:</td>
-                                <td>Amman/Jordan</td>
-                              </tr>
-                              <tr>
-                                <td>Languages:</td>
-                                <td>Arabic /English</td>
-                              </tr>
-                              <tr>
-                                <td>Contact:</td>
-                                <td>+962783569142</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- users view card details ends -->
-                
                 </section>
-                <!-- users view ends -->
+                <!-- users list ends -->
             </div>
         </div>
     </div>
     <!-- END: Content-->
-    <!--JQuery-->
-    <script src="../../assets/js/jquery.js"></script>
 
-    </div>
+
+    <!-- BEGIN: Footer-->
+
+    <!-- END: Footer-->
+
 
     <!-- BEGIN: Vendor JS-->
     <script src="../../app-assets/vendors/js/vendors.min.js"></script>
@@ -362,6 +333,12 @@
     <!-- BEGIN Vendor JS-->
 
     <!-- BEGIN: Page Vendor JS-->
+    <script src="../../app-assets/vendors/js/tables/datatable/datatables.min.js"></script>
+    <script src="../../app-assets/vendors/js/tables/datatable/dataTables.bootstrap4.min.js"></script>
+    <script src="../../app-assets/vendors/js/editors/quill/quill.min.js"></script>
+    <script src="../../app-assets/vendors/js/pickers/pickadate/picker.js"></script>
+    <script src="../../app-assets/vendors/js/pickers/pickadate/picker.date.js"></script>
+    <script src="../../app-assets/vendors/js/pickers/pickadate/picker.time.js"></script>
     <!-- END: Page Vendor JS-->
 
     <!-- BEGIN: Theme JS-->
@@ -372,6 +349,7 @@
     <!-- END: Theme JS-->
 
     <!-- BEGIN: Page JS-->
+    <script src="../../app-assets/js/scripts/pickers/dateTime/pick-a-datetime.js"></script>
     <script src="../../app-assets/js/scripts/pages/page-users.js"></script>
     <!-- END: Page JS-->
 

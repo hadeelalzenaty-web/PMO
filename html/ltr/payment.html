@@ -6,17 +6,20 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-    <meta name="description" content="Frest admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
+    <meta name="description" content="PMO Project For SSSIT">
     <meta name="keywords" content="admin template, Frest admin template, dashboard template, flat admin template, responsive admin template, web app">
-    <meta name="author" content="PIXINVENT">
+    <meta name="author" content="sssit">
     <title>Payment</title>
     <link rel="apple-touch-icon" href="../../app-assets/images/ico/apple-icon-120.png">
-    <link rel="shortcut icon" type="image/x-icon" href="../../app-assets/images/ico/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="../../assets/images/logo.png">
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,600%7CIBM+Plex+Sans:300,400,500,600,700" rel="stylesheet">
 
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/vendors.min.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/tables/datatable/datatables.min.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/editors/quill/quill.snow.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/pickers/pickadate/pickadate.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/charts/apexcharts.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/pickers/daterange/daterangepicker.css">
     <!-- END: Vendor CSS-->
 
     <!-- BEGIN: Theme CSS-->
@@ -24,13 +27,11 @@
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/bootstrap-extended.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/colors.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/components.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/themes/dark-layout.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/themes/semi-dark-layout.css">
     <!-- END: Theme CSS-->
 
     <!-- BEGIN: Page CSS-->
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/core/menu/menu-types/vertical-menu.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/pages/page-users.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/pages/app-kanban.css">
     <!-- END: Page CSS-->
 
     <!-- BEGIN: Custom CSS-->
@@ -42,7 +43,7 @@
 
 <!-- BEGIN: Body-->
 
-<body class="vertical-layout vertical-menu-modern boxicon-layout no-card-shadow 2-columns  navbar-sticky footer-static menu-collapsed  " data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
+<body class="vertical-layout vertical-menu-modern boxicon-layout 2-columns  navbar-sticky footer-static menu-expanded" data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
 
     <!-- BEGIN: Header-->
     <div class="header-navbar-shadow"></div>
@@ -222,7 +223,7 @@
             </li>
               <li class="nav-item"><a href="Resources.html"><i class="fas fa-user-friends"></i><span class="menu-title">Resources</span></a>
             </li>
-            <li class=" nav-item"><a href="Clients.html"><i class="bx bxs-user-badge"></i><span class="menu-title">Clients</span></a>
+            <li class="nav-item"><a href="Clients.html"><i class="bx bxs-user-badge"></i><span class="menu-title">Clients</span></a>
               </li>
                 <li class="active nav-item"><a href="Payment.html"><i class="bx bx-money"></i><span class="menu-title">Payments</span></a>
                 </li>
@@ -237,13 +238,13 @@
         
         <div class="content-wrapper">
             <div class="row">
-                <div class="content-header-left col-12 mb-2 mt-1">
+                <div class="content-header-left col-12 mb-2">
                   <div class="row breadcrumbs-top">
-                    <div class="col-lg-9 col-md-9 col-12">
-                      <h5 class="content-header-title float-left pr-1 mb-0">Payments</h5>
+                    <div class="col-lg-9 col-md-8 col-sm-7 col-12">
+                      <h5 class="content-header-title float-left pr-sm-1 mb-0">Payments</h5>
                       <div class="breadcrumb-wrapper col-12">
                         <ol class="breadcrumb p-0 mb-0">
-                          <li class="breadcrumb-item"><a href="Payment.html"><i class="bx bx-home-alt"></i></a>
+                          <li class="breadcrumb-item"><a href="clients.html"><i class="bx bx-home-alt"></i></a>
                           </li>
                           
                           <li class="breadcrumb-item active">Payment
@@ -251,34 +252,105 @@
                         </ol>
                       </div>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-12 d-flex justify-content-sm-end mt-1 mt-sm-0">
-                      <button class="btn btn-primary w-sm-100" data-dismiss="modal" data-toggle="modal" data-target="#myModal"><i class="bx bxs-add-to-queue"></i> Add Payment</button>
+                    <div class="col-lg-3 col-md-4 col-sm-5 col-12 d-flex justify-content-sm-end mt-1 mt-sm-0">
+                      <button class="btn btn-primary w-sm-100" data-dismiss="modal" data-toggle="modal" data-target="#myModal"><i class="fas fa-donate"></i>  Add Payment</button>
                     </div>
                   </div>
                 </div>
               </div>
+              <div class="row filter-row">
+                <div class="col-12 project-search">
+                  <div class="input-group">
+              
+                    <input type="search" class="form-control" placeholder="Search" aria-label="Username" aria-describedby="basic-addon1">
+                    <div class="input-group-append">
+                      <button type="button" class="btn filter-button">
+                        <i class="bx bx-slider"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              
+              </div>
+                <div class="filter-box  white-container">
+                    <form>
+                        <div class="row">
+                            <div class="col-12 col-sm-6 col-lg-3">
+                                <label for="select1">Project Name</label>
+                                <fieldset class="form-group">
+                                    <select class="form-control" id="select1">
+                                        <option value="P">PMO</option>
+                                        <option value="M">MOJ</option>
+                                        <option value="I">IPA</option>
+                                    </select>
+                                </fieldset>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-3">
+                                <label for="select1">Status</label>
+                                <fieldset class="form-group">
+                                    <select class="form-control" id="select1">
+                                        <option value="paid">Paid</option>
+                                        <option value="unpaid">Unpaid</option>
+                                    </select>
+                                </fieldset>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-3">
+                                <label for="select1">Location</label>
+                                <fieldset class="form-group">
+                                    <select class="form-control" id="select1">
+                                        <option value="A">Amman</option>
+                                        <option value="R">Riyadh</option>
+                                        <option value="p"></option>
+                                    </select>
+                                </fieldset>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-3">
+                              <label for="select2">Sort By</label>
+                              <fieldset class="form-group">
+                                  <select class="form-control" id="select2">
+                                      <option value="">Ascending</option>
+                                      <option value="Yes">descending</option>
+                                      <option value="No"></option>
+                                  </select>
+                              </fieldset>
+                          </div>
+                        </div>
+                  </form>
+                
+                </div>  
             <div class="content-body">
-                <!-- users list start -->
+                <div class="my-1">
+                    <div class="chip mr-1">
+                      <div class="chip-body">
+                          <span class="chip-text">#Amman</span>
+                          <div class="chip-closeable">
+                              <i class="bx bx-x"></i>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="chip mr-1">
+                      <div class="chip-body">
+                          <span class="chip-text">#Riyadh</span>
+                          <div class="chip-closeable">
+                              <i class="bx bx-x"></i>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="chip mr-1">
+                      <div class="chip-body">
+                          <span class="chip-text">#Paid</span>
+                          <div class="chip-closeable">
+                              <i class="bx bx-x"></i>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+                <!-- Payment List Start -->
                 <section class="users-list-wrapper">
                     <div class="users-list-table">
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-body">
-                                    <div class="row mb-1">
-                                        <div class="col-sm-12 col-md-10">
-                                            <div class="dataTables_length" id="users-list-datatable_length"><label>Show 
-                                                <select name="users-list-datatable_length" aria-controls="users-list-datatable" class="custom-select custom-select-sm form-control form-control-sm">
-                                                        <option value="10">10</option>
-                                                        <option value="25">25</option>
-                                                        <option value="50">50</option>
-                                                        <option value="100">100</option>
-                                                    </select></label></div>
-                                        </div>
-                                        <div class="col-sm-12 col-md-2">
-                                            <div id="users-list-datatable_filter" class="dataTables_filter"><label>Search:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="users-list-datatable"></label>
-                                            </div>
-                                        </div>
-                                    </div>
                                     <!-- datatable start -->
                                     <div class="table-responsive">
                                         <table id="users-list-datatable" class="table table-bordered table-striped mb-0">
@@ -289,7 +361,7 @@
                                                     <th>Amount</th>
                                                     <th>Deadline</th>
                                                     <th>Status</th>
-                                                    <th>Action</th>
+                                                    <th class="col-action">Action</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -301,7 +373,7 @@
                                                     <td><i class="bx bxs-circle success font-small-1 mr-50"></i><span>Paid</span></td>
                                                     <td>
                                                         <div class="table-icon d-flex align-items-center">
-                                                            <a href="#"><i class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
+                                                            <a href="edit-payment.html"><i class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
                                                             <a href="#"><i class="badge-circle badge-circle-light-secondary bx bx-trash-alt font-medium-1"></i></a>
                                                         </div>
                                                     </td>
@@ -315,7 +387,7 @@
                                                     <td><i class="bx bxs-circle danger font-small-1 mr-50"></i><span>Unpaid</span></td>
                                                     <td>
                                                         <div class="table-icon d-flex align-items-center">
-                                                            <a href="#"><i class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
+                                                            <a href="edit-payment.html"><i class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
                                                             <a href="#"><i class="badge-circle badge-circle-light-secondary bx bx-trash-alt font-medium-1"></i></a>
                                                         </div>
                                                     </td>
@@ -328,7 +400,7 @@
                                                     <td><i class="bx bxs-circle success font-small-1 mr-50"></i><span>Paid</span></td>
                                                     <td>
                                                         <div class="table-icon d-flex align-items-center">
-                                                            <a href="#"><i class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
+                                                            <a href="edit-payment.html"><i class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
                                                             <a href="#"><i class="badge-circle badge-circle-light-secondary bx bx-trash-alt font-medium-1"></i></a>
                                                         </div>
                                                     </td>
@@ -342,7 +414,7 @@
                                                     <td><i class="bx bxs-circle danger font-small-1 mr-50"></i><span>Unpaid</span></td>
                                                     <td>
                                                         <div class="table-icon d-flex align-items-center">
-                                                            <a href="#"><i class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
+                                                            <a href="edit-payment.html"><i class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
                                                             <a href="#"><i class="badge-circle badge-circle-light-secondary bx bx-trash-alt font-medium-1"></i></a>
                                                         </div>
                                                     </td>
@@ -355,7 +427,7 @@
                                                     <td><i class="bx bxs-circle success font-small-1 mr-50"></i><span>Paid</span></td>
                                                     <td>
                                                         <div class="table-icon d-flex align-items-center">
-                                                            <a href="#"><i class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
+                                                            <a href="edit-payment.html"><i class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
                                                             <a href="#"><i class="badge-circle badge-circle-light-secondary bx bx-trash-alt font-medium-1"></i></a>
                                                         </div>
                                                     </td>
@@ -369,7 +441,7 @@
                                                     <td><i class="bx bxs-circle danger font-small-1 mr-50"></i><span>Unpaid</span></td>
                                                     <td>
                                                         <div class="table-icon d-flex align-items-center">
-                                                            <a href="#"><i class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
+                                                            <a href="edit-payment.html"><i class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
                                                             <a href="#"><i class="badge-circle badge-circle-light-secondary bx bx-trash-alt font-medium-1"></i></a>
                                                         </div>
                                                     </td>
@@ -382,7 +454,7 @@
                                                     <td><i class="bx bxs-circle success font-small-1 mr-50"></i><span>Paid</span></td>
                                                     <td>
                                                         <div class="table-icon d-flex align-items-center">
-                                                            <a href="#"><i class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
+                                                            <a href="edit-payment.html"><i class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
                                                             <a href="#"><i class="badge-circle badge-circle-light-secondary bx bx-trash-alt font-medium-1"></i></a>
                                                         </div>
                                                     </td>
@@ -396,7 +468,7 @@
                                                     <td><i class="bx bxs-circle danger font-small-1 mr-50"></i><span>Unpaid</span></td>
                                                     <td>
                                                         <div class="table-icon d-flex align-items-center">
-                                                            <a href="#"><i class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
+                                                            <a href="edit-payment.html"><i class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
                                                             <a href="#"><i class="badge-circle badge-circle-light-secondary bx bx-trash-alt font-medium-1"></i></a>
                                                         </div>
                                                     </td>
@@ -409,7 +481,7 @@
                                                     <td><i class="bx bxs-circle success font-small-1 mr-50"></i><span>Paid</span></td>
                                                     <td>
                                                         <div class="table-icon d-flex align-items-center">
-                                                            <a href="#"><i class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
+                                                            <a href="edit-payment.html"><i class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
                                                             <a href="#"><i class="badge-circle badge-circle-light-secondary bx bx-trash-alt font-medium-1"></i></a>
                                                         </div>
                                                     </td>
@@ -423,7 +495,7 @@
                                                     <td><i class="bx bxs-circle danger font-small-1 mr-50"></i><span>Unpaid</span></td>
                                                     <td>
                                                         <div class="table-icon d-flex align-items-center">
-                                                            <a href="#"><i class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
+                                                            <a href="edit-payment.html"><i class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
                                                             <a href="#"><i class="badge-circle badge-circle-light-secondary bx bx-trash-alt font-medium-1"></i></a>
                                                         </div>
                                                     </td>
@@ -436,7 +508,7 @@
                                                     <td><i class="bx bxs-circle success font-small-1 mr-50"></i><span>Paid</span></td>
                                                     <td>
                                                         <div class="table-icon d-flex align-items-center">
-                                                            <a href="#"><i class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
+                                                            <a href="edit-payment.html"><i class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
                                                             <a href="#"><i class="badge-circle badge-circle-light-secondary bx bx-trash-alt font-medium-1"></i></a>
                                                         </div>
                                                     </td>
@@ -450,7 +522,7 @@
                                                     <td><i class="bx bxs-circle danger font-small-1 mr-50"></i><span>Unpaid</span></td>
                                                     <td>
                                                         <div class="table-icon d-flex align-items-center">
-                                                            <a href="#"><i class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
+                                                            <a href="edit-payment.html"><i class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
                                                             <a href="#"><i class="badge-circle badge-circle-light-secondary bx bx-trash-alt font-medium-1"></i></a>
                                                         </div>
                                                     </td>
@@ -463,7 +535,7 @@
                                                     <td><i class="bx bxs-circle success font-small-1 mr-50"></i><span>Paid</span></td>
                                                     <td>
                                                         <div class="table-icon d-flex align-items-center">
-                                                            <a href="#"><i class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
+                                                            <a href="edit-payment.html"><i class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
                                                             <a href="#"><i class="badge-circle badge-circle-light-secondary bx bx-trash-alt font-medium-1"></i></a>
                                                         </div>
                                                     </td>
@@ -477,7 +549,7 @@
                                                     <td><i class="bx bxs-circle danger font-small-1 mr-50"></i><span>Unpaid</span></td>
                                                     <td>
                                                         <div class="table-icon d-flex align-items-center">
-                                                            <a href="#"><i class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
+                                                            <a href="edit-payment.html"><i class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
                                                             <a href="#"><i class="badge-circle badge-circle-light-secondary bx bx-trash-alt font-medium-1"></i></a>
                                                         </div>
                                                     </td>
@@ -511,7 +583,70 @@
                 </section>
                 <!-- users list ends -->
             </div>
+            <div class="modal" tabindex="-1" role="dialog" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Add Payment</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-md-6 col-sm-6 col-12">
+                            <fieldset class="form-group">
+                                <label for="project-name">Project Name</label>
+                                <input type="text " class="form-control is-invalid" id="project-name" placeholder="Project Name">
+                                <div class="invalid-feedback">This field is required</div>
+                            </fieldset>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-12">
+                            <fieldset class="form-group">
+                                <label for="client-name" class="client-name-a">Client Name</label>
+                                <input type="text" class="form-control is-invalid" id="client-name" placeholder="Client Name">
+                                <div class="invalid-feedback">This field is required</div>
+                            </fieldset>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-12">
+                            <fieldset class="form-group">
+                                <label for="basicInput">Amount</label>
+                                <input type="text" class="form-control" id="basicInput" placeholder="$">
+                            </fieldset>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-12">
+                            <label for="users-list-status">DeadLine</label>
+                          <fieldset class="form-group position-relative has-icon-left">
+                            <input type="text" class="form-control pickadate-months-year" placeholder="Select Date" id="users-list-status">
+                            <div class="form-control-position">
+                                <i class='bx bx-calendar'></i>
+                            </div>
+                        </fieldset>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-12">
+                            <fieldset class="form-group">
+                                <label for="basicSelect">Status</label>
+                                <select class="form-control" id="basicSelect">
+                                    <option>Paid</option>
+                                    <option>UnPaid</option>
+                                </select>
+                            </fieldset>
+                        </div>
+                         </div>
+                    </div>
+                    <div class="modal-footer">
+                      <div class="d-flex flex-sm-row flex-column justify-content-end  p-0">
+                        <button type="submit" class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">
+                          Add New Payment
+                            </button>
+                        <button type="reset" class="btn btn-dark glow" data-dismiss="modal">Cancel</button>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </div>
+        
     </div>
     <!-- END: Content-->
 
@@ -531,16 +666,21 @@
     <!-- BEGIN: Page Vendor JS-->
     <script src="../../app-assets/vendors/js/tables/datatable/datatables.min.js"></script>
     <script src="../../app-assets/vendors/js/tables/datatable/dataTables.bootstrap4.min.js"></script>
+    <script src="../../app-assets/vendors/js/editors/quill/quill.min.js"></script>
+    <script src="../../app-assets/vendors/js/pickers/pickadate/picker.js"></script>
+    <script src="../../app-assets/vendors/js/pickers/pickadate/picker.date.js"></script>
+    <script src="../../app-assets/vendors/js/pickers/pickadate/picker.time.js"></script>
     <!-- END: Page Vendor JS-->
 
     <!-- BEGIN: Theme JS-->
     <script src="../../app-assets/js/core/app-menu.js"></script>
     <script src="../../app-assets/js/core/app.js"></script>
     <script src="../../app-assets/js/scripts/components.js"></script>
-    <script src="../../app-assets/js/scripts/footer.js"></script>
+
     <!-- END: Theme JS-->
 
     <!-- BEGIN: Page JS-->
+    <script src="../../app-assets/js/scripts/pickers/dateTime/pick-a-datetime.js"></script>
     <script src="../../app-assets/js/scripts/pages/page-users.js"></script>
     <!-- END: Page JS-->
 
@@ -548,3 +688,10 @@
 <!-- END: Body-->
 
 </html>
+<script>
+    $(document).ready(function () {
+        $('.filter-button').click(function () {
+            $('.filter-box').slideToggle();
+        });
+    });
+    </script>
