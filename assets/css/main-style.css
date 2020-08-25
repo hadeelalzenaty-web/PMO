@@ -20,6 +20,9 @@
 .activity-progress  small{
     font-size:12px;
 }
+.bg-authentication{
+    background-color:#F2F4F4;
+}
 .box{
     margin-bottom: 1.5rem;
 }
