@@ -17,6 +17,9 @@
 	font-weight: bold;
 	font-size:18px;
 }
+.activity-progress  small{
+    font-size:12px;
+}
 .box{
     margin-bottom: 1.5rem;
 }
