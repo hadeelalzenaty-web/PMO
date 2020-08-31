@@ -340,7 +340,7 @@ $(window).on("load", function () {
       enabled: false
     },
     series: [80, 30, 60],
-    labels: ["Social", "Email", "Search"],
+    labels: ["Transactions", "Tasks", "Search"],
     stroke: {
       width: 0,
       lineCap: 'round',

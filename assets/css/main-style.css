@@ -48,13 +48,16 @@
     overflow: hidden;
     white-space: nowrap;
 }
-.nav.nav-profile .nav-link{
-    border-radius:0px !important;
+.nav-profile{
+    pointer-events:none;
+}
+
+.nav-profile .nav-item a{
+    pointer-events:auto;
 }
 .resource-head  .user-profile-text div{
 font-size:13px;
 }
-
 
 .description p{
       /* hide text if it more than N lines  */
@@ -345,7 +348,8 @@ table td{
     margin-right:5px;
     margin-left:5px;
 }
-.main-info{
+.sub{
+    color:#5A8DEE;
     font-weight: bold;
 }
 .client-name-a{

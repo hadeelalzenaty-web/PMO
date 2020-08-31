@@ -2254,7 +2254,6 @@ input[type=number]::-webkit-outer-spin-button {
   left: 0;
   right: 0;
 }
-
 .nav.nav-tabs .nav-item.current::after {
   content: "";
   position: absolute;
@@ -2268,7 +2267,6 @@ input[type=number]::-webkit-outer-spin-button {
   left: 0;
   right: 0;
 }
-
 .nav.nav-tabs ~ .tab-content {
   padding-left: 0.6rem;
   color: #475F7B;

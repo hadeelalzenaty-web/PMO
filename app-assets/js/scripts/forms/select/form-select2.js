@@ -43,8 +43,8 @@
   $(".max-length").select2({
     dropdownAutoWidth: true,
     width: '100%',
-    maximumSelectionLength: 2,
-    placeholder: "Select maximum 2 items"
+    maximumSelectionLength: 1,
+    placeholder: "Select maximum 1 items"
   });
 
 
