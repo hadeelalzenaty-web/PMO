@@ -239,10 +239,29 @@
         
         <div class="content-wrapper">
             <div class="content-header">
-                      <h4 class="text-primary my-1 d-inline-block">$1,934</h4>
-                      <div class="d-inline-block ml-50">
-                        <i class="bx bxs-circle success font-small-1 mr-50"></i><span>Paid</span>
-                      </div>
+                <div class="user-profile-text mb-50">
+                <h4 class="text-bold-500 text-primary mb-50">PMO</h4>
+                <div class="d-flex flex-sm-row flex-column">
+                    <div class="mr-sm-2 main-info">
+                        <span>Client Name :</span>
+                        <span class="sub">Ahmad Assaf</span>
+                        <div>
+                            <span>Amount :</span>
+                            <span class="sub">$1,934</span>
+                        </div>
+                    </div>
+                    <div class="mr-2">
+                        <div>
+                            <span>DeadLine :</span>
+                            <span class="sub">20/3/2020</span>
+                        </div>
+                        <div>
+                            <span>Status:</span>
+                            <span class="sub"><i class="bx bxs-circle success font-small-1 mr-50"></i>Paid</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
             </div>
             <div class="content-body">
                 <!-- users list start -->
@@ -253,10 +272,17 @@
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col-md-6 col-sm-6 col-12">
-                                            <fieldset class="form-group">
-                                                <label for="basicInput">Project Name</label>
-                                                <input type="text" class="form-control" id="basicInput" placeholder="Moj">
-                                            </fieldset>
+                                            <div class="form-group">
+                                                <label>Project</label>
+                                                <select class="select2 form-control">
+                                                    <optgroup label="Projects">
+                                                        <option value="PMO">PMO</option>
+                                                        <option value="Moj">Moj</option>
+                                                        <option value="Mod">Mod</option>
+                                                        <option value="manager">IPA</option>
+                                                    </optgroup>
+                                                </select>
+                                            </div>
                                         </div>
                                         <div class="col-md-6 col-sm-6 col-12">
                                             <fieldset class="form-group">
@@ -264,13 +290,13 @@
                                                 <input type="text" class="form-control" id="basicInput" placeholder="Client name">
                                             </fieldset>
                                         </div>
-                                        <div class="col-md-6 col-sm-6 col-12">
+                                        <div class="col-md-4 col-sm-6 col-12">
                                             <fieldset class="form-group">
                                                 <label for="basicInput">Amount</label>
                                                 <input type="text" class="form-control" id="basicInput" placeholder="$">
                                             </fieldset>
                                         </div>
-                                        <div class="col-md-6 col-sm-6 col-12">
+                                        <div class="col-md-4 col-sm-6 col-12">
                                             <label for="edit-deadline">DeadLine</label>
                                           <fieldset class="form-group position-relative has-icon-left">
                                             <input type="text" class="form-control pickadate pickadate-months-year" placeholder="Select Date" id="edit-deadline">
@@ -279,7 +305,7 @@
                                             </div>
                                         </fieldset>
                                         </div>
-                                        <div class="col-md-6 col-sm-6 col-12">
+                                        <div class="col-md-4 col-sm-6 col-12">
                                             <fieldset class="form-group">
                                                 <label for="basicSelect">Status</label>
                                                 <select class="form-control" id="basicSelect">

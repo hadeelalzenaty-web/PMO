@@ -416,10 +416,10 @@ $(window).on("load", function () {
     },
     colors: [$primary, $warning],
     series: [{
-      name: 'New Clients',
+      name: 'Active Clients',
       data: [75, 150, 225, 200, 35, 50, 150, 180, 50, 150, 240, 140, 75, 35, 60, 120]
     }, {
-      name: 'Retained Clients',
+      name: 'Inactive Clients',
       data: [-100, -55, -40, -120, -70, -40, -60, -50, -70, -30, -60, -40, -50, -70, -40, -50],
     }],
     grid: {

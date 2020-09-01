@@ -55,7 +55,7 @@
 .nav-profile .nav-item a{
     pointer-events:auto;
 }
-.resource-head  .user-profile-text div{
+.user-profile-text div,.project-info{
 font-size:13px;
 }
 
@@ -349,7 +349,6 @@ table td{
     margin-left:5px;
 }
 .sub{
-    color:#5A8DEE;
     font-weight: bold;
 }
 .client-name-a{
