@@ -28,6 +28,7 @@
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/colors.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/components.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/pages/page-users.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/pages/authentication.css">
     <!-- END: Theme CSS-->
 
     <!-- BEGIN: Page CSS-->
@@ -38,7 +39,6 @@
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="../../assets/css/main-style.css">
     <!-- END: Custom CSS-->
-
 </head>
 <!-- END: Head-->
 
@@ -357,7 +357,7 @@
                                                     </div>
                                                     <div class="form-group">
                                                         <label>Level</label>
-                                                        <select class="select2 form-control">
+                                                        <select class="select2-icons form-control">>
                                                             <optgroup label="Resource Level">
                                                                 <option value="junior">Junior</option>
                                                                 <option value="senior">Senior</option>
@@ -381,7 +381,7 @@
                                                     </div>
                                                     <div class="form-group">
                                                         <label>Location</label>
-                                                        <select class="form-control select2" id="location">
+                                                        <select class="form-control select2-icons" id="location">
                                                             <option value="Jordan">Jordan</option>
                                                             <option value="KSA">KSA</option>
                                                             <option value="Canada">Canada</option>
@@ -408,7 +408,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 d-flex flex-sm-row flex-column justify-content-end my-1 p-0">
+                    <div class="d-flex flex-sm-row flex-column justify-content-end flex-grow-1 mt-1">
                         <button type="submit" class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">Save Changes
                             </button>
                         <button type="reset" class="btn btn-dark glow">Cancel</button>
@@ -423,38 +423,36 @@
 
     </div>
 
-    <!--JQuery-->
-    <script src="../../assets/js/jquery.js"></script>
-    <!---->
+ <!-- BEGIN: Vendor JS-->
+ <script src="../../app-assets/vendors/js/vendors.min.js"></script>
+ <script src="../../app-assets/fonts/LivIconsEvo/js/LivIconsEvo.tools.js"></script>
+ <script src="../../app-assets/fonts/LivIconsEvo/js/LivIconsEvo.defaults.js"></script>
+ <script src="../../app-assets/fonts/LivIconsEvo/js/LivIconsEvo.min.js"></script>
+ <!-- BEGIN Vendor JS-->
 
-    <!-- BEGIN: Vendor JS-->
-    <script src="../../app-assets/vendors/js/vendors.min.js"></script>
-    <script src="../../app-assets/fonts/LivIconsEvo/js/LivIconsEvo.tools.js"></script>
-    <script src="../../app-assets/fonts/LivIconsEvo/js/LivIconsEvo.defaults.js"></script>
-    <script src="../../app-assets/fonts/LivIconsEvo/js/LivIconsEvo.min.js"></script>
-    <!-- BEGIN Vendor JS-->
+ <!-- BEGIN: Page Vendor JS-->
+ <!--Data Picker and form changes include percantage-->
+ <script src="../../app-assets/vendors/js/forms/select/select2.full.min.js"></script>
+ <script src="../../app-assets/vendors/js/forms/validation/jqBootstrapValidation.js"></script>
+ <script src="../../app-assets/vendors/js/forms/spinner/jquery.bootstrap-touchspin.js"></script>
+ <script src="../../app-assets/vendors/js/tables/datatable/datatables.min.js"></script>
+ <script src="../../app-assets/vendors/js/tables/datatable/dataTables.bootstrap4.min.js"></script>
+ <script src="../../app-assets/vendors/js/pickers/pickadate/picker.js"></script>
+ <script src="../../app-assets/vendors/js/pickers/pickadate/picker.date.js"></script>
+ <script src="../../app-assets/vendors/js/pickers/pickadate/picker.time.js"></script>
+ <!-- END: Page Vendor JS-->
 
-    <!-- BEGIN: Page Vendor JS-->
-    <script src="../../app-assets/vendors/js/forms/select/select2.full.min.js"></script>
-    <script src="../../app-assets/vendors/js/forms/validation/jqBootstrapValidation.js"></script>
-    <script src="../../app-assets/vendors/js/pickers/pickadate/picker.js"></script>
-    <script src="../../app-assets/vendors/js/pickers/pickadate/picker.date.js"></script>
-    <!-- END: Page Vendor JS-->
+ <!-- BEGIN: Theme JS-->
+ <script src="../../app-assets/js/core/app-menu.js"></script>
+ <script src="../../app-assets/js/core/app.js"></script>
+ <script src="../../app-assets/js/scripts/components.js"></script>
+ <!-- END: Theme JS-->
 
-    <!-- BEGIN: Theme JS-->
-    <script src="../../app-assets/js/core/app-menu.js"></script>
-    <script src="../../app-assets/js/core/app.js"></script>
-    <script src="../../app-assets/js/scripts/components.js"></script>
-    <!-- END: Theme JS-->
-    
-    <!-- BEGIN: Page JS-->
-    <script src="../../app-assets/js/scripts/pages/page-users.js"></script>
-    <script src="../../app-assets/js/scripts/navs/navs.js"></script>
+<!-- BEGIN: Page JS include forms select and percantage too-->
+    <script src="../../app-assets/js/scripts/pages/app-invoice.js"></script>
     <script src="../../app-assets/js/scripts/forms/select/form-select2.js"></script>
-    <!-- END: Page JS-->
-    
+<!-- END: Page JS-->
 
-<!--My Code-->
 <script>
     $(document).ready(function () {
     $(".nav-item").click(function(){

@@ -16,8 +16,10 @@
 
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/vendors.min.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/tables/datatable/datatables.min.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/forms/select/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/editors/quill/quill.snow.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/pickers/pickadate/pickadate.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/charts/apexcharts.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/pickers/daterange/daterangepicker.css">
     <!-- END: Vendor CSS-->
 
@@ -26,20 +28,18 @@
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/bootstrap-extended.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/colors.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/components.css">
-
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/themes/semi-dark-layout.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/pages/page-users.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/pages/authentication.css">
     <!-- END: Theme CSS-->
 
     <!-- BEGIN: Page CSS-->
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/core/menu/menu-types/vertical-menu.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/pages/page-users.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/pages/app-kanban.css">
     <!-- END: Page CSS-->
 
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="../../assets/css/main-style.css">
-    <!-- END: Custom CSS-->
-
-</head>
+    <!-- END: Custom CSS--></head>
 <!-- END: Head-->
 
 <!-- BEGIN: Body-->
@@ -272,9 +272,9 @@
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col-md-6 col-sm-6 col-12">
-                                            <div class="form-group">
-                                                <label>Project</label>
-                                                <select class="select2 form-control">
+                                            <label for="projects">Project</label>
+                                            <div class="form-group"> 
+                                                <select class="form-control select2-icons" id="projects">
                                                     <optgroup label="Projects">
                                                         <option value="PMO">PMO</option>
                                                         <option value="Moj">Moj</option>
@@ -308,7 +308,7 @@
                                         <div class="col-md-4 col-sm-6 col-12">
                                             <fieldset class="form-group">
                                                 <label for="basicSelect">Status</label>
-                                                <select class="select2 form-control" id="basicSelect">
+                                                <select class="select2-icons form-control" id="basicSelect">
                                                     <option>Paid</option>
                                                     <option>UnPaid</option>
                                                 </select>
@@ -318,7 +318,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 d-flex flex-sm-row flex-column justify-content-end mt-1 p-0">
+                        <div class="d-flex flex-sm-row flex-column justify-content-end flex-grow-1 mt-1">
                             <button type="submit" class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">Save</button>
                             <button type="reset" class="btn btn-dark glow">Cancel</button>
                         </div>
@@ -336,29 +336,37 @@
     <!-- END: Footer-->
 
 
-     <!-- BEGIN: Vendor JS-->
-     <script src="../../app-assets/vendors/js/vendors.min.js"></script> <!--Jquery 3.1-->
-     <script src="../../app-assets/fonts/LivIconsEvo/js/LivIconsEvo.tools.js"></script>
-     <script src="../../app-assets/fonts/LivIconsEvo/js/LivIconsEvo.defaults.js"></script>
-     <script src="../../app-assets/fonts/LivIconsEvo/js/LivIconsEvo.min.js"></script>
-     <!-- BEGIN Vendor JS-->
- 
-     <!-- BEGIN: Page Vendor JS-->
-     <script src="../../app-assets/vendors/js/pickers/pickadate/picker.js"></script>
-     <script src="../../app-assets/vendors/js/pickers/pickadate/picker.date.js"></script>
-     <script src="../../app-assets/vendors/js/forms/repeater/jquery.repeater.min.js"></script>
-     <!-- END: Page Vendor JS-->
- 
-     <!-- BEGIN: Theme JS-->
-     <script src="../../app-assets/js/core/app-menu.js"></script>
-     <script src="../../app-assets/js/core/app.js"></script>
-      <script src="../../app-assets/js/scripts/components.js"></script>
-     
-     <!-- END: Theme JS-->
- 
-     <!-- BEGIN: Page JS-->
-     <script src="../../app-assets/js/scripts/pages/app-invoice.js"></script>
-     <!-- END: Page JS-->
+
+
+ <!-- BEGIN: Vendor JS-->
+ <script src="../../app-assets/vendors/js/vendors.min.js"></script>
+ <script src="../../app-assets/fonts/LivIconsEvo/js/LivIconsEvo.tools.js"></script>
+ <script src="../../app-assets/fonts/LivIconsEvo/js/LivIconsEvo.defaults.js"></script>
+ <script src="../../app-assets/fonts/LivIconsEvo/js/LivIconsEvo.min.js"></script>
+ <!-- BEGIN Vendor JS-->
+
+ <!-- BEGIN: Page Vendor JS-->
+ <!--Data Picker and form changes include percantage-->
+ <script src="../../app-assets/vendors/js/forms/select/select2.full.min.js"></script>
+ <script src="../../app-assets/vendors/js/forms/validation/jqBootstrapValidation.js"></script>
+ <script src="../../app-assets/vendors/js/forms/spinner/jquery.bootstrap-touchspin.js"></script>
+ <script src="../../app-assets/vendors/js/tables/datatable/datatables.min.js"></script>
+ <script src="../../app-assets/vendors/js/tables/datatable/dataTables.bootstrap4.min.js"></script>
+ <script src="../../app-assets/vendors/js/pickers/pickadate/picker.js"></script>
+ <script src="../../app-assets/vendors/js/pickers/pickadate/picker.date.js"></script>
+ <script src="../../app-assets/vendors/js/pickers/pickadate/picker.time.js"></script>
+ <!-- END: Page Vendor JS-->
+
+ <!-- BEGIN: Theme JS-->
+ <script src="../../app-assets/js/core/app-menu.js"></script>
+ <script src="../../app-assets/js/core/app.js"></script>
+ <script src="../../app-assets/js/scripts/components.js"></script>
+ <!-- END: Theme JS-->
+
+<!-- BEGIN: Page JS include forms select and percantage too-->
+    <script src="../../app-assets/js/scripts/pages/app-invoice.js"></script>
+    <script src="../../app-assets/js/scripts/forms/select/form-select2.js"></script>
+<!-- END: Page JS-->
 
 </body>
 <!-- END: Body-->
