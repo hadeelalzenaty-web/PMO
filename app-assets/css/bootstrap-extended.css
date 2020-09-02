@@ -122,6 +122,10 @@ a:focus {
 .text-bold-700 {
   font-weight: 700;
 }
+.calendar-view i{
+  position: relative;
+  top:3px;
+}
 
 /*   Font style   */
 /*---------------*/

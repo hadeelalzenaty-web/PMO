@@ -10,12 +10,13 @@
     <meta name="keywords" content="admin template, Frest admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="sssIT">
     <title>New Project</title>
-    <link rel="apple-touch-icon" href="../../app-assets/images/ico/apple-icon-120.png">
+    
     <link rel="shortcut icon" type="image/x-icon" href="../../assets/images/logo.png">
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,600%7CIBM+Plex+Sans:300,400,500,600,700" rel="stylesheet">
 
-    <!-- BEGIN: Vendor CSS-->
+    <!-- BEGIN: Vendor CSS-->س
     <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/forms/select/select2.min.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/editors/quill/quill.snow.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/pickers/pickadate/pickadate.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/charts/apexcharts.css">
@@ -404,8 +405,8 @@
                                                                 </div>
                                                                 <div class="col-md-6 col-md-6 col-12">
                                                                     <fieldset class="form-group">
-                                                                        <label for="pselect">Client Name</label>
-                                                                        <select class="form-control" id="basicSelect">
+                                                                        <label for="cselect">Client Name</label>
+                                                                        <select class="form-control select2" id="cselect">
                                                                             <option>Ahmad Yasser</option>
                                                                             <option>Blade Runner</option>
                                                                             <option>Thor Ragnarok</option>
@@ -447,7 +448,7 @@
                                                             <div class="col-md-6 col-md-6 col-12">
                                                                 <fieldset class="form-group">
                                                                     <label for="pselect">Project Manager</label>
-                                                                    <select class="form-control" id="basicSelect">
+                                                                    <select class="select2 form-control" id="pselect">
                                                                         <option>Ala'a khalil</option>
                                                                         <option>Abdllatif ghazal</option>
                                                                         <option>mohammad hosny </option>
@@ -457,7 +458,7 @@
                                                             <div class="col-md-6 col-md-6 col-12">
                                                                 <fieldset class="form-group">
                                                                     <label for="rselect">Requirments</label>
-                                                                    <select class="form-control" id="basicSelect">
+                                                                    <select class="select2 form-control" id="rselect">
                                                                         <option>Resources</option>
                                                                         <option>printer</option>
                                                                         <option>screens</option>
@@ -467,7 +468,7 @@
                                                             <div class="col-md-6 col-md-6 col-12">
                                                                 <fieldset class="form-group">
                                                                     <label for="pselects">Priority</label>
-                                                                    <select class="form-control" id="pselects">
+                                                                    <select class="select2 form-control" id="pselects">
                                                                         <option>Project1</option>
                                                                         <option>Project2</option>
                                                                         <option>Project3</option>
@@ -905,7 +906,7 @@
                                                                 <div class="col-md-6 col-md-6 col-12">
                                                                     <fieldset class="form-group">
                                                                         <label for="pselect">Status</label>
-                                                                        <select class="form-control" id="basicSelect">
+                                                                        <select class="select2 form-control" id="basicSelect">
                                                                             <option selected>Paid</option>
                                                                             <option>Unpaid</option>
                                                                         </select>
@@ -1092,7 +1093,7 @@
                                                                 <div class="col-md-6 col-md-6 col-12">
                                                                     <label for="select2">Status</label>
                                                                     <fieldset class="form-group">
-                                                                        <select class="form-control" id="select2">
+                                                                        <select class="select2 form-control" id="select2">
                                                                             <option value="">Any</option>
                                                                             <option value="Yes">Yes</option>
                                                                             <option value="No">No</option>
@@ -1177,7 +1178,7 @@
                                                                 <div class="col-md-6 col-md-6 col-12">
                                                                     <label for="traveld_select">Travel Destination</label>
                                                                     <fieldset class="form-group">
-                                                                        <select class="form-control" id="traveld_select">
+                                                                        <select class="select2 form-control" id="traveld_select">
                                                                             <option value="">KSA</option>
                                                                             <option value="Yes">UAE</option>
                                                                             <option value="No">No</option>
@@ -1324,14 +1325,12 @@
                                                                             placeholder="Number of Hours">
                                                                     </fieldset>
                                                                 </div>
-                                                                <div class="col-md-6 col-md-6 col-12">
-                                                                    <fieldset class="form-group">
-                                                                        <label for="IsHoliday">Is Holiday</label>
-                                                                        <select class="form-control" id="IsHoliday">
+                                                                <div class="form-group col-md-6 col-md-6 col-12">
+                                                                    <label for="IsHoliday">Is Holiday</label>
+                                                                        <select class="form-control select2" id="IsHoliday">
                                                                             <option>Yes</option>
                                                                             <option>No</option>
                                                                         </select>
-                                                                    </fieldset>
                                                                 </div>
                                                                 <div class="col-md-6 col-md-6 col-12">
                                                                     <fieldset class="form-group">
@@ -1479,7 +1478,7 @@
                                                                 <div class="col-md-6 col-md-6 col-12">
                                                                     <fieldset class="form-group">
                                                                         <label for="Position">Position</label>
-                                                                        <select class="form-control" id="Position">
+                                                                        <select class="select2 form-control" id="Position">
                                                                             <option>..</option>
                                                                             <option>..</option>
                                                                         </select>
@@ -1488,7 +1487,7 @@
                                                                 <div class="col-md-6 col-md-6 col-12">
                                                                     <fieldset class="form-group">
                                                                         <label for="type">Type</label>
-                                                                        <select class="form-control" id="type">
+                                                                        <select class="select2 form-control" id="type">
                                                                             <option>Customer</option>
                                                                             <option>Government</option>
                                                                         </select>
@@ -1601,7 +1600,7 @@
                                                                 <div class="col-md-6 col-md-6 col-12">
                                                                     <fieldset class="form-group">
                                                                         <label for="reaction">Reaction</label>
-                                                                        <select class="form-control" id="reaction">
+                                                                        <select class="select2 form-control" id="reaction">
                                                                             <option>Yes</option>
                                                                             <option>No</option>
                                                                         </select>
@@ -1644,8 +1643,8 @@
                                                                 </div>
                                                                 <div class="col-md-6 col-md-6 col-12">
                                                                     <fieldset class="form-group">
-                                                                        <label for="reaction">Periority</label>
-                                                                        <select class="form-control" id="reaction">
+                                                                        <label for="periority">Periority</label>
+                                                                        <select class="select2 form-control" id="periority">
                                                                             <option>Important</option>
                                                                             <option>Low</option>
                                                                         </select>
@@ -1654,7 +1653,7 @@
                                                                 <div class="col-md-6 col-md-6 col-12">
                                                                     <fieldset class="form-group">
                                                                         <label for="critical">Status</label>
-                                                                        <select class="form-control" id="critical">
+                                                                        <select class="select2 form-control" id="critical">
                                                                             <option>crtical</option>
                                                                             <option>Low</option>
                                                                         </select>
@@ -1663,7 +1662,7 @@
                                                                 <div class="col-md-6 col-md-6 col-12">
                                                                     <fieldset class="form-group">
                                                                         <label for="owner">Owner</label>
-                                                                        <select class="form-control" id="owner">
+                                                                        <select class="select2 form-control" id="owner">
                                                                             <option>.</option>
                                                                             <option>..</option>
                                                                         </select>
@@ -1713,7 +1712,7 @@
                                                                 <div class="col-md-6 col-md-6 col-12">
                                                                     <label for="priority2">Priority</label>
                                                                     <fieldset class="form-group">
-                                                                        <select class="form-control" id="priority2">
+                                                                        <select class="select2 form-control" id="priority2">
                                                                             <option value="">High</option>
                                                                             <option value="Low">Medium</option>
                                                                             <option value="Meduim">Low</option>
@@ -1729,7 +1728,7 @@
                                                                 <div class="col-md-6 col-md-6 col-12">
                                                                     <label for="owner2">Owner</label>
                                                                     <fieldset class="form-group">
-                                                                        <select class="form-control" id="owner2">
+                                                                        <select class="select2 form-control" id="owner2">
                                                                             <option value="">High</option>
                                                                             <option value="Low">Yes</option>
                                                                             <option value="Meduim">No</option>
@@ -1749,7 +1748,7 @@
                                                                 <div class="col-md-6 col-md-6 col-12">
                                                                     <label for="issue-status">Status</label>
                                                                     <fieldset class="form-group">
-                                                                        <select class="form-control" id="issue-status">
+                                                                        <select class="select2 form-control" id="issue-status">
                                                                             <option value="">..</option>
                                                                             <option value="Low">..</option>
                                                                             <option value="Meduim">..</option>
@@ -1780,7 +1779,7 @@
                                                                 <div class="col-md-6 col-md-6 col-12">
                                                                     <label for="lastweek_owner">Owner</label>
                                                                     <fieldset class="form-group">
-                                                                        <select class="form-control" id="lastweek_owner">
+                                                                        <select class="select2 form-control" id="lastweek_owner">
                                                                             <option value="">Yasser Tamimi</option>
                                                                             <option value="">Asmaa Ali</option>
                                                                             <option value="Meduim">Ahmad Mohammad</option>
@@ -1790,7 +1789,7 @@
                                                                 <div class="col-md-6 col-md-6 col-12">
                                                                     <label for="lastweek_status">Status</label>
                                                                     <fieldset class="form-group">
-                                                                        <select class="form-control" id="lastweek_status">
+                                                                        <select class="select2 form-control" id="lastweek_status">
                                                                             <option value="">Inprogress</option>
                                                                             <option value="Low">Complete</option>
                                                                             <option value="Meduim">Hold</option>
@@ -1898,9 +1897,9 @@
                                                                     </fieldset>
                                                                 </div>
                                                                 <div class="col-md-6 col-md-6 col-12">
-                                                                    <label for="lastweek_owner">Owner</label>
+                                                                    <label for="nextweek_owner">Owner</label>
                                                                     <fieldset class="form-group">
-                                                                        <select class="form-control" id="lastweek_owner">
+                                                                        <select class="select2 form-control" id="nextweek_owner">
                                                                             <option value="">Yasser Tamimi</option>
                                                                             <option value="">Asmaa Ali</option>
                                                                             <option value="Meduim">Ahmad Mohammad</option>
@@ -1908,9 +1907,9 @@
                                                                     </fieldset>
                                                                 </div>
                                                                 <div class="col-md-6 col-md-6 col-12">
-                                                                    <label for="lastweek_status">Status</label>
+                                                                    <label for="nextweek_status">Status</label>
                                                                     <fieldset class="form-group">
-                                                                        <select class="form-control" id="lastweek_status">
+                                                                        <select class="select2 form-control" id="nextweek_status">
                                                                             <option value="">Inprogress</option>
                                                                             <option value="Low">Complete</option>
                                                                             <option value="Meduim">Hold</option>
@@ -2027,6 +2026,7 @@
 
 
  <!-- BEGIN: Vendor JS-->
+ <script src="../../app-assets/vendors/js/forms/select/select2.full.min.js"></script>
  <script src="../../app-assets/vendors/js/vendors.min.js"></script>
  <script src="../../app-assets/fonts/LivIconsEvo/js/LivIconsEvo.tools.js"></script>
  <script src="../../app-assets/fonts/LivIconsEvo/js/LivIconsEvo.defaults.js"></script>
@@ -2045,13 +2045,14 @@
  <script src="../../app-assets/js/core/app-menu.js"></script>
  <script src="../../app-assets/js/core/app.js"></script>
  <script src="../../app-assets/js/scripts/components.js"></script>
- <script src="../../app-assets/js/scripts/footer.js"></script>
+ 
  <!-- END: Theme JS-->
 
  <!-- BEGIN: Page JS-->
  <script src="../../app-assets/js/scripts/forms/number-input.js"></script>
  <script src="../../app-assets/js/scripts/pages/page-users.js"></script>
  <script src="../../app-assets/js/scripts/pages/app-invoice.js"></script>
+ <script src="../../app-assets/js/scripts/forms/select/form-select2.js"></script>
  <!-- END: Page JS-->
 
 </body>

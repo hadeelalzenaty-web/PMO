@@ -282,7 +282,10 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(228,228,246,1) 3
     width: 1%;
 }
 
-
+.content-area-wrapper i{
+    position: relative;
+    top:3px;
+}
 .filter-box{
     display: none;
 }
