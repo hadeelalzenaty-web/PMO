@@ -17,14 +17,14 @@
   border-bottom-left-radius: 0.267rem;
 }
 
-.todo-application .content-area-wrapper .sidebar .todo-sidebar .sidebar-close-icon {
+/*.todo-application .content-area-wrapper .sidebar .todo-sidebar .sidebar-close-icon {
   position: absolute;
   right: .25rem;
   top: .25rem;
   cursor: pointer;
   font-size: 1.25rem;
   visibility: hidden;
-}
+}*/
 
 .todo-application .content-area-wrapper .sidebar .todo-sidebar .todo-app-menu {
   width: 100%;
