@@ -20,6 +20,11 @@
     <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/pickers/pickadate/pickadate.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/charts/apexcharts.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/pickers/daterange/daterangepicker.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/plugins/calendars/app-calendar.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/calendars/tui-time-picker.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/calendars/tui-date-picker.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/calendars/tui-calendar.min.css">
     <!-- END: Vendor CSS-->
 
     <!-- BEGIN: Theme CSS-->
@@ -35,6 +40,7 @@
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/core/menu/menu-types/vertical-menu.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/pages/app-todo.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/pages/app-kanban.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/plugins/calendars/app-calendar.css">
     <!-- END: Page CSS-->
 
     <!-- BEGIN: Custom CSS-->
@@ -390,7 +396,8 @@
                                                     </div>
                                                     <div class="form-group">
                                                         <label>Languages</label>
-                                                        <select class="form-control" id="users-language-select2" multiple="multiple">
+                                                        <select class="form-control select2" id="users-language-select2" multiple="multiple">
+                                                        <optgroup label="Languages">
                                                             <option value="English" selected>English</option>
                                                             <option value="Spanish">Spanish</option>
                                                             <option value="French">French</option>
@@ -398,6 +405,7 @@
                                                             <option value="German">German</option>
                                                             <option value="Arabic" selected>Arabic</option>
                                                             <option value="Sanskrit">Sanskrit</option>
+                                                        </optgroup>
                                                         </select>
                                                     </div>
                                                 </div>
@@ -423,7 +431,6 @@
 
 
     </div>
-
  <!-- BEGIN: Vendor JS-->
  <script src="../../app-assets/vendors/js/vendors.min.js"></script>
  <script src="../../app-assets/fonts/LivIconsEvo/js/LivIconsEvo.tools.js"></script>
@@ -453,10 +460,19 @@
  <script src="../../app-assets/js/scripts/components.js"></script>
  <!-- END: Theme JS-->
 
-<!-- BEGIN: Page JS include forms select and percantage too-->
+  <!-- BEGIN: Page JS include forms select and percantage too-->
     <script src="../../app-assets/js/scripts/pages/app-invoice.js"></script>
     <script src="../../app-assets/js/scripts/forms/select/form-select2.js"></script>
-<!-- END: Page JS-->
+  <!-- END: Page JS-->
+
+  <!--For Calendar-->
+    <!--<script src="../../app-assets/js/scripts/extensions/calendar/calendars-data.js"></script>
+    <script src="../../app-assets/js/scripts/extensions/calendar/schedules.js"></script>
+    <script src="../../app-assets/js/scripts/extensions/calendar/app-calendar.js"></script>
+    <script src="../../app-assets/js/scripts/extensions/calendar/calendars-data.js"></script>
+    <script src="../../app-assets/js/scripts/extensions/calendar/schedules.js"></script>
+    <script src="../../app-assets/js/scripts/extensions/calendar/app-calendar.js"></script>
+    -->
 
 <script>
     $(document).ready(function () {
