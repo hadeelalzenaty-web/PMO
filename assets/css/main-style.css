@@ -20,6 +20,17 @@
 .activity-progress  small{
     font-size:12px;
 }
+.file-upload__input{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    opacity: 0;
+    display: block;
+}
+
 .bg-authentication{
     background-color:#F2F4F4;
 }

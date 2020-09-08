@@ -328,8 +328,11 @@
                                         <i class="bx bx-check align-middle"></i>
                                         <span class="mark-complete align-middle">Mark Complete</span>
                                     </button>
-                                    <span class="dropdown mr-50">
-                                    <i class='bx bx-paperclip cursor-pointer mr-50'></i>
+                                    <span class="dropdown mr-50 d-flex">
+                                    <div class="d-flex">
+                                        <i class='bx bx-paperclip cursor-pointer change_avater mr-50'></i>
+                                        <input id="upload" class="file-upload__input" type="file" name="file-upload">
+                                    </div> 
                                         <a href="#" class="dropdown-toggle" id="todo-sidebar-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                                             <i class='bx bx-dots-vertical-rounded'></i>
                                         </a>
@@ -902,6 +905,23 @@
     <script src="../../app-assets/js/scripts/extensions/calendar/schedules.js"></script>
     <script src="../../app-assets/js/scripts/extensions/calendar/app-calendar.js"></script>
     -->
+    <script>
+        $(document).ready(function () {
+            i=0;
+          $(".file-upload__input").change(function(e){      
+              var upload_text=e.target.files[0].name;
+              i++;
+              if(i <=1){
+              var upload_button="<div class='btn btn-primary btn-sm mr-25'>"+upload_text+"</div>";
+              $(".change_avater").before(upload_button);
+            }
+            else{
+                alert("you can't uploaded more than one file");
+            }
+            });
+             });
+    
+    </script>
 
 </body>
 <!-- END: Body-->

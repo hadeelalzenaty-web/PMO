@@ -275,23 +275,25 @@
                                             <div class="media-body">
                                                 <h4 class="media-heading">Avatar</h4>
                                                 <div class="col-12 px-0 d-flex">
-                                                    <a href="#" class="btn btn-sm btn-primary mr-25">Change</a>
-                                                    <a href="#" class="btn btn-sm btn-light-secondary">Reset</a>
+                                                    <a href="#" class="btn btn-sm btn-primary mr-25 change_avater">Change</a>
+                                                    <input id="upload" class="file-upload__input" type="file" name="file-upload">
                                                 </div>
                                             </div>
                                         </div>
                                         <!-- users edit media object ends -->
                                         <!-- users edit account form start -->
-                                        <h5 class="mb-1"><i class="bx bx-info-circle"></i> Personal Info</h5>
+                                        <h5 class="mb-1"><i class="bx bx-info-circle mr-25"></i> Personal Info</h5>
                                         <form>
                                             <div class="row">
-                                                <div class="col-12 col-sm-6">
+                                                <div class="col-sm-6 col-12">
                                                     <div class="form-group">
                                                         <div class="controls">
                                                             <label>Username</label>
                                                             <input type="text" class="form-control" placeholder="Username" value="dean3004" required data-validation-required-message="This username field is required">
                                                         </div>
                                                     </div>
+                                                </div>
+                                                <div class="col-sm-6 col-12">
                                                     <div class="form-group">
                                                         <div class="controls">
                                                             <label>Name</label>
@@ -299,34 +301,35 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-sm-6">
+                                                <div class="col-sm-4 col-12">
+                                                    <div class="form-group">
+                                                        <div class="controls">
+                                                            <label>E-mail</label>
+                                                            <input type="email" class="form-control" placeholder="Email" value="deanstanley@gmail.com" required data-validation-required-message="This email field is required">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4 col-12">
                                                     <div class="form-group">
                                                         <div class="controls">
                                                             <label>Phone</label>
                                                             <input type="email" class="form-control" placeholder="Phone">
                                                         </div>
-                                                    </div>
+                                                    </div>        
+                                                </div>
+                                                <div class="col-sm-4 col-12">
                                                     <div class="form-group">
                                                         <label>Skype</label>
                                                         <input type="text" class="form-control" placeholder="Skype name">
                                                     </div>
-                                                    
                                                 </div>
                                             </div>
                                         </form>
                                         <!-- users edit account form ends -->
-                                        <h5 class="mb-1"><i class="bx bx-lock"></i> Login</h5>
+                                        <h5 class="my-1"><i class="bx bx-lock mr-25"></i> Security</h5>
                                         <form>
                                             <div class="row">
-                                                <div class="col-md-6 col-12">
-                                                <div class="form-group">
-                                                    <div class="controls">
-                                                        <label>E-mail</label>
-                                                        <input type="email" class="form-control" placeholder="Email" value="deanstanley@gmail.com" required data-validation-required-message="This email field is required">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                                <div class="col-md-6 col-12">
+                                                <div class="col-12">
                                                     <div class="form-group">
                                                         <div class="controls">
                                                             <label>Current Password</label>
@@ -334,7 +337,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-6 col-12">
+                                                <div class="col-12">
                                                     <div class="form-group">
                                                         <div class="controls">
                                                             <label>New Password</label>
@@ -342,7 +345,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-6 col-12">
+                                                <div class="col-12">
                                                     <div class="form-group">
                                                         <div class="controls">
                                                             <label>Confirm New Password</label>
@@ -355,63 +358,80 @@
                                     </div>
                                     <div class="tab-pane fade show" id="information" aria-labelledby="information-tab" role="tabpanel">
                                         <!-- users edit Info form start -->
-                                        <form novalidate>
-                                            <div class="row">
-                                                <div class="col-12 col-sm-6">
-                                                    <h5 class="mb-1"><i class="bx bx-link"></i>Career Info</h5>
-                                                    <div class="form-group">
-                                                        <label>Position</label>
-                                                        <input class="form-control" type="text">
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label>Level</label>
-                                                        <select class="select2-icons form-control">>
-                                                            <optgroup label="Resource Level">
-                                                                <option value="junior">Junior</option>
-                                                                <option value="senior">Senior</option>
-                                                                <option value="trainee">Trainee</option>
-                                                                <option value="manager">Manager</option>
-                                                            </optgroup>
-                                                        </select>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label>Rate</label>
-                                                        <input class="form-control" type="text">
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 col-sm-6 mt-1 mt-sm-0">
-                                                    <h5 class="mb-1"><i class="bx bx-user mr-25"></i>Personal Info</h5>
-                                                    <div class="form-group">
-                                                        <div class="controls position-relative">
-                                                            <label>Birthdate</label>
-                                                            <input type="text" class="form-control birthdate-picker" required placeholder="Birth date" data-validation-required-message="This birthdate field is required">
+                                                <h5 class="my-1"><i class="bx bx-link mr-25"></i>Career Info</h5>
+                                                <form>
+                                                    <div class="row">
+                                                        <div class="col-12 col-sm-6">
+                                                            <div class="form-group">
+                                                                <label>Position</label>
+                                                                <input class="form-control" type="text">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-sm-6">
+                                                            <div class="form-group">
+                                                                <label>Level</label>
+                                                                <select class="select2-icons form-control">>
+                                                                    <optgroup label="Resource Level">
+                                                                        <option value="junior">Junior</option>
+                                                                        <option value="senior">Senior</option>
+                                                                        <option value="trainee">Trainee</option>
+                                                                        <option value="manager">Manager</option>
+                                                                    </optgroup>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-sm-6">
+                                                            <div class="form-group">
+                                                                <label>Rate</label>
+                                                                <input class="form-control" type="text">
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="form-group">
-                                                        <label>Location</label>
-                                                        <select class="form-control select2-icons" id="location">
-                                                            <option value="Jordan">Jordan</option>
-                                                            <option value="KSA">KSA</option>
-                                                            <option value="Canada">Canada</option>
-                                                        </select>
+                                                </form>
+                                                    <h5 class="my-1"><i class="bx bx-user mr-25"></i>Personal Info</h5>
+                                                <form>
+                                                    <div class="row">
+                                                        <div class="col-12 col-sm-6">
+                                                            <div class="form-group">
+                                                                <div class="controls position-relative">
+                                                                    <label>Birthdate</label>
+                                                                    <fieldset class="form-group position-relative has-icon-left invoice-date-picker">
+                                                                        <input type="text" class="form-control pickadate" placeholder="Select Date" id="Birthdate">
+                                                                        <div class="form-control-position">
+                                                                            <i class='bx bx-calendar'></i>
+                                                                        </div>
+                                                                    </fieldset>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-sm-6">
+                                                            <div class="form-group">
+                                                                <label>Location</label>
+                                                                <select class="form-control select2-icons" id="location">
+                                                                    <option value="Jordan">Jordan</option>
+                                                                    <option value="KSA">KSA</option>
+                                                                    <option value="Canada">Canada</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-sm-6">
+                                                            <div class="form-group">
+                                                                <label>Languages</label>
+                                                                <select class="form-control select2" id="users-language-select2" multiple="multiple">
+                                                                    <optgroup label="Languages">
+                                                                        <option value="English" selected>English</option>
+                                                                        <option value="Spanish">Spanish</option>
+                                                                        <option value="French">French</option>
+                                                                        <option value="Russian">Russian</option>
+                                                                        <option value="German">German</option>
+                                                                        <option value="Arabic" selected>Arabic</option>
+                                                                        <option value="Sanskrit">Sanskrit</option>
+                                                                    </optgroup>
+                                                                </select>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <div class="form-group">
-                                                        <label>Languages</label>
-                                                        <select class="form-control select2" id="users-language-select2" multiple="multiple">
-                                                        <optgroup label="Languages">
-                                                            <option value="English" selected>English</option>
-                                                            <option value="Spanish">Spanish</option>
-                                                            <option value="French">French</option>
-                                                            <option value="Russian">Russian</option>
-                                                            <option value="German">German</option>
-                                                            <option value="Arabic" selected>Arabic</option>
-                                                            <option value="Sanskrit">Sanskrit</option>
-                                                        </optgroup>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </form>
+                                                </form>
                                         <!-- users edit Info form ends -->
                                     </div>
                                 </div>
@@ -482,6 +502,11 @@
         $(".nav-item").removeClass("current");
             $(this).toggleClass("current");
       });
+      $(".file-upload__input").change(function(e){
+        debugger
+          var upload_text=e.target.files[0].name;
+          $(".change_avater").text(upload_text);
+      })
          });
 
 </script>
