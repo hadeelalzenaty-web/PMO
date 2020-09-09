@@ -328,11 +328,11 @@
                                         <i class="bx bx-check align-middle"></i>
                                         <span class="mark-complete align-middle">Mark Complete</span>
                                     </button>
-                                    <span class="dropdown mr-50 d-flex">
-                                    <div class="d-flex upload">
-                                        <label for="upload" ><i class='bx bx-paperclip cursor-pointer change_avater mr-50'></i></label>
+                                    <div class="d-flex flex-nowrap upload ml-auto">
+                                        <label class="label-upload ml-auto" for="upload"><i class="bx bx-paperclip cursor-pointer change_avater mr-50"></i>                                        </label>
                                         <input id="upload" class="file-upload__input" type="file" name="file-upload">
-                                    </div> 
+                                 </div>
+                                    <span class="dropdown mr-50 d-flex">
                                         <a href="#" class="dropdown-toggle" id="todo-sidebar-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                                             <i class='bx bx-dots-vertical-rounded'></i>
                                         </a>
@@ -342,10 +342,10 @@
                                             <a href="#" class="dropdown-item">Print</a>
                                         </span>
                                     </span>
+                                    <button type="button" class="close close-icon">
+                                        <i class="bx bx-x"></i>
+                                    </button>
                                 </div>
-                                <button type="button" class="close close-icon">
-                                    <i class="bx bx-x"></i>
-                                </button>
                             </div>
                             <!-- form start -->
                             <form id="compose-form" class="mt-1">
@@ -911,25 +911,25 @@
             var upload_button="";
           $(".file-upload__input").change(function(e){      
               var upload_text=e.target.files[0].name;
-              i++;
+              ++i;
             if(i<=1 && upload_button==""){ 
               upload_button="<div class='uploaded_file btn btn-primary btn-sm mr-25'>"+upload_text+"</div>";
               $(".change_avater").before(upload_button);
-              $(".upload").before("<a class='exit'><i class='fas fa-times-circle mr-25'></i></a>");
+              $(".upload").prepend("<a class='exit'><i class='fas fa-times-circle mr-25'></i></a>");
             }
             else if(i<=1 && upload_button!=""){
                 $(".uploaded_file").removeClass("d-none");
-                $(this).removeClass("d-none");
+                $(".exit").removeClass("d-none");
+               $(".uploaded_file").text(upload_text);
             }
-            else{
+            else if(i>1){
                 alert("you can't uploaded more than one file");
             }
             $(".exit").click(function(){
-                debugger
-                $(upload_text).val("");
+                $(".file-upload__input").val("");
                 $(".uploaded_file").addClass("d-none");
                 $(this).addClass("d-none");
-                i--;
+                i=0;
             });
             });
              });
