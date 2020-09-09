@@ -913,14 +913,14 @@
               var upload_text=e.target.files[0].name;
               ++i;
             if(i<=1 && upload_button==""){ 
-              upload_button="<div class='uploaded_file btn btn-primary btn-sm mr-25'>"+upload_text+"</div>";
+              upload_button="<div class='uploaded_file btn btn-danger btn-sm mr-25'>1</div>";
               $(".change_avater").before(upload_button);
               $(".upload").prepend("<a class='exit'><i class='fas fa-times-circle mr-25'></i></a>");
             }
             else if(i<=1 && upload_button!=""){
                 $(".uploaded_file").removeClass("d-none");
                 $(".exit").removeClass("d-none");
-               $(".uploaded_file").text(upload_text);
+               $(".uploaded_file").text(1);
             }
             else if(i>1){
                 alert("you can't uploaded more than one file");
