@@ -214,7 +214,7 @@
 
     <!-- BEGIN: Main Menu-->
     <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
-        <div class="navbar-header">
+        <div class="navbar-header mb-25">
             <ul class="nav navbar-nav flex-row">
                 <li class="nav-item mr-auto"><a class="navbar-brand" href="../../../html/ltr/vertical-menu-boxicons-template/index.html">
                     <img src="../../assets/images/logo.png" alt="logo" class="logo" height="45" width="45">
@@ -248,9 +248,6 @@
             <div class="sidebar-left">
                 <div class="sidebar">
                     <div class="todo-sidebar d-flex">
-                        <span class="sidebar-close-icon">
-                            <i class="bx bx-x"></i>
-                        </span>
                         <!-- todo app menu -->
                         <div class="todo-app-menu">
                             <div class="form-group text-center add-task">
@@ -351,10 +348,9 @@
                             <form id="compose-form" class="mt-1">
                                 <div class="card-content">
                                     <div class="card-body py-0 border-bottom">
-                                        <div class="form-group">
+                                        <div class="form-group task-title">
                                             <!-- text area for task title -->
-                                            <textarea name="title" class="form-control task-title" cols="1" rows="2" placeholder="Write a Task Name" required>
-            </textarea>
+                                            <textarea name="title" class="form-control" cols="1" rows="2" placeholder="Write a Task Name" required> </textarea>
                                         </div>
                                         <div class="assigned d-flex justify-content-between">
                                             <div class="form-group d-flex align-items-center mr-1">
@@ -757,6 +753,28 @@
                                                     </div>
                                                 </div>
                                             </li>
+                                                                                        <li class="todo-item" data-name="Marry Smith">
+                                                <div class="todo-title-wrapper d-flex justify-content-sm-between justify-content-end align-items-center">
+                                                    <div class="todo-title-area d-flex">
+                                                        <i class='bx bx-grid-vertical handle'></i>
+                                                        <div class="checkbox">
+                                                            <input type="checkbox" class="checkbox-input" id="checkbox12">
+                                                            <label for="checkbox12"></label>
+                                                        </div>
+                                                        <p class="todo-title mx-50 m-0 truncate">Get The Boot A Birds Eye Look Into Mcse Boot Camps</p>
+                                                    </div>
+                                                    <div class="todo-item-action d-flex align-items-center">
+                                                        <div class="todo-badge-wrapper d-flex">
+                                                            <span class="badge badge-light-warning badge-pill">Design</span>
+                                                        </div>
+                                                        <div class="avatar ml-1">
+                                                            <img src="../../app-assets/images/portrait/small/avatar-s-12.jpg" alt="avatar" height="30" width="30">
+                                                        </div>
+                                                        <a class='todo-item-favorite ml-75'><i class="bx bx-star"></i></a>
+                                                        <a class='todo-item-delete ml-75'><i class="bx bx-trash"></i></a>
+                                                    </div>
+                                                </div>
+                                            </li>
                                             <li class="todo-item" data-name="Maria Garcia">
                                                 <div class="todo-title-wrapper d-flex justify-content-sm-between justify-content-end align-items-center">
                                                     <div class="todo-title-area d-flex">
@@ -918,28 +936,29 @@
     <script>
         $(document).ready(function () {
             i=0;
-            var upload_button="";
+            var upload_button=[];
           $(".file-upload__input").change(function(e){      
               var upload_text=e.target.files[0].name;
-              ++i;
-            if(i<=1 && upload_button==""){ 
-              upload_button="<div class='uploaded_file btn btn-danger btn-sm mr-25'>1</div>";
-              $(".change_avater").before(upload_button);
-              $(".upload").prepend("<a class='exit'><i class='fas fa-times-circle mr-25'></i></a>");
+            if(i<=3 && upload_button[i]==null){ 
+              upload_button.push("<button type='button' class='btn btn-primary uploaded_file mb-1'><span class='upload-text'>"+upload_text+"<span></button><a class='exit ml-25'><i class='fas fa-times-circle'></i></a>");
+              $(".task-title").before(upload_button[i]);
             }
-            else if(i<=1 && upload_button!=""){
+             else if(i<=3 && upload_button[i]!=null){
                 $(".uploaded_file").removeClass("d-none");
                 $(".exit").removeClass("d-none");
-               $(".uploaded_file").text(1);
+                $("uploaded_file").text(upload_button[i]);
             }
-            else if(i>1){
-                alert("you can't uploaded more than one file");
+            else if(i>3){
+                alert("you can't uploaded more than 4 file");
             }
+            ++i;
+
             $(".exit").click(function(){
                 $(".file-upload__input").val("");
+                upload_button[i]=null;
                 $(".uploaded_file").addClass("d-none");
                 $(this).addClass("d-none");
-                i=0;
+                --i;
             });
             });
              });

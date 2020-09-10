@@ -95,7 +95,7 @@ html body .content.app-content .content-area-wrapper {
 
 html body .content.app-content .content-area-wrapper .content-wrapper {
   margin-top: 0;
-  height: calc(100vh - 9rem);
+ height: calc(100vh - 5.5rem);
 }
 
 html body .content .content-wrapper {

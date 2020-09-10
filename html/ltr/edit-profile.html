@@ -213,7 +213,7 @@
 
     <!-- BEGIN: Main Menu-->
     <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
-        <div class="navbar-header">
+        <div class="navbar-header mb-25">
             <ul class="nav navbar-nav flex-row">
                 <li class="nav-item mr-auto"><a class="navbar-brand" href="../../../html/ltr/vertical-menu-boxicons-template/index.html">
                     <img src="../../assets/images/logo.png" alt="logo" class="logo" height="45" width="45">
@@ -260,8 +260,18 @@
                                         </a>
                                     </li>
                                     <li class="nav-item">
+                                        <a class="nav-link d-flex align-items-center" id="career-tab" data-toggle="tab" href="#career-info" aria-controls="career" role="tab" aria-selected="false">
+                                            <i class="fas fa-briefcase mr-25"></i><span class="d-none d-sm-block">Career Info</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
                                         <a class="nav-link d-flex align-items-center" id="information-tab" data-toggle="tab" href="#information" aria-controls="information" role="tab" aria-selected="false">
-                                            <i class="bx bx-info-circle mr-25"></i><span class="d-none d-sm-block">Career Information</span>
+                                            <i class="bx bx-lock mr-25"></i><span class="d-none d-sm-block">Security</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link d-flex align-items-center" id="contact-tab" data-toggle="tab" href="#contact-info" aria-controls="contact" role="tab" aria-selected="false">
+                                            <i class="fas fa-phone-volume"></i><span class="d-none d-sm-block">Contact</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -274,15 +284,12 @@
                                             </a>
                                             <div class="media-body">
                                                 <h4 class="media-heading">Avatar</h4>
-                                                <div class="col-12 px-0 d-flex">
-                                                    <a href="#" class="btn btn-sm btn-primary mr-25 change_avater">Change</a>
-                                                    <input id="upload" class="file-upload__input" type="file" name="file-upload">
+                                                <div class="col-12 px-0 d-flex avater-file">
+                                                    <label for="upload2"  class="btn btn-sm btn-primary mr-25 change_avater">Change</a>
+                                                    <input id="upload2" class="file-upload__input" type="file" name="file-upload">
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- users edit media object ends -->
-                                        <!-- users edit account form start -->
-                                        <h5 class="mb-1"><i class="bx bx-info-circle mr-25"></i> Personal Info</h5>
                                         <form>
                                             <div class="row">
                                                 <div class="col-sm-6 col-12">
@@ -301,6 +308,116 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                                    <div class="col-12 col-sm-6">
+                                                        <div class="form-group">
+                                                            <div class="controls position-relative">
+                                                                <label>Birthdate</label>
+                                                                <fieldset class="form-group position-relative has-icon-left invoice-date-picker">
+                                                                    <input type="text" class="form-control pickadate" placeholder="Select Date" id="Birthdate">
+                                                                    <div class="form-control-position">
+                                                                        <i class='bx bx-calendar'></i>
+                                                                    </div>
+                                                                </fieldset>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6">
+                                                        <div class="form-group">
+                                                            <label>Location</label>
+                                                            <select class="form-control select2-icons" id="location">
+                                                                <option value="Jordan">Jordan</option>
+                                                                <option value="KSA">KSA</option>
+                                                                <option value="Canada">Canada</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6">
+                                                        <div class="form-group">
+                                                            <label>Languages</label>
+                                                            <select class="form-control select2" id="users-language-select2" multiple="multiple">
+                                                                <optgroup label="Languages">
+                                                                    <option value="English" selected>English</option>
+                                                                    <option value="Spanish">Spanish</option>
+                                                                    <option value="French">French</option>
+                                                                    <option value="Russian">Russian</option>
+                                                                    <option value="German">German</option>
+                                                                    <option value="Arabic" selected>Arabic</option>
+                                                                    <option value="Sanskrit">Sanskrit</option>
+                                                                </optgroup>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="tab-pane fade" id="career-info" aria-labelledby="career-tab" role="tabpanel">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-sm-4 col-12">
+                                                    <div class="form-group">
+                                                        <label>Position</label>
+                                                        <input class="form-control" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4 col-12">
+                                                    <div class="form-group">
+                                                        <label>Level</label>
+                                                        <select class="select2-icons form-control">>
+                                                            <optgroup label="Resource Level">
+                                                                <option value="junior">Junior</option>
+                                                                <option value="senior">Senior</option>
+                                                                <option value="trainee">Trainee</option>
+                                                                <option value="manager">Manager</option>
+                                                            </optgroup>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4 col-12">
+                                                    <div class="form-group">
+                                                        <label>Rate</label>
+                                                        <input class="form-control" type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <!-- users edit Info form ends -->
+                                    </div>
+                                    <div class="tab-pane fade show" id="information" aria-labelledby="information-tab" role="tabpanel">
+                                                <form>
+                                                    <div class="form-row">
+                                                        <div class="col-sm-6 col-12">
+                                                            <div class="form-group">
+                                                                <div class="controls">
+                                                                    <label>Current Password</label>
+                                                                    <input type="password" class="form-control" placeholder="Current Password">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="clearfix w-100"></div>
+                                                        <div class="col-sm-6 col-12">
+                                                            <div class="form-group">
+                                                                <div class="controls">
+                                                                    <label>New Password</label>
+                                                                    <input type="password" class="form-control" placeholder="New Password">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="clearfix w-100"></div>
+                                                        <div class="col-sm-6 col-12">
+                                                            <div class="form-group">
+                                                                <div class="controls">
+                                                                    <label>Confirm New Password</label>
+                                                                    <input type="password" class="form-control" placeholder="Retype New Password">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                        <!-- users edit Info form ends -->
+                                    </div>
+                                    <div class="tab-pane fade" id="contact-info" aria-labelledby="contact-tab" role="tabpanel">
+                                        <form>
+                                            <div class="row">
                                                 <div class="col-sm-4 col-12">
                                                     <div class="form-group">
                                                         <div class="controls">
@@ -325,113 +442,6 @@
                                                 </div>
                                             </div>
                                         </form>
-                                        <!-- users edit account form ends -->
-                                        <h5 class="my-1"><i class="bx bx-lock mr-25"></i> Security</h5>
-                                        <form>
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="form-group">
-                                                        <div class="controls">
-                                                            <label>Current Password</label>
-                                                            <input type="password" class="form-control" placeholder="Current Password">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12">
-                                                    <div class="form-group">
-                                                        <div class="controls">
-                                                            <label>New Password</label>
-                                                            <input type="password" class="form-control" placeholder="New Password">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12">
-                                                    <div class="form-group">
-                                                        <div class="controls">
-                                                            <label>Confirm New Password</label>
-                                                            <input type="password" class="form-control" placeholder="Retype New Password">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <div class="tab-pane fade show" id="information" aria-labelledby="information-tab" role="tabpanel">
-                                        <!-- users edit Info form start -->
-                                                <h5 class="my-1"><i class="bx bx-link mr-25"></i>Career Info</h5>
-                                                <form>
-                                                    <div class="row">
-                                                        <div class="col-12 col-sm-6">
-                                                            <div class="form-group">
-                                                                <label>Position</label>
-                                                                <input class="form-control" type="text">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 col-sm-6">
-                                                            <div class="form-group">
-                                                                <label>Level</label>
-                                                                <select class="select2-icons form-control">>
-                                                                    <optgroup label="Resource Level">
-                                                                        <option value="junior">Junior</option>
-                                                                        <option value="senior">Senior</option>
-                                                                        <option value="trainee">Trainee</option>
-                                                                        <option value="manager">Manager</option>
-                                                                    </optgroup>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 col-sm-6">
-                                                            <div class="form-group">
-                                                                <label>Rate</label>
-                                                                <input class="form-control" type="text">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                                    <h5 class="my-1"><i class="bx bx-user mr-25"></i>Personal Info</h5>
-                                                <form>
-                                                    <div class="row">
-                                                        <div class="col-12 col-sm-6">
-                                                            <div class="form-group">
-                                                                <div class="controls position-relative">
-                                                                    <label>Birthdate</label>
-                                                                    <fieldset class="form-group position-relative has-icon-left invoice-date-picker">
-                                                                        <input type="text" class="form-control pickadate" placeholder="Select Date" id="Birthdate">
-                                                                        <div class="form-control-position">
-                                                                            <i class='bx bx-calendar'></i>
-                                                                        </div>
-                                                                    </fieldset>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 col-sm-6">
-                                                            <div class="form-group">
-                                                                <label>Location</label>
-                                                                <select class="form-control select2-icons" id="location">
-                                                                    <option value="Jordan">Jordan</option>
-                                                                    <option value="KSA">KSA</option>
-                                                                    <option value="Canada">Canada</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 col-sm-6">
-                                                            <div class="form-group">
-                                                                <label>Languages</label>
-                                                                <select class="form-control select2" id="users-language-select2" multiple="multiple">
-                                                                    <optgroup label="Languages">
-                                                                        <option value="English" selected>English</option>
-                                                                        <option value="Spanish">Spanish</option>
-                                                                        <option value="French">French</option>
-                                                                        <option value="Russian">Russian</option>
-                                                                        <option value="German">German</option>
-                                                                        <option value="Arabic" selected>Arabic</option>
-                                                                        <option value="Sanskrit">Sanskrit</option>
-                                                                    </optgroup>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </form>
                                         <!-- users edit Info form ends -->
                                     </div>
                                 </div>
@@ -503,9 +513,17 @@
             $(this).toggleClass("current");
       });
       $(".file-upload__input").change(function(e){
-        debugger
+          debugger;
           var upload_text=e.target.files[0].name;
-          $(".change_avater").text(upload_text);
+          $(".change_avater").addClass("d-none");
+          $(".avater-file").append("<button type='button' class='btn btn-primary avater-upload'>"+upload_text+"<a class='exit ml-1'><i class='fas fa-times-circle'></i></a></button>");
+
+          $(".exit").click(function(){
+                $(".file-upload__input").val("");
+                $(".change_avater").removeClass("d-none");
+                $(".avater-upload").addClass("d-none");
+                i=0;
+            });
       })
          });
 
