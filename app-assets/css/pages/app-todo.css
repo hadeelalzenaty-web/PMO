@@ -20401,6 +20401,7 @@
   .todo-application .content-area-wrapper .todo-new-task-sidebar {
     width: auto;
     right: calc(100% - 88%) !important;
+    left:0;
   }
   .todo-application .content-area-wrapper .todo-new-task-sidebar.show {
     transform: translateX(11%) translateY(1px);
@@ -20440,7 +20441,7 @@
   }
   .todo-application .app-content .todo-app-list .todo-task-list {
     position: relative;
-    height: calc(100vh - 9rem) !important;
+    height: calc(100vh - 5rem) !important;
   }
 }
 

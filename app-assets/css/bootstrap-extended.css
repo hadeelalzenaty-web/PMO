@@ -1347,6 +1347,7 @@ input[type=number]::-webkit-outer-spin-button {
   padding: 0.7rem 1rem;
 }
 
+
 .header-navbar .navbar-container ul.nav li i.ficon {
   font-size: 1.5rem;
   color: #475F7B;
@@ -1809,6 +1810,10 @@ input[type=number]::-webkit-outer-spin-button {
     margin-left: 1.2rem !important;
     margin-right: 1.2rem !important;
   }
+  .header-navbar .navbar-container ul.nav li a.nav-link-search,
+  .header-navbar .navbar-container ul.nav li a.nav-link-expand {
+    padding: 1.4rem 0.5rem 1rem 0.50rem;
+    }
 }
 
 /* 1-column Layout - Back Link in Center */

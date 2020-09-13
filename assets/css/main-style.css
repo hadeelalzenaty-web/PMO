@@ -70,6 +70,13 @@
 .user-profile-text div,.project-info{
 font-size:13px;
 }
+.avater-file .exit{
+    position: relative;
+    bottom: -1px;
+}
+body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu.expanded .navbar-header .navbar-brand .logo{
+    margin-bottom: 1rem;
+}
 
 .description p{
       /* hide text if it more than N lines  */

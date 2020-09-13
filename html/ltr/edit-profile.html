@@ -65,15 +65,15 @@
                             <li class="nav-item mobile-menu d-xl-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ficon bx bx-menu"></i></a></li>
                         </ul>
                         <ul class="nav navbar-nav bookmark-icons">
-                            <li class="nav-item d-none d-lg-block"><a class="nav-link" href="tasks.html"data-toggle="tooltip" data-placement="top" title="Tasks"><i class="ficon bx bx-check-circle"></i></a></li>
-                            <li class="nav-item d-none d-lg-block"><a class="nav-link" href="app-calendar.html" data-toggle="tooltip" data-placement="top" title="Calendar"><i class="ficon bx bx-calendar-alt"></i></a></li>
+                            <li class="nav-item"><a class="nav-link" href="tasks.html"data-toggle="tooltip" data-placement="top" title="Tasks"><i class="ficon bx bx-check-circle"></i></a></li>
+                            <li class="nav-item"><a class="nav-link" href="app-calendar.html" data-toggle="tooltip" data-placement="top" title="Calendar"><i class="ficon bx bx-calendar-alt"></i></a></li>
                         </ul>
                     </div>
                     <ul class="nav navbar-nav float-right">
                         <li class="dropdown dropdown-language nav-item"><a class="dropdown-toggle nav-link" id="dropdown-flag" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="selected-language">English</span></a>
                             <div class="dropdown-menu" aria-labelledby="dropdown-flag"><a class="dropdown-item" href="#" data-language="en"> English</a><a class="dropdown-item" href="#" data-language="fr"> Arabic</a></div>
                         </li>
-                        <li class="nav-item d-none d-lg-block"><a class="nav-link nav-link-expand"><i class="ficon bx bx-fullscreen"></i></a></li>
+                        <li class="nav-item"><a class="nav-link nav-link-expand"><i class="ficon bx bx-fullscreen"></i></a></li>
                         <li class="nav-item nav-search"><a class="nav-link nav-link-search"><i class="ficon bx bx-search"></i></a>
                             <div class="search-input">
                                 <div class="search-input-icon"><i class="bx bx-search primary"></i></div>
@@ -213,7 +213,7 @@
 
     <!-- BEGIN: Main Menu-->
     <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
-        <div class="navbar-header mb-25">
+        <div class="navbar-header">
             <ul class="nav navbar-nav flex-row">
                 <li class="nav-item mr-auto"><a class="navbar-brand" href="../../../html/ltr/vertical-menu-boxicons-template/index.html">
                     <img src="../../assets/images/logo.png" alt="logo" class="logo" height="45" width="45">
@@ -269,11 +269,6 @@
                                             <i class="bx bx-lock mr-25"></i><span class="d-none d-sm-block">Security</span>
                                         </a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link d-flex align-items-center" id="contact-tab" data-toggle="tab" href="#contact-info" aria-controls="contact" role="tab" aria-selected="false">
-                                            <i class="fas fa-phone-volume"></i><span class="d-none d-sm-block">Contact</span>
-                                        </a>
-                                    </li>
                                 </ul>
                                 <div class="tab-content">
                                     <div class="tab-pane active fade show" id="account" aria-labelledby="account-tab" role="tabpanel">
@@ -290,6 +285,7 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <h5><i class="bx bxs-user-detail"></i> User Info</h5>
                                         <form>
                                             <div class="row">
                                                 <div class="col-sm-6 col-12">
@@ -308,7 +304,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                    <div class="col-12 col-sm-6">
+                                                    <div class="col-md-4 col-sm-6 col-12">
                                                         <div class="form-group">
                                                             <div class="controls position-relative">
                                                                 <label>Birthdate</label>
@@ -321,7 +317,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-12 col-sm-6">
+                                                    <div class="col-md-4 col-sm-6 col-12">
                                                         <div class="form-group">
                                                             <label>Location</label>
                                                             <select class="form-control select2-icons" id="location">
@@ -331,7 +327,7 @@
                                                             </select>
                                                         </div>
                                                     </div>
-                                                    <div class="col-12 col-sm-6">
+                                                    <div class="col-md-4 col-sm-6 col-12">
                                                         <div class="form-group">
                                                             <label>Languages</label>
                                                             <select class="form-control select2" id="users-language-select2" multiple="multiple">
@@ -346,12 +342,38 @@
                                                                 </optgroup>
                                                             </select>
                                                         </div>
+                                                    </div>            
+                                            </div>
+                                            <h5><i class="bx bxs-contact"></i> Contact details</h5>
+                                            <div class="form-row">
+                                                <div class="col-sm-4 col-12">
+                                                    <div class="form-group">
+                                                        <div class="controls">
+                                                            <label>E-mail</label>
+                                                            <input type="email" class="form-control" placeholder="Email" value="deanstanley@gmail.com" required data-validation-required-message="This email field is required">
+                                                        </div>
                                                     </div>
+                                                </div>
+                                                <div class="col-sm-4 col-12">
+                                                    <div class="form-group">
+                                                        <div class="controls">
+                                                            <label>Phone</label>
+                                                            <input type="email" class="form-control" placeholder="Phone">
+                                                        </div>
+                                                    </div>        
+                                                </div>
+                                                <div class="col-sm-4 col-12">
+                                                    <div class="form-group">
+                                                        <label>Skype</label>
+                                                        <input type="text" class="form-control" placeholder="Skype name">
+                                                    </div>
+                                                </div>
                                             </div>
                                         </form>
                                     </div>
                                     <div class="tab-pane fade" id="career-info" aria-labelledby="career-tab" role="tabpanel">
                                         <form>
+                                            <h5><i class="fas fa-briefcase"></i> Career Info</h5>
                                             <div class="row">
                                                 <div class="col-sm-4 col-12">
                                                     <div class="form-group">
@@ -383,9 +405,10 @@
                                         <!-- users edit Info form ends -->
                                     </div>
                                     <div class="tab-pane fade show" id="information" aria-labelledby="information-tab" role="tabpanel">
+                                        <h5><i class="bx bx-lock"></i> Security</h5>
                                                 <form>
                                                     <div class="form-row">
-                                                        <div class="col-sm-6 col-12">
+                                                        <div class="col-sm-4 col-12">
                                                             <div class="form-group">
                                                                 <div class="controls">
                                                                     <label>Current Password</label>
@@ -394,7 +417,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="clearfix w-100"></div>
-                                                        <div class="col-sm-6 col-12">
+                                                        <div class="col-sm-4 col-12">
                                                             <div class="form-group">
                                                                 <div class="controls">
                                                                     <label>New Password</label>
@@ -402,8 +425,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="clearfix w-100"></div>
-                                                        <div class="col-sm-6 col-12">
+                                                        <div class="col-sm-4 col-12">
                                                             <div class="form-group">
                                                                 <div class="controls">
                                                                     <label>Confirm New Password</label>
@@ -413,35 +435,6 @@
                                                         </div>
                                                     </div>
                                                 </form>
-                                        <!-- users edit Info form ends -->
-                                    </div>
-                                    <div class="tab-pane fade" id="contact-info" aria-labelledby="contact-tab" role="tabpanel">
-                                        <form>
-                                            <div class="row">
-                                                <div class="col-sm-4 col-12">
-                                                    <div class="form-group">
-                                                        <div class="controls">
-                                                            <label>E-mail</label>
-                                                            <input type="email" class="form-control" placeholder="Email" value="deanstanley@gmail.com" required data-validation-required-message="This email field is required">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-4 col-12">
-                                                    <div class="form-group">
-                                                        <div class="controls">
-                                                            <label>Phone</label>
-                                                            <input type="email" class="form-control" placeholder="Phone">
-                                                        </div>
-                                                    </div>        
-                                                </div>
-                                                <div class="col-sm-4 col-12">
-                                                    <div class="form-group">
-                                                        <label>Skype</label>
-                                                        <input type="text" class="form-control" placeholder="Skype name">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </form>
                                         <!-- users edit Info form ends -->
                                     </div>
                                 </div>
@@ -459,7 +452,8 @@
         </div>
     </div>
     <!-- END: Content-->
-
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
 
     </div>
  <!-- BEGIN: Vendor JS-->
@@ -512,17 +506,26 @@
         $(".nav-item").removeClass("current");
             $(this).toggleClass("current");
       });
+      i=0;
       $(".file-upload__input").change(function(e){
+          i++;
           debugger;
           var upload_text=e.target.files[0].name;
+        if(i==1){
           $(".change_avater").addClass("d-none");
-          $(".avater-file").append("<button type='button' class='btn btn-primary avater-upload'>"+upload_text+"<a class='exit ml-1'><i class='fas fa-times-circle'></i></a></button>");
-
-          $(".exit").click(function(){
+          $(".avater-file").append("<button type='button' class='btn btn-primary uploaded_file'><span class='upload-text'>"+upload_text+"</span></button><a class='exit ml-25'><i class='fas fa-times-circle'></i></a>");
+        }
+        else if (i>1){
+            $(".exit").removeClass("d-none");
+            $(".change_avater").addClass("d-none");
+            $(".uploaded_file").removeClass("d-none");
+            $(".uploaded_file").text(upload_text);
+        }
+         $(".exit").click(function(){
                 $(".file-upload__input").val("");
                 $(".change_avater").removeClass("d-none");
-                $(".avater-upload").addClass("d-none");
-                i=0;
+                $(this).addClass("d-none");
+                $(".uploaded_file").addClass("d-none");
             });
       })
          });
