@@ -12,7 +12,8 @@
     <title>Tasks</title>
 
     <link rel="shortcut icon" type="image/x-icon" href="../../assets/images/logo.png">
-    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,600%7CIBM+Plex+Sans:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,600%7CIBM+Plex+Sans:300,400,500,600,700"
+        rel="stylesheet">
 
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/vendors.min.css">
@@ -49,207 +50,279 @@
     <link rel="stylesheet" type="text/css" href="../../assets/css/main-style.css">
     <!-- END: Custom CSS-->
     <script>
-   /*function exitfun(ids){
-        debugger
-        $(".file-upload__input").val("");
-        upload_button[ids]=null;
-        ids.before($(".uploaded_file").addClass("d-none"));
-        ids.addClass("d-none");
-     }*/
+        /*function exitfun(ids){
+             debugger
+             $(".file-upload__input").val("");
+             upload_button[ids]=null;
+             ids.before($(".uploaded_file").addClass("d-none"));
+             ids.addClass("d-none");
+          }*/
     </script>
 </head>
 <!-- END: Head-->
 
 <!-- BEGIN: Body-->
 
-<body class="vertical-layout vertical-menu-modern boxicon-layout no-card-shadow content-left-sidebar todo-application navbar-sticky footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="content-left-sidebar">
+<body
+    class="vertical-layout vertical-menu-modern boxicon-layout no-card-shadow content-left-sidebar todo-application navbar-sticky footer-static  "
+    data-open="click" data-menu="vertical-menu-modern" data-col="content-left-sidebar">
 
     <!-- BEGIN: Header-->
     <div class="header-navbar-shadow"></div>
     <nav class="header-navbar main-header-navbar navbar-expand-lg navbar navbar-with-menu fixed-top ">
-      <div class="navbar-wrapper">
-          <div class="navbar-container content">
-              <div class="navbar-collapse" id="navbar-mobile">
-                  <div class="mr-auto float-left bookmark-wrapper d-flex align-items-center">
-                      <ul class="nav navbar-nav">
-                          <li class="nav-item mobile-menu d-xl-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ficon bx bx-menu"></i></a></li>
-                      </ul>
-                      <ul class="nav navbar-nav bookmark-icons">
-                          <li class="nav-item "><a class="nav-link" href="tasks.html"data-toggle="tooltip" data-placement="top" title="Tasks"><i class="ficon bx bx-check-circle"></i></a></li>
-                          <li class="nav-item "><a class="nav-link" href="app-calendar.html" data-toggle="tooltip" data-placement="top" title="Calendar"><i class="ficon bx bx-calendar-alt"></i></a></li>
-                      </ul>
-                  </div>
-                  <ul class="nav navbar-nav float-right">
-                      <li class="dropdown dropdown-language nav-item"><a class="dropdown-toggle nav-link" id="dropdown-flag" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="selected-language">English</span></a>
-                          <div class="dropdown-menu" aria-labelledby="dropdown-flag"><a class="dropdown-item" href="#" data-language="en"> English</a><a class="dropdown-item" href="#" data-language="fr"> Arabic</a></div>
-                      </li>
-                      <li class="nav-item "><a class="nav-link nav-link-expand"><i class="ficon bx bx-fullscreen"></i></a></li>
-                      <li class="nav-item nav-search"><a class="nav-link nav-link-search"><i class="ficon bx bx-search"></i></a>
-                          <div class="search-input">
-                              <div class="search-input-icon"><i class="bx bx-search primary"></i></div>
-                              <input class="input" type="text" placeholder="Explore PMO..." tabindex="-1" data-search="template-search">
-                              <div class="search-input-close"><i class="bx bx-x"></i></div>
-                              <ul class="search-list"></ul>
-                          </div>
-                      </li>
-                      <li class="dropdown dropdown-notification nav-item"><a class="nav-link nav-link-label" href="#" data-toggle="dropdown"><i class="ficon bx bx-bell bx-tada bx-flip-horizontal"></i><span class="badge badge-pill badge-danger badge-up">5</span></a>
-                          <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
-                              <li class="dropdown-menu-header">
-                                  <div class="dropdown-header px-1 py-75 d-flex justify-content-between"><span class="notification-title">7 new Notification</span><span class="text-bold-400 cursor-pointer">Mark all as read</span></div>
-                              </li>
-                              <li class="scrollable-container media-list"><a class="d-flex justify-content-between" href="javascript:void(0)">
-                                      <div class="media d-flex align-items-center">
-                                          <div class="media-left pr-0">
-                                              <div class="avatar mr-1 m-0"><img src="../../app-assets/images/portrait/small/avatar-s-11.jpg" alt="avatar" height="39" width="39"></div>
-                                          </div>
-                                          <div class="media-body">
-                                              <h6 class="media-heading"><span class="text-bold-500">Congratulate Socrates Itumay</span> for work anniversaries</h6><small class="notification-text">Mar 15 12:32pm</small>
-                                          </div>
-                                      </div>
-                                  </a>
-                                  <div class="d-flex justify-content-between read-notification cursor-pointer">
-                                      <div class="media d-flex align-items-center">
-                                          <div class="media-left pr-0">
-                                              <div class="avatar mr-1 m-0"><img src="../../app-assets/images/portrait/small/avatar-s-16.jpg" alt="avatar" height="39" width="39"></div>
-                                          </div>
-                                          <div class="media-body">
-                                              <h6 class="media-heading"><span class="text-bold-500">New Message</span> received</h6><small class="notification-text">You have 18 unread messages</small>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <div class="d-flex justify-content-between cursor-pointer">
-                                      <div class="media d-flex align-items-center py-0">
-                                          <div class="media-left pr-0"><img class="mr-1" src="../../app-assets/images/icon/sketch-mac-icon.png" alt="avatar" height="39" width="39"></div>
-                                          <div class="media-body">
-                                              <h6 class="media-heading"><span class="text-bold-500">Updates Available</span></h6><small class="notification-text">Sketch 50.2 is currently newly added</small>
-                                          </div>
-                                          <div class="media-right pl-0">
-                                              <div class="row border-left text-center">
-                                                  <div class="col-12 px-50 py-75 border-bottom">
-                                                      <h6 class="media-heading text-bold-500 mb-0">Update</h6>
-                                                  </div>
-                                                  <div class="col-12 px-50 py-75">
-                                                      <h6 class="media-heading mb-0">Close</h6>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <div class="d-flex justify-content-between cursor-pointer">
-                                      <div class="media d-flex align-items-center">
-                                          <div class="media-left pr-0">
-                                              <div class="avatar bg-primary bg-lighten-5 mr-1 m-0 p-25"><span class="avatar-content text-primary font-medium-2">LD</span></div>
-                                          </div>
-                                          <div class="media-body">
-                                              <h6 class="media-heading"><span class="text-bold-500">New customer</span> is registered</h6><small class="notification-text">1 hrs ago</small>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <div class="cursor-pointer">
-                                      <div class="media d-flex align-items-center justify-content-between">
-                                          <div class="media-left pr-0">
-                                              <div class="media-body">
-                                                  <h6 class="media-heading">New Offers</h6>
-                                              </div>
-                                          </div>
-                                          <div class="media-right">
-                                              <div class="custom-control custom-switch">
-                                                  <input class="custom-control-input" type="checkbox" checked id="notificationSwtich">
-                                                  <label class="custom-control-label" for="notificationSwtich"></label>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <div class="d-flex justify-content-between cursor-pointer">
-                                      <div class="media d-flex align-items-center">
-                                          <div class="media-left pr-0">
-                                              <div class="avatar bg-danger bg-lighten-5 mr-1 m-0 p-25"><span class="avatar-content"><i class="bx bx-loader-alt"></i></span></div>
-                                          </div>
-                                          <div class="media-body">
-                                              <h6 class="media-heading"><span class="text-bold-500">Application</span> has been approved</h6><small class="notification-text">6 hrs ago</small>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <div class="d-flex justify-content-between read-notification cursor-pointer">
-                                      <div class="media d-flex align-items-center">
-                                          <div class="media-left pr-0">
-                                              <div class="avatar mr-1 m-0"><img src="../../app-assets/images/portrait/small/avatar-s-4.jpg" alt="avatar" height="39" width="39"></div>
-                                          </div>
-                                          <div class="media-body">
-                                              <h6 class="media-heading"><span class="text-bold-500">New file</span> has been uploaded</h6><small class="notification-text">4 hrs ago</small>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <div class="d-flex justify-content-between cursor-pointer">
-                                      <div class="media d-flex align-items-center">
-                                          <div class="media-left pr-0">
-                                              <div class="avatar bg-rgba-danger m-0 mr-1 p-25">
-                                                  <div class="avatar-content"><i class="bx bx-detail text-danger"></i></div>
-                                              </div>
-                                          </div>
-                                          <div class="media-body">
-                                              <h6 class="media-heading"><span class="text-bold-500">Finance report</span> has been generated</h6><small class="notification-text">25 hrs ago</small>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <div class="d-flex justify-content-between cursor-pointer">
-                                      <div class="media d-flex align-items-center border-0">
-                                          <div class="media-left pr-0">
-                                              <div class="avatar mr-1 m-0"><img src="../../app-assets/images/portrait/small/avatar-s-16.jpg" alt="avatar" height="39" width="39"></div>
-                                          </div>
-                                          <div class="media-body">
-                                              <h6 class="media-heading"><span class="text-bold-500">New customer</span> comment recieved</h6><small class="notification-text">2 days ago</small>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </li>
-                              <li class="dropdown-menu-footer"><a class="dropdown-item p-50 text-primary justify-content-center" href="javascript:void(0)">Read all notifications</a></li>
-                          </ul>
-                      </li>
-                      <li class="dropdown dropdown-user nav-item"><a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
-                              <div class="user-nav d-sm-flex d-none"><span class="user-name">John Doe</span><span class="user-status text-muted">Available</span></div><span><img class="round" src="../../app-assets/images/portrait/small/avatar-s-11.jpg" alt="avatar" height="40" width="40"></span>
-                          </a>
-                          <div class="dropdown-menu dropdown-menu-right pb-0"><a class="dropdown-item" href="edit-profile.html"><i class="bx bx-user mr-50"></i> Edit Profile</a><a class="dropdown-item" href="app-todo.html"><i class="bx bx-check-square mr-50"></i> Task</a>
-                            <a class="dropdown-item" href="#"><i class="bx bx-cog mr-50"></i> Sitting</a>
-                              <div class="dropdown-divider mb-0"></div><a class="dropdown-item" href="auth-login.html"><i class="bx bx-power-off mr-50"></i> Logout</a>
-                          </div>
-                      </li>
-                  </ul>
-              </div>
-          </div>
-      </div>
-  </nav>
+        <div class="navbar-wrapper">
+            <div class="navbar-container content">
+                <div class="navbar-collapse" id="navbar-mobile">
+                    <div class="mr-auto float-left bookmark-wrapper d-flex align-items-center">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item mobile-menu d-xl-none mr-auto"><a
+                                    class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i
+                                        class="ficon bx bx-menu"></i></a></li>
+                        </ul>
+                        <ul class="nav navbar-nav bookmark-icons">
+                            <li class="nav-item "><a class="nav-link" href="tasks.html" data-toggle="tooltip"
+                                    data-placement="top" title="Tasks"><i class="ficon bx bx-check-circle"></i></a></li>
+                            <li class="nav-item "><a class="nav-link" href="app-calendar.html" data-toggle="tooltip"
+                                    data-placement="top" title="Calendar"><i class="ficon bx bx-calendar-alt"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="nav navbar-nav float-right">
+                        <li class="dropdown dropdown-language nav-item"><a class="dropdown-toggle nav-link"
+                                id="dropdown-flag" href="#" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false"><span class="selected-language">English</span></a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown-flag"><a class="dropdown-item" href="#"
+                                    data-language="en"> English</a><a class="dropdown-item" href="#" data-language="fr">
+                                    Arabic</a></div>
+                        </li>
+                        <li class="nav-item "><a class="nav-link nav-link-expand"><i
+                                    class="ficon bx bx-fullscreen"></i></a></li>
+                        <li class="nav-item nav-search"><a class="nav-link nav-link-search"><i
+                                    class="ficon bx bx-search"></i></a>
+                            <div class="search-input">
+                                <div class="search-input-icon"><i class="bx bx-search primary"></i></div>
+                                <input class="input" type="text" placeholder="Explore PMO..." tabindex="-1"
+                                    data-search="template-search">
+                                <div class="search-input-close"><i class="bx bx-x"></i></div>
+                                <ul class="search-list"></ul>
+                            </div>
+                        </li>
+                        <li class="dropdown dropdown-notification nav-item"><a class="nav-link nav-link-label" href="#"
+                                data-toggle="dropdown"><i class="ficon bx bx-bell bx-tada bx-flip-horizontal"></i><span
+                                    class="badge badge-pill badge-danger badge-up">5</span></a>
+                            <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
+                                <li class="dropdown-menu-header">
+                                    <div class="dropdown-header px-1 py-75 d-flex justify-content-between"><span
+                                            class="notification-title">7 new Notification</span><span
+                                            class="text-bold-400 cursor-pointer">Mark all as read</span></div>
+                                </li>
+                                <li class="scrollable-container media-list"><a class="d-flex justify-content-between"
+                                        href="javascript:void(0)">
+                                        <div class="media d-flex align-items-center">
+                                            <div class="media-left pr-0">
+                                                <div class="avatar mr-1 m-0"><img
+                                                        src="../../app-assets/images/portrait/small/avatar-s-11.jpg"
+                                                        alt="avatar" height="39" width="39"></div>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading"><span class="text-bold-500">Congratulate
+                                                        Socrates Itumay</span> for work anniversaries</h6><small
+                                                    class="notification-text">Mar 15 12:32pm</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="d-flex justify-content-between read-notification cursor-pointer">
+                                        <div class="media d-flex align-items-center">
+                                            <div class="media-left pr-0">
+                                                <div class="avatar mr-1 m-0"><img
+                                                        src="../../app-assets/images/portrait/small/avatar-s-16.jpg"
+                                                        alt="avatar" height="39" width="39"></div>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading"><span class="text-bold-500">New Message</span>
+                                                    received</h6><small class="notification-text">You have 18 unread
+                                                    messages</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between cursor-pointer">
+                                        <div class="media d-flex align-items-center py-0">
+                                            <div class="media-left pr-0"><img class="mr-1"
+                                                    src="../../app-assets/images/icon/sketch-mac-icon.png" alt="avatar"
+                                                    height="39" width="39"></div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading"><span class="text-bold-500">Updates
+                                                        Available</span></h6><small class="notification-text">Sketch
+                                                    50.2 is currently newly added</small>
+                                            </div>
+                                            <div class="media-right pl-0">
+                                                <div class="row border-left text-center">
+                                                    <div class="col-12 px-50 py-75 border-bottom">
+                                                        <h6 class="media-heading text-bold-500 mb-0">Update</h6>
+                                                    </div>
+                                                    <div class="col-12 px-50 py-75">
+                                                        <h6 class="media-heading mb-0">Close</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between cursor-pointer">
+                                        <div class="media d-flex align-items-center">
+                                            <div class="media-left pr-0">
+                                                <div class="avatar bg-primary bg-lighten-5 mr-1 m-0 p-25"><span
+                                                        class="avatar-content text-primary font-medium-2">LD</span>
+                                                </div>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading"><span class="text-bold-500">New
+                                                        customer</span> is registered</h6><small
+                                                    class="notification-text">1 hrs ago</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cursor-pointer">
+                                        <div class="media d-flex align-items-center justify-content-between">
+                                            <div class="media-left pr-0">
+                                                <div class="media-body">
+                                                    <h6 class="media-heading">New Offers</h6>
+                                                </div>
+                                            </div>
+                                            <div class="media-right">
+                                                <div class="custom-control custom-switch">
+                                                    <input class="custom-control-input" type="checkbox" checked
+                                                        id="notificationSwtich">
+                                                    <label class="custom-control-label"
+                                                        for="notificationSwtich"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between cursor-pointer">
+                                        <div class="media d-flex align-items-center">
+                                            <div class="media-left pr-0">
+                                                <div class="avatar bg-danger bg-lighten-5 mr-1 m-0 p-25"><span
+                                                        class="avatar-content"><i class="bx bx-loader-alt"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading"><span class="text-bold-500">Application</span>
+                                                    has been approved</h6><small class="notification-text">6 hrs
+                                                    ago</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between read-notification cursor-pointer">
+                                        <div class="media d-flex align-items-center">
+                                            <div class="media-left pr-0">
+                                                <div class="avatar mr-1 m-0"><img
+                                                        src="../../app-assets/images/portrait/small/avatar-s-4.jpg"
+                                                        alt="avatar" height="39" width="39"></div>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading"><span class="text-bold-500">New file</span>
+                                                    has been uploaded</h6><small class="notification-text">4 hrs
+                                                    ago</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between cursor-pointer">
+                                        <div class="media d-flex align-items-center">
+                                            <div class="media-left pr-0">
+                                                <div class="avatar bg-rgba-danger m-0 mr-1 p-25">
+                                                    <div class="avatar-content"><i class="bx bx-detail text-danger"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading"><span class="text-bold-500">Finance
+                                                        report</span> has been generated</h6><small
+                                                    class="notification-text">25 hrs ago</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between cursor-pointer">
+                                        <div class="media d-flex align-items-center border-0">
+                                            <div class="media-left pr-0">
+                                                <div class="avatar mr-1 m-0"><img
+                                                        src="../../app-assets/images/portrait/small/avatar-s-16.jpg"
+                                                        alt="avatar" height="39" width="39"></div>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading"><span class="text-bold-500">New
+                                                        customer</span> comment recieved</h6><small
+                                                    class="notification-text">2 days ago</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="dropdown-menu-footer"><a
+                                        class="dropdown-item p-50 text-primary justify-content-center"
+                                        href="javascript:void(0)">Read all notifications</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown-user nav-item"><a
+                                class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
+                                <div class="user-nav d-sm-flex d-none"><span class="user-name">John Doe</span><span
+                                        class="user-status text-muted">Available</span></div><span><img class="round"
+                                        src="../../app-assets/images/portrait/small/avatar-s-11.jpg" alt="avatar"
+                                        height="40" width="40"></span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right pb-0"><a class="dropdown-item"
+                                    href="edit-profile.html"><i class="bx bx-user mr-50"></i> Edit Profile</a><a
+                                    class="dropdown-item" href="app-todo.html"><i class="bx bx-check-square mr-50"></i>
+                                    Task</a>
+                                <a class="dropdown-item" href="#"><i class="bx bx-cog mr-50"></i> Sitting</a>
+                                <div class="dropdown-divider mb-0"></div><a class="dropdown-item"
+                                    href="auth-login.html"><i class="bx bx-power-off mr-50"></i> Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
     <!-- END: Header-->
 
     <!-- BEGIN: Main Menu-->
     <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
         <div class="navbar-header mb-25">
             <ul class="nav navbar-nav flex-row">
-                <li class="nav-item mr-auto"><a class="navbar-brand" href="../../html/ltr/vertical-menu-boxicons-template/index.html">
-                    <img src="../../assets/images/logo.png" alt="logo" class="logo" height="45" width="45">
-                    
+                <li class="nav-item mr-auto"><a class="navbar-brand"
+                        href="../../html/ltr/vertical-menu-boxicons-template/index.html">
+                        <img src="../../assets/images/logo.png" alt="logo" class="logo" height="45" width="45">
+
                     </a></li>
-                <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="bx bx-x d-block d-xl-none font-medium-4 primary toggle-icon"></i><i class="toggle-icon bx bx-disc font-medium-4 d-none d-xl-block collapse-toggle-icon primary" data-ticon="bx-disc"></i></a></li>
+                <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i
+                            class="bx bx-x d-block d-xl-none font-medium-4 primary toggle-icon"></i><i
+                            class="toggle-icon bx bx-disc font-medium-4 d-none d-xl-block collapse-toggle-icon primary"
+                            data-ticon="bx-disc"></i></a></li>
             </ul>
         </div>
         <div class="shadow-bottom"></div>
         <div class="main-menu-content">
-          <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation" data-icon-style="">
-              <li class="nav-item"><a href="dashboard.html"><i class="bx bx-home-alt"></i><span class="menu-title" data-i18n="Dashboard">Dashboard</span></a>
-              </li>
-              <li class="active nav-item"><a href="Projects.html"><i class="bx bxs-briefcase"></i><span class="menu-title">Projects</span></a>
-            </li>
-              <li class="nav-item"><a href="Resources.html"><i class="fas fa-user-friends"></i><span class="menu-title">Resources</span></a>
-            </li>
-            <li class="nav-item"><a href="Clients.html"><i class="bx bxs-user-badge"></i><span class="menu-title">Clients</span></a>
-              </li>
-                <li class="nav-item"><a href="Payment.html"><i class="bx bx-money"></i><span class="menu-title">Payments</span></a>
+            <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation"
+                data-icon-style="">
+                <li class="nav-item"><a href="dashboard.html"><i class="bx bx-home-alt"></i><span class="menu-title"
+                            data-i18n="Dashboard">Dashboard</span></a>
                 </li>
-                  </ul>
-      </div>
+                <li class="active nav-item"><a href="Projects.html"><i class="bx bxs-briefcase"></i><span
+                            class="menu-title">Projects</span></a>
+                </li>
+                <li class="nav-item"><a href="Resources.html"><i class="fas fa-user-friends"></i><span
+                            class="menu-title">Resources</span></a>
+                </li>
+                <li class="nav-item"><a href="Clients.html"><i class="bx bxs-user-badge"></i><span
+                            class="menu-title">Clients</span></a>
+                </li>
+                <li class="nav-item"><a href="Payment.html"><i class="bx bx-money"></i><span
+                            class="menu-title">Payments</span></a>
+                </li>
+            </ul>
+        </div>
     </div>
     <!-- END: Main Menu-->
-  
+
 
     <!-- BEGIN: Content-->
     <div class="app-content content">
@@ -299,23 +372,28 @@
                                 </div>
                                 <label class="filter-label mt-2 mb-1 pt-25">Labels</label>
                                 <div class="list-group">
-                                    <a href="#" class="list-group-item border-0 d-flex align-items-center justify-content-between">
+                                    <a href="#"
+                                        class="list-group-item border-0 d-flex align-items-center justify-content-between">
                                         <span>Frontend</span>
                                         <span class="bullet bullet-sm bullet-primary"></span>
                                     </a>
-                                    <a href="#" class="list-group-item border-0 d-flex align-items-center justify-content-between">
+                                    <a href="#"
+                                        class="list-group-item border-0 d-flex align-items-center justify-content-between">
                                         <span>Backend</span>
                                         <span class="bullet bullet-sm bullet-success"></span>
                                     </a>
-                                    <a href="#" class="list-group-item border-0 d-flex align-items-center justify-content-between">
+                                    <a href="#"
+                                        class="list-group-item border-0 d-flex align-items-center justify-content-between">
                                         <span>Issue</span>
                                         <span class="bullet bullet-sm bullet-danger"></span>
                                     </a>
-                                    <a href="#" class="list-group-item border-0 d-flex align-items-center justify-content-between">
+                                    <a href="#"
+                                        class="list-group-item border-0 d-flex align-items-center justify-content-between">
                                         <span>Design</span>
                                         <span class="bullet bullet-sm bullet-warning"></span>
                                     </a>
-                                    <a href="#" class="list-group-item border-0 d-flex align-items-center justify-content-between">
+                                    <a href="#"
+                                        class="list-group-item border-0 d-flex align-items-center justify-content-between">
                                         <span>Wireframe</span>
                                         <span class="bullet bullet-sm bullet-info"></span>
                                     </a>
@@ -335,14 +413,17 @@
                                         <span class="mark-complete align-middle">Mark Complete</span>
                                     </button>
                                     <div class="d-flex flex-nowrap upload ml-auto">
-                                        <label class="label-upload ml-auto" for="upload"><i class="bx bx-paperclip cursor-pointer change_avater mr-50"></i>                                        </label>
+                                        <label class="label-upload ml-auto" for="upload"><i
+                                                class="bx bx-paperclip cursor-pointer change_avater mr-50"></i> </label>
                                         <input id="upload" class="file-upload__input" type="file" name="file-upload">
-                                 </div>
+                                    </div>
                                     <span class="dropdown mr-50 d-flex">
-                                        <a href="#" class="dropdown-toggle" id="todo-sidebar-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        <a href="#" class="dropdown-toggle" id="todo-sidebar-dropdown"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                                             <i class='bx bx-dots-vertical-rounded'></i>
                                         </a>
-                                        <span class="dropdown-menu dropdown-menu-right" aria-labelledby="todo-sidebar-dropdown">
+                                        <span class="dropdown-menu dropdown-menu-right"
+                                            aria-labelledby="todo-sidebar-dropdown">
                                             <a href="#" class="dropdown-item">Add to another project </a>
                                             <a href="#" class="dropdown-item">Create follow up task</a>
                                             <a href="#" class="dropdown-item">Print</a>
@@ -359,20 +440,23 @@
                                     <div class="card-body py-0 border-bottom">
                                         <div class="form-group task-title">
                                             <!-- text area for task title -->
-                                            <textarea name="title" class="form-control" cols="1" rows="2" placeholder="Write a Task Name" required> </textarea>
+                                            <textarea name="title" class="form-control" cols="1" rows="2"
+                                                placeholder="Write a Task Name" required> </textarea>
                                         </div>
                                         <div class="assigned d-flex justify-content-between">
                                             <div class="form-group d-flex align-items-center mr-1">
                                                 <!-- users avatar -->
                                                 <div class="avatar">
-                                                    <img src="#" class="avatar-user-image d-none" alt="#" width="38" height="38">
+                                                    <img src="#" class="avatar-user-image d-none" alt="#" width="38"
+                                                        height="38">
                                                     <div class="avatar-content">
                                                         <i class='bx bx-user font-medium-4'></i>
                                                     </div>
                                                 </div>
                                                 <!-- select2  for user name  -->
                                                 <div class="select-box mr-1">
-                                                    <select class="select2-users-name form-control" id="select2-users-name">
+                                                    <select class="select2-users-name form-control"
+                                                        id="select2-users-name">
                                                         <optgroup label="Backend">
                                                             <option value="David Smith">David Smith</option>
                                                             <option value="John Doe">John Doe</option>
@@ -391,12 +475,14 @@
                                             <div class="form-group d-flex align-items-center position-relative">
                                                 <!-- date picker -->
                                                 <div class="date-icon mr-50">
-                                                    <button type="button" class="btn btn-icon btn-outline-secondary round">
+                                                    <button type="button"
+                                                        class="btn btn-icon btn-outline-secondary round">
                                                         <i class='bx bx-calendar-alt'></i>
                                                     </button>
                                                 </div>
                                                 <div class="date-picker">
-                                                    <input type="text" class="pickadate form-control px-0" placeholder="Due Date">
+                                                    <input type="text" class="pickadate form-control px-0"
+                                                        placeholder="Due Date">
                                                 </div>
                                             </div>
                                         </div>
@@ -418,7 +504,8 @@
                                         <div class="tag d-flex justify-content-between align-items-center pt-1">
                                             <div class="flex-grow-1 d-flex align-items-center">
                                                 <i class="bx bx-tag align-middle mr-25"></i>
-                                                <select class="select2-assign-label form-control" multiple="multiple" id="select2-assign-label" disabled>
+                                                <select class="select2-assign-label form-control" multiple="multiple"
+                                                    id="select2-assign-label" disabled>
                                                     <optgroup label="Tags">
                                                         <option value="Frontend">Frontend</option>
                                                         <option value="Backend">Backend</option>
@@ -436,7 +523,8 @@
                                     <div class="card-body pb-1">
                                         <div class="d-flex align-items-center mb-1">
                                             <div class="avatar mr-75">
-                                                <img src="../../app-assets/images/portrait/small/avatar-s-3.jpg" alt="charlie" width="38" height="38">
+                                                <img src="../../app-assets/images/portrait/small/avatar-s-3.jpg"
+                                                    alt="charlie" width="38" height="38">
                                             </div>
                                             <div class="avatar-content">
                                                 Charlie created this task
@@ -461,7 +549,8 @@
                                         </div>
                                         <div class="mt-1 d-flex justify-content-end">
                                             <button type="button" class="btn btn-primary add-todo">Add Task</button>
-                                            <button type="button" class="btn btn-primary update-todo">Save Changes</button>
+                                            <button type="button" class="btn btn-primary update-todo">Save
+                                                Changes</button>
                                         </div>
                                     </div>
                                 </div>
@@ -487,17 +576,20 @@
                                             <i class="bx bx-menu"></i>
                                         </div>
                                         <fieldset class="form-group position-relative has-icon-left m-0 flex-grow-1">
-                                            <input type="text" class="form-control todo-search" id="todo-search" placeholder="Search Task">
+                                            <input type="text" class="form-control todo-search" id="todo-search"
+                                                placeholder="Search Task">
                                             <div class="form-control-position">
                                                 <i class="bx bx-search"></i>
                                             </div>
                                         </fieldset>
                                         <div class="todo-sort dropdown mr-1">
-                                            <button class="btn dropdown-toggle sorting" type="button" id="sortDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <button class="btn dropdown-toggle sorting" type="button" id="sortDropdown"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 <i class="bx bx-filter"></i>
                                                 <span>Sort</span>
                                             </button>
-                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="sortDropdown">
+                                            <div class="dropdown-menu dropdown-menu-right"
+                                                aria-labelledby="sortDropdown">
                                                 <a class="dropdown-item ascending" href="#">Ascending</a>
                                                 <a class="dropdown-item descending" href="#">Descending</a>
                                             </div>
@@ -507,362 +599,476 @@
                                         <!-- task list start -->
                                         <ul class="todo-task-list-wrapper list-unstyled" id="todo-task-list-drag">
                                             <li class="todo-item" data-name="David Smith">
-                                                <div class="todo-title-wrapper d-flex justify-content-sm-between justify-content-end align-items-center">
+                                                <div
+                                                    class="todo-title-wrapper d-flex justify-content-sm-between justify-content-end align-items-center">
                                                     <div class="todo-title-area d-flex">
                                                         <i class='bx bx-grid-vertical handle'></i>
                                                         <div class="checkbox">
-                                                            <input type="checkbox" class="checkbox-input" id="checkbox1">
+                                                            <input type="checkbox" class="checkbox-input"
+                                                                id="checkbox1">
                                                             <label for="checkbox1"></label>
                                                         </div>
-                                                        <p class="todo-title mx-50 m-0 truncate">Effective Hypnosis Quit Smoking Methods</p>
+                                                        <p class="todo-title mx-50 m-0 truncate">Effective Hypnosis Quit
+                                                            Smoking Methods</p>
                                                     </div>
                                                     <div class="todo-item-action d-flex align-items-center">
                                                         <div class="todo-badge-wrapper d-flex">
-                                                            <span class="badge badge-light-primary badge-pill">Frontend</span>
+                                                            <span
+                                                                class="badge badge-light-primary badge-pill">Frontend</span>
                                                         </div>
                                                         <div class="avatar ml-1">
-                                                            <img src="../../app-assets/images/portrait/small/avatar-s-1.jpg" alt="avatar" height="30" width="30">
+                                                            <img src="../../app-assets/images/portrait/small/avatar-s-1.jpg"
+                                                                alt="avatar" height="30" width="30">
                                                         </div>
-                                                        <a class='todo-item-favorite ml-75'><i class="bx bx-star"></i></a>
-                                                        <a class='todo-item-delete ml-75'><i class="bx bx-trash"></i></a>
+                                                        <a class='todo-item-favorite ml-75'><i
+                                                                class="bx bx-star"></i></a>
+                                                        <a class='todo-item-delete ml-75'><i
+                                                                class="bx bx-trash"></i></a>
                                                     </div>
                                                 </div>
                                             </li>
                                             <li class="todo-item" data-name="John Doe">
-                                                <div class="todo-title-wrapper d-flex justify-content-sm-between justify-content-end align-items-center">
+                                                <div
+                                                    class="todo-title-wrapper d-flex justify-content-sm-between justify-content-end align-items-center">
                                                     <div class="todo-title-area d-flex">
                                                         <i class='bx bx-grid-vertical handle'></i>
                                                         <div class="checkbox">
-                                                            <input type="checkbox" class="checkbox-input" id="checkbox2">
+                                                            <input type="checkbox" class="checkbox-input"
+                                                                id="checkbox2">
                                                             <label for="checkbox2"></label>
                                                         </div>
-                                                        <p class="todo-title mx-50 m-0 truncate">How To Protect Your Computer Very Useful Tips</p>
+                                                        <p class="todo-title mx-50 m-0 truncate">How To Protect Your
+                                                            Computer Very Useful Tips</p>
                                                     </div>
                                                     <div class="todo-item-action d-flex align-items-center">
                                                         <div class="todo-badge-wrapper d-flex"></div>
                                                         <div class="avatar ml-1">
-                                                            <img src="../../app-assets/images/portrait/small/avatar-s-2.jpg" alt="avatar" height="30" width="30">
+                                                            <img src="../../app-assets/images/portrait/small/avatar-s-2.jpg"
+                                                                alt="avatar" height="30" width="30">
                                                         </div>
-                                                        <a class='todo-item-favorite ml-75 warning'><i class="bx bx-star bxs-star"></i></a>
-                                                        <a class='todo-item-delete ml-75'><i class="bx bx-trash"></i></a>
+                                                        <a class='todo-item-favorite ml-75 warning'><i
+                                                                class="bx bx-star bxs-star"></i></a>
+                                                        <a class='todo-item-delete ml-75'><i
+                                                                class="bx bx-trash"></i></a>
                                                     </div>
                                                 </div>
                                             </li>
                                             <li class="todo-item" data-name="James Smith">
-                                                <div class="todo-title-wrapper d-flex justify-content-sm-between justify-content-end align-items-center">
+                                                <div
+                                                    class="todo-title-wrapper d-flex justify-content-sm-between justify-content-end align-items-center">
                                                     <div class="todo-title-area d-flex">
                                                         <i class='bx bx-grid-vertical handle'></i>
                                                         <div class="checkbox">
-                                                            <input type="checkbox" class="checkbox-input" id="checkbox14">
+                                                            <input type="checkbox" class="checkbox-input"
+                                                                id="checkbox14">
                                                             <label for="checkbox14"></label>
                                                         </div>
-                                                        <p class="todo-title mx-50 m-0 truncate">It is a good idea to think of your PC as an office.</p>
+                                                        <p class="todo-title mx-50 m-0 truncate">It is a good idea to
+                                                            think of your PC as an office.</p>
                                                     </div>
                                                     <div class="todo-item-action d-flex align-items-center">
                                                         <div class="todo-badge-wrapper d-flex">
-                                                            <span class="badge badge-light-primary badge-pill">Frontend</span>
+                                                            <span
+                                                                class="badge badge-light-primary badge-pill">Frontend</span>
                                                         </div>
                                                         <div class="avatar ml-1">
-                                                            <img src="../../app-assets/images/portrait/small/avatar-s-3.jpg" alt="avatar" height="30" width="30">
+                                                            <img src="../../app-assets/images/portrait/small/avatar-s-3.jpg"
+                                                                alt="avatar" height="30" width="30">
                                                         </div>
-                                                        <a class='todo-item-favorite ml-75'><i class="bx bx-star"></i></a>
-                                                        <a class='todo-item-delete ml-75'><i class="bx bx-trash"></i></a>
+                                                        <a class='todo-item-favorite ml-75'><i
+                                                                class="bx bx-star"></i></a>
+                                                        <a class='todo-item-delete ml-75'><i
+                                                                class="bx bx-trash"></i></a>
                                                     </div>
                                                 </div>
                                             </li>
                                             <li class="todo-item" data-name="Maria Garcia">
-                                                <div class="todo-title-wrapper d-flex justify-content-sm-between justify-content-end align-items-center">
+                                                <div
+                                                    class="todo-title-wrapper d-flex justify-content-sm-between justify-content-end align-items-center">
                                                     <div class="todo-title-area d-flex">
                                                         <i class='bx bx-grid-vertical handle'></i>
                                                         <div class="checkbox">
-                                                            <input type="checkbox" class="checkbox-input" id="checkbox4">
+                                                            <input type="checkbox" class="checkbox-input"
+                                                                id="checkbox4">
                                                             <label for="checkbox4"></label>
                                                         </div>
-                                                        <p class="todo-title mx-50 m-0 truncate">Don't Let The Outtakes Take You Out</p>
+                                                        <p class="todo-title mx-50 m-0 truncate">Don't Let The Outtakes
+                                                            Take You Out</p>
                                                     </div>
                                                     <div class="todo-item-action d-flex align-items-center">
                                                         <div class="todo-badge-wrapper d-flex">
-                                                            <span class="badge badge-light-danger badge-pill ml-50">Issue</span>
-                                                            <span class="badge badge-light-success badge-pill ml-50">Backend</span>
+                                                            <span
+                                                                class="badge badge-light-danger badge-pill ml-50">Issue</span>
+                                                            <span
+                                                                class="badge badge-light-success badge-pill ml-50">Backend</span>
                                                         </div>
                                                         <div class="avatar ml-1">
-                                                            <img src="../../app-assets/images/portrait/small/avatar-s-4.jpg" alt="avatar" height="30" width="30">
+                                                            <img src="../../app-assets/images/portrait/small/avatar-s-4.jpg"
+                                                                alt="avatar" height="30" width="30">
                                                         </div>
-                                                        <a class='todo-item-favorite ml-75 warning'><i class="bx bx-star bxs-star"></i></a>
-                                                        <a class='todo-item-delete ml-75'><i class="bx bx-trash"></i></a>
+                                                        <a class='todo-item-favorite ml-75 warning'><i
+                                                                class="bx bx-star bxs-star"></i></a>
+                                                        <a class='todo-item-delete ml-75'><i
+                                                                class="bx bx-trash"></i></a>
                                                     </div>
                                                 </div>
                                             </li>
                                             <li class="todo-item" data-name="Maria Rodrigu">
-                                                <div class="todo-title-wrapper d-flex justify-content-sm-between justify-content-end align-items-center">
+                                                <div
+                                                    class="todo-title-wrapper d-flex justify-content-sm-between justify-content-end align-items-center">
                                                     <div class="todo-title-area d-flex">
                                                         <i class='bx bx-grid-vertical handle'></i>
                                                         <div class="checkbox">
-                                                            <input type="checkbox" class="checkbox-input" id="checkbox5">
+                                                            <input type="checkbox" class="checkbox-input"
+                                                                id="checkbox5">
                                                             <label for="checkbox5"></label>
                                                         </div>
-                                                        <p class="todo-title mx-50 m-0 truncate">Sony laptops are among the most well known laptops on today</p>
+                                                        <p class="todo-title mx-50 m-0 truncate">Sony laptops are among
+                                                            the most well known laptops on today</p>
                                                     </div>
                                                     <div class="todo-item-action d-flex align-items-center">
                                                         <div class="todo-badge-wrapper d-flex"></div>
                                                         <div class="avatar ml-1">
-                                                            <img src="../../app-assets/images/portrait/small/avatar-s-5.jpg" alt="avatar" height="30" width="30">
+                                                            <img src="../../app-assets/images/portrait/small/avatar-s-5.jpg"
+                                                                alt="avatar" height="30" width="30">
                                                         </div>
-                                                        <a class='todo-item-favorite ml-75'><i class="bx bx-star"></i></a>
-                                                        <a class='todo-item-delete ml-75'><i class="bx bx-trash"></i></a>
+                                                        <a class='todo-item-favorite ml-75'><i
+                                                                class="bx bx-star"></i></a>
+                                                        <a class='todo-item-delete ml-75'><i
+                                                                class="bx bx-trash"></i></a>
                                                     </div>
                                                 </div>
                                             </li>
                                             <li class="todo-item" data-name="Marry Smith">
-                                                <div class="todo-title-wrapper d-flex justify-content-sm-between justify-content-end align-items-center">
+                                                <div
+                                                    class="todo-title-wrapper d-flex justify-content-sm-between justify-content-end align-items-center">
                                                     <div class="todo-title-area d-flex">
                                                         <i class='bx bx-grid-vertical handle'></i>
                                                         <div class="checkbox">
-                                                            <input type="checkbox" class="checkbox-input" id="checkbox6">
+                                                            <input type="checkbox" class="checkbox-input"
+                                                                id="checkbox6">
                                                             <label for="checkbox6"></label>
                                                         </div>
-                                                        <p class="todo-title mx-50 m-0 truncate">Success Steps For Your Personal Or Business Life</p>
+                                                        <p class="todo-title mx-50 m-0 truncate">Success Steps For Your
+                                                            Personal Or Business Life</p>
                                                     </div>
                                                     <div class="todo-item-action d-flex align-items-center">
                                                         <div class="todo-badge-wrapper d-flex"></div>
                                                         <div class="avatar ml-1">
-                                                            <img src="../../app-assets/images/portrait/small/avatar-s-6.jpg" alt="avatar" height="30" width="30">
+                                                            <img src="../../app-assets/images/portrait/small/avatar-s-6.jpg"
+                                                                alt="avatar" height="30" width="30">
                                                         </div>
-                                                        <a class='todo-item-favorite ml-75'><i class="bx bx-star"></i></a>
-                                                        <a class='todo-item-delete ml-75'><i class="bx bx-trash"></i></a>
+                                                        <a class='todo-item-favorite ml-75'><i
+                                                                class="bx bx-star"></i></a>
+                                                        <a class='todo-item-delete ml-75'><i
+                                                                class="bx bx-trash"></i></a>
                                                     </div>
                                                 </div>
                                             </li>
                                             <li class="todo-item" data-name="Maria Hern">
-                                                <div class="todo-title-wrapper d-flex justify-content-sm-between justify-content-end align-items-center">
+                                                <div
+                                                    class="todo-title-wrapper d-flex justify-content-sm-between justify-content-end align-items-center">
                                                     <div class="todo-title-area d-flex">
                                                         <i class='bx bx-grid-vertical handle'></i>
                                                         <div class="checkbox">
-                                                            <input type="checkbox" class="checkbox-input" id="checkbox7">
+                                                            <input type="checkbox" class="checkbox-input"
+                                                                id="checkbox7">
                                                             <label for="checkbox7"></label>
                                                         </div>
-                                                        <p class="todo-title mx-50 m-0 truncate">Believing Is The Absence Of Doubt</p>
+                                                        <p class="todo-title mx-50 m-0 truncate">Believing Is The
+                                                            Absence Of Doubt</p>
                                                     </div>
                                                     <div class="todo-item-action d-flex align-items-center">
                                                         <div class="todo-badge-wrapper d-flex"></div>
                                                         <div class="avatar ml-1">
-                                                            <img src="../../app-assets/images/portrait/small/avatar-s-7.jpg" alt="avatar" height="30" width="30">
+                                                            <img src="../../app-assets/images/portrait/small/avatar-s-7.jpg"
+                                                                alt="avatar" height="30" width="30">
                                                         </div>
-                                                        <a class='todo-item-favorite ml-75'><i class="bx bx-star"></i></a>
-                                                        <a class='todo-item-delete ml-75'><i class="bx bx-trash"></i></a>
+                                                        <a class='todo-item-favorite ml-75'><i
+                                                                class="bx bx-star"></i></a>
+                                                        <a class='todo-item-delete ml-75'><i
+                                                                class="bx bx-trash"></i></a>
                                                     </div>
                                                 </div>
                                             </li>
                                             <li class="todo-item" data-name="Jamesh Jackson">
-                                                <div class="todo-title-wrapper d-flex justify-content-sm-between justify-content-end align-items-center">
+                                                <div
+                                                    class="todo-title-wrapper d-flex justify-content-sm-between justify-content-end align-items-center">
                                                     <div class="todo-title-area d-flex">
                                                         <i class='bx bx-grid-vertical handle'></i>
                                                         <div class="checkbox">
-                                                            <input type="checkbox" class="checkbox-input" id="checkbox8">
+                                                            <input type="checkbox" class="checkbox-input"
+                                                                id="checkbox8">
                                                             <label for="checkbox8"></label>
                                                         </div>
-                                                        <p class="todo-title mx-50 m-0 truncate">Are You Struggling In Life</p>
+                                                        <p class="todo-title mx-50 m-0 truncate">Are You Struggling In
+                                                            Life</p>
                                                     </div>
                                                     <div class="todo-item-action d-flex align-items-center">
                                                         <div class="todo-badge-wrapper d-flex">
-                                                            <span class="badge badge-light-danger badge-pill ml-50">Issue</span>
-                                                            <span class="badge badge-light-success badge-pill ml-50">Backend</span>
+                                                            <span
+                                                                class="badge badge-light-danger badge-pill ml-50">Issue</span>
+                                                            <span
+                                                                class="badge badge-light-success badge-pill ml-50">Backend</span>
                                                         </div>
                                                         <div class="avatar ml-1">
-                                                            <img src="../../app-assets/images/portrait/small/avatar-s-8.jpg" alt="avatar" height="30" width="30">
+                                                            <img src="../../app-assets/images/portrait/small/avatar-s-8.jpg"
+                                                                alt="avatar" height="30" width="30">
                                                         </div>
-                                                        <a class='todo-item-favorite ml-75'><i class="bx bx-star"></i></a>
-                                                        <a class='todo-item-delete ml-75'><i class="bx bx-trash"></i></a>
+                                                        <a class='todo-item-favorite ml-75'><i
+                                                                class="bx bx-star"></i></a>
+                                                        <a class='todo-item-delete ml-75'><i
+                                                                class="bx bx-trash"></i></a>
                                                     </div>
                                                 </div>
                                             </li>
                                             <li class="todo-item" data-name="David Smith">
-                                                <div class="todo-title-wrapper d-flex justify-content-sm-between justify-content-end align-items-center">
+                                                <div
+                                                    class="todo-title-wrapper d-flex justify-content-sm-between justify-content-end align-items-center">
                                                     <div class="todo-title-area d-flex">
                                                         <i class='bx bx-grid-vertical handle'></i>
                                                         <div class="checkbox">
-                                                            <input type="checkbox" class="checkbox-input" id="checkbox9">
+                                                            <input type="checkbox" class="checkbox-input"
+                                                                id="checkbox9">
                                                             <label for="checkbox9"></label>
                                                         </div>
-                                                        <p class="todo-title mx-50 m-0 truncate">Hypnotherapy For Motivation Getting The Drive Back</p>
+                                                        <p class="todo-title mx-50 m-0 truncate">Hypnotherapy For
+                                                            Motivation Getting The Drive Back</p>
                                                     </div>
                                                     <div class="todo-item-action d-flex align-items-center">
                                                         <div class="todo-badge-wrapper d-flex"></div>
                                                         <span class=" badge badge-circle badge-light-primary">DS</span>
-                                                        <a class='todo-item-favorite ml-75 warning'><i class="bx bx-star bxs-star"></i></a>
-                                                        <a class='todo-item-delete ml-75'><i class="bx bx-trash"></i></a>
+                                                        <a class='todo-item-favorite ml-75 warning'><i
+                                                                class="bx bx-star bxs-star"></i></a>
+                                                        <a class='todo-item-delete ml-75'><i
+                                                                class="bx bx-trash"></i></a>
                                                     </div>
                                                 </div>
                                             </li>
                                             <li class="todo-item" data-name="John Doe">
-                                                <div class="todo-title-wrapper d-flex justify-content-sm-between justify-content-end align-items-center">
+                                                <div
+                                                    class="todo-title-wrapper d-flex justify-content-sm-between justify-content-end align-items-center">
                                                     <div class="todo-title-area d-flex">
                                                         <i class='bx bx-grid-vertical handle'></i>
                                                         <div class="checkbox">
-                                                            <input type="checkbox" class="checkbox-input" id="checkbox10">
+                                                            <input type="checkbox" class="checkbox-input"
+                                                                id="checkbox10">
                                                             <label for="checkbox10"></label>
                                                         </div>
                                                         <p class="todo-title mx-50 m-0 truncate">Fix Responsiveness</p>
                                                     </div>
                                                     <div class="todo-item-action d-flex align-items-center">
                                                         <div class="todo-badge-wrapper d-flex">
-                                                            <span class="badge badge-light-warning badge-pill ml-50">Design</span>
-                                                            <span class="badge badge-light-primary badge-pill ml-50">Frontend</span>
-                                                            <span class="badge badge-light-secondary badge-pill ml-50" data-tag="ISSUE,BACKEND" data-toggle="tooltip" data-placement="bottom" title="ISSUE,BACKEND">
-                                                                <i class='bx bx-dots-horizontal-rounded font-small-1'></i>
+                                                            <span
+                                                                class="badge badge-light-warning badge-pill ml-50">Design</span>
+                                                            <span
+                                                                class="badge badge-light-primary badge-pill ml-50">Frontend</span>
+                                                            <span class="badge badge-light-secondary badge-pill ml-50"
+                                                                data-tag="ISSUE,BACKEND" data-toggle="tooltip"
+                                                                data-placement="bottom" title="ISSUE,BACKEND">
+                                                                <i
+                                                                    class='bx bx-dots-horizontal-rounded font-small-1'></i>
                                                             </span>
                                                         </div>
                                                         <div class="avatar ml-1">
-                                                            <img src="../../app-assets/images/portrait/small/avatar-s-10.jpg" alt="avatar" height="30" width="30">
+                                                            <img src="../../app-assets/images/portrait/small/avatar-s-10.jpg"
+                                                                alt="avatar" height="30" width="30">
                                                         </div>
-                                                        <a class='todo-item-favorite ml-75'><i class="bx bx-star"></i></a>
-                                                        <a class='todo-item-delete ml-75'><i class="bx bx-trash"></i></a>
+                                                        <a class='todo-item-favorite ml-75'><i
+                                                                class="bx bx-star"></i></a>
+                                                        <a class='todo-item-delete ml-75'><i
+                                                                class="bx bx-trash"></i></a>
                                                     </div>
                                                 </div>
                                             </li>
                                             <li class="todo-item" data-name="James Smith">
-                                                <div class="todo-title-wrapper d-flex justify-content-sm-between justify-content-end align-items-center">
+                                                <div
+                                                    class="todo-title-wrapper d-flex justify-content-sm-between justify-content-end align-items-center">
                                                     <div class="todo-title-area d-flex">
                                                         <i class='bx bx-grid-vertical handle'></i>
                                                         <div class="checkbox">
-                                                            <input type="checkbox" class="checkbox-input" id="checkbox11">
+                                                            <input type="checkbox" class="checkbox-input"
+                                                                id="checkbox11">
                                                             <label for="checkbox11"></label>
                                                         </div>
-                                                        <p class="todo-title mx-50 m-0 truncate">Buying Used Electronic Test Equipment.</p>
+                                                        <p class="todo-title mx-50 m-0 truncate">Buying Used Electronic
+                                                            Test Equipment.</p>
                                                     </div>
                                                     <div class="todo-item-action d-flex align-items-center">
                                                         <div class="todo-badge-wrapper d-flex"></div>
                                                         <div class="avatar ml-1">
-                                                            <img src="../../app-assets/images/portrait/small/avatar-s-11.jpg" alt="avatar" height="30" width="30">
+                                                            <img src="../../app-assets/images/portrait/small/avatar-s-11.jpg"
+                                                                alt="avatar" height="30" width="30">
                                                         </div>
-                                                        <a class='todo-item-favorite ml-75'><i class="bx bx-star"></i></a>
-                                                        <a class='todo-item-delete ml-75'><i class="bx bx-trash"></i></a>
+                                                        <a class='todo-item-favorite ml-75'><i
+                                                                class="bx bx-star"></i></a>
+                                                        <a class='todo-item-delete ml-75'><i
+                                                                class="bx bx-trash"></i></a>
                                                     </div>
                                                 </div>
                                             </li>
                                             <li class="todo-item" data-name="Marry Smith">
-                                                <div class="todo-title-wrapper d-flex justify-content-sm-between justify-content-end align-items-center">
+                                                <div
+                                                    class="todo-title-wrapper d-flex justify-content-sm-between justify-content-end align-items-center">
                                                     <div class="todo-title-area d-flex">
                                                         <i class='bx bx-grid-vertical handle'></i>
                                                         <div class="checkbox">
-                                                            <input type="checkbox" class="checkbox-input" id="checkbox12">
+                                                            <input type="checkbox" class="checkbox-input"
+                                                                id="checkbox12">
                                                             <label for="checkbox12"></label>
                                                         </div>
-                                                        <p class="todo-title mx-50 m-0 truncate">Get The Boot A Birds Eye Look Into Mcse Boot Camps</p>
+                                                        <p class="todo-title mx-50 m-0 truncate">Get The Boot A Birds
+                                                            Eye Look Into Mcse Boot Camps</p>
                                                     </div>
                                                     <div class="todo-item-action d-flex align-items-center">
                                                         <div class="todo-badge-wrapper d-flex">
-                                                            <span class="badge badge-light-warning badge-pill">Design</span>
+                                                            <span
+                                                                class="badge badge-light-warning badge-pill">Design</span>
                                                         </div>
                                                         <div class="avatar ml-1">
-                                                            <img src="../../app-assets/images/portrait/small/avatar-s-12.jpg" alt="avatar" height="30" width="30">
+                                                            <img src="../../app-assets/images/portrait/small/avatar-s-12.jpg"
+                                                                alt="avatar" height="30" width="30">
                                                         </div>
-                                                        <a class='todo-item-favorite ml-75'><i class="bx bx-star"></i></a>
-                                                        <a class='todo-item-delete ml-75'><i class="bx bx-trash"></i></a>
+                                                        <a class='todo-item-favorite ml-75'><i
+                                                                class="bx bx-star"></i></a>
+                                                        <a class='todo-item-delete ml-75'><i
+                                                                class="bx bx-trash"></i></a>
                                                     </div>
                                                 </div>
                                             </li>
-                                                                                        <li class="todo-item" data-name="Marry Smith">
-                                                <div class="todo-title-wrapper d-flex justify-content-sm-between justify-content-end align-items-center">
+                                            <li class="todo-item" data-name="Marry Smith">
+                                                <div
+                                                    class="todo-title-wrapper d-flex justify-content-sm-between justify-content-end align-items-center">
                                                     <div class="todo-title-area d-flex">
                                                         <i class='bx bx-grid-vertical handle'></i>
                                                         <div class="checkbox">
-                                                            <input type="checkbox" class="checkbox-input" id="checkbox12">
+                                                            <input type="checkbox" class="checkbox-input"
+                                                                id="checkbox12">
                                                             <label for="checkbox12"></label>
                                                         </div>
-                                                        <p class="todo-title mx-50 m-0 truncate">Get The Boot A Birds Eye Look Into Mcse Boot Camps</p>
+                                                        <p class="todo-title mx-50 m-0 truncate">Get The Boot A Birds
+                                                            Eye Look Into Mcse Boot Camps</p>
                                                     </div>
                                                     <div class="todo-item-action d-flex align-items-center">
                                                         <div class="todo-badge-wrapper d-flex">
-                                                            <span class="badge badge-light-warning badge-pill">Design</span>
+                                                            <span
+                                                                class="badge badge-light-warning badge-pill">Design</span>
                                                         </div>
                                                         <div class="avatar ml-1">
-                                                            <img src="../../app-assets/images/portrait/small/avatar-s-12.jpg" alt="avatar" height="30" width="30">
+                                                            <img src="../../app-assets/images/portrait/small/avatar-s-12.jpg"
+                                                                alt="avatar" height="30" width="30">
                                                         </div>
-                                                        <a class='todo-item-favorite ml-75'><i class="bx bx-star"></i></a>
-                                                        <a class='todo-item-delete ml-75'><i class="bx bx-trash"></i></a>
+                                                        <a class='todo-item-favorite ml-75'><i
+                                                                class="bx bx-star"></i></a>
+                                                        <a class='todo-item-delete ml-75'><i
+                                                                class="bx bx-trash"></i></a>
                                                     </div>
                                                 </div>
                                             </li>
                                             <li class="todo-item" data-name="Maria Garcia">
-                                                <div class="todo-title-wrapper d-flex justify-content-sm-between justify-content-end align-items-center">
+                                                <div
+                                                    class="todo-title-wrapper d-flex justify-content-sm-between justify-content-end align-items-center">
                                                     <div class="todo-title-area d-flex">
                                                         <i class='bx bx-grid-vertical handle'></i>
                                                         <div class="checkbox">
-                                                            <input type="checkbox" class="checkbox-input" id="checkbox13">
+                                                            <input type="checkbox" class="checkbox-input"
+                                                                id="checkbox13">
                                                             <label for="checkbox13"></label>
                                                         </div>
-                                                        <p class="todo-title mx-50 m-0 truncate">Dealing With Technical Support 10 Useful Tips</p>
+                                                        <p class="todo-title mx-50 m-0 truncate">Dealing With Technical
+                                                            Support 10 Useful Tips</p>
                                                     </div>
                                                     <div class="todo-item-action d-flex align-items-center">
                                                         <div class="todo-badge-wrapper d-flex">
-                                                            <span class="badge badge-light-success badge-pill">Backend</span>
+                                                            <span
+                                                                class="badge badge-light-success badge-pill">Backend</span>
                                                         </div>
                                                         <div class="avatar ml-1">
-                                                            <img src="../../app-assets/images/portrait/small/avatar-s-13.jpg" alt="avatar" height="30" width="30">
+                                                            <img src="../../app-assets/images/portrait/small/avatar-s-13.jpg"
+                                                                alt="avatar" height="30" width="30">
                                                         </div>
-                                                        <a class='todo-item-favorite ml-75'><i class="bx bx-star"></i></a>
-                                                        <a class='todo-item-delete ml-75'><i class="bx bx-trash"></i></a>
+                                                        <a class='todo-item-favorite ml-75'><i
+                                                                class="bx bx-star"></i></a>
+                                                        <a class='todo-item-delete ml-75'><i
+                                                                class="bx bx-trash"></i></a>
                                                     </div>
                                                 </div>
                                             </li>
                                             <li class="todo-item" data-name="Maria Rodrigu">
-                                                <div class="todo-title-wrapper d-flex justify-content-sm-between justify-content-end align-items-center">
+                                                <div
+                                                    class="todo-title-wrapper d-flex justify-content-sm-between justify-content-end align-items-center">
                                                     <div class="todo-title-area d-flex">
                                                         <i class='bx bx-grid-vertical handle'></i>
                                                         <div class="checkbox">
-                                                            <input type="checkbox" class="checkbox-input" id="checkbox15">
+                                                            <input type="checkbox" class="checkbox-input"
+                                                                id="checkbox15">
                                                             <label for="checkbox15"></label>
                                                         </div>
-                                                        <p class="todo-title mx-50 m-0 truncate">How Hypnosis Can Help You</p>
+                                                        <p class="todo-title mx-50 m-0 truncate">How Hypnosis Can Help
+                                                            You</p>
                                                     </div>
                                                     <div class="todo-item-action d-flex align-items-center">
                                                         <div class="todo-badge-wrapper d-flex"></div>
                                                         <span class="badge badge-circle badge-light-success">MR</span>
-                                                        <a class='todo-item-favorite ml-75 warning'><i class="bx bx-star bxs-star"></i></a>
-                                                        <a class='todo-item-delete ml-75'><i class="bx bx-trash"></i></a>
+                                                        <a class='todo-item-favorite ml-75 warning'><i
+                                                                class="bx bx-star bxs-star"></i></a>
+                                                        <a class='todo-item-delete ml-75'><i
+                                                                class="bx bx-trash"></i></a>
                                                     </div>
                                                 </div>
                                             </li>
                                             <li class="todo-item" data-name="David Smith">
-                                                <div class="todo-title-wrapper d-flex justify-content-sm-between justify-content-end align-items-center">
+                                                <div
+                                                    class="todo-title-wrapper d-flex justify-content-sm-between justify-content-end align-items-center">
                                                     <div class="todo-title-area d-flex">
                                                         <i class='bx bx-grid-vertical handle'></i>
                                                         <div class="checkbox">
-                                                            <input type="checkbox" class="checkbox-input" id="checkbox16">
+                                                            <input type="checkbox" class="checkbox-input"
+                                                                id="checkbox16">
                                                             <label for="checkbox16"></label>
                                                         </div>
-                                                        <p class="todo-title mx-50 m-0 truncate">Effective Hypnosis Quit Smoking Methods</p>
+                                                        <p class="todo-title mx-50 m-0 truncate">Effective Hypnosis Quit
+                                                            Smoking Methods</p>
                                                     </div>
                                                     <div class="todo-item-action d-flex align-items-center">
                                                         <div class="todo-badge-wrapper d-flex">
-                                                            <span class="badge badge-light-primary badge-pill">Frontend</span>
+                                                            <span
+                                                                class="badge badge-light-primary badge-pill">Frontend</span>
                                                         </div>
                                                         <div class="avatar ml-1">
-                                                            <img src="../../app-assets/images/portrait/small/avatar-s-1.jpg" alt="avatar" height="30" width="30">
+                                                            <img src="../../app-assets/images/portrait/small/avatar-s-1.jpg"
+                                                                alt="avatar" height="30" width="30">
                                                         </div>
-                                                        <a class='todo-item-favorite ml-75'><i class="bx bx-star"></i></a>
-                                                        <a class='todo-item-delete ml-75'><i class="bx bx-trash"></i></a>
+                                                        <a class='todo-item-favorite ml-75'><i
+                                                                class="bx bx-star"></i></a>
+                                                        <a class='todo-item-delete ml-75'><i
+                                                                class="bx bx-trash"></i></a>
                                                     </div>
                                                 </div>
                                             </li>
                                             <li class="todo-item" data-name="John Doe">
-                                                <div class="todo-title-wrapper d-flex justify-content-sm-between justify-content-end align-items-center">
+                                                <div
+                                                    class="todo-title-wrapper d-flex justify-content-sm-between justify-content-end align-items-center">
                                                     <div class="todo-title-area d-flex">
                                                         <i class='bx bx-grid-vertical handle'></i>
                                                         <div class="checkbox">
-                                                            <input type="checkbox" class="checkbox-input" id="checkbox17">
+                                                            <input type="checkbox" class="checkbox-input"
+                                                                id="checkbox17">
                                                             <label for="checkbox17"></label>
                                                         </div>
-                                                        <p class="todo-title mx-50 m-0 truncate">How To Protect Your Computer Very Useful Tips</p>
+                                                        <p class="todo-title mx-50 m-0 truncate">How To Protect Your
+                                                            Computer Very Useful Tips</p>
                                                     </div>
                                                     <div class="todo-item-action d-flex align-items-center">
                                                         <div class="todo-badge-wrapper d-flex"></div>
                                                         <div class="avatar ml-1">
-                                                            <img src="../../app-assets/images/portrait/small/avatar-s-2.jpg" alt="avatar" height="30" width="30">
+                                                            <img src="../../app-assets/images/portrait/small/avatar-s-2.jpg"
+                                                                alt="avatar" height="30" width="30">
                                                         </div>
-                                                        <a class='todo-item-favorite ml-75'><i class="bx bx-star"></i></a>
-                                                        <a class='todo-item-delete ml-75'><i class="bx bx-trash"></i></a>
+                                                        <a class='todo-item-favorite ml-75'><i
+                                                                class="bx bx-star"></i></a>
+                                                        <a class='todo-item-delete ml-75'><i
+                                                                class="bx bx-trash"></i></a>
                                                     </div>
                                                 </div>
                                             </li>
@@ -910,33 +1116,37 @@
     <!-- END: Pag-->
     <script>
         $(document).ready(function () {
-            i=0;
-            var upload_button=[];
-          $(".file-upload__input").change(function(e){      
-              var upload_text=e.target.files[0].name;
-            if(i<=3 && upload_button[i]==null){ 
-                debugger
-              upload_button.push("<button type='button' class='btn btn-primary uploaded_file mb-1'><span class='upload-text'>"+upload_text+"</span></button><a class='exit ml-25'><i class='fas fa-times-circle'></i></a>");
-              $(".task-title").before(upload_button[i]);
-            }
-             else if(i<=3 && upload_button[i]!=null){
-                $(".uploaded_file").removeClass("d-none");
-                $(".exit").removeClass("d-none");
-                $("uploaded_file").text(upload_button[i]);
-            }
-            else if(i>3){
-                alert("you can't uploaded more than 4 file");
-            }
-            ++i;
-
+            var upload_button = [];
+            $(".file-upload__input").change(function (e) {
+                var upload_text = e.target.files[0].name;
+                var alreadyExistIndex = upload_button.indexOf(upload_text);
+                if (alreadyExistIndex != -1) {
+                    alert("This file is already exist");
+                }
+                else if (upload_button.length < 4)  {
+                    var ele = "<span><button type='button' class='btn btn-primary uploaded_file mb-1'><span class='upload-text'>" + upload_text + "</span></button><a class='exit ml-25'><i class='fas fa-times-circle'></i></a><span>";
+                    $(".task-title").before(ele);
+                    upload_button.push(upload_text);
+                }
+                else {
+                    alert("you can't uploaded more than 4 file");
+                }
+                $(".file-upload__input").val("");
+                $(".exit").click(function () {
+                    debugger
+                    $(".file-upload__input").val("");
+                    var text = $(this).parent().children()[0].innerText;
+                    const index = upload_button.indexOf(text);
+                    if (index > -1) {
+                    upload_button.splice(index, 1);
+                    $(this).parent().remove();
+                    }
             });
-            /*$(".exit").click(function(){
-                exitfun($(this).attr(id));
-            });*/
-             });
+        });
+    });
 
 
-    
+
     </script>
 
 </body>
