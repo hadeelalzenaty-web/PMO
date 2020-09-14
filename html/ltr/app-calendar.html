@@ -15,31 +15,26 @@
 
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/vendors.min.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/forms/select/select2.min.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/editors/quill/quill.snow.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/pickers/pickadate/pickadate.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/charts/apexcharts.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/pickers/daterange/daterangepicker.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/plugins/calendars/app-calendar.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/vendors.min.css">
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Vendor Calendar CSS-->
     <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/calendars/tui-time-picker.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/calendars/tui-date-picker.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/calendars/tui-calendar.min.css">
-    <!-- END: Vendor CSS-->
+    <!-- END: Vendor Calendar CSS-->
 
     <!-- BEGIN: Theme CSS-->
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/bootstrap-extended.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/colors.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/components.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/pages/page-users.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/pages/authentication.css">
     <!-- END: Theme CSS-->
 
     <!-- BEGIN: Page CSS-->
-        <link rel="stylesheet" type="text/css" href="../../app-assets/css/core/menu/menu-types/vertical-menu.css">
-        <link rel="stylesheet" type="text/css" href="../../app-assets/css/pages/app-todo.css">
-        <link rel="stylesheet" type="text/css" href="../../app-assets/css/pages/app-kanban.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/core/menu/menu-types/vertical-menu.css">
+    <!-- END: Page CSS-->
+    
+    <!-- BEGIN: Page Calendar CSS-->
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/plugins/calendars/app-calendar.css">
     <!-- END: Page CSS-->
 
@@ -212,7 +207,7 @@
 
     <!-- BEGIN: Main Menu-->
     <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
-        <div class="navbar-header mb-25">
+        <div class="navbar-header">
             <ul class="nav navbar-nav flex-row">
                 <li class="nav-item mr-auto"><a class="navbar-brand" href="../../../html/ltr/vertical-menu-boxicons-template/index.html">
                     <img src="../../assets/images/logo.png" alt="logo" class="logo" height="45" width="45">
@@ -366,17 +361,16 @@
     <div class="drag-target"></div>
     </div>
 
-
-
-
     <!-- BEGIN: Vendor JS-->
     <script src="../../app-assets/vendors/js/vendors.min.js"></script>
-    <script src="../../app-assets/fonts/LivIconsEvo/js/LivIconsEvo.tools.js"></script>
-    <script src="../../app-assets/fonts/LivIconsEvo/js/LivIconsEvo.defaults.js"></script>
-    <script src="../../app-assets/fonts/LivIconsEvo/js/LivIconsEvo.min.js"></script>
     <!-- BEGIN Vendor JS-->
-
-    <!-- BEGIN: Page Vendor JS-->
+    
+    <!-- BEGIN: Theme JS-->
+    <script src="../../app-assets/js/core/app-menu.js"></script>
+    <script src="../../app-assets/js/core/app.js"></script>
+    <script src="../../app-assets/js/scripts/components.js"></script>
+    <!-- END: Theme JS-->
+    <!-- BEGIN: Page Vendor JS Calendar-->
     <script src="../../app-assets/vendors/js/calendar/tui-code-snippet.min.js"></script>
     <script src="../../app-assets/vendors/js/calendar/tui-dom.js"></script>
     <script src="../../app-assets/vendors/js/calendar/tui-time-picker.min.js"></script>
@@ -384,19 +378,14 @@
     <script src="../../app-assets/vendors/js/extensions/moment.min.js"></script>
     <script src="../../app-assets/vendors/js/calendar/chance.min.js"></script>
     <script src="../../app-assets/vendors/js/calendar/tui-calendar.min.js"></script>
-    <!-- END: Page Vendor JS-->
-
-    <!-- BEGIN: Theme JS-->
-    <script src="../../app-assets/js/core/app-menu.js"></script>
-    <script src="../../app-assets/js/core/app.js"></script>
-    <script src="../../app-assets/js/scripts/components.js"></script>
-    <!-- END: Theme JS-->
-
-    <!-- BEGIN: Page JS-->
+    <!-- END: Page Vendor JS Calendar-->
+    
+    <!-- BEGIN: Page JS Calendar-->
     <script src="../../app-assets/js/scripts/extensions/calendar/calendars-data.js"></script>
     <script src="../../app-assets/js/scripts/extensions/calendar/schedules.js"></script>
     <script src="../../app-assets/js/scripts/extensions/calendar/app-calendar.js"></script>
-    <!-- END: Page JS-->
+    <!-- END: Page JS Calendar-->
+
 
 </body>
 <!-- END: Body-->

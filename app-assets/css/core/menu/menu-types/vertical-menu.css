@@ -94,8 +94,14 @@ transition: all 2s ease;
   }
   body.vertical-layout .main-menu .navbar-brand .logo{
     height:45px;
-    width:45px;
+    width:45px;  
     transition: all 400ms ease;
+  }
+  body.vertical-layout .main-menu .navbar-header{
+    margin-bottom:25px;
+  }
+  body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu:not(.expanded) .navbar-header{
+    margin-bottom:0;
   }
   /*Till here*/
 body.vertical-layout.vertical-menu-modern .main-menu:not(.expanded) .navigation-header {

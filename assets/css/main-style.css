@@ -72,8 +72,13 @@ font-size:13px;
 }
 .avater-file .exit{
     position: relative;
-    bottom: -1px;
+    bottom: -10px;
 }
+.media-body.avater-upload{
+    flex: 1 1 auto;
+    width: 1%;
+}
+
 body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu.expanded .navbar-header .navbar-brand .logo{
     margin-bottom: 1rem;
 }
@@ -323,6 +328,16 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(228,228,246,1) 3
 
 }
 .uploaded_file .upload-text{
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.activity-progress.flex-grow-1{
+    flex:1 1 auto;
+    width:1%;
+}
+.activity-progress.flex-grow-1 .text-muted{
     display: block;
     text-overflow: ellipsis;
     overflow: hidden;

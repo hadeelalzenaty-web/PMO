@@ -15,35 +15,29 @@
 
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/core/menu/menu-types/vertical-menu.css">
+    <!--END: Vendor CSS-->
+    
+    <!-- BEGIN: Vendor Select CSS-->
     <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/forms/select/select2.min.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/editors/quill/quill.snow.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/pickers/pickadate/pickadate.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/charts/apexcharts.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/extensions/dragula.min.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/pickers/daterange/daterangepicker.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/plugins/calendars/app-calendar.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/vendors.min.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/calendars/tui-time-picker.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/calendars/tui-date-picker.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/calendars/tui-calendar.min.css">
-    <!-- END: Vendor CSS-->
+    <!-- END: Vendor Select CSS-->
 
+    <!-- BEGIN: Vendor DateTimePicker CSS-->
+        <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/pickers/pickadate/pickadate.css">
+        <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/pickers/daterange/daterangepicker.css">
+    <!-- END: Vendor DateTimePicker CSS-->
+
+    <!--BEGIN: Page Vendor Percantege CSS-->
+    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/forms/spinner/jquery.bootstrap-touchspin.css">
+    <!--END: Page Vendor Percantege CSS-->
+        
     <!-- BEGIN: Theme CSS-->
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/bootstrap-extended.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/colors.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/components.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/pages/page-users.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/pages/authentication.css">
-    <!-- END: Theme CSS-->
-
-    <!-- BEGIN: Page CSS-->
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/core/menu/menu-types/vertical-menu.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/pages/app-todo.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/pages/app-kanban.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/plugins/calendars/app-calendar.css">
-    <!-- END: Page CSS-->
-
+    <!--END: Theme Css-->
+    
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="../../assets/css/main-style.css">
     <!-- END: Custom CSS-->
@@ -277,10 +271,10 @@
                                             <a class="mr-2" href="#">
                                                 <img src="../../app-assets/images/portrait/small/avatar-s-9.jpg" alt="users avatar" class="users-avatar-shadow rounded-circle" height="64" width="64">
                                             </a>
-                                            <div class="media-body">
+                                            <div class="media-body avater-upload">
                                                 <h4 class="media-heading">Avatar</h4>
                                                 <div class="col-12 px-0 d-flex avater-file">
-                                                    <label for="upload2"  class="btn btn-sm btn-primary mr-25 change_avater">Change</a>
+                                                    <label for="upload2"  class="btn btn-sm btn-primary mr-25 change_avater"><span>Change</span></a>
                                                     <input id="upload2" class="file-upload__input" type="file" name="file-upload">
                                                 </div>
                                             </div>
@@ -455,50 +449,44 @@
     <div class="sidenav-overlay"></div>
     <div class="drag-target"></div>
 
-    </div>
- <!-- BEGIN: Vendor JS-->
- <script src="../../app-assets/vendors/js/vendors.min.js"></script>
- <script src="../../app-assets/fonts/LivIconsEvo/js/LivIconsEvo.tools.js"></script>
- <script src="../../app-assets/fonts/LivIconsEvo/js/LivIconsEvo.defaults.js"></script>
- <script src="../../app-assets/fonts/LivIconsEvo/js/LivIconsEvo.min.js"></script>
- <!-- BEGIN Vendor JS-->
-
- <!-- BEGIN: Page Vendor JS-->
- <!--Data Picker and form changes include percantage-->
-    <script src="../../app-assets/vendors/js/pickers/daterange/moment.min.js"></script>
-    <script src="../../app-assets/vendors/js/pickers/daterange/daterangepicker.js"></script>
-    <script src="../../app-assets/vendors/js/editors/quill/quill.min.js"></script>
-    <script src="../../app-assets/vendors/js/extensions/dragula.min.js"></script>
-    <script src="../../app-assets/vendors/js/forms/select/select2.full.min.js"></script>
-    <script src="../../app-assets/vendors/js/forms/validation/jqBootstrapValidation.js"></script>
+    <!-- BEGIN: Vendor JS-->
+    <script src="../../app-assets/vendors/js/vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+    
+    <!-- BEGIN: Theme JS-->
+    <script src="../../app-assets/js/core/app-menu.js"></script>
+    <script src="../../app-assets/js/core/app.js"></script>
+    <script src="../../app-assets/js/scripts/components.js"></script>
+    <!-- END: Theme JS-->
+    
+    <!-- BEGIN: Page Vendor JS Number Input-->
     <script src="../../app-assets/vendors/js/forms/spinner/jquery.bootstrap-touchspin.js"></script>
-    <script src="../../app-assets/vendors/js/tables/datatable/datatables.min.js"></script>
-    <script src="../../app-assets/vendors/js/tables/datatable/dataTables.bootstrap4.min.js"></script>
+    <!-- BEGIN: Page Vendor JS Number Input-->
+    
+    <!-- BEGIN: Page Vendor JS pickadate-->
     <script src="../../app-assets/vendors/js/pickers/pickadate/picker.js"></script>
     <script src="../../app-assets/vendors/js/pickers/pickadate/picker.date.js"></script>
     <script src="../../app-assets/vendors/js/pickers/pickadate/picker.time.js"></script>
- <!-- END: Page Vendor JS-->
-
- <!-- BEGIN: Theme JS-->
- <script src="../../app-assets/js/core/app-menu.js"></script>
- <script src="../../app-assets/js/core/app.js"></script>
- <script src="../../app-assets/js/scripts/components.js"></script>
- <!-- END: Theme JS-->
-
-  <!-- BEGIN: Page JS include forms select and percantage too-->
-    <script src="../../app-assets/js/scripts/pages/app-invoice.js"></script>
+    <script src="../../app-assets/vendors/js/pickers/pickadate/legacy.js"></script>
+    <script src="../../app-assets/vendors/js/pickers/daterange/moment.min.js"></script>
+    <script src="../../app-assets/vendors/js/pickers/daterange/daterangepicker.js"></script>
+    <!-- END: Page Vendor JS pickadate-->
+    
+    <!-- BEGIN: Page Vendor JS Select2-->
+    <script src="../../app-assets/vendors/js/forms/select/select2.full.min.js"></script>
+    <!-- END: Page Vendor JS Select2-->
+    
+    <!-- BEGIN: Page JS Form-select2-->
     <script src="../../app-assets/js/scripts/forms/select/form-select2.js"></script>
+    <!-- END: Page JS Form-select2-->
+    
+    <!-- BEGIN: Page JS Number Input-->
     <script src="../../app-assets/js/scripts/forms/number-input.js"></script>
-  <!-- END: Page JS-->
-
-  <!--For Calendar-->
-    <!--<script src="../../app-assets/js/scripts/extensions/calendar/calendars-data.js"></script>
-    <script src="../../app-assets/js/scripts/extensions/calendar/schedules.js"></script>
-    <script src="../../app-assets/js/scripts/extensions/calendar/app-calendar.js"></script>
-    <script src="../../app-assets/js/scripts/extensions/calendar/calendars-data.js"></script>
-    <script src="../../app-assets/js/scripts/extensions/calendar/schedules.js"></script>
-    <script src="../../app-assets/js/scripts/extensions/calendar/app-calendar.js"></script>
-    -->
+    <!-- END: Page JS Number Input-->
+    
+    <!--BEGIN: Page JS pickadate--->
+    <script src="../../app-assets/js/scripts/pages/app-invoice.js"></script>
+    <!-- END: Page JS pickadate--->
 
 <script>
     $(document).ready(function () {
@@ -519,8 +507,9 @@
             $(".exit").removeClass("d-none");
             $(".change_avater").addClass("d-none");
             $(".uploaded_file").removeClass("d-none");
-            $(".uploaded_file").text(upload_text);
+            $(".uploaded_file").children().text(upload_text);
         }
+        $(".file-upload__input").val("");
          $(".exit").click(function(){
                 $(".file-upload__input").val("");
                 $(".change_avater").removeClass("d-none");

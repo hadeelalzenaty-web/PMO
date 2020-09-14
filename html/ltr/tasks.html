@@ -17,47 +17,30 @@
 
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/vendors.min.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/forms/select/select2.min.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/editors/quill/quill.snow.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/pickers/pickadate/pickadate.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/charts/apexcharts.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/extensions/dragula.min.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/pickers/daterange/daterangepicker.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/plugins/calendars/app-calendar.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/vendors.min.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/calendars/tui-time-picker.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/calendars/tui-date-picker.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/calendars/tui-calendar.min.css">
-    <!-- END: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/core/menu/menu-types/vertical-menu.css">
+    <!--END: Vendor CSS-->
 
     <!-- BEGIN: Theme CSS-->
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/bootstrap-extended.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/colors.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/components.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/pages/page-users.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/pages/authentication.css">
-    <!-- END: Theme CSS-->
+    <!--END: Theme Css-->
 
-    <!-- BEGIN: Page CSS-->
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/core/menu/menu-types/vertical-menu.css">
+    <!--BEGIN: Vendor Tasks CSS-->
+    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/pickers/daterange/daterangepicker.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/forms/select/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/editors/quill/quill.snow.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/extensions/dragula.min.css">
+    <!--END: Vendor Tasks CSS-->
+
+    <!-- BEGIN: Page Tasks CSS-->
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/pages/app-todo.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/pages/app-kanban.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/plugins/calendars/app-calendar.css">
-    <!-- END: Page CSS-->
+    <!-- END: Page Tasks CSS-->
 
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="../../assets/css/main-style.css">
     <!-- END: Custom CSS-->
-    <script>
-        /*function exitfun(ids){
-             debugger
-             $(".file-upload__input").val("");
-             upload_button[ids]=null;
-             ids.before($(".uploaded_file").addClass("d-none"));
-             ids.addClass("d-none");
-          }*/
-    </script>
 </head>
 <!-- END: Head-->
 
@@ -286,7 +269,7 @@
 
     <!-- BEGIN: Main Menu-->
     <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
-        <div class="navbar-header mb-25">
+        <div class="navbar-header">
             <ul class="nav navbar-nav flex-row">
                 <li class="nav-item mr-auto"><a class="navbar-brand"
                         href="../../html/ltr/vertical-menu-boxicons-template/index.html">
@@ -1092,28 +1075,29 @@
     </div>
     <!-- BEGIN: Vendor JS-->
     <script src="../../app-assets/vendors/js/vendors.min.js"></script>
-    <script src="../../app-assets/fonts/LivIconsEvo/js/LivIconsEvo.tools.js"></script>
-    <script src="../../app-assets/fonts/LivIconsEvo/js/LivIconsEvo.defaults.js"></script>
-    <script src="../../app-assets/fonts/LivIconsEvo/js/LivIconsEvo.min.js"></script>
     <!-- BEGIN Vendor JS-->
-
-    <!-- BEGIN: Page Vendor JS-->
-    <script src="../../app-assets/vendors/js/pickers/daterange/moment.min.js"></script>
-    <script src="../../app-assets/vendors/js/pickers/daterange/daterangepicker.js"></script>
-    <script src="../../app-assets/vendors/js/forms/select/select2.full.min.js"></script>
-    <script src="../../app-assets/vendors/js/editors/quill/quill.min.js"></script>
-    <script src="../../app-assets/vendors/js/extensions/dragula.min.js"></script>
-    <!-- END: Page Vendor JS-->
-
+    
     <!-- BEGIN: Theme JS-->
     <script src="../../app-assets/js/core/app-menu.js"></script>
     <script src="../../app-assets/js/core/app.js"></script>
     <script src="../../app-assets/js/scripts/components.js"></script>
     <!-- END: Theme JS-->
-
-    <!-- BEGIN: Page JS-->
+    
+    <!-- BEGIN: Page Vendor JS Select2-->
+    <script src="../../app-assets/vendors/js/forms/select/select2.full.min.js"></script>
+    <!-- END: Page Vendor JS Select2-->
+    
+    <!-- BEGIN: Page Vendor JS-->
+    <script src="../../app-assets/vendors/js/pickers/daterange/moment.min.js"></script>
+    <script src="../../app-assets/vendors/js/pickers/daterange/daterangepicker.js"></script>
+    <script src="../../app-assets/vendors/js/editors/quill/quill.min.js"></script>
+    <script src="../../app-assets/vendors/js/extensions/dragula.min.js"></script>
+    <!-- END: Page Vendor JS-->
+    
+    <!-- BEGIN: Page JS Todo-->
     <script src="../../app-assets/js/scripts/pages/app-todo.js"></script>
-    <!-- END: Pag-->
+    <!-- END: Page JS Todo-->
+
     <script>
         $(document).ready(function () {
             var upload_button = [];
@@ -1144,9 +1128,6 @@
             });
         });
     });
-
-
-
     </script>
 
 </body>
