@@ -284,7 +284,8 @@
 .todo-application .content-area-wrapper .content-right .todo-app-list-wrapper .todo-app-list .todo-task-list {
   position: relative;
   background-color: #FFFFFF;
-  max-height:778px;
+  max-height: calc(100vh - 6rem);
+}
 }
 
 .todo-application .content-area-wrapper .content-right .todo-app-list-wrapper .todo-app-list .todo-task-list .todo-task-list-wrapper {
