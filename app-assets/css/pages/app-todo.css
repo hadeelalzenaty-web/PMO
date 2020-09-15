@@ -12,7 +12,7 @@
 .todo-application .content-area-wrapper .sidebar .todo-sidebar {
   /* todo-sidebar menu */
   width: 260px;
-  height: calc(100vh - 5rem);
+  height: calc(100vh - 6rem);
   border-top-left-radius: 0.267rem;
   border-bottom-left-radius: 0.267rem;
 }
@@ -85,7 +85,7 @@
   transition: all .3s ease-in-out;
   z-index: 8;
   right: 4.6rem;
-  bottom: 0rem;
+  bottom: 1rem;
 }
 
 .todo-application .content-area-wrapper .todo-new-task-sidebar.show {
@@ -284,9 +284,9 @@
 .todo-application .content-area-wrapper .content-right .todo-app-list-wrapper .todo-app-list .todo-task-list {
   position: relative;
   background-color: #FFFFFF;
-  max-height: calc(100vh - 6rem);
+  height: calc(100vh - 9.7rem);
 }
-}
+
 
 .todo-application .content-area-wrapper .content-right .todo-app-list-wrapper .todo-app-list .todo-task-list .todo-task-list-wrapper {
   margin: 0;

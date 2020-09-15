@@ -98,15 +98,15 @@ transition: all 2s ease;
     transition: all 400ms ease;
   }
   body.vertical-layout .main-menu .navbar-header{
-    margin-bottom:25px;
+    margin-bottom:14px;
   }
   body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu:not(.expanded) .navbar-header{
     margin-bottom:0;
   }
   /*Till here*/
-body.vertical-layout.vertical-menu-modern .main-menu:not(.expanded) .navigation-header {
+/*body.vertical-layout.vertical-menu-modern .main-menu:not(.expanded) .navigation-header {
   margin: 0;
-}
+}*/
 
 body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu:not(.expanded) .navigation li a {
   display: block;
