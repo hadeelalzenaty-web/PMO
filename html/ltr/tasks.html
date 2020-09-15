@@ -275,7 +275,7 @@
             </li>
             <li class="navigation-header"><span>Apps</span>
             </li>
-            <li class="nav-item"><a href="app-calendar.html"><i class="bx bxs-calendar"></i><span
+            <li class="nav-item"><a href="app-calendar.html"><i class="ficon bx bx-calendar-alt"></i><span
               class="menu-title">Calendar</span></a>
            </li>
            <li class="active nav-item"><a href="tasks.html"><i class="bx bx-check-circle"></i><span
@@ -1088,7 +1088,7 @@
                     alert("This file is already exist");
                 }
                 else if (upload_button.length < 4)  {
-                    var ele = "<span><button type='button' class='btn btn-primary uploaded_file mb-1'><span class='upload-text'>" + upload_text + "</span></button><a class='exit ml-25'><i class='fas fa-times-circle'></i></a><span>";
+                    var ele = "<span class='mr-25'><button type='button' class='btn btn-primary uploaded_file mb-1'><span class='upload-text'>" + upload_text + "</span></button><a class='exit ml-25'><i class='fas fa-times-circle'></i></a><span>";
                     $(".task-title").before(ele);
                     upload_button.push(upload_text);
                 }

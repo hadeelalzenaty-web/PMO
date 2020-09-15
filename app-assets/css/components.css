@@ -3986,6 +3986,7 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
   margin-top: 0.6rem;
   border-radius: 0.267rem;
   box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.2);
+  line-height: 0.9;
 }
 
 .picker .picker__day--infocus:hover,
