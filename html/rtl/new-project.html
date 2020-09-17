@@ -1,0 +1,2087 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <meta name="description" content="PMO Project For SSSIT">
+    <meta name="keywords" content="PMO,SSSIT,Projects">
+    <meta name="author" content="SSSIT">
+    <title>مشروع جديد</title>
+    
+    <link rel="shortcut icon" type="image/x-icon" href="../../assets/images/logo.png">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,600%7CIBM+Plex+Sans:300,400,500,600,700" rel="stylesheet">
+
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/core/menu/menu-types/vertical-menu.css">
+    <!--END: Vendor CSS-->
+    
+    <!-- BEGIN: Vendor Select CSS-->
+    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/forms/select/select2.min.css">
+    <!-- END: Vendor Select CSS-->
+
+    <!-- BEGIN: Vendor DateTimePicker CSS-->
+        <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/pickers/pickadate/pickadate.css">
+        <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/pickers/daterange/daterangepicker.css">
+    <!-- END: Vendor DateTimePicker CSS-->
+
+    <!--BEGIN: Page Vendor Percantege CSS-->
+    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/forms/spinner/jquery.bootstrap-touchspin.css">
+    <!--END: Page Vendor Percantege CSS-->
+        
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/colors.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/components.css">
+    <!--END: Theme Css-->
+    
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/main-style.css">
+    <!-- END: Custom CSS-->
+</head>
+<!-- END: Head-->
+
+<!-- BEGIN: Body-->
+
+<body class="vertical-layout vertical-menu-modern boxicon-layout 2-columns  navbar-sticky footer-static menu-collapsed" data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
+
+    <!-- BEGIN: Header-->
+    <div class="header-navbar-shadow"></div>
+    <nav class="header-navbar main-header-navbar navbar-expand-lg navbar navbar-with-menu fixed-top ">
+      <div class="navbar-wrapper">
+        <div class="navbar-container content">
+          <div class="navbar-collapse" id="navbar-mobile">
+            <div class="mr-auto float-left bookmark-wrapper d-flex align-items-center">
+              <ul class="nav navbar-nav">
+                <li class="nav-item mobile-menu d-xl-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs"
+                    href="#"><i class="ficon bx bx-menu"></i></a></li>
+              </ul>
+              <ul class="nav navbar-nav bookmark-icons">
+                <li class="nav-item d-none d-lg-block"><a class="nav-link" href="tasks.html"data-toggle="tooltip"
+                    data-placement="top" title="المهام"><i class="ficon bx bx-check-circle"></i></a></li>
+                <li class="nav-item d-none d-lg-block"><a class="nav-link" href="app-calendar.html" data-toggle="tooltip"
+                    data-placement="top" title="التقويم"><i class="ficon bx bx-calendar-alt"></i></a></li>
+              </ul>
+            </div>
+            <ul class="nav navbar-nav float-right">
+              <li class="dropdown dropdown-language nav-item"><a class="dropdown-toggle nav-link" id="dropdown-flag" href="#"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span
+                    class="selected-language">English</span></a>
+                <div class="dropdown-menu" aria-labelledby="dropdown-flag"><a class="dropdown-item" href="#"
+                    data-language="en"> English</a><a class="dropdown-item" href="#" data-language="ar">العربية</a></div>
+              </li>
+              <li class="nav-item "><a class="nav-link nav-link-expand"><i
+                    class="ficon bx bx-fullscreen"></i></a></li>
+              <li class="nav-item nav-search"><a class="nav-link nav-link-search"><i class="ficon bx bx-search"></i></a>
+                <div class="search-input">
+                  <div class="search-input-icon"><i class="bx bx-search primary"></i></div>
+                  <input class="input" type="text" placeholder="Explore PMO..." tabindex="-1" data-search="template-search">
+                  <div class="search-input-close"><i class="bx bx-x"></i></div>
+                  <ul class="search-list"></ul>
+                </div>
+              </li>
+              <li class="dropdown dropdown-notification nav-item"><a class="nav-link nav-link-label" href="#"
+                  data-toggle="dropdown"><i class="ficon bx bx-bell bx-tada bx-flip-horizontal"></i><span
+                    class="badge badge-pill badge-danger badge-up">5</span></a>
+                <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
+                  <li class="dropdown-menu-header">
+                    <div class="dropdown-header px-1 py-75 d-flex justify-content-between"><span class="notification-title">7
+                    اشعارات جديدة</span><span class="text-bold-400 cursor-pointer">تحديد الكل كمقروء</span></div>
+                  </li>
+                  <li class="scrollable-container media-list"><a class="d-flex justify-content-between"
+                      href="javascript:void(0)">
+                      <div class="media d-flex align-items-center">
+                        <div class="media-left pr-0">
+                          <div class="avatar mr-1 m-0"><img src="../../app-assets/images/portrait/small/avatar-s-11.jpg"
+                              alt="avatar" height="39" width="39"></div>
+                        </div>
+                        <div class="media-body">
+                          <h6 class="media-heading"><span class="text-bold-500">تهنئة أحمد علي</span> بمناسبة السنوية</h6><small class="notification-text">Mar 15 12:32pm</small>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="d-flex justify-content-between read-notification cursor-pointer">
+                      <div class="media d-flex align-items-center">
+                        <div class="media-left pr-0">
+                          <div class="avatar mr-1 m-0"><img src="../../app-assets/images/portrait/small/avatar-s-16.jpg"
+                              alt="avatar" height="39" width="39"></div>
+                        </div>
+                        <div class="media-body">
+                          <h6 class="media-heading"><span class="text-bold-500">تم استلام</span> رسالة جديدة</h6><small
+                            class="notification-text">لديك 18 رسالة لم يتم قرائتها</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between cursor-pointer">
+                      <div class="media d-flex align-items-center py-0">
+                        <div class="media-left pr-0"><img class="mr-1" src="../../app-assets/images/icon/sketch-mac-icon.png"
+                            alt="avatar" height="39" width="39"></div>
+                        <div class="media-body">
+                          <h6 class="media-heading"><span class="text-bold-500">تحديثات متاحة</span></h6><small
+                            class="notification-text">Sketch 50.2 is تم إضافته حديثاً</small>
+                        </div>
+                        <div class="media-right pl-0">
+                          <div class="row border-left text-center">
+                            <div class="col-12 px-50 py-75 border-bottom">
+                              <h6 class="media-heading text-bold-500 mb-0">تعديل</h6>
+                            </div>
+                            <div class="col-12 px-50 py-75">
+                              <h6 class="media-heading mb-0">إغلاق</h6>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between cursor-pointer">
+                      <div class="media d-flex align-items-center">
+                        <div class="media-left pr-0">
+                          <div class="avatar bg-primary bg-lighten-5 mr-1 m-0 p-25"><span
+                              class="avatar-content text-primary font-medium-2">LD</span></div>
+                        </div>
+                        <div class="media-body">
+                          <h6 class="media-heading"><span class="text-bold-500">عميل جديد</span> تم تسجيله</h6><small
+                            class="notification-text">قبل 1 ساعة</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cursor-pointer">
+                      <div class="media d-flex align-items-center justify-content-between">
+                        <div class="media-left pr-0">
+                          <div class="media-body">
+                            <h6 class="media-heading">عروض جديدة</h6>
+                          </div>
+                        </div>
+                        <div class="media-right">
+                          <div class="custom-control custom-switch">
+                            <input class="custom-control-input" type="checkbox" checked id="notificationSwtich">
+                            <label class="custom-control-label" for="notificationSwtich"></label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between cursor-pointer">
+                      <div class="media d-flex align-items-center">
+                        <div class="media-left pr-0">
+                          <div class="avatar bg-danger bg-lighten-5 mr-1 m-0 p-25"><span class="avatar-content"><i
+                                class="bx bx-loader-alt"></i></span></div>
+                        </div>
+                        <div class="media-body">
+                          <h6 class="media-heading"><span class="text-bold-500">التطبيق</span> تم قبوله</h6>
+                          <small class="notification-text">قبل 6 ساعة</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between read-notification cursor-pointer">
+                      <div class="media d-flex align-items-center">
+                        <div class="media-left pr-0">
+                          <div class="avatar mr-1 m-0"><img src="../../app-assets/images/portrait/small/avatar-s-4.jpg"
+                              alt="avatar" height="39" width="39"></div>
+                        </div>
+                        <div class="media-body">
+                          <h6 class="media-heading"><span class="text-bold-500">ملف جديد</span> تم رفعه</h6><small
+                            class="notification-text">قبل 4 ساعات</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between cursor-pointer">
+                      <div class="media d-flex align-items-center">
+                        <div class="media-left pr-0">
+                          <div class="avatar bg-rgba-danger m-0 mr-1 p-25">
+                            <div class="avatar-content"><i class="bx bx-detail text-danger"></i></div>
+                          </div>
+                        </div>
+                        <div class="media-body">
+                          <h6 class="media-heading"><span class="text-bold-500">التقرير المالي</span> تم إنشاؤه</h6>
+                          <small class="notification-text">قبل 25 ساعة</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between cursor-pointer">
+                      <div class="media d-flex align-items-center border-0">
+                        <div class="media-left pr-0">
+                          <div class="avatar mr-1 m-0"><img src="../../app-assets/images/portrait/small/avatar-s-16.jpg"
+                              alt="avatar" height="39" width="39"></div>
+                        </div>
+                        <div class="media-body">
+                          <h6 class="media-heading"><span class="text-bold-500">تعليق عميل</span> جديد تم استلامه</h6>
+                          <small class="notification-text">قبل 2 يوم</small>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="dropdown-menu-footer"><a class="dropdown-item p-50 text-primary justify-content-center"
+                      href="javascript:void(0)">قراءة كافة التنبيهات</a></li>
+                </ul>
+              </li>
+              <li class="dropdown dropdown-user nav-item"><a class="dropdown-toggle nav-link dropdown-user-link" href="#"
+                  data-toggle="dropdown">
+                  <div class="user-nav d-sm-flex d-none"><span class="user-name">ياسر التميمي</span><span
+                      class="user-status text-muted">متاح</span></div><span><img class="round"
+                      src="../../app-assets/images/portrait/small/avatar-s-11.jpg" alt="avatar" height="40" width="40"></span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right pb-0"><a class="dropdown-item" href="edit-profile.html"><i
+                      class="bx bx-user mr-50"></i> تعديل الملف </a><a class="dropdown-item" href="app-todo.html"><i
+                      class="bx bx-check-square mr-50"></i> المهام</a>
+                  <a class="dropdown-item" href="#"><i class="bx bx-cog mr-50"></i> الإعدادات</a>
+                  <div class="dropdown-divider mb-0"></div><a class="dropdown-item" href="auth-login.html"><i
+                      class="bx bx-power-off mr-50"></i> تسجيل الخروج</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- END: Header-->
+
+    <!-- BEGIN: Main Menu-->
+    <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
+        <div class="navbar-header">
+            <ul class="nav navbar-nav flex-row">
+                <li class="nav-item mr-auto"><a class="navbar-brand" href="../../../html/ltr/vertical-menu-boxicons-template/index.html">
+                    <img src="../../assets/images/logo.png" alt="logo" class="logo" height="45" width="45">
+                    
+                    </a></li>
+                <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="bx bx-x d-block d-xl-none font-medium-4 primary toggle-icon"></i><i class="toggle-icon bx bx-disc font-medium-4 d-none d-xl-block collapse-toggle-icon primary" data-ticon="bx-disc"></i></a></li>
+            </ul>
+        </div>
+        <div class="shadow-bottom"></div>
+        <div class="main-menu-content">
+            <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation" data-icon-style="">
+                <li class="nav-item"><a href="dashboard.html"><i class="bx bx-home-alt"></i><span class="menu-title"
+                      data-i18n="Dashboard">لوحة التحكم</span></a>
+                </li>
+                <li class="active nav-item"><a href="Projects.html"><i class="bx bxs-briefcase"></i><span
+                      class="menu-title">المشاريع</span></a>
+                </li>
+                <li class="nav-item"><a href="Resources.html"><i class="fas fa-user-friends"></i><span
+                      class="menu-title">الموارد</span></a>
+                </li>
+                <li class="nav-item"><a href="Clients.html"><i class="bx bxs-user-badge"></i><span
+                      class="menu-title">العملاء</span></a>
+                </li>
+                <li class="nav-item"><a href="Payment.html"><i class="bx bx-money"></i><span
+                      class="menu-title">المدفوعات</span></a>
+                </li>
+                <li class="navigation-header"><span>Apps</span>
+                </li>
+                <li class="nav-item"><a href="app-calendar.html"><i class="ficon bx bx-calendar-alt"></i><span
+                  class="menu-title">التقويم</span></a>
+               </li>
+               <li class="nav-item"><a href="tasks.html"><i class="bx bx-check-circle"></i><span
+                class="menu-title">المهام</span></a>
+               </li>
+              </ul>
+      </div>
+    </div>
+    <!-- END: Main Menu-->
+
+    <!-- BEGIN: Content-->
+    <div class="app-content content">
+        <div class="content-overlay"></div>
+    
+        <div class="content-wrapper">
+            <div class="content-header">
+            <div class="content-body">
+                <!-- users list start -->
+                <section class="users-list-wrapper">
+                    <div class="users-list-table">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="d-flex-responsive">
+                                    <!-- left menu section -->
+                                    <div class="mb-2 mb-md-0 pills-stacked">
+                                        <ul class="nav nav-pills d-flex flex-md-column flex-row">
+                                            <li class="nav-item  col-md col-sm-6 col-12 pl-0 m-0">
+                                                <a class="nav-link d-flex active" id="project-tab" data-toggle="pill"
+                                                    href="#project" aria-expanded="true">
+                                                    <i class="bx bx-news"></i>
+                                                    <span>المعلومات الرئيسية</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item  col-md col-sm-6 col-12 pl-0 m-0">
+                                                <a class="nav-link d-flex" id="baseline-tab" data-toggle="pill"
+                                                    href="#baseline" aria-expanded="false">
+                                                    <i class="bx bx-dollar-circle"></i>
+                                                    <span>التسعير الأساسي</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item  col-md col-sm-6 col-12 pl-0 m-0">
+                                                <a class="nav-link d-flex" id="actual-tab" data-toggle="pill"
+                                                    href="#actual" aria-expanded="false">
+                                                    <i class="bx bxs-dollar-circle"></i>
+                                                    <span>التسعير الفعلي</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item  col-md col-sm-6 col-12 pl-0 m-0">
+                                                <a class="nav-link d-flex" id="resource-tab" data-toggle="pill"
+                                                    href="#resource" aria-expanded="false">
+                                                    <i class="bx bx-user-plus"></i>
+                                                    <span>تخصيص الموارد</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item  col-md col-sm-6 col-12 pl-0 m-0">
+                                                <a class="nav-link d-flex" id="attachs-tab" data-toggle="pill"
+                                                    href="#payments" aria-expanded="false">
+                                                    <i class="bx bxs-credit-card"></i>
+                                                    <span>الدفعات</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item  col-md col-sm-6 col-12 pl-0 m-0">
+                                                <a class="nav-link d-flex" id="attachs-tab" data-toggle="pill"
+                                                    href="#attachs" aria-expanded="false">
+                                                    <i class="bx bx-link"></i>
+                                                    <span>المرفقات</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item  col-md col-sm-6 col-12 pl-0 m-0">
+                                                <a class="nav-link d-flex" id="millustones-tab" data-toggle="pill"
+                                                    href="#millestones" aria-expanded="false">
+                                                    <i class="bx bxs-calendar-event"></i>
+                                                    <span>معالم</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item  col-md col-sm-6 col-12 pl-0 m-0">
+                                                <a class="nav-link d-flex" id="weeklyprogress-tab" data-toggle="pill"
+                                                    href="#weeklyprogress" aria-expanded="false">
+                                                    <i class="bx bx-line-chart"></i>
+                                                    <span>التقدم الاسبوعي</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item  col-md col-sm-6 col-12 pl-0 m-0">
+                                                <a class="nav-link d-flex" id="travel-list-tab" data-toggle="pill"
+                                                    href="#travel-list" aria-expanded="false">
+                                                    <i class="bx bxs-plane-alt"></i>
+                                                    <span>قائمة السفر</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item  col-md col-sm-6 col-12 pl-0 m-0">
+                                                <a class="nav-link d-flex" id="overtime-list-tab" data-toggle="pill"
+                                                    href="#overtime-list" aria-expanded="false">
+                                                    <i class="bx bx-alarm-add"></i>
+                                                    <span>قائمة العمل الإضافي</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item  col-md col-sm-6 col-12 pl-0 m-0">
+                                                <a class="nav-link d-flex" id="stackholder-tab" data-toggle="pill"
+                                                    href="#stackholder" aria-expanded="false">
+                                                    <i class="bx bx-group"></i>
+                                                    <span>أصحاب المصلحة</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item  col-md col-sm-6 col-12 pl-0 m-0">
+                                                <a class="nav-link d-flex" id="escalation-tab" data-toggle="pill"
+                                                    href="#escalation" aria-expanded="false">
+                                                    <i class="bx bx-trending-up"></i>
+                                                    <span>التصعيد</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item  col-md col-sm-6 col-12 pl-0 m-0">
+                                                <a class="nav-link d-flex" id="risks-tab" data-toggle="pill"
+                                                    href="#risks" aria-expanded="false">
+                                                    <i class="bx bx-no-entry"></i>
+                                                    <span>المخاطر</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item  col-md col-sm-6 col-12 pl-0 m-0">
+                                                <a class="nav-link d-flex" id="escalation-tab" data-toggle="pill"
+                                                    href="#issues" aria-expanded="false">
+                                                    <i class="bx bx-cog"></i>
+                                                    <span>قضايا</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item  col-md col-sm-6 col-12 pl-0 m-0">
+                                                <a class="nav-link d-flex" id="escalation-tab" data-toggle="pill"
+                                                    href="#last-tasks" aria-expanded="false">
+                                                    <i class="bx bx-task"></i>
+                                                    <span>مهام الأسبوع الماضي</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item  col-md col-sm-6 col-12 pl-0 m-0">
+                                                <a class="nav-link d-flex" id="escalation-tab" data-toggle="pill"
+                                                    href="#next-tasks" aria-expanded="false">
+                                                    <i class="bx bx-task"></i>
+                                                    <span>مهام الأسبوع القادم</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- right content section -->
+                                    <div class="stretch-side">
+                                        <div class="mb-50 user-profile-text">
+                                             <h4 class="text-primary mb-50">Ministry of Justice (Moj)</h4>
+                                             <div class="d-flex flex-sm-row flex-column project-info ">
+                                                <div class="mr-sm-2 main-info">
+                                                    <span>ترميز المشروع:</span>
+                                                    <span class="sub">IT 300</span>
+                                                </div>
+                                                <div class="mr-2">
+                                                        <span>تاريخ البداية:</span>
+                                                        <span class="sub">05/06/2019</span>
+                                                </div>
+                                                <div class="mr-2">
+                                                    <span>تاريخ النهاية:</span>
+                                                    <span class="sub">08/10/2020</span>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-content">
+                                            <div role="tabpanel" class="tab-pane active" id="project">
+                                                <!-- Tab panes -->
+                                                <div class="card mb-0">
+                                                    <div class="card-content">
+                                                        <div class="card-body">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="pname">اسم المشروع</label>
+                                                                        <input type="text" class="form-control" id="pname"
+                                                                            placeholder="اسم المشروع">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="pcode">ترميز المشروع</label>
+                                                                        <input type="text" class="form-control" id="pcode"
+                                                                            placeholder="ادخل الترميز">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="cselect">اسم العميل</label>
+                                                                        <select class="form-control select2-icons" id="cselect">
+                                                                            <option>أحمد ياسر</option>
+                                                                            <option>أحمد محمد</option>
+                                                                            <option>ياسر التميمي</option>
+                                                                        </select>
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <label for="users-list-status">تاريخ البداية</label>
+                                                                    <fieldset
+                                                                        class="form-group position-relative has-icon-left invoice-date-picker">
+                                                                        <input type="text" class="form-control pickadate"
+                                                                            placeholder="اختر تاريخ" id="users-list-status">
+                                                                        <div class="form-control-position">
+                                                                            <i class='bx bx-calendar'></i>
+                                                                        </div>
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <label for="users-list-status">تاريخ الانتهاء</label>
+                                                                    <fieldset
+                                                                        class="form-group position-relative has-icon-left invoice-date-picker">
+                                                                        <input type="text" class="form-control pickadate"
+                                                                            placeholder="اختر تاريخ" id="users-list-status">
+                                                                        <div class="form-control-position">
+                                                                            <i class='bx bx-calendar'></i>
+                                                                        </div>
+                                                                    </fieldset>
+                                                                </div>
+                                                        </div>
+                                                        <hr class="hr-color">
+                                                        <div class="row">
+                                                            <div class="col-md-6 col-md-6 col-12">
+                                                                <fieldset class="form-group">
+                                                                    <label for="pcontract">تسعير المشروع</label>
+                                                                    <input type="text" class="form-control" id="pcontract"
+                                                                        placeholder="سعر المشروع">
+                                                                </fieldset>
+                                                            </div>
+                                                            <div class="col-md-6 col-md-6 col-12">
+                                                                <fieldset class="form-group">
+                                                                    <label for="pselect">مدير المشروع</label>
+                                                                    <select class="select2-icons form-control" id="pselect">
+                                                                        <option>علاء خليل</option>
+                                                                        <option>عبداللطيف غزال</option>
+                                                                        <option>محمد حسني </option>
+                                                                    </select>
+                                                                </fieldset>
+                                                            </div>
+                                                            <div class="col-md-6 col-md-6 col-12">
+                                                                <fieldset class="form-group">
+                                                                    <label for="rselect">المتطلبات</label>
+                                                                    <select class="select2-icons form-control" id="rselect">
+                                                                        <option>الموارد</option>
+                                                                        <option>طابعة</option>
+                                                                        <option>شاشات</option>
+                                                                    </select>
+                                                                </fieldset>
+                                                            </div>
+                                                            <div class="col-md-6 col-md-6 col-12">
+                                                                <fieldset class="form-group">
+                                                                    <label for="pselects">الأولوية</label>
+                                                                    <select class="select2-icons form-control" id="pselects">
+                                                                        <option>المشروع1</option>
+                                                                        <option>المشروع2</option>
+                                                                        <option>المشروع3</option>
+                                                                    </select>
+                                                                </fieldset>
+                                                            </div>
+                                                            <div class="col-md-6 col-md-6 col-12">
+                                                                <div class="form-group">
+                                                                    <label for="textareap">الوصف</label>
+                                                                    <textarea class="form-control" id="textareap"
+                                                                        rows="3"></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 d-flex flex-sm-row flex-column justify-content-end my-1 p-0">
+                                                    <button type="submit" class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">إنشاء المشروع</button>
+                                                    <button type="reset" class="btn btn-dark glow">إلغاء</button>
+                                                </div>
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane" id="baseline">
+                                                <div class="card mb-0">
+                                                    <div class="card-content">
+                                                        <div class="card-body">
+                                                            <div class="row">
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="budget">ميزانية الخدمات الأساسية</label>
+                                                                        <input type="text" class="form-control" id="budget"
+                                                                            placeholder="الخدمات الأساسية">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="pcost">تكلفة الطرف الثالث</label>
+                                                                        <input type="text" class="form-control" id="pcost"
+                                                                            placeholder="تكلفة الطرف الثالث">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="lcost">تكلفة التراخيص</label>
+                                                                        <input type="text" class="form-control" id="lcost"
+                                                                            placeholder="تكلفة التراخيص">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="tcost">تكلفة التدريب</label>
+                                                                        <input type="text" class="form-control" id="tcost"
+                                                                            placeholder="تكلفة التدريب">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="ocost">تكلفة المصادر الخارجية</label>
+                                                                        <input type="text" class="form-control" id="ocost"
+                                                                            placeholder="تكلفة المصادر الخارجية">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="scost">تكلفة الدعم</label>
+                                                                        <input type="text" class="form-control" id="pname"
+                                                                            placeholder="تكلفة الدعم">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="hcost">تكلفة الأجهزة</label>
+                                                                        <input type="text" class="form-control" id="pname"
+                                                                            placeholder="تكلفة الأجهزة">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="othercost">التكاليف الأخرى</label>
+                                                                        <input type="text" class="form-control" id="othercost"
+                                                                            placeholder="التكاليف الأخرى">
+                                                                    </fieldset>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 d-flex flex-sm-row flex-column justify-content-end my-1 p-0">
+                                                    <button type="submit"
+                                                        class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">حفظ</button>
+                                                    <button type="reset" class="btn btn-dark glow">إلغاء</button>
+                                                </div>
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane" id="actual">
+                                                <div class="card mb-0">
+                                                    <div class="card-content">
+                                                        <div class="card-body">
+                                                            <div class="row">
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="profservice">الميزانية الأساسية للخدمات</label>
+                                                                        <input type="text" class="form-control" id="profservice"
+                                                                            placeholder="الميزانية الأساسية للخدمات">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="actservice">ميزانية الخدمات الفعلية المتبقية</label>
+                                                                        <input type="text" class="form-control" id="actservice"
+                                                                            placeholder="ميزانية الخدمات الفعلية المتبقية">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="actbudg">ميزانية الطرف الثالث</label>
+                                                                        <input type="text" class="form-control" id="actbudg"
+                                                                            placeholder="ميزانية الطرف الثالث">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="actbudg">ميزانية الطرف الثالث الفعلية المتبقية</label>
+                                                                        <input type="text" class="form-control" id="actbudg"
+                                                                            placeholder="ميزانية الطرف الثالث الفعلية المتبقية">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="act-l-budg">ميزانية التراخيص الفعلية</label>
+                                                                        <input type="text" class="form-control" id="act-l-budg"
+                                                                            placeholder="ميزانية التراخيص الفعلية">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="act-l-remain-budg">ميزانية التراخيص الفعلية المتبقية</label>
+                                                                        <input type="text" class="form-control" id="act-l-remain-budg"
+                                                                            placeholder="ميزانية التراخيص المتبقية">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="act-t-budg">ميزانية مصاريف التدريب الفعلية</label>
+                                                                        <input type="text" class="form-control" id="act-t-budg"
+                                                                            placeholder="ميزانية التدريب الفعلية">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="act-t-remain-budg">ميزانية التدريب الفعلية المتبقية</label>
+                                                                        <input type="text" class="form-control" id="act-t-remain-budg"
+                                                                            placeholder="ميزانية التدريب المتبقية">
+                                                                    </fieldset>
+                                                                </div>
+                                                            </div>
+                                                            <hr class="hr-color">
+                                                            <div class="row">
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="act-o-budg">ميزانية 
+                                                                            مصروفات الاستعانة بمصادر خارجية
+                                                                        </label>
+                                                                        <input type="text" class="form-control" id="act-o-budg"
+                                                                            placeholder="ميزانية المصادر الخارجية">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="act-o-remain-budg">ميزانية المصادر الخارجية المتبقية</label>
+                                                                        <input type="text" class="form-control" id="act-o-remain-budg"
+                                                                            placeholder="ميزانية المصادر الخارجية المتبقية">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="act-s-budg">ميزانية مصروفات الدعم</label>
+                                                                        <input type="text" class="form-control" id="act-s-budg"
+                                                                            placeholder="ميزانية مصروفات الدعم">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="act-s-remain-budg">ميزانية الدعم المتبقية</label>
+                                                                        <input type="text" class="form-control" id="act-s-remain-budg"
+                                                                            placeholder="ميزانية الدعم المتبقية">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="act-h-budg">ميزانية الأجهزة الفعلية</label>
+                                                                        <input type="text" class="form-control" id="act-h-budg"
+                                                                            placeholder="ميزانية الأجهزة الفعلية">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="act-h-remain-budg">ميزانية الأجهزة الفعلية المتبقية</label>
+                                                                        <input type="text" class="form-control" id="act-h-remain-budg"
+                                                                            placeholder="ميزانية الأجهزة الفعلية المتبقية">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="act-oth-budg">ميزانية المصروفات الأخرى</label>
+                                                                        <input type="text" class="form-control" id="act-oth-budg"
+                                                                            placeholder="ميزانية المصروفات الأخرى">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="act-h-oth-budg">ميزانية المصروفات الأخرى المبتقية</label>
+                                                                        <input type="text" class="form-control" id="act-oth-remain-budg"
+                                                                            placeholder="ميزانية المصروفات الأخرى المتبقية">
+                                                                    </fieldset>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 d-flex flex-sm-row flex-column justify-content-end my-1 p-0">
+                                                    <button type="submit" class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">إنشاء مشروع</button>
+                                                    <button type="reset" class="btn btn-dark glow">إلغاء</button>
+                                                </div>
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane" id="resource">
+                                                <div class="card mb-0">
+                                                    <div class="card-content">
+                                                        <div class="card-body">
+                                                            <div class="row">
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="Rname">اسم المورد</label>
+                                                                        <input type="text" class="form-control is-invalid" id="Rname"
+                                                                            placeholder="اسم المورد">
+                                                                        <div class="invalid-feedback">
+                                                                            <i class="bx bx-radio-circle"></i>
+                                                                            ياسر تميمي ليس متوفر حتى 25/5
+                                                                        </div>
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <label for="start-date">تاريخ البدء</label>
+                                                                    <fieldset class="form-group position-relative has-icon-left">
+                                                                        <input type="text" class="form-control pickadate"
+                                                                            placeholder="اختر التاريخ" id="start-date">
+                                                                        <div class="form-control-position">
+                                                                            <i class='bx bx-calendar'></i>
+                                                                        </div>
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <label for="end-date">تاريخ الإنتهاء</label>
+                                                                    <fieldset class="form-group position-relative has-icon-left">
+                                                                        <input type="text" class="form-control pickadate"
+                                                                            placeholder="اختر التاريخ" id="end-date">
+                                                                        <div class="form-control-position">
+                                                                            <i class='bx bx-calendar'></i>
+                                                                        </div>
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <label for="end-date">نسبة التخصيص</label>
+                                                                    <div class="d-inline-block mb-1 mr-1 w-100">
+                                                                        <input type="number" class="touchspin" value="20"
+                                                                            data-bts-postfix="%">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <div class="form-group">
+                                                                        <label for="textareap">ملاحظات</label>
+                                                                        <textarea class="form-control" id="textareap"
+                                                                            rows="3"></textarea>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12 d-flex flex-sm-row flex-column justify-content-end mb-1 p-0">
+                                                                    <button type="submit" class="btn btn-primary glow">إضافة</button>
+                                                                </div>
+                                                                <div class="table-responsive">
+                                                                    <table class="table table-bordered table-striped mb-0">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>اسم المورد</th>
+                                                                                <th>تاريخ البدء</th>
+                                                                                <th>تاريخ الإنتهاء</th>
+                                                                                <th>نسبة التخصيص</th>
+                                                                                <th>ملاحظات</th>
+                                                                                <th class="col-action">Action</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <div class="media">
+                                                                                        <a class="mr-1" href="#">
+                                                                                            <img src="../../app-assets/images/portrait/small/avatar-s-26.jpg"
+                                                                                                alt="users view avatar"
+                                                                                                class="users-avatar-shadow rounded-circle"
+                                                                                                height="35" width="35">
+                                                                                        </a>
+                                                                                        <div class="media-body pt-25">
+                                                                                            <span>سارة التميمي</span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td>2/5/2020</td>
+                                                                                <td>2/7/2020</td>
+                                                                                <td>30%</td>
+                                                                                <td>لديه خبرة في Angular</td>
+                                                                                <td>
+                                                                                    <div class="table-icon d-flex justify-content-center align-items-center">
+                                                                                        <a href="#"><i
+                                                                                                class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
+                                                                                        <a href="#"><i
+                                                                                                class="badge-circle badge-circle-light-secondary bx bx-trash-alt font-medium-1"></i></a>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <div class="media">
+                                                                                        <a class="mr-1" href="#">
+                                                                                            <img src="../../app-assets/images/portrait/small/avatar-s-17.jpg"
+                                                                                                alt="users view avatar"
+                                                                                                class="users-avatar-shadow rounded-circle"
+                                                                                                height="35" width="35">
+                                                                                        </a>
+                                                                                        <div class="media-body pt-25">
+                                                                                            <span>ياسر التميمي </span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td>2/5/2020</td>
+                                                                                <td>2/6/2020</td>
+                                                                                <td>20%</td>
+                                                                                <td>لديه خبرة في MVC</td>
+                                                                                <td>
+                                                                                    <div class="table-icon d-flex justify-content-center align-items-center">
+                                                                                        <a href="#"><i
+                                                                                                class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
+                                                                                        <a href="#"><i
+                                                                                                class="badge-circle badge-circle-light-secondary bx bx-trash-alt font-medium-1"></i></a>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <div class="media">
+                                                                                        <a class="mr-1" href="#">
+                                                                                            <img src="../../app-assets/images/portrait/small/avatar-s-26.jpg"
+                                                                                                alt="users view avatar"
+                                                                                                class="users-avatar-shadow rounded-circle"
+                                                                                                height="35" width="35">
+                                                                                        </a>
+                                                                                        <div class="media-body pt-25">
+                                                                                            <span>سارة التميمي</span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td>2/5/2020</td>
+                                                                                <td>2/7/2020</td>
+                                                                                <td>20%</td>
+                                                                                <td>لديه خبرة في  Angular</td>
+                                                                                <td>
+                                                                                    <div class="table-icon d-flex justify-content-center align-items-center">
+                                                                                        <a href="#"><i
+                                                                                                class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
+                                                                                        <a href="#"><i
+                                                                                                class="badge-circle badge-circle-light-secondary bx bx-trash-alt font-medium-1"></i></a>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 d-flex flex-sm-row flex-column justify-content-end my-1 p-0">
+                                                    <button type="submit"
+                                                        class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">حفظ</button>
+                                                    <button type="reset" class="btn btn-dark glow">إلغاء</button>
+                                                </div>
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane" id="payments">
+                                                <div class="card mb-0">
+                                                    <div class="card-content">
+                                                        <div class="card-body">
+                                                            <div class="row">
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="name">Name</label>
+                                                                        <input type="text" class="form-control" id="name"
+                                                                            placeholder="الاسم">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="value">القيمة</label>
+                                                                        <input type="text" class="form-control" id="value"
+                                                                            placeholder="القيمة">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <label for="users-list-status">تاريخ الاستحقاق</label>
+                                                                    <fieldset class="form-group position-relative has-icon-left">
+                                                                        <input type="text" class="form-control pickadate"
+                                                                            placeholder="اختر التاريخ" id="users-list-status">
+                                                                        <div class="form-control-position">
+                                                                            <i class='bx bx-calendar'></i>
+                                                                        </div>
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="pselect">الحالة</label>
+                                                                        <select class="select2-icons form-control" id="basicSelect">
+                                                                            <option selected>مدفوع</option>
+                                                                            <option>غير مدفوع</option>
+                                                                        </select>
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <label for="users-list-status">تاريخ تغيير الحالة</label>
+                                                                    <fieldset class="form-group position-relative has-icon-left">
+                                                                        <input type="text" class="form-control pickadate"
+                                                                            placeholder="اختر التاريخ" id="users-list-status">
+                                                                        <div class="form-control-position">
+                                                                            <i class='bx bx-calendar'></i>
+                                                                        </div>
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <div class="form-group">
+                                                                        <label for="textareap">ملاحظات</label>
+                                                                        <textarea class="form-control" id="textareap"
+                                                                            rows="3"></textarea>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 d-flex flex-sm-row flex-column justify-content-end my-1 p-0">
+                                                    <button type="submit"
+                                                        class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">حفظ</button>
+                                                    <button type="reset" class="btn btn-dark glow">إلغاء</button>
+                                                </div>
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane" id="attachs">
+                                                <div class="card mb-0">
+                                                    <div class="card-content">
+                                                        <div class="card-body">
+                                                            <div class="row">
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="basicInputFile">العقد</label>
+                                                                        <div class="custom-file">
+                                                                            <input type="file" class="custom-file-input"
+                                                                                id="inputGroupFile01">
+                                                                            <label class="custom-file-label"
+                                                                                for="inputGroupFile01">اختر ملف</label>
+                                                                        </div>
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="pcontract">مكتب البريد</label>
+                                                                        <input type="text" class="form-control" id="pcontract"
+                                                                            placeholder="">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="basicInputFile">وثيقة طلب الاقتراح</label>
+                                                                        <div class="custom-file">
+                                                                            <input type="file" class="custom-file-input"
+                                                                                id="inputGroupFile02">
+                                                                            <label class="custom-file-label"
+                                                                                for="inputGroupFile02">اختر ملف</label>
+                                                                        </div>
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="basicInputFile">اقتراح</label>
+                                                                        <div class="custom-file">
+                                                                            <input type="file" class="custom-file-input"
+                                                                                id="inputGroupFile03">
+                                                                            <label class="custom-file-label"
+                                                                                for="inputGroupFile03">اختر ملف</label>
+                                                                        </div>
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="dnotes">مذكرة التسليم</label>
+                                                                        <input type="text" class="form-control" id="dnotes"
+                                                                            placeholder="مذكرة التسليم">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="Wdocument">وثيقة مجال العمل</label>
+                                                                        <input type="text" class="form-control" id="Wdocument"
+                                                                            placeholder="مجال العمل">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="basicInputFile">BRS وثيقة</label>
+                                                                        <div class="custom-file">
+                                                                            <input type="file" class="custom-file-input"
+                                                                                id="inputGroupFile04">
+                                                                            <label class="custom-file-label"
+                                                                                for="inputGroupFile04">اختر ملف</label>
+                                                                        </div>
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="basicInputFile">وثيقة الإغلاق</label>
+                                                                        <div class="custom-file">
+                                                                            <input type="file" class="custom-file-input"
+                                                                                id="inputGroupFile05">
+                                                                            <label class="custom-file-label"
+                                                                                for="inputGroupFile05">اختر ملف</label>
+                                                                        </div>
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="basicInputFile">وثائق أخرى</label>
+                                                                        <div class="custom-file">
+                                                                            <input type="file" class="custom-file-input"
+                                                                                id="inputGroupFile06">
+                                                                            <label class="custom-file-label"
+                                                                                for="inputGroupFile06">اختر ملف</label>
+                                                                        </div>
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="basicInputFile">Ms Project Plan</label>
+                                                                        <div class="custom-file">
+                                                                            <input type="file" class="custom-file-input"
+                                                                                id="inputGroupFile07">
+                                                                            <label class="custom-file-label"
+                                                                                for="inputGroupFile07">اختر ملف</label>
+                                                                        </div>
+                                                                    </fieldset>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 d-flex flex-sm-row flex-column justify-content-end my-1 p-0">
+                                                    <button type="submit"
+                                                        class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">حفظ</button>
+                                                    <button type="reset" class="btn btn-dark glow">إلغاء</button>
+                                                </div>
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane" id="millestones">
+                                                <div class="card mb-0">
+                                                    <div class="card-content">
+                                                        <div class="card-body">
+                                                            <div class="row">
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="basicInputFile">الاسم</label>
+                                                                        <div class="custom-file">
+                                                                            <input type="file" class="custom-file-input"
+                                                                                id="inputGroupFile01">
+                                                                            <label class="custom-file-label"
+                                                                                for="inputGroupFile01">اختر ملف</label>
+                                                                        </div>
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <label for="start-date">تاريخ البدء</label>
+                                                                    <fieldset class="form-group position-relative has-icon-left">
+                                                                        <input type="text" class="form-control pickadate"
+                                                                            placeholder="اختر التاريخ" id="start-date">
+                                                                        <div class="form-control-position">
+                                                                            <i class='bx bx-calendar'></i>
+                                                                        </div>
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <label for="start-date">تاريخ الانتهاء</label>
+                                                                    <fieldset class="form-group position-relative has-icon-left">
+                                                                        <input type="text" class="form-control pickadate"
+                                                                            placeholder="اختر التاريخ" id="finish-date">
+                                                                        <div class="form-control-position">
+                                                                            <i class='bx bx-calendar'></i>
+                                                                        </div>
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <label for="select2">الحالة</label>
+                                                                    <fieldset class="form-group">
+                                                                        <select class="select2-icons form-control" id="select2">
+                                                                            <option value="">-</option>
+                                                                            <option value="Yes">نعم</option>
+                                                                            <option value="No">لا</option>
+                                                                        </select>
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <div class="form-group">
+                                                                        <label for="textareap">ملاحظات</label>
+                                                                        <textarea class="form-control" id="textareap"
+                                                                            rows="3"></textarea>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 d-flex flex-sm-row flex-column justify-content-end my-1 p-0">
+                                                    <button type="submit"
+                                                        class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">حفظ</button>
+                                                    <button type="reset" class="btn btn-dark glow">إلغاء</button>
+                                                </div>
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane" id="weeklyprogress">
+                                                <div class="card mb-0">
+                                                    <div class="card-content">
+                                                        <div class="card-body">
+                                                            <div class="row">
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="basicInputFile">الاسم</label>
+                                                                        <div class="custom-file">
+                                                                            <span>طارق علي</span>
+                                                                        </div>
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <label for="planned-percant">النسبة المخطط لها </label>
+                                                                    <div class="d-inline-block mb-1 mr-1 w-100">
+                                                                        <input type="text" class="touchspin" value="10"
+                                                                            data-bts-postfix="%" id="planned-percant">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <label for="actual-percant">النسبة الفعلية</label>
+                                                                    <div class="d-inline-block mb-1 mr-1 w-100">
+                                                                        <input type="text" class="touchspin" value="10"
+                                                                            data-bts-postfix="%" id="actual-percant">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <div class="form-group">
+                                                                        <label for="textareap">ملاحظات</label>
+                                                                        <textarea class="form-control" id="textareap"
+                                                                            rows="3"></textarea>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 d-flex flex-sm-row flex-column justify-content-end my-1 p-0">
+                                                    <button type="submit"
+                                                        class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">حفظ</button>
+                                                    <button type="reset" class="btn btn-dark glow">إلغاء</button>
+                                                </div>
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane" id="travel-list">
+                                                <div class="card mb-0">
+                                                    <div class="card-content">
+                                                        <div class="card-body">
+                                                            <div class="row">
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="Rname">اسم المورد</label>
+                                                                        <input type="text" class="form-control" id="Rname"
+                                                                            placeholder="اسم المورد">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <label for="traveld_select">وجهة السفر</label>
+                                                                    <fieldset class="form-group">
+                                                                        <select class="select2-icons form-control" id="traveld_select">
+                                                                            <option value="">المملكة العربية السعودية</option>
+                                                                            <option value="Yes">الامارات</option>
+                                                                            <option value="No">المانيا</option>
+                                                                        </select>
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="Vcost">تكلفة التأشيرة</label>
+                                                                        <input type="text" class="form-control" id="Vcost"
+                                                                            placeholder="تكلفة التاشيرة">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="Tcost">تكلفة التذكرة</label>
+                                                                        <input type="text" class="form-control" id="Tcost"
+                                                                            placeholder="تكلفة التذكرة">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <label for="end-date">من التاريخ</label>
+                                                                    <fieldset class="form-group position-relative has-icon-left">
+                                                                        <input type="text" class="form-control pickadate"
+                                                                            placeholder="اختر التاريخ" id="end-date">
+                                                                        <div class="form-control-position">
+                                                                            <i class='bx bx-calendar'></i>
+                                                                        </div>
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <label for="end-date">إلى التاريخ</label>
+                                                                    <fieldset class="form-group position-relative has-icon-left">
+                                                                        <input type="text" class="form-control pickadate"
+                                                                            placeholder="اختر التاريخ" id="end-date">
+                                                                        <div class="form-control-position">
+                                                                            <i class='bx bx-calendar'></i>
+                                                                        </div>
+                                                                    </fieldset>
+                                                                </div>
+                                                            </div>
+                                                            <hr class="hr-color">
+                                                            <div class="row">
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="Acccost">مكان الإقامة</label>
+                                                                        <input type="text" class="form-control" id="Acccost"
+                                                                            placeholder="مكان الإقامة">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="Acccos_night">الإقامة كل ليلة
+                                                                        </label>
+                                                                        <input type="text" class="form-control" id="Acccos_night">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="Vcost">مجموع الليال</label>
+                                                                        <input type="text" class="form-control" id="Vcost"
+                                                                            placeholder="مجموع الليال">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="Vcost">لكل يوم في الليلة</label>
+                                                                        <input type="text" class="form-control" id="Vcost"
+                                                                            placeholder="لكل يوم في الليلة">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="Vcost">مجموع الليال</label>
+                                                                        <input type="text" class="form-control" id="Vcost"
+                                                                            placeholder="Total Days">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="Transportaion_cost">تكاليف النقل</label>
+                                                                        <input type="text" class="form-control" id="Transportaion_cost"
+                                                                            placeholder="تكاليف النقل">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="excep_reason">سبب الاستثناء</label>
+                                                                        <input type="text" class="form-control" id="excep_reason"
+                                                                            placeholder="سبب الاستثناء">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <div class="form-group">
+                                                                        <label for="textareap">ملاحظات</label>
+                                                                        <textarea class="form-control" id="textareap"
+                                                                            rows="3"></textarea>
+                                                                    </div>
+                                                                </div>
+                
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <div class="form-group">
+                                                                        <label for="textareap">إجمالي تكلفة السفر</label>
+                                                                        <span class="d-block bold-cost">500 JD</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 d-flex flex-sm-row flex-column justify-content-end my-1 p-0">
+                                                    <button type="submit"
+                                                        class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">حفظ</button>
+                                                    <button type="reset" class="btn btn-dark glow">إلغاء</button>
+                                                </div>
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane" id="overtime-list">
+                                                <div class="card mb-0">
+                                                    <div class="card-content">
+                                                        <div class="card-body">
+                                                            <div class="row">
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="Rname">اسم المورد</label>
+                                                                        <input type="text" class="form-control" id="Rname"
+                                                                            placeholder="اسم المورد">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <label for="overtime-date">تاريخ العمل الاضافي</label>
+                                                                    <fieldset class="form-group position-relative has-icon-left">
+                                                                        <input type="text" class="form-control pickadate"
+                                                                            placeholder="اختر التاريخ" id="start-date">
+                                                                        <div class="form-control-position">
+                                                                            <i class='bx bx-calendar'></i>
+                                                                        </div>
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="numhour">عدد الساعات</label>
+                                                                        <input type="text" class="form-control" id="numhour"
+                                                                            placeholder="عدد الساعات">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="form-group col-md-6 col-md-6 col-12">
+                                                                    <label for="IsHoliday">في عطلة</label>
+                                                                        <select class="form-control select2-icons" id="IsHoliday">
+                                                                            <option>نعم</option>
+                                                                            <option>لا</option>
+                                                                        </select>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label>مجموع دخل العمل الإضافي</label>
+                                                                        <span class="d-block bold-cost">500 JD</span>
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-12 d-flex flex-sm-row flex-column justify-content-end mb-1 p-0">
+                                                                    <button type="submit" class="btn btn-primary glow">إضافة</button>
+                                                                </div>
+                                                                <div class="table-responsive">
+                
+                
+                                                                    <table class="table table-bordered table-striped mb-0">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>اسم المورد</th>
+                                                                                <th>تاريخ العمل الإضافي</th>
+                                                                                <th>عدد الساعات</th>
+                                                                                <th>في عطلة</th>
+                                                                                <th class="col-action">تعديل </th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <div class="media">
+                                                                                        <a class="mr-1" href="#">
+                                                                                            <img src="../../app-assets/images/portrait/small/avatar-s-11.jpg"
+                                                                                                alt="users view avatar"
+                                                                                                class="users-avatar-shadow rounded-circle"
+                                                                                                height="35" width="35">
+                                                                                        </a>
+                                                                                        <div class="media-body pt-25">
+                                                                                            <span>ياسر التميمي</span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td>2/5/2020</td>
+                                                                                <td>3 ساعات</td>
+                                                                                <td>نعم</td>
+                                                                                <td>
+                                                                                    <div class="table-icon d-flex justify-content-center align-items-center">
+                                                                                        <a href="#"><i
+                                                                                                class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
+                                                                                        <a href="#"><i
+                                                                                                class="badge-circle badge-circle-light-secondary bx bx-trash-alt font-medium-1"></i></a>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <div class="media">
+                                                                                        <a class="mr-1" href="#">
+                                                                                            <img src="../../app-assets/images/portrait/small/avatar-s-5.jpg"
+                                                                                                alt="users view avatar"
+                                                                                                class="users-avatar-shadow rounded-circle"
+                                                                                                height="35" width="35">
+                                                                                        </a>
+                                                                                        <div class="media-body pt-25">
+                                                                                            <span>سارة التميمي</span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td>2/5/2020</td>
+                                                                                <td>3 ساعات</td>
+                                                                                <td>نعم</td>
+                                                                                <td>
+                                                                                    <div class="table-icon d-flex justify-content-center align-items-center">
+                                                                                        <a href="#"><i
+                                                                                                class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
+                                                                                        <a href="#"><i
+                                                                                                class="badge-circle badge-circle-light-secondary bx bx-trash-alt font-medium-1"></i></a>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <div class="media">
+                                                                                        <a class="mr-1" href="#">
+                                                                                            <img src="../../app-assets/images/portrait/small/avatar-s-5.jpg"
+                                                                                                alt="users view avatar"
+                                                                                                class="users-avatar-shadow rounded-circle"
+                                                                                                height="35" width="35">
+                                                                                        </a>
+                                                                                        <div class="media-body pt-25">
+                                                                                            <span>سارة التميمي</span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td>2/5/2020</td>
+                                                                                <td>2 ساعة</td>
+                                                                                <td>لا</td>
+                                                                                <td>
+                                                                                    <div class="table-icon d-flex justify-content-center align-items-center">
+                                                                                        <a href="#"><i
+                                                                                                class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
+                                                                                        <a href="#"><i
+                                                                                                class="badge-circle badge-circle-light-secondary bx bx-trash-alt font-medium-1"></i></a>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 d-flex flex-sm-row flex-column justify-content-end my-1 p-0">
+                                                    <button type="submit"
+                                                        class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">حفظ</button>
+                                                    <button type="reset" class="btn btn-dark glow">إلغاء</button>
+                                                </div>
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane" id="stackholder">
+                                                <div class="card mb-0">
+                                                    <div class="card-content">
+                                                        <div class="card-body">
+                                                            <div class="row">
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="name1">الاسم</label>
+                                                                        <input type="text" class="form-control" id="name1"
+                                                                            placeholder="الاسم">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="email">البريد الالكتروني</label>
+                                                                        <input type="email" class="form-control" id="email"
+                                                                            placeholder="البريد الالكتروني">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="mobile-num">رقم الهاتف</label>
+                                                                        <input type="tel" class="form-control" id="mobile-num"
+                                                                            placeholder="رقم الهاتف">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="Position">الوظيفة</label>
+                                                                        <select class="select2-icons form-control" id="Position">
+                                                                            <option>..</option>
+                                                                            <option>..</option>
+                                                                        </select>
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="type">النوع</label>
+                                                                        <select class="select2-icons form-control" id="type">
+                                                                            <option>عميل</option>
+                                                                            <option>حكومة</option>
+                                                                        </select>
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-12 d-flex flex-sm-row flex-column justify-content-end mb-1 p-0">
+                                                                    <button type="submit" class="btn btn-primary glow">إضافة</button>
+                                                                </div>
+                                                                <div class="table-responsive">
+                                                                    <table class="table table-bordered table-striped mb-0">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>Name</th>
+                                                                                <th>E-mail</th>
+                                                                                <th>Mobile Number</th>
+                                                                                <th>Position</th>
+                                                                                <th>Type</th>
+                                                                                <th class="col-action">Action</th>
+                
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>وزارة الداخلية</td>
+                                                                                <td>ministry@riyadh.net</td>
+                                                                                <td>343567534</td>
+                                                                                <td>الرياض</td>
+                                                                                <td>حكومة</td>
+                                                                                <td>
+                                                                                    <div class="table-icon d-flex justify-content-center align-items-center">
+                                                                                        <a href="#"><i
+                                                                                                class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
+                                                                                        <a href="#"><i
+                                                                                                class="badge-circle badge-circle-light-secondary bx bx-trash-alt font-medium-1"></i></a>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>وزارة الصحة</td>
+                                                                                <td>ministryh@riyadh.net</td>
+                                                                                <td>343567534</td>
+                                                                                <td>الرياض</td>
+                                                                                <td>حكومة</td>
+                                                                                <td>
+                                                                                    <div class="table-icon d-flex justify-content-center align-items-center">
+                                                                                        <a href="#"><i
+                                                                                                class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
+                                                                                        <a href="#"><i
+                                                                                                class="badge-circle badge-circle-light-secondary bx bx-trash-alt font-medium-1"></i></a>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>وزارة الداخلية</td>
+                                                                                <td>ministry@riyadh.net</td>
+                                                                                <td>343567534</td>
+                                                                                <td>الرياض</td>
+                                                                                <td>حكومة</td>
+                                                                                <td>
+                                                                                    <div class="table-icon d-flex justify-content-center align-items-center">
+                                                                                        <a href="#"><i
+                                                                                                class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
+                                                                                        <a href="#"><i
+                                                                                                class="badge-circle badge-circle-light-secondary bx bx-trash-alt font-medium-1"></i></a>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 d-flex flex-sm-row flex-column justify-content-end my-1 p-0">
+                                                    <button type="submit"
+                                                        class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">حفظ</button>
+                                                    <button type="reset" class="btn btn-dark glow">إلغاء</button>
+                                                </div>
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane" id="escalation">
+                                                <div class="card mb-0">
+                                                    <div class="card-content">
+                                                        <div class="card-body">
+                                                            <div class="row">
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <label for="date">Date</label>
+                                                                    <fieldset class="form-group position-relative has-icon-left">
+                                                                        <input type="text" class="form-control pickadate"
+                                                                            placeholder="اختر التاريخ" id="date">
+                                                                        <div class="form-control-position">
+                                                                            <i class='bx bx-calendar'></i>
+                                                                        </div>
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="client_own">مملوك من العميل</label>
+                                                                        <input type="text" class="form-control" id="client_own"
+                                                                            placeholder="مملوك من العميل">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="Inter_own">المالك الداخلي</label>
+                                                                        <input type="text" class="form-control" id="Inter_own"
+                                                                            placeholder="المالك الداخلي">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="reaction">التفاعل</label>
+                                                                        <select class="select2-icons form-control" id="reaction">
+                                                                            <option>نعم</option>
+                                                                            <option>لا</option>
+                                                                        </select>
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <div class="form-group">
+                                                                        <label for="reason">السبب</label>
+                                                                        <textarea class="form-control" id="reason" rows="3"></textarea>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <div class="form-group">
+                                                                        <label for="notes">ملاحظات</label>
+                                                                        <textarea class="form-control" id="notes" rows="3"></textarea>
+                                                                    </div>
+                                                                </div>
+                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 d-flex flex-sm-row flex-column justify-content-end my-1 p-0">
+                                                    <button type="submit"
+                                                        class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">حفظ</button>
+                                                    <button type="reset" class="btn btn-dark glow">إلغاء</button>
+                                                </div>
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane" id="risks">
+                                                <div class="card mb-0">
+                                                    <div class="card-content">
+                                                        <div class="card-body">
+                                                            <div class="row">
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="client_own">الاحتمالية</label>
+                                                                        <input type="text" class="form-control" id="client_own"
+                                                                            placeholder="الاحتمالية">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="periority">الأولوية</label>
+                                                                        <select class="select2-icons form-control" id="periority">
+                                                                            <option>مهم</option>
+                                                                            <option>غير مهم</option>
+                                                                        </select>
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="critical">الحالة</label>
+                                                                        <select class="select2-icons form-control" id="critical">
+                                                                            <option>حرجة</option>
+                                                                            <option>عادية</option>
+                                                                        </select>
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="owner">المالك</label>
+                                                                        <select class="select2-icons form-control" id="owner">
+                                                                            <option>.</option>
+                                                                            <option>..</option>
+                                                                        </select>
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <div class="form-group">
+                                                                        <label for="notes">اجراءات التخفيف</label>
+                                                                        <textarea class="form-control" id="notes" rows="3"></textarea>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <div class="form-group">
+                                                                        <label for="desc">الوصف</label>
+                                                                        <textarea class="form-control" id="desc" rows="3"></textarea>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <div class="form-group">
+                                                                        <label for="impact">التأثير</label>
+                                                                        <textarea class="form-control" id="impact" rows="3"></textarea>
+                                                                    </div>
+                                                                </div>
+                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 d-flex flex-sm-row flex-column justify-content-end my-1 p-0">
+                                                    <button type="submit"
+                                                        class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">حفظ</button>
+                                                    <button type="reset" class="btn btn-dark glow">إلغاء</button>
+                                                </div>
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane" id="issues">
+                                                <div class="card mb-0">
+                                                    <div class="card-content">
+                                                        <div class="card-body">
+                                                            <div class="row">
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <div class="form-group">
+                                                                        <label for="issues-des">الوصف</label>
+                                                                        <textarea class="form-control" id="issues-des"
+                                                                            rows="3"></textarea>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <label for="priority2">الأولوية</label>
+                                                                    <fieldset class="form-group">
+                                                                        <select class="select2-icons form-control" id="priority2">
+                                                                            <option value="">مرتفعة</option>
+                                                                            <option value="Low">Medium</option>
+                                                                            <option value="Meduim">Low</option>
+                                                                        </select>
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <div class="form-group">
+                                                                        <label for="snotes">ملاحظات الحل</label>
+                                                                        <textarea class="form-control" id="snotes" rows="3"></textarea>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <label for="owner2">المالك</label>
+                                                                    <fieldset class="form-group">
+                                                                        <select class="select2-icons form-control" id="owner2">
+                                                                            <option value="">مرتفعة</option>
+                                                                            <option value="Low">نعم</option>
+                                                                            <option value="Meduim">لا</option>
+                                                                        </select>
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <label for="start-date">تاريخ البدء</label>
+                                                                    <fieldset class="form-group position-relative has-icon-left">
+                                                                        <input type="text" class="form-control pickadate"
+                                                                            placeholder="اختر التاريخ" id="start-date">
+                                                                        <div class="form-control-position">
+                                                                            <i class='bx bx-calendar'></i>
+                                                                        </div>
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <label for="issue-status">الحالة</label>
+                                                                    <fieldset class="form-group">
+                                                                        <select class="select2-icons form-control" id="issue-status">
+                                                                            <option value="">..</option>
+                                                                            <option value="Low">..</option>
+                                                                            <option value="Meduim">..</option>
+                                                                        </select>
+                                                                    </fieldset>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 d-flex flex-sm-row flex-column justify-content-end my-1 p-0">
+                                                    <button type="submit"
+                                                        class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">حفظ</button>
+                                                    <button type="reset" class="btn btn-dark glow">إلغاء</button>
+                                                </div>
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane" id="last-tasks">
+                                                <div class="card mb-0">
+                                                    <div class="card-content">
+                                                        <div class="card-body">
+                                                            <div class="row">
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="tname">اسم المهمة</label>
+                                                                        <input type="text" class="form-control" id="tname" placeholder="اسم المهمة">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <label for="lastweek_owner">المالك</label>
+                                                                    <fieldset class="form-group">
+                                                                        <select class="select2-icons form-control" id="lastweek_owner">
+                                                                            <option value="">ياسر التميمي</option>
+                                                                            <option value="">أسماء علي</option>
+                                                                            <option value="Meduim">أحمد محمد</option>
+                                                                        </select>
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <label for="lastweek_status">الحالة</label>
+                                                                    <fieldset class="form-group">
+                                                                        <select class="select2-icons form-control" id="lastweek_status">
+                                                                            <option value="">في تقدم</option>
+                                                                            <option value="Low">اكتملت</option>
+                                                                            <option value="Meduim">في الانتظار</option>
+                                                                        </select>
+                                                                    </fieldset>
+                                                                </div>
+                                            
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <label for="start-date">موعد الإكمال</label>
+                                                                    <fieldset class="form-group position-relative has-icon-left">
+                                                                        <input type="text" class="form-control pickadate" placeholder="اختر التاريخ" id="start-date">
+                                                                        <div class="form-control-position">
+                                                                            <i class='bx bx-calendar'></i>
+                                                                        </div>
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <div class="form-group">
+                                                                        <label for="lastweek_notes">ملاحظات</label>
+                                                                        <textarea class="form-control" id="lastweek_notes" rows="3"></textarea>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 d-flex flex-sm-row flex-column justify-content-end mb-1 p-0">
+                                                                <button type="submit" class="btn btn-primary glow">إضافة</button>
+                                                            </div>
+                                                            <div class="table-responsive">
+                                                                <table class="table table-bordered table-striped mb-0">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th>اسم المهمة</th>
+                                                                            <th>Owner</th>
+                                                                            <th>الحالة</th>
+                                                                            <th>موعد الإكمال</th>
+                                                                            <th>ملاحظات</th>
+                                                                            <th class="col-action">Action</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>إنشاء لوحة تحكم</td>
+                                                                            <td>ياسر التميمي</td>
+                                                                            <td class="text-warning">في تقدم</td>
+                                                                            <td>5/5/2020</td>
+                                                                            <td>بحاجة بعض التحديثات</td>
+                                                                            <td>
+                                                                                <div class="table-icon d-flex justify-content-center align-items-center">
+                                                                                    <a href="#"><i
+                                                                                            class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
+                                                                                    <a href="#"><i
+                                                                                            class="badge-circle badge-circle-light-secondary bx bx-trash-alt font-medium-1"></i></a>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>اختبر المشروع</td>
+                                                                            <td>أحمد محمد</td>
+                                                                            <td class="text-success">اكتملت</td>
+                                                                            <td>29/4/2020</td>
+                                                                            <td>الاختبار على كافة الأجهزة</td>
+                                                                            <td>
+                                                                                <div class="table-icon d-flex justify-content-center align-items-center">
+                                                                                    <a href="#"><i
+                                                                                            class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
+                                                                                    <a href="#"><i
+                                                                                            class="badge-circle badge-circle-light-secondary bx bx-trash-alt font-medium-1"></i></a>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>العمل على قاعدة البيانات</td>
+                                                                            <td>أسماء علي</td>
+                                                                            <td class="text-danger">في الانتظار</td>
+                                                                            <td>5/5/2020</td>
+                                                                            <td>معلومات المستخدم</td>
+                                                                            <td>
+                                                                                <div class="table-icon d-flex justify-content-center align-items-center">
+                                                                                    <a href="#"><i
+                                                                                            class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
+                                                                                    <a href="#"><i
+                                                                                            class="badge-circle badge-circle-light-secondary bx bx-trash-alt font-medium-1"></i></a>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 d-flex flex-sm-row flex-column justify-content-end my-1 p-0">
+                                                    <button type="submit" class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">Save</button>
+                                                    <button type="reset" class="btn btn-dark glow">إلغاء</button>
+                                                </div>
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane" id="next-tasks">
+                                                <div class="card mb-0">
+                                                    <div class="card-content">
+                                                        <div class="card-body">
+                                                            <div class="row">
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="tname">اسم المهمة</label>
+                                                                        <input type="text" class="form-control" id="tname" placeholder="اسم المهمة">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <label for="nextweek_owner">المالك</label>
+                                                                    <fieldset class="form-group">
+                                                                        <select class="select2-icons form-control" id="nextweek_owner">
+                                                                            <option value="">ياسر التميمي</option>
+                                                                            <option value="">أسماء علي</option>
+                                                                            <option value="Meduim">أحمد محمد</option>
+                                                                        </select>
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <label for="nextweek_status">الحالة</label>
+                                                                    <fieldset class="form-group">
+                                                                        <select class="select2-icons form-control" id="nextweek_status">
+                                                                            <option value="">في تقدم</option>
+                                                                            <option value="Low">اكتملت</option>
+                                                                            <option value="Meduim">معلق</option>
+                                                                        </select>
+                                                                    </fieldset>
+                                                                </div>
+                                            
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <label for="start-date">موعد الإكمال</label>
+                                                                    <fieldset class="form-group position-relative has-icon-left">
+                                                                        <input type="text" class="form-control pickadate" placeholder="اختر التاريخ" id="start-date">
+                                                                        <div class="form-control-position">
+                                                                            <i class='bx bx-calendar'></i>
+                                                                        </div>
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-md-6 col-md-6 col-12">
+                                                                    <div class="form-group">
+                                                                        <label for="lastweek_notes">ملاحظات</label>
+                                                                        <textarea class="form-control" id="lastweek_notes" rows="3"></textarea>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 d-flex flex-sm-row flex-column justify-content-end mb-1 p-0">
+                                                                <button type="submit" class="btn btn-primary glow">إضافة</button>
+                                                            </div>
+                                                            <div class="table-responsive">
+                                                                <table class="table table-bordered table-striped table-bordered mb-0">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th>اسم المهمة</th>
+                                                                            <th>Owner</th>
+                                                                            <th>الحالة</th>
+                                                                            <th>موعد الإكمال</th>
+                                                                            <th>ملاحظات</th>
+                                                                            <th class="col-action">Action</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>إنشاء لوحة تحكم</td>
+                                                                            <td>ياسر التميمي</td>
+                                                                            <td class="text-warning">في تقدم</td>
+                                                                            <td>5/5/2020</td>
+                                                                            <td>بحاجة بعض التحديثات</td>
+                                                                            <td>
+                                                                                <div class="table-icon d-flex justify-content-center align-items-center">
+                                                                                    <a href="#"><i
+                                                                                            class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
+                                                                                    <a href="#"><i
+                                                                                            class="badge-circle badge-circle-light-secondary bx bx-trash-alt font-medium-1"></i></a>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>اختبر المشروع</td>
+                                                                            <td>أحمد محمد</td>
+                                                                            <td class="text-success">اكتملت</td>
+                                                                            <td>29/4/2020</td>
+                                                                            <td>الاختبار على كافة الأجهزة</td>
+                                                                            <td>
+                                                                                <div class="table-icon d-flex justify-content-center align-items-center">
+                                                                                    <a href="#"><i
+                                                                                            class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
+                                                                                    <a href="#"><i
+                                                                                            class="badge-circle badge-circle-light-secondary bx bx-trash-alt font-medium-1"></i></a>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>العمل على قاعدة البيانات</td>
+                                                                            <td>أسماء علي</td>
+                                                                            <td class="text-danger">في الانتظار</td>
+                                                                            <td>5/5/2020</td>
+                                                                            <td>معلومات المستخدم</td>
+                                                                            <td>
+                                                                                <div class="table-icon d-flex justify-content-center align-items-center">
+                                                                                    <a href="#"><i
+                                                                                            class="badge-circle badge-circle-light-secondary bx bxs-pencil font-medium-1"></i></a>
+                                                                                    <a href="#"><i
+                                                                                            class="badge-circle badge-circle-light-secondary bx bx-trash-alt font-medium-1"></i></a>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 d-flex flex-sm-row flex-column justify-content-end my-1 p-0">
+                                                    <button type="submit" class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">Save</button>
+                                                    <button type="reset" class="btn btn-dark glow">إلغاء</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            <!-- users list ends -->
+        </div>
+    </div>
+</div>
+    </div>
+    <!-- END: Content-->
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
+    
+    <!-- BEGIN: Vendor JS-->
+    <script src="../../app-assets/vendors/js/vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+
+     <!-- BEGIN: Theme JS-->
+    <script src="../../app-assets/js/core/app-menu.js"></script>
+    <script src="../../app-assets/js/core/app.js"></script>
+    <script src="../../app-assets/js/scripts/components.js"></script>
+    <!-- END: Theme JS-->
+
+    <!-- BEGIN: Page Vendor JS Number Input-->
+    <script src="../../app-assets/vendors/js/forms/spinner/jquery.bootstrap-touchspin.js"></script>
+    <!-- BEGIN: Page Vendor JS Number Input-->
+
+    <!-- BEGIN: Page Vendor JS pickadate-->
+    <script src="../../app-assets/vendors/js/pickers/pickadate/picker.js"></script>
+    <script src="../../app-assets/vendors/js/pickers/pickadate/picker.date.js"></script>
+    <script src="../../app-assets/vendors/js/pickers/pickadate/picker.time.js"></script>
+    <script src="../../app-assets/vendors/js/pickers/pickadate/legacy.js"></script>
+    <script src="../../app-assets/vendors/js/pickers/daterange/moment.min.js"></script>
+    <script src="../../app-assets/vendors/js/pickers/daterange/daterangepicker.js"></script>
+    <!-- END: Page Vendor JS pickadate-->
+
+    <!-- BEGIN: Page Vendor JS Select2-->
+    <script src="../../app-assets/vendors/js/forms/select/select2.full.min.js"></script>
+    <!-- END: Page Vendor JS Select2-->
+    
+    <!-- BEGIN: Page JS Form-select2-->
+    <script src="../../app-assets/js/scripts/forms/select/form-select2.js"></script>
+    <!-- END: Page JS Form-select2-->
+
+    <!-- BEGIN: Page JS Number Input-->
+    <script src="../../app-assets/js/scripts/forms/number-input.js"></script>
+    <!-- END: Page JS Number Input-->
+
+    <!--BEGIN: Page JS pickadate--->
+    <script src="../../app-assets/js/scripts/pages/app-invoice.js"></script>
+    <!-- END: Page JS pickadate--->
+
+
+</body>
+<!-- END: Body-->
+
+</html>
