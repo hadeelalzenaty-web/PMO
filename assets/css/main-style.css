@@ -1,5 +1,7 @@
+/*Fonts*/
 @import "../fonts/fontawesome/css/all.css";
 @import "../fonts/icomoon/style.css";
+@import "../fonts/site-font/english-font.css";
 .text-card{
 	font-size:20px;
 	color:#333;

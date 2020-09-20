@@ -455,6 +455,11 @@ body.footer-hidden footer {
 .main-menu.menu-light .navigation li.has-sub ul li.has-sub ul.menu-content > li a:hover {
   padding-right : 25px !important;
 }
+.main-menu .navigation > li > a > i {
+  margin-left: 14px;
+  float: right;
+  width: 1.6rem !important;
+}
 
 .main-menu.menu-light .navigation li a {
   display : -webkit-box;
@@ -3227,20 +3232,14 @@ body.navbar-static .navbar-container .search-input.open {
 /* Chips Css */
 /* --------- */
 .chip {
-  background-color : #F0F0F0;
-  font-size : 0.8rem;
-  border-radius : 1.428rem;
-  display : -webkit-inline-box;
-  display : -webkit-inline-flex;
-  display : -ms-inline-flexbox;
-  display :         inline-flex;
-  padding : 0 10px;
-  margin-bottom : 5px;
-  vertical-align : middle;
-  -webkit-box-pack : center;
-  -webkit-justify-content : center;
-  -ms-flex-pack : center;
-          justify-content : center;
+  background-color: #FFFFFF;
+  font-size: 0.8rem;
+  border-radius: 1.428rem;
+  display: inline-flex;
+  padding: 0 10px;
+  margin-bottom: 5px;
+  vertical-align: middle;
+  justify-content: center;
 }
 
 .chip .chip-body {

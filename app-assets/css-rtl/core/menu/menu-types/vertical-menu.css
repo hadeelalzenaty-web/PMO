@@ -186,6 +186,19 @@ body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu.expanded .mo
 body.vertical-layout.vertical-menu-modern.menu-collapsed .navbar-static-top .navbar-wrapper, body.vertical-layout.vertical-menu-modern.menu-collapsed .app-content, body.vertical-layout.vertical-menu-modern.menu-collapsed .footer {
   margin-right : 78px;
 }
+body.vertical-layout .main-menu .navbar-header {
+  margin-bottom: 14px;
+}
+body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu:not(.expanded) .navbar-header .navbar-brand .logo{
+  height:35px;
+  width:35px;
+  transition: all 400ms ease;
+  }
+  body.vertical-layout .main-menu .navbar-brand .logo{
+    height:45px;
+    width:45px;  
+    transition: all 400ms ease;
+  }
 
 @media (min-width: 992px) {
   body.vertical-layout.vertical-menu-modern .main-menu {
@@ -260,6 +273,7 @@ body.vertical-layout.vertical-menu-modern.menu-collapsed .navbar-static-top .nav
   height : 27px;
   width : 35px;
 }
+
 
 .vertical-overlay-menu .navbar[data-nav='brand-center'] .navbar-header .navbar-brand .brand-logo .logo {
   height : 27px;

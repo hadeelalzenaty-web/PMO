@@ -28,8 +28,10 @@ body.vertical-layout.vertical-menu-modern .main-menu .navigation .menu-content >
 }
 
 body.vertical-layout.vertical-menu-modern .main-menu {
-  transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
+  -webkit-transform : translate3d(0, 0, 0);
+          transform : translate3d(0, 0, 0);
+  -webkit-backface-visibility : hidden;
+          backface-visibility : hidden;
 }
 
 body.vertical-layout.vertical-menu-modern.menu-expanded .main-menu {
