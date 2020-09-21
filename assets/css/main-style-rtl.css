@@ -95,8 +95,11 @@ body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu.expanded .na
   /* fix problem when last visible word doesn't adjoin right side  */
   text-align: justify;  
   /* place for '...' */
-  margin-right: -1em;
-  padding-right: 1em;
+  margin-left: -1em;
+  padding-left: 1em;
+}
+input[type=checkbox].tui-full-calendar-checkbox-round+span {
+    margin-left: 8px !important;
 }
 
 .price{
@@ -157,10 +160,22 @@ body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu.expanded .na
     overflow: hidden;
     white-space: nowrap
 }
-.sub-menu.show{
-    right:8px !important;
+/*Calender Changes*/
+.calendar-action .dropdown-menu-right.show{
+  transform: translate3d(0px, 35px, 0px) !important;
 }
-
+.tui-full-calendar-button.tui-full-calendar-popup-close {
+    left: 10px;
+    right:auto !important;
+}
+.tui-full-calendar-popup-section-item.tui-full-calendar-section-allday .tui-full-calendar-content {
+    padding-right: 4px;
+    padding-left:auto !important;
+}
+.tui-full-calendar-button.tui-full-calendar-section-private {
+    margin-right: 4px;
+    margin-left: auto !important;
+}
 .nav-itam a{
 	font-size: 1.5rem;
     color: #475F7B;

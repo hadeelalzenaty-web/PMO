@@ -3981,7 +3981,7 @@ input[type='submit'].btn-block, input[type='reset'].btn-block, input[type='butto
 }
 
 .custom-file-input:lang(en) ~ .custom-file-label::after {
-  content : 'Browse';
+  content : 'بحث';
 }
 
 .custom-file-input ~ .custom-file-label[data-browse]::after {
