@@ -181,9 +181,7 @@
 .picker--focused .picker__day--highlighted {
 	cursor: pointer;
 	color: #fff;
-	background-color: #4F8BED;
-	width: 30px;
-    height: 25px;
+	background-color: #357ebd;
 }
 .picker__day--selected,
 .picker__day--selected:hover,
