@@ -581,11 +581,11 @@ label {
 
 .checkbox input:checked ~ label:after {
   border-top-style : none;
-  border-left-style : none;
+  border-right-style: none;
   /* IE9 */
-      -ms-transform : rotate(45deg);
-  -webkit-transform : rotate(45deg);
-          transform : rotate(45deg);
+      -ms-transform : rotate(-45deg);
+  -webkit-transform : rotate(-45deg);
+          transform : rotate(-45deg);
   height : 0.4rem;
   width : 0.8rem;
   border-color : #5A8DEE;
@@ -2252,6 +2252,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
   font-family : 'boxicons';
   position : relative;
   top : 2px;
+  transform: rotate(180deg);
 }
 
 .breadcrumb.breadcrumb-divider {

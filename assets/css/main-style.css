@@ -109,6 +109,7 @@ body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu.expanded .na
 }
 .contract-a:hover .price{
     display: inline-block;
+    color: gray;
 }
 .description p:before{
   content: '...';

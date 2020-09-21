@@ -8,7 +8,7 @@
   position : absolute;
   top : 11px;
   left : 15px;
-}
+  transform: rotate(180deg);
 
 .bg-authentication .brand-text {
   color : #5A8DEE;
