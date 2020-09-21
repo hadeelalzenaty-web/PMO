@@ -47,7 +47,7 @@
 }
 
 .todo-application .content-area-wrapper .sidebar .todo-sidebar .todo-app-menu .sidebar-menu-list .filter-label {
-  font-family : 'Rubik', Helvetica, Arial, serif;
+  font-family: 'Tajawal','IBM Plex Sans', Helvetica, Arial, serif;
   letter-spacing : 1px;
   color : #BAC0C7;
 }
@@ -129,7 +129,7 @@
 }
 
 .todo-application .content-area-wrapper .todo-new-task-sidebar .task-title {
-  font-family : 'Rubik', Helvetica, Arial, serif;
+  font-family: 'Tajawal','IBM Plex Sans', Helvetica, Arial, serif;
   font-size : 1.1rem;
 }
 
@@ -269,7 +269,7 @@
 
 .todo-application .content-area-wrapper .content-right .todo-app-list-wrapper .todo-fixed-search input {
   border : 0;
-  font-family : 'IBM Plex Sans', Helvetica, Arial, serif;
+  font-family : 'Tajawal','IBM Plex Sans', Helvetica, Arial, serif;
 }
 
 .todo-application .content-area-wrapper .content-right .todo-app-list-wrapper .todo-fixed-search input:focus {
@@ -353,7 +353,7 @@
 }
 
 .todo-application .content-area-wrapper .content-right .todo-app-list-wrapper .todo-app-list .todo-task-list .todo-task-list-wrapper .todo-item .todo-title {
-  font-family : 'Rubik', Helvetica, Arial, serif;
+  font-family: 'Tajawal','IBM Plex Sans', Helvetica, Arial, serif;
   color : #475F7B;
 }
 

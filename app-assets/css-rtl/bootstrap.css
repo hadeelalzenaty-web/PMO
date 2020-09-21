@@ -31,7 +31,7 @@
   --breakpoint-md : 768px;
   --breakpoint-lg : 992px;
   --breakpoint-xl : 1200px;
-  --font-family-sans-serif : 'IBM Plex Sans', Helvetica, Arial, serif;
+  --font-family-sans-serif : 'Tajawal','IBM Plex Sans', Helvetica, Arial, serif;
   --font-family-monospace : 'Rubik', Helvetica, Arial, serif;
 }
 
@@ -48,7 +48,7 @@ html {
 
 body {
   margin : 0;
-  font-family : 'IBM Plex Sans', Helvetica, Arial, serif;
+  font-family : 'Tajawal','IBM Plex Sans', Helvetica, Arial, serif;
   font-size : 1rem;
   font-weight : 400;
   line-height : 1.4;
@@ -324,7 +324,7 @@ template {
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom : 0.5rem;
-  font-family : 'Rubik', Helvetica, Arial, serif;
+  font-family : 'Tajawal','Rubik', Helvetica, Arial, serif;
   font-weight : 400;
   line-height : 1.2;
   color : #475F7B;
@@ -6276,7 +6276,7 @@ a.close.disabled {
   z-index : 1070;
   display : block;
   margin : 0;
-  font-family : 'IBM Plex Sans', Helvetica, Arial, serif;
+  font-family : 'Tajawal','IBM Plex Sans', Helvetica, Arial, serif;
   font-style : normal;
   font-weight : 400;
   line-height : 1.4;
@@ -6389,7 +6389,7 @@ a.close.disabled {
   z-index : 1060;
   display : block;
   max-width : 276px;
-  font-family : 'IBM Plex Sans', Helvetica, Arial, serif;
+  font-family : 'Tajawal','IBM Plex Sans', Helvetica, Arial, serif;
   font-style : normal;
   font-weight : 400;
   line-height : 1.4;

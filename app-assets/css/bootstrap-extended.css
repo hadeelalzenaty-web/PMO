@@ -2156,7 +2156,7 @@ input[type=number]::-webkit-outer-spin-button {
 /*------------*/
 .badge {
   color: #FFFFFF;
-  font-family: "Rubik", Helvetica, Arial, serif;
+  font-family: 'Tajawal','IBM Plex Sans', Helvetica, Arial, serif;
   background-color: #5A8DEE;
   text-transform: uppercase;
 }

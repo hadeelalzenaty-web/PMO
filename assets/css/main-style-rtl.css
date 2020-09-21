@@ -1,6 +1,5 @@
 @import "../fonts/fontawesome/css/all.css";
-@import "../fonts/icomoon/style.css";
-@import "../fonts/site-font/arabic-font.csss";
+@import "../fonts/site-font/arabic-font.css";
 .text-card{
 	font-size:20px;
 	color:#333;

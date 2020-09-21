@@ -259,7 +259,7 @@ pre code {
 /*---------------*/
 .table th, .table td {
   /* default font-family to table data */
-  font-family : 'Rubik', Helvetica, Arial, serif;
+  font-family : 'Tajawal','IBM Plex Sans', Helvetica, Arial, serif;
 }
 
 .table thead {
@@ -1284,7 +1284,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 .header-navbar {
   padding : 0;
   min-height : 4rem;
-  font-family : 'Rubik', Helvetica, Arial, serif;
+  font-family : 'Tajawal','Rubik', Helvetica, Arial, serif;
   -webkit-transition : 100ms ease all;
           transition : 100ms ease all;
   z-index : 1000;
@@ -2167,7 +2167,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
   font-weight : normal;
   color : #475F7B;
   padding : 1rem 1.9rem;
-  font-family : 'Rubik', Helvetica, Arial, serif;
+  font-family: 'Tajawal','IBM Plex Sans', Helvetica, Arial, serif;
 }
 
 /* Card Column specific */
@@ -2330,7 +2330,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 /*------------*/
 .badge {
   color : #FFFFFF;
-  font-family : 'Rubik', Helvetica, Arial, serif;
+  font-family: 'Tajawal','IBM Plex Sans', Helvetica, Arial, serif;
   background-color : #5A8DEE;
   text-transform : uppercase;
 }
@@ -2802,7 +2802,7 @@ _:-ms-lang(x), .toast-bs-container {
   padding : 1rem 1.7rem;
   border-radius : 0.267rem !important;
   font-size : 1.2rem;
-  font-family : 'Rubik', Helvetica, Arial, serif;
+  font-family: 'Tajawal','IBM Plex Sans', Helvetica, Arial, serif;
   cursor : pointer;
 }
 
@@ -2970,7 +2970,7 @@ _:-ms-lang(x), .toast-bs-container {
 }
 
 .modal .modal-content .modal-header .modal-title {
-  font-family : 'Rubik', Helvetica, Arial, serif;
+  font-family: 'Tajawal','IBM Plex Sans', Helvetica, Arial, serif;
   font-weight : normal;
   font-size : 1.2rem;
 }
