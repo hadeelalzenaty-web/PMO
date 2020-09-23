@@ -31,6 +31,7 @@ var badgeColors = {
   "Backend": "badge-light-success",
   "Issue": "badge-light-danger",
   "Design": "badge-light-warning",
+  "تصميم": "badge-light-warning",
   "Wireframe": "badge-light-info",
 }
 

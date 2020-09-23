@@ -43,7 +43,6 @@
 .todo-application .content-area-wrapper .sidebar .todo-sidebar .todo-app-menu .sidebar-menu-list {
   padding : 0 1.5rem;
   position : relative;
-  height : calc(100% - 5.4rem);
 }
 
 .todo-application .content-area-wrapper .sidebar .todo-sidebar .todo-app-menu .sidebar-menu-list .filter-label {
@@ -74,7 +73,7 @@
 
 .todo-application .content-area-wrapper .todo-new-task-sidebar {
   /* todo-new-task-sidebar */
-  height : calc(100vh - 9rem);
+  height : calc(100vh - 6rem);
   width : 400px;
   border-radius : 0.267rem;
   border-top-right-radius : 0;
@@ -88,7 +87,7 @@
           transition : all 0.3s ease-in-out;
   z-index : 8;
   left : 4.6rem;
-  bottom : 4rem;
+  bottom : 1rem;
 }
 
 .todo-application .content-area-wrapper .todo-new-task-sidebar.show {
@@ -192,27 +191,26 @@
   color : #475F7B !important;
 }
 
-.todo-application .content-area-wrapper .todo-new-task-sidebar .select2-assign-label + .select2-container .select2-selection__rendered .select2-selection__choice[title='Frontend'] {
+.todo-application .content-area-wrapper .todo-new-task-sidebar .select2-assign-label + .select2-container .select2-selection__rendered .select2-selection__choice[title='مطور الواجهة الأمامية'] {
   background-color : #E2ECFF !important;
   color : #5A8DEE !important;
 }
 
-.todo-application .content-area-wrapper .todo-new-task-sidebar .select2-assign-label + .select2-container .select2-selection__rendered .select2-selection__choice[title='Backend'] {
+.todo-application .content-area-wrapper .todo-new-task-sidebar .select2-assign-label + .select2-container .select2-selection__rendered .select2-selection__choice[title='مطور الواجهة الخلفية'] {
   background-color : #D2FFE8 !important;
   color : #39DA8A !important;
 }
 
-.todo-application .content-area-wrapper .todo-new-task-sidebar .select2-assign-label + .select2-container .select2-selection__rendered .select2-selection__choice[title='Issue'] {
+.todo-application .content-area-wrapper .todo-new-task-sidebar .select2-assign-label + .select2-container .select2-selection__rendered .select2-selection__choice[title='Issue'],.todo-application .content-area-wrapper .todo-new-task-sidebar .select2-assign-label + .select2-container .select2-selection__rendered .select2-selection__choice[title='مشكلة'] {
   background-color : #FFDEDE !important;
   color : #FF5B5C !important;
 }
-
-.todo-application .content-area-wrapper .todo-new-task-sidebar .select2-assign-label + .select2-container .select2-selection__rendered .select2-selection__choice[title='Design'] {
+.todo-application .content-area-wrapper .todo-new-task-sidebar .select2-assign-label + .select2-container .select2-selection__rendered .select2-selection__choice[title='تصميم']{
   background-color : #FFEED9 !important;
   color : #FDAC41 !important;
 }
 
-.todo-application .content-area-wrapper .todo-new-task-sidebar .select2-assign-label + .select2-container .select2-selection__rendered .select2-selection__choice[title='Wireframe'] {
+.todo-application .content-area-wrapper .todo-new-task-sidebar .select2-assign-label + .select2-container .select2-selection__rendered .select2-selection__choice[title='تصميم مبدئي'] {
   background-color : #CCF5F8 !important;
   color : #00CFDD !important;
 }
@@ -264,7 +262,7 @@
   padding : 0.51rem 0.1rem;
   border-bottom : 1px solid #DFE3E7;
   background-color : #FFFFFF;
-  border-top-left-radius : 0.267rem;
+  border-top-left-radius: 0.267rem;
 }
 
 .todo-application .content-area-wrapper .content-right .todo-app-list-wrapper .todo-fixed-search input {
@@ -294,7 +292,7 @@
 
 .todo-application .content-area-wrapper .content-right .todo-app-list-wrapper .todo-app-list .todo-task-list {
   position : relative;
-  height : calc(100vh - 12.7rem);
+  height : calc(100vh - 9.7rem);
 }
 
 .todo-application .content-area-wrapper .content-right .todo-app-list-wrapper .todo-app-list .todo-task-list .todo-task-list-wrapper {

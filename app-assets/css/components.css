@@ -3994,7 +3994,7 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
 .picker .picker__day--highlighted,
 .picker .picker__day--selected,
 .picker .picker__day--today {
-  border-radius: 50%;
+  border-radius: 4px;
 }
 
 /*.picker .picker__day--highlighted,
