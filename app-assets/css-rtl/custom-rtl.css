@@ -109,7 +109,8 @@ body .ps__rail-y {
 
 /* Right dropdown menu */
 .dropdown-menu.dropdown-menu-right::before {
-  right : 1rem;
+  right: auto;
+  left : 1rem;
 }
 
 /* Quill Editor - arrow icons */

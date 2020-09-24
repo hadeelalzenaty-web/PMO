@@ -506,3 +506,17 @@ hr{
     margin-top: 1rem !important;
     }
 }
+
+
+.card .dropdown-menu.dropdown-menu-right {
+    left: 0px !important;
+    right: auto !important;
+    transform: translate3d(0px, 19px, 0px) !important;
+}
+
+.todo-fixed-search .dropdown-menu {
+    transform: translate3d(0px, 34px, 0px) !important;
+}
+
+
+

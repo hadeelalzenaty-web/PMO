@@ -20442,7 +20442,7 @@
   }
   .todo-application .app-content .todo-app-list .todo-task-list {
     position: relative;
-    height: calc(100vh - 5rem) !important;
+    height: calc(100vh - 9.9rem) !important;
   }
 }
 
