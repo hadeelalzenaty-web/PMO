@@ -394,6 +394,7 @@
   pointer-events: none;
   position: absolute;
   right: 15px;
+  text-align: right;
 }
 .ql-snow.ql-toolbar:after,
 .ql-snow .ql-toolbar:after {

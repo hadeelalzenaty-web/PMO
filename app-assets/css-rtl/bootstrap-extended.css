@@ -2868,7 +2868,6 @@ _:-ms-lang(x), .toast-bs-container {
 .pagination .page-item .page-link i {
   font-weight : 600;
   vertical-align : middle;
-  transform: rotate(180deg);
 }
 
 .pagination .page-item.active {
