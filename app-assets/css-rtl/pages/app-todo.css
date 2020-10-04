@@ -43,6 +43,7 @@
 .todo-application .content-area-wrapper .sidebar .todo-sidebar .todo-app-menu .sidebar-menu-list {
   padding : 0 1.5rem;
   position : relative;
+  height: calc(100% - 5.4rem) !important;
 }
 
 .todo-application .content-area-wrapper .sidebar .todo-sidebar .todo-app-menu .sidebar-menu-list .filter-label {
