@@ -1,6 +1,5 @@
 /*Fonts*/
 @import "../fonts/fontawesome/css/all.css";
-@import "../fonts/icomoon/style.css";
 @import "../fonts/site-font/english-font.css";
 .text-card{
 	font-size:20px;
@@ -495,4 +494,9 @@ hr{
 }
 
 
+}
+.card .dropdown-menu.dropdown-menu-right {
+    left: auto !important;
+    right: 0px !important;
+    transform: translate3d(9px, 19px, 0px) !important;
 }

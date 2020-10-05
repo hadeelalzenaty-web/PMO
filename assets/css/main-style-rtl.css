@@ -511,7 +511,7 @@ hr{
 .card .dropdown-menu.dropdown-menu-right {
     left: 0px !important;
     right: auto !important;
-    transform: translate3d(0px, 19px, 0px) !important;
+    transform: translate3d(-12px, 19px, 0px) !important;
 }
 
 .todo-fixed-search .dropdown-menu {

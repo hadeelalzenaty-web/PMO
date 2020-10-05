@@ -12,7 +12,7 @@
 .todo-application .content-area-wrapper .sidebar .todo-sidebar {
   /* todo-sidebar menu */
   width : 260px;
-  height : calc(100vh - 9rem);
+  height : calc(100vh - 6rem);
   border-top-right-radius : 0.267rem;
   border-bottom-right-radius : 0.267rem;
 }
